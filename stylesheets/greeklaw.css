@@ -7,7 +7,9 @@ body > header {
 	border-top: 0px solid #2b3443;
 	padding-left: 20px;
 }
-body > header a:hover { text-decoration: none; color: black; }
+body > header a:hover,
+body > header a:link,
+body > header a:visited { text-decoration: none; color: black; }
 nav {
 	display:inline-block;
 	vertical-align: top;
