@@ -6,6 +6,7 @@ body > header {
 	background: white linear-gradient(45deg, #647797 44px, transparent 33%) !important;
 	border-top: 0px solid #2b3443;
 }
+body > header a { text-decoration: none; color: black; }
 nav {
 	display:inline-block;
 	vertical-align: top;
