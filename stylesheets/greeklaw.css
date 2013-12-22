@@ -20,7 +20,7 @@ nav li a { color: #afbbcd; }
 nav li a:hover { color: white; }
 
 nav ul { list-style: none; padding: 0 1em; }
-nav > ul {
+nav {
 	background-image: -webkit-linear-gradient(45deg, #4D6C9E, #2b3443);
 	background-image:    -moz-linear-gradient(45deg, #4D6C9E, #2b3443);
 	background-image:         linear-gradient(45deg, #4D6C9E, #2b3443);
