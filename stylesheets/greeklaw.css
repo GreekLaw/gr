@@ -5,8 +5,9 @@ body > header {
 	margin: 0 5.4em 0 auto;
 	background: white linear-gradient(45deg, #647797 44px, transparent 33%) !important;
 	border-top: 0px solid #2b3443;
+	padding-left: 20px;
 }
-body > header a { text-decoration: none; color: black; }
+body > header a:hover { text-decoration: none; color: black; }
 nav {
 	display:inline-block;
 	vertical-align: top;
@@ -25,18 +26,21 @@ nav {
 	background-image: -webkit-linear-gradient(45deg, #4D6C9E, #2b3443);
 	background-image:    -moz-linear-gradient(45deg, #4D6C9E, #2b3443);
 	background-image:         linear-gradient(45deg, #4D6C9E, #2b3443);
-	padding: .5em 1em;
+	padding: .5em 1em 0 2em;
 }
 nav li a {
 	display: inline-block;
 	width: 100%;
 	padding: 3px 0px 2px 0px;
 }
-
+nav header {
+	text-align: center;
+	color: white;
+}
 hr { display: inline; border: 0px; }
 hr::after { content: ''; padding-right: 2.5em; }
-a { text-decoration: none; }
-a:hover { text-decoration:underline; }
+a       { text-decoration:      none; }
+a:hover { text-decoration: underline; }
 
 ol, ul, dl {
 	display: inline-block;
@@ -51,7 +55,11 @@ dd, dt { padding: 0 }
 
 main li a { color: #255DB1; }
 main li a:hover { color: #859DBD; }
-.favorites { position: relative; background: linear-gradient(gold,gold) no-repeat 8px; background-size: 1px 100%; }
+.favorites {
+	position: relative;
+	background: linear-gradient(gold,gold) no-repeat 8px;
+	background-size: 1px 100%;
+}
 .favorites::before {
 	content: '★';
 	position: absolute;
