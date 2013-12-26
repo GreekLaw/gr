@@ -1,7 +1,7 @@
 body, html { margin: 0; padding: 0; }
 body { background: white; position: relative; }
 body > header { 
-	font: small-caps 55px/75px;
+	font: small-caps 55px/75px serif;
 	margin: 0 5.4em 0 auto;
 	background: white linear-gradient(45deg, #647797 -40px, transparent 210px);
 	border-top: 0px solid #2b3443;
