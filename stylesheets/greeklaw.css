@@ -1,9 +1,9 @@
 body, html { margin: 0; padding: 0; }
 body { background: white; position: relative; }
 body > header { 
-	font: small-caps 60px/80px "OFL Sorts Mill Goudy";
+	font: small-caps 55px/75px;
 	margin: 0 5.4em 0 auto;
-	background: white linear-gradient(45deg, #647797 44px, transparent 33%) !important;
+	background: white linear-gradient(45deg, #647797 -40px, transparent 210px);
 	border-top: 0px solid #2b3443;
 	padding-left: 20px;
 }
