@@ -135,9 +135,10 @@ h6 { font-size: 1em; text-indent: 4em; }
 table { width: 99.9%; border-collapse: collapse; }
 td { border: 1px solid grey; }
 
-h1 { font-size: 3em; }
-h2 { font-size: 2.25em; }
-h3 { font-size: 1.75em; }
-h4 { font-size: 1.125em; }
+h1 { font-size: 2.3571em; line-height: 1.3333em;                                       }
+h2 { font-size: 1.9285em; line-height: 1.6296em;                                       }
+h3 { font-size:      1em; line-height:      1em; font-weight: bold;                    }
+h4 { font-size:      1em; line-height:      1em; font-weight: bold; padding-left: 4em; }
+h5 { font-size:      1em; line-height:      1em; font-weight: bold; padding-left: 8em; }
 
 
