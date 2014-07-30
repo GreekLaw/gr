@@ -68,6 +68,7 @@ void function(){
   }(window,document,'script','//www.google-analytics.com/analytics.js','ga')
 
   ga('create', 'UA-33952776-3', 'greeklaw.github.io')
+  ga('require', 'displayfeatures')
   ga('send', 'pageview')
 
 }()
