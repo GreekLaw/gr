@@ -1,5 +1,6 @@
 body, html { margin: 0; padding: 0; }
 body { background: white; position: relative; }
+body {width: 768px; margin: auto;}
 body > header { 
 	font: small-caps 55px/75px serif;
 	margin: auto;
