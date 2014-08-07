@@ -44,6 +44,8 @@ hr::after { content: ''; padding-right: 2.5em; }
 a       { text-decoration:      none; }
 a:hover { text-decoration: underline; }
 
+ul {padding: 0 1em;}
+
 ol, ul, dl {
 	display: inline-block;
 	white-space: normal;
