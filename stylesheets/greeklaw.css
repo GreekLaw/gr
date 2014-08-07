@@ -73,8 +73,7 @@ main li a:hover { color: #859DBD; }
 }
 main {
 	display: inline-block;
-	width: 79%;
-	max-width: 775px;
+	width: 100%;
 	margin-top: -2.4em;
 	padding-bottom: 30px;
 	padding-top: 20px;
