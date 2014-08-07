@@ -1,6 +1,6 @@
 body, html { margin: 0; padding: 0; }
 body { background: white; position: relative; }
-body {width: 768px; margin: auto;}
+body {max-width: 768px; margin: auto;}
 body > header { 
 	font: small-caps 55px/75px serif;
 	margin: auto;
@@ -28,7 +28,7 @@ nav {
 	background-image: -webkit-linear-gradient(45deg, #4D6C9E, #2b3443);
 	background-image:    -moz-linear-gradient(45deg, #4D6C9E, #2b3443);
 	background-image:         linear-gradient(45deg, #4D6C9E, #2b3443);
-	padding: .5em 1em 0 2em;
+	padding: .5em 0em 0 0em;
 }
 nav li a {
 	display: inline-block;
