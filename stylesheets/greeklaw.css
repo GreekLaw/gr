@@ -63,7 +63,7 @@ main li a:hover { color: #859DBD; }
 	background-size: 1px 100%;
 }
 .favorites::before {
-	content: '★';
+	content: '\2605';
 	position: absolute;
 	color: gold;
 	font-size: 16px;
