@@ -7,7 +7,7 @@
 [role="button"]{
 	display: inline;
 	padding: 1px .5em 2px;
-	background: #AFD7F5;
+	background: #CEE9FF;
 	color: rgba(52, 62, 71, 1);
 	border-radius: 3px;
 	cursor: pointer;
@@ -21,8 +21,8 @@
 
 [role="menu"] { display: inline-block; }
 [role="menu"] label {
-	border: 1px solid #AFD7F5;
-	border-right: 1px solid #AFD7F5;
+	border: 1px solid #CEE9FF;
+	border-right: 1px solid #CEE9FF;
 	border-left: none;
 	background: transparent;
 	color: rgba(182, 190, 196, 1);
@@ -30,12 +30,12 @@
 }
 
 [role="menu"] :first-child {	
-	border-left: 1px solid #AFD7F5;
+	border-left: 1px solid #CEE9FF;
 	border-radius: 4px 0 0 4px;
 }
 
 [role="menu"] :last-child {
-	border-right: 1px solid #AFD7F5;
+	border-right: 1px solid #CEE9FF;
 	border-radius: 0 4px 4px 0;
 }
 
@@ -43,14 +43,14 @@
 .vertical[role="menu"] label {
 	display: inline-block;
 	width: 90%;
-	border: 1px solid #AFD7F5;
+	border: 1px solid #CEE9FF;
 	border-top: none;
 	background: transparent;
 	border-radius: 0;
 }
 
 .vertical[role="menu"] label:first-child {
-	border-top: 1px solid #AFD7F5;
+	border-top: 1px solid #CEE9FF;
 	border-radius: 4px 4px 0 0;
 }
 .vertical[role="menu"] label:last-child {
@@ -203,7 +203,7 @@
 .if21:checked ~ .then [data-select~="if21"],
 .if91:checked ~ .then [data-select~="if91"], .if92:checked ~ .then [data-select~="if92"],
 .if93:checked ~ .then [data-select~="if93"]  {
-	background: #AFD7F5;
+	background: #CEE9FF;
 	color: rgba(52, 62, 71, 1);
 	padding: 1px .5em 2px;
 	-webkit-box-decoration-break: clone;
@@ -216,3 +216,8 @@
 	   -moz-animation: fadeIn .5s;
 	        animation: fadeIn .5s;
 }
+
+
+@-webkit-keyframes fadeIn { from {opacity: 0;} }
+   @-moz-keyframes fadeIn { from {opacity: 0;} }
+        @keyframes fadeIn { from {opacity: 0;} }
