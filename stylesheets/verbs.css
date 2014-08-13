@@ -19,8 +19,8 @@
 	cursor: pointer;
 }
 
-.multiple-choice { display: inline-block; }
-.multiple-choice label {
+[role="menu"] { display: inline-block; }
+[role="menu"] label {
 	border: 1px solid #AFD7F5;
 	border-right: 1px solid #AFD7F5;
 	border-left: none;
@@ -29,18 +29,18 @@
 	padding: 1px .5em 2px;
 }
 
-.multiple-choice :first-child {	
+[role="menu"] :first-child {	
 	border-left: 1px solid #AFD7F5;
 	border-radius: 4px 0 0 4px;
 }
 
-.multiple-choice :last-child {
+[role="menu"] :last-child {
 	border-right: 1px solid #AFD7F5;
 	border-radius: 0 4px 4px 0;
 }
 
-.table-choice { display: block; }
-.table-choice label {
+.vertical[role="menu"] { display: block; }
+.vertical[role="menu"] label {
 	display: inline-block;
 	width: 90%;
 	border: 1px solid #AFD7F5;
@@ -49,11 +49,11 @@
 	border-radius: 0;
 }
 
-.table-choice label:first-child {
+.vertical[role="menu"] label:first-child {
 	border-top: 1px solid #AFD7F5;
 	border-radius: 4px 4px 0 0;
 }
-.table-choice label:last-child {
+.vertical[role="menu"] label:last-child {
 	border-radius: 0 0 4px 4px;
 }
 /* :not() ensures hide and show are mutually exclusive */
