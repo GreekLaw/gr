@@ -68,7 +68,7 @@ main li a:hover { color: #859DBD; }
 main {
 	display: inline-block;
 	width: 100%;
-	margin-top: -2.4em;
+	margin-top: 0em;
 	padding-bottom: 30px;
 	padding-top: 20px;
 	padding-left: 1em;
