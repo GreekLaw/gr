@@ -79,7 +79,11 @@ main {
 	   -moz-box-sizing: border-box;
 	        box-sizing: border-box;
 }
-
+.fill-the-blank{
+	border:none;
+	border-bottom: 1px dotted;
+	text-align: right;
+}
 h1 ~ div { white-space: pre-wrap; }
 
 cite { color: grey; font-size: 10px }
