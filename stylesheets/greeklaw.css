@@ -64,14 +64,7 @@ main li a:hover { color: #859DBD; }
 	background: linear-gradient(gold,gold) no-repeat 8px;
 	background-size: 1px 100%;
 }
-.favorites::before {
-	content: '\2605';
-	position: absolute;
-	color: gold;
-	font-size: 16px;
-	left: -0.6em;
-	top: .1em;
-}
+.white-space-normal {white-space:normal;}
 main {
 	display: inline-block;
 	width: 100%;
