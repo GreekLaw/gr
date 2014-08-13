@@ -12,13 +12,113 @@
   <header><a href="./index.html">Greek Law</a></header>
   <nav role="navigation"></nav>
 <main role="main">
-<h1 class="heading">Επίδοση</h1>
-<h2>Αγωγής</h2> (αντίγραφο με πράξη προσδιορισμού δικασίμου, στον εναγόμενο)
-Αρμόδιος δικαστικός επιμελητής παραγγέλλεται να επιδώσει νόμιμα την παρούσα προς τον (Στοιχεία εναγομένου: <u>όνομα, επίθετο, πατρώνυμο</u>), κάτοικο (Στοιχεία εναγομένου: <u>κατοικία, διεύθυνση</u>) προς γνώση του και για τις νόμιμες συνέπειες, καλούμενον συγχρόνως να παραστεί κατά την συζήτηση αυτής όταν και όπου με την ανωτέρω πράξη ορίζεται.
-<div align="right">ΤΟΠΟΘΕΣΙΑ ΧΡΟΝΟΛΟΓΙΑ
+<input class="if1"  id="serveLawsuit"     type="radio"    name="serveWhat"       checked>
+<input class="if2"  id="serveRecords"     type="radio"    name="serveWhat"              >
+<input class="if3"  id="serveDecision"    type="radio"    name="serveWhat"              >
+<input class="if4"  id="serveOrderTitle"  type="radio"    name="serveWhat"              >
+<input class="if5"  id="serveDefendant"   type="radio"    name="serveWhom"       checked>
+<input class="if6"  id="serveLawyer"      type="radio"    name="serveWhom"              >
+<input class="if7"  id="defendantPerson"  type="radio"    name="defendantEgo"    checked>
+<input class="if8"  id="defendantCompany" type="radio"    name="defendantEgo"           >
+<input class="if9"  id="defendantMale"    type="radio"    name="defendantGender" checked>
+<input class="if10" id="defendantFemale"  type="radio"    name="defendantGender"        >
+<input class="if11" id="defendantNeutral" type="radio"    name="defendantGender"        >
+<input class="if12" id="lawyerMale"       type="radio"    name="lawyerGender"    checked>
+<input class="if13" id="lawyerFeMale"     type="radio"    name="lawyerGender"           >
+<input class="if14" id="orderPresence"    type="checkbox"                        checked>
+<input class="if15" id="peaceCourtTitle"  type="checkbox"                        checked>
+<span class="then">
+Θέλω να επιδώσω
+  <span role="menu">
+    <label for="serveLawsuit"    data-select="if1">Αγωγή</label><label for="serveRecords"    data-select="if2">Πρακτικά</label><label for="serveDecision"   data-select="if3">Απόφαση</label><label for="serveOrderTitle" data-select="if4">Απόγραφο</label>
+  </span><span data-show="if3"> ή διαταγή πληρωμής</span> προς 
+  <span data-show="if1 if2 if3">γνώση</span>
+  <span data-show="if4"        >εκτέλεση</span>.<br>
+<span role="menu">
+  <label for="defendantMale"    data-select="if9" >Ο</label><label for="defendantFemale"  data-select="if10">Η</label><label for="defendantNeutral" data-select="if11">Το</label>
+</span> 
+  αντίδικο<span data-show="if9 if10">ς</span> είναι 
+  <span role="menu">
+    <label for="defendantPerson"  data-select="if7">φυσικό</label><label for="defendantCompany" data-select="if8">νομικό</label>
+  </span> πρόσωπο.<br>
+<span data-hide="if1">Η επίδοση να γίνει στον 
+  <span role="menu">
+    <label for="serveDefendant" data-select="if5">αντίδικο</label>
+    <label for="serveLawyer"    data-select="if6">πληρεξούσιο δικηγόρο</label>
+  </span>.<br>
+</span>
+<span data-show="if1 if2">Ο παραλαβών 
+  <label for="orderPresence" role="button"><span data-hide="if14">δεν</span> καλείται</label>
+   να παραστεί στην συζήτηση.<br>
+ </span>
+ <span data-show="if4">Το δικαστήριο που εξέδωσε το απόγραφο <label for="peaceCourtTitle" role="button"><span data-hide="if15">δεν</span> είναι</label> το Ειρηνοδικείο.</span>
+<h2>Επίδοση 
+  <span data-show="if1">Αγωγής</span>
+  <span data-show="if2">Πρακτικών Δικαστηρίου</span>
+  <span data-show="if3">Απόφασης ή Διαταγής πληρωμής</span>
+  <span data-show="if4">Αντιγράφου του Απογράφου </span> 
+  <span data-show="if1 if2 if3">προς γνώση</span>
+  <span data-show="if4"        >με επιταγή προς πληρωμή</span>
+</h2>
+<span data-show="if4">Αυτό είναι ακριβές αντίγραφο από το εκτελεστό α' απόγραφο που έχω στα χέρια μου και αρμόδιος</span>
+<span data-show="if1 if2 if3">Αρμόδιος</span>
+δικαστικός επιμελητής παραγγέλλεται να 
+<span data-show="if4">το</span> επιδώσει νόμιμα 
+<span data-show="if1 if3">την παρούσα </span>
+<span data-show="if2">τα παρόντα </span> 
+προς 
+<span data-show="if6"> τον <input type="text" placeholder="όνοματεπώνυμο">, δικηγόρο του Πρωτοδικείου <input type="text" placeholder="Πρωτοδικείο έδρας"> 
+  ως πληρεξούσι<span data-show="if12">ο</span><span data-show="if13">α</span> δικηγόρο 
+</span> 
+<span data-show="if9" > το<span data-show="if5">ν</span><span data-show="if6">υ</span></span>
+<span data-show="if10"> τη<span data-show="if5">ν</span><span data-show="if6">ς</span></span>
+<span data-show="if11"> τ<span  data-show="if5">ο</span><span data-show="if6">oυ</span></span> 
+<input type="text" placeholder="όνοματεπώνυμο">, που 
+<span data-show="if7"> κατοικεί</span>
+<span data-show="if8"> εδρεύει</span> 
+<input type="text" placeholder="διεύθυνση">
+<span data-show="if8">, νόμιμα 
+  εκπροσωπούμεν<span data-show="if9">ο</span><span data-show="if10">η</span><span data-show="if11">ο</span>
+</span>
+<span data-show="if1 if2 if3">, προς γνώση 
+  <span data-show="if9" >του</span>
+  <span data-show="if10">της</span>
+  <span data-show="if11">του</span> και για τις νόμιμες συνέπειες
+</span>
+<span data-show="if14" data-hide="default lvl2(if3) lvl2(if4)">, 
+  καλούμεν<span data-show="if9">ον</span><span data-show="if10">η</span><span data-show="if11">ο</span>
+   συγχρόνως να παραστεί κατά την συζήτηση όταν και όπου ορίζεται με 
+   <span data-show="if1">την παραπάνω πράξη</span>
+   <span data-show="if2">τα παραπάνω πρακτικά</span>
+ </span>
+ <span data-show="if4">, 
+  καλούμεν<span data-show="if9">ον</span><span data-show="if10">η</span><span data-show="if11">ο</span> 
+  συγχρόνως να καταβάλλει σε μένα ή στον πληρεξούσιο και αντίκλητο Δικηγόρο μου κ. 
+  <input type="text" placeholder="ονοματεπώνυμο"> που έχω  
+  <input type="text" placeholder="πόλη δικηγόρου"> και είναι δεκτικός καταβολής τα εξής χρηματικά ποσά:<br>
+  1) Για επιδικασθείσα απαίτηση <input type="text" placeholder="ποσό"> €,<br>
+  2) για δεδουλευμένους τόκους από <input type="text" placeholder="ημερομηνία"> μέχρι <input type="text" placeholder="ημερομηνία"> <input type="text" placeholder="ποσό"> €,<br> 
+  3) για επιδικασθείσα δικαστική δαπάνη <input type="text" placeholder="ποσό"> €,<br> 
+  4) για τέλος απογράφου <input type="text" placeholder="ποσό"> €,<br> 
+  5) για σύνταξη και υπογραφή της παρούσας επιταγής <input type="text" placeholder="ποσό"> € με ΦΠΑ,<br> 
+  6) για έξοδα επίδοσης του παρόντος <input type="text" placeholder="ποσό"> € με ΦΠΑ, δηλαδή συνολικά <br>
+  <input type="text" placeholder="ποσό"> € και όλα νομιμότοκα, πλην των τόκων, διαφορετικά θα εισπραχθούν αναγκαστικά και σύμφωνα με τον νόμο, οπότε θα προστεθούν και 89,79 € για παραγγελία εκτέλεσης.
+Στην παρούσα επικολλήθηκε επικυρώσημο αξίας 2 € και ένσημο ειδικής εισφοράς αξίας 
+<span data-show="if15">1,20</span>
+<span data-hide="if15">1,80</span> €</span>.
+<div align="right">
+  <input type="text" placeholder="ΤΟΠΟΘΕΣΙΑ">
+  <input type="text" placeholder="ΧΡΟΝΟΛΟΓΙΑ">
 Ο πληρεξούσιος Δικηγόρος
-ΥΠΟΓΡΑΦΗ
-ΣΦΡΑΓΙΔΑ</div>
+<input type="text" placeholder="ΥΠΟΓΡΑΦΗ">
+<input type="text" placeholder="ΣΦΡΑΓΙΔΑ">
+
+<span data-show="if4">
+<input type="text" placeholder="ΕΠΙΚΥΡΩΣΗΜΟ"><input type="text" placeholder="ΕΙΔΙΚΗ ΕΙΣΦΟΡΑ">
+<input type="text" placeholder="ΥΠΟΓΡΑΦΗ">
+<input type="text" placeholder="ΣΦΡΑΓΙΔΑ"></span></div>
+</span>
+<span style="position: absolute; z-index:-1; top:0"
 <h2>Αγωγής</h2> (αντίγραφο με πράξη προσδιορισμού δικασίμου, στον πληρεξούσιο δικηγόρο)
 Αρμόδιος δικαστικός επιμελητής παραγγέλλεται να επιδώσει νόμιμα την παρούσα προς τον (Στοιχεία πληρεξουσίου δικηγόρου: <u>όνομα, επίθετο, πατρώνυμο</u>), δικηγόρο του Πρωτοδικείου (Στοιχεία πληρεξουσίου δικηγόρου: <u>έδρα Πρωτοδικείου</u>), ως πληρεξούσιο δικηγόρο της εταιρείας με την επωνυμία (Στοιχεία εναγόμενης εταιρείας: <u>όνομασία</u>), η οποία εδρεύει στην (Στοιχεία εναγόμενης εταιρείας: <u>διεύθυνση έδρας</u>),νόμιμα εκπροσωπούμενης, προς γνώση του και για τις νόμιμες συνέπειες, καλούμενον συγχρόνως να  παραστεί κατά την συζήτηση αυτής όταν και όπου με την ανωτέρω πράξη ορίζεται.
 <div align="right">ΤΟΠΟΘΕΣΙΑ ΧΡΟΝΟΛΟΓΙΑ
@@ -89,6 +189,11 @@
 ΕΠΙΚΥΡΩΣΗΜΟ
 ΥΠΟΓΡΑΦΗ
 ΣΦΡΑΓΙΔΑ</div>
+</span>
+
+Το αντίγραφο απόφασης πρέπει να είναι θεωρημένο από την Γραμματεία<cite> 195/2001 ΑΠ</cite><cite> 1133/2008 ΑΠ</cite>.
+
+Το αντίγραφο του απογράφου της διαταγής πληρωμής ή της απόφασης βάσει του οποίου επιδίδεται επιταγή προς εκτέλεση μπορεί να έχει επικυρωθεί ως αντίγραφο από δικηγόρο, χωρίς να απαιτείται επικύρωση από το δικαστήριο<cite> Γνωμ. ΝΣΚ 57/2010</cite>
 
 Κατά μια άποψη, οι διατάξεις που ορίζουν ότι είναι άκυρη αν δεν χαρτοσημανθεί σωστά η εξώδικη ή δικαστική πράξη είναι αντισυνταγματικές και δεν εφαρμόζονται<cite>159/2011 ΕφΛαμ</cite>.
 
