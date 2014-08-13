@@ -6,3 +6,9 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 ga('create', 'UA-33952776-3', 'greeklaw.github.io')
 ga('require', 'displayfeatures')
 ga('send', 'pageview')
+
+document.body.addEventListener('click',
+function(e){
+e.target.id ? ga('send', 'event', 'button', 'click', e.target.id, {'nonInteraction': 1, 'page': location.pathname}:
+              void(null)
+})
