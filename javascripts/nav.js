@@ -9,6 +9,6 @@ ga('send', 'pageview')
 
 document.body.addEventListener('click',
 function(e){
-e.target.id ? ga('send', 'event', 'button', 'click', e.target.id, {'nonInteraction': 1, 'page': location.pathname}):
+e.target.id ? ga('send', 'event', decodeURI(location.pathname.match(/.+\/(.+?)\.html?$/)[1]), 'click', e.target.id, {'nonInteraction': 1, 'page': location.pathname}):
               void(null)
 })
