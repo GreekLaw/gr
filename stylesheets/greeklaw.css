@@ -15,12 +15,14 @@ nav {
 	display:inline-block;
 	vertical-align: top;
 	width: 100%;
-	font: 16px/1.3em 'Lucida Grande', 'Lucida Sans', Verdana, Arial, sans-serif;
 	box-shadow: -3px -0px 3px rgba(44, 43, 43, .6);
 	margin-left: 0px;
 }
 
-nav li a { color: #afbbcd; }
+nav li a { 
+	font: 16px/1.3em 'Lucida Grande', 'Lucida Sans', Verdana, Arial, sans-serif;
+}
+nav li a       { color: #afbbcd; }
 nav li a:hover { color: white; }
 
 nav ul { list-style: none; padding: 0 1em; }
