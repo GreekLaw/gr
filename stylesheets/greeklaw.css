@@ -112,7 +112,6 @@ footer {
 	display: block;
 	width: 100%;
 	white-space: normal;
-	vertical-align: top;
 	background: none;
 	box-shadow: none;
 }
@@ -120,6 +119,7 @@ footer {
 .horizontal-tree h2 {
 	display: inline-block;
 	width: 25%;
+	vertical-align: top;
 }
 
 .horizontal-tree .horizontal-tree-branch {
