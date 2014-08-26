@@ -107,6 +107,22 @@ footer {
 	text-align: center;
 	text-shadow: 0 1px 0 rgba(255,255,255,.3)
 }
+
+.horizontal-tree {
+	display: block;
+	width: 100%;
+}
+
+.horizontal-tree h2 {
+	display: inline-block;
+	width: 25%;
+}
+
+.horizontal-tree .horizontal-tree-branch {
+	display: inline-block;
+	width: 75%;
+}
+
 h1, h2, h3, h4, h5, h6 {
 	display: inline-block;
 	margin: 0;
