@@ -111,6 +111,9 @@ footer {
 .horizontal-tree {
 	display: block;
 	width: 100%;
+	white-space: normal;
+	vertical-align: top;
+	box-shadow: none;
 }
 
 .horizontal-tree h2 {
