@@ -108,21 +108,21 @@ footer {
 	text-shadow: 0 1px 0 rgba(255,255,255,.3)
 }
 
-.horizontal-tree {
+.nav-tree {
 	display: block;
 	width: 100%;
-	white-space: normal;
+	white-space: nowrap;
 	background: none;
 	box-shadow: none;
 }
 
-.horizontal-tree h2 {
+.nav-tree h2 {
 	display: inline-block;
 	width: 25%;
 	vertical-align: top;
 }
 
-.horizontal-tree .horizontal-tree-branch {
+.nav-tree .nav-tree-branch {
 	display: inline-block;
 	width: 75%;
 }
@@ -161,3 +161,8 @@ h4 { font-size:      1em; line-height:      1em; font-weight: bold; padding-left
 h5 { font-size:      1em; line-height:      1em; font-weight: bold; padding-left: 8em; }
 
 
+@media (max-width: 35em) {
+	.nav-tree {
+		white-space: normal;
+	}
+}
