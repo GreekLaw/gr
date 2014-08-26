@@ -111,6 +111,7 @@ footer {
 .nav-tree {
 	display: block;
 	width: 100%;
+	padding-top: 10px;
 	white-space: nowrap;
 	background: none;
 	box-shadow: none;
