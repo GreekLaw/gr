@@ -15,7 +15,7 @@ nav {
 	display:inline-block;
 	vertical-align: top;
 	width: 100%;
-	font: bold 1em/1.3em 'Lucida Grande', 'Lucida Sans', Verdana, Arial, sans-serif;
+	font: 16px/1.3em 'Lucida Grande', 'Lucida Sans', Verdana, Arial, sans-serif;
 	box-shadow: -3px -0px 3px rgba(44, 43, 43, .6);
 	margin-left: 0px;
 }
