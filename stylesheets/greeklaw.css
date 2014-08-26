@@ -120,6 +120,7 @@ footer {
 .nav-tree h2 {
 	display: inline-block;
 	width: 25%;
+	padding-top: 0;
 	vertical-align: top;
 }
 
