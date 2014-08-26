@@ -15,7 +15,7 @@ nav {
 	display:inline-block;
 	vertical-align: top;
 	width: 100%;
-	font: bold 12px/1.4em 'Lucida Grande', 'Lucida Sans', Verdana, Arial, sans-serif;
+	font: bold 1em/1.3em 'Lucida Grande', 'Lucida Sans', Verdana, Arial, sans-serif;
 	box-shadow: -3px -0px 3px rgba(44, 43, 43, .6);
 	margin-left: 0px;
 }
@@ -59,11 +59,7 @@ dd, dt { padding: 0 }
 
 main li a { color: #255DB1; }
 main li a:hover { color: #859DBD; }
-.favorites {
-	position: relative;
-	background: linear-gradient(gold,gold) no-repeat 8px;
-	background-size: 1px 100%;
-}
+
 .white-space-normal {white-space:normal;}
 .block {display: block;}
 main {
@@ -124,7 +120,7 @@ footer {
 	vertical-align: top;
 }
 
-.nav-tree .nav-tree-branch {
+.nav-tree-branch {
 	display: inline-block;
 	width: 75%;
 	padding-top: 10px;
@@ -167,5 +163,9 @@ h5 { font-size:      1em; line-height:      1em; font-weight: bold; padding-left
 @media (max-width: 35em) {
 	.nav-tree {
 		white-space: normal;
+	}
+	
+	.nav-tree h2, .nav-tree-branch {
+		width: 100%;
 	}
 }
