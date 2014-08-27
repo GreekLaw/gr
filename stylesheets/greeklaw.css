@@ -94,11 +94,7 @@ dt {
 }
 
 .inlined { display: inline; }
-.inlined::after {
-	content: '';
-	display: block;
-	height: 20px;
-}
+
 footer {
 	color: #a7adb1;
 	font: 13px/30px Helvetica, Arial, sans-serif;
