@@ -7,6 +7,7 @@
   <meta name="viewport"         content="initial-scale = 1">
   <meta name="format-detection" content="telephone = no">
   <link rel ="stylesheet"       href   ="./stylesheets/greeklaw.css">
+  <link rel ="stylesheet"       href   ="./stylesheets/verbs.css">
 </head>
 <body>
   <header><a href="./index.html">Greek Law</a></header>
@@ -14,7 +15,40 @@
 <main role="main">
 <h1>Προθεσμίες</h1>
 <h2>Κατάθεση προτάσεων</h2>
-Οι προθεσμίες τρέχουν από την επόμενη της ημερομηνίας κατάθεσης έως και την προηγούμενη της συζήτησης εργάσιμη<cite> 144 ΚΠολΔ, ΠΠρ Θεσ 6590/2004, ΠΠρ Αθ 21/2010</cite>
+<span style="display:none">
+<input class="if1"  id="FirstLevelCourt"   type="radio"    name="courtLevel"      checked>
+<input class="if2"  id="SecondLevelCourt"  type="radio"    name="courtLevel"      >
+<input class="if3"  id="Decision1Member"   type="radio"    name="decisionMembers" >
+<input class="if4"  id="Decision2Member"   type="radio"    name="decisionMembers" checked>
+<input class="if5"  id="DiscussionTactic"  type="radio"    name="discussionType"  checked>
+<input class="if6"  id="DiscussionSpecial" type="radio"    name="discussionType"  >
+<input class="if7"  id="DiscussionTemp"    type="radio"    name="discussionType"  >
+<input class="if8"  id="SpecialMarriage"   type="radio"    name="specialType"     >
+<input class="if9"  id="SpecialParents"    type="radio"    name="specialType"     >
+<input class="if10" id="SpecialLease"      type="radio"    name="specialType"     >
+<input class="if11" id="SpecialWorker"     type="radio"    name="specialType"     >
+<input class="if12" id="SpecialEmployee"   type="radio"    name="specialType"     >
+<input class="if13" id="SpecialCarDamage"  type="radio"    name="specialType"     checked>
+<input class="if14" id="SpecialAlimony"    type="radio"    name="specialType"     >
+<input class="if15" id="SpecialPulpPress"  type="radio"    name="specialType"     >
+<input class="if16" id="counterLawsuit"    type="checkbox"                        >
+<span class="then">
+Η συζήτηση διεξάγεται ενώπιον <span role="menu"><label for="FirstLevelCourt" role="button">Πρωτοβάθμιου</label><label for="SecondLevelCourt" role="button">Δευτεροβάθμιου</label><span> δικαστηρίου<span data-show="if2">, και η πρωτόδικη απόφαση εκδόθηκε <span role="menu"><label for="Decision2Member">κατ' αντιμωλία</label><label for="Decision1Member">ερήμην</label></span></span>.
+Η διαδικασία είναι [τακτική | ειδική | ασφαλιστικά μέτρα] {και αφορά σε
+[ γαμικές διαφορές           |
+ σχέσεις γονέων και τέκνου  |
+ μισθωτικές διαφορές και χρήσης ιδιοκτησίας κατ' ορόφους |
+ εργατικές διαφορές         |
+ αμοιβές για παροχή εργασίας |
+ ζημίες από αυτοκίνητο ή σύμβαση ασφάλισης |
+ διατροφή ή επιμέλεια τέκνου |
+ προσβολές από δημοσιεύματα ή ραδιοτηλεοπτικές εκπομπές]}
+ Με τις προτάσεις {[δεν] ασκείται} και ανταγωγή
+Ο διάδικος {δεν} υποχρεούται να καταθέσει προτάσεις.
+Για να είναι εμπρόθεσμες, οι προτάσεις πρέπει να κατατεθούν {τουλάχιστον 5|8|20|30 ημέρες πριν } {το αργότερο κατά} την δικάσιμο.
+Η προθεσμία τρέχει από την επόμενη της ημερομηνίας κατάθεσης έως και την προηγούμενη της συζήτησης εργάσιμη<cite> 144 ΚΠολΔ</cite><cite>ΠΠρ Θεσ 6590/2004</cite><cite>ΠΠρ Αθ 21/2010</cite>
+</span>
+</span>
 <table>  
 <thead>
 <tr><th></th><th>Στο</th><th>Πρωτοβάθμιο</th><th>Δικαστήριο</th><th></th><th></th>
@@ -335,6 +369,7 @@
 
 Η παραγραφή της αξίωσης ενεργεί έναντι κάθε ενός τως οφειλετών υποκειμενικά.<cite> 72/2007 ΑΠ</cite>
 
+<h2>Παραγραφή απαιτήσεων κατά του Δημοσίου</h2>
 Οι απαιτήσεις κατά του Δημοσίου, ακόμη και βάσει αδικαιολογήτου πλουτισμού, υπόκεινται σε πενταετή παραγραφή εκτός αν άλλος νόμος ορίζει μικρότερο χρονικό διάστημα<cite> ν 2362/1995 αρ90 παρ1</cite>
 Χρηματική απαίτηση που έχει βεβαιωθεί με τελεσίδικη δικαστική απόφαση, ή για την οποία εκδόθηκε τίτλος πληρωμής ή που έχει αναγνωριστεί κατά την διαδικασία που προβλέπεται από την νομοθεσία περί Νομικού Συμβουλίου του Κράτους, υπόκειται σε πενταετή παραγραφή, που αρχίζει από την τελεσιδικία ή την έκδοση του τίτλου πληρωμής, ή την αναγνώριση αντίστοιχα<cite> ν 2362/1995 αρ90 παρ6</cite><cite> 4024/2010 ΣΤΕ</cite>.
 
