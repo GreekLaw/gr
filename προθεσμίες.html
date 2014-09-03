@@ -17,35 +17,44 @@
 <h2>Κατάθεση προτάσεων</h2>
 <span style="display:none">
 <input class="if1"  id="FirstLevelCourt"   type="radio"    name="courtLevel"      checked>
-<input class="if2"  id="SecondLevelCourt"  type="radio"    name="courtLevel"      >
-<input class="if3"  id="Decision1Member"   type="radio"    name="decisionMembers" >
+<input class="if2"  id="SecondLevelCourt"  type="radio"    name="courtLevel"             >
+<input class="if3"  id="Decision1Member"   type="radio"    name="decisionMembers"        >
 <input class="if4"  id="Decision2Member"   type="radio"    name="decisionMembers" checked>
 <input class="if5"  id="DiscussionTactic"  type="radio"    name="discussionType"  checked>
-<input class="if6"  id="DiscussionSpecial" type="radio"    name="discussionType"  >
-<input class="if7"  id="DiscussionTemp"    type="radio"    name="discussionType"  >
-<input class="if8"  id="SpecialMarriage"   type="radio"    name="specialType"     >
-<input class="if9"  id="SpecialParents"    type="radio"    name="specialType"     >
-<input class="if10" id="SpecialLease"      type="radio"    name="specialType"     >
-<input class="if11" id="SpecialWorker"     type="radio"    name="specialType"     >
-<input class="if12" id="SpecialEmployee"   type="radio"    name="specialType"     >
+<input class="if6"  id="DiscussionSpecial" type="radio"    name="discussionType"         >
+<input class="if7"  id="DiscussionTemp"    type="radio"    name="discussionType"         >
+<input class="if8"  id="SpecialMarriage"   type="radio"    name="specialType"            >
+<input class="if9"  id="SpecialParents"    type="radio"    name="specialType"            >
+<input class="if10" id="SpecialLease"      type="radio"    name="specialType"            >
+<input class="if11" id="SpecialEmployee"   type="radio"    name="specialType"            >
+<input class="if12" id="SpecialWorker"     type="radio"    name="specialType"            >
 <input class="if13" id="SpecialCarDamage"  type="radio"    name="specialType"     checked>
-<input class="if14" id="SpecialAlimony"    type="radio"    name="specialType"     >
-<input class="if15" id="SpecialPulpPress"  type="radio"    name="specialType"     >
-<input class="if16" id="counterLawsuit"    type="checkbox"                        >
+<input class="if14" id="SpecialAlimony"    type="radio"    name="specialType"            >
+<input class="if15" id="SpecialPulpPress"  type="radio"    name="specialType"            >
+<input class="if16" id="counterLawsuit"    type="checkbox"                               >
+<input class="if17" id="CourtPeace"        type="radio"    name="courtRank"       checked>
+<input class="if18" id="CourtSingle"       type="radio"    name="courtRank"              >
+<input class="if19" id="CourtMulti"        type="radio"    name="courtRank"              >
 <span class="then">
-Η συζήτηση διεξάγεται ενώπιον <span role="menu"><label for="FirstLevelCourt" role="button">Πρωτοβάθμιου</label><label for="SecondLevelCourt" role="button">Δευτεροβάθμιου</label></span> δικαστηρίου<span data-show="if2">, και η πρωτόδικη απόφαση εκδόθηκε <span role="menu"><label for="Decision2Member">κατ' αντιμωλία</label><label for="Decision1Member">ερήμην</label></span></span>.
-Η διαδικασία είναι [τακτική | ειδική | ασφαλιστικά μέτρα] {και αφορά σε
-[ γαμικές διαφορές           |
- σχέσεις γονέων και τέκνου  |
- μισθωτικές διαφορές και χρήσης ιδιοκτησίας κατ' ορόφους |
- εργατικές διαφορές         |
- αμοιβές για παροχή εργασίας |
- ζημίες από αυτοκίνητο ή σύμβαση ασφάλισης |
- διατροφή ή επιμέλεια τέκνου |
- προσβολές από δημοσιεύματα ή ραδιοτηλεοπτικές εκπομπές]}
- Με τις προτάσεις {[δεν] ασκείται} και ανταγωγή
-Ο διάδικος {δεν} υποχρεούται να καταθέσει προτάσεις.
-Για να είναι εμπρόθεσμες, οι προτάσεις πρέπει να κατατεθούν {τουλάχιστον 5|8|20|30 ημέρες πριν } {το αργότερο κατά} την δικάσιμο.
+Η συζήτηση διεξάγεται ενώπιον <menu><label for="FirstLevelCourt" role="button">Πρωτοβάθμιου</label><label for="SecondLevelCourt" role="button">Δευτεροβάθμιου</label></menu> δικαστηρίου<span data-show="if2">, και η πρωτόδικη απόφαση εκδόθηκε <menu><label for="Decision2Member">κατ' αντιμωλία</label><label for="Decision1Member">ερήμην</label></menu></span>.
+Το δικαστήριο είναι <menu>
+<label for="CourtPeace">Ειρηνοδικείο</label>
+<label for="CourtSingle">Μονομελές Πρωτοδικείο</label>
+<label for="CourtMulti">Πολυμελές Πρωτοδικείο</label></menu>
+Η διαδικασία είναι <menu><label for="DiscussionTactic">τακτική</label><label for="DiscussionSpecial">ειδική</label><label for="DiscussionTemp">ασφαλιστικά μέτρα</label></menu><span data-show="if7"> και αφορά σε
+<menu class="vertical">
+<label for="SpecialMarriage"> γαμικές διαφορές</label>
+<label for="SpecialParents">σχέσεις γονέων και τέκνου</label>
+<label for="SpecialLease">μισθωτικές διαφορές και χρήσης ιδιοκτησίας κατ' ορόφους</label>
+<label for="SpecialEmployee">εργατικές διαφορές</label>
+<label for="SpecialWorker">αμοιβές για παροχή εργασίας</label>
+<label for="SpecialCarDamage">ζημίες από αυτοκίνητο ή σύμβαση ασφάλισης</label>
+<label for="SpecialAlimony">διατροφή ή επιμέλεια τέκνου</label>
+<label for="SpecialPulpPress">προσβολές από δημοσιεύματα ή ραδιοτηλεοπτικές εκπομπές</label></menu></span>
+<span data-show="">Με τις προτάσεις <label for="counterLawsuit" role="button"><span data-show="if16">δεν</span> ασκείται</label> και ανταγωγή.</span>
+<h4>Υποχρέωση κατάθεσης και προθεσμία</h4>
+Ο διάδικος <span data-show="if17"> δεν</span> υποχρεούται να καταθέσει προτάσεις<cite> </cite><cite> </cite>.
+Για να είναι εμπρόθεσμες, οι προτάσεις πρέπει να κατατεθούν <span data-show="if18 if19">τουλάχιστον 5|8|20|30 ημέρες πριν</span><span>το αργότερο κατά</span> την δικάσιμο.
 Η προθεσμία τρέχει από την επόμενη της ημερομηνίας κατάθεσης έως και την προηγούμενη της συζήτησης εργάσιμη<cite> 144 ΚΠολΔ</cite><cite>ΠΠρ Θεσ 6590/2004</cite><cite>ΠΠρ Αθ 21/2010</cite>
 </span>
 </span>
