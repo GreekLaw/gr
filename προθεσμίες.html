@@ -31,7 +31,7 @@
 <input class="if13" id="SpecialCarDamage"  type="radio"    name="specialType"     checked>
 <input class="if14" id="SpecialAlimony"    type="radio"    name="specialType"            >
 <input class="if15" id="SpecialPulpPress"  type="radio"    name="specialType"            >
-<input class="if16" id="counterLawsuit"    type="checkbox"                               >
+<input class="if16" id="CounterLawsuit"    type="checkbox"                               >
 <input class="if17" id="CourtPeace"        type="radio"    name="courtRank"       checked>
 <input class="if18" id="CourtSingle"       type="radio"    name="courtRank"              >
 <input class="if19" id="CourtMulti"        type="radio"    name="courtRank"              >
@@ -51,10 +51,16 @@
 <label for="SpecialCarDamage">ζημίες από αυτοκίνητο ή σύμβαση ασφάλισης</label>
 <label for="SpecialAlimony">διατροφή ή επιμέλεια τέκνου</label>
 <label for="SpecialPulpPress">προσβολές από δημοσιεύματα ή ραδιοτηλεοπτικές εκπομπές</label></menu></span>
-<span data-show="">Με τις προτάσεις <label for="counterLawsuit" role="button"><span data-show="if16">δεν</span> ασκείται</label> και ανταγωγή.</span>
+<span data-show="">Με τις προτάσεις <label for="CounterLawsuit" role="button"><span data-show="if16">δεν</span> ασκείται</label> και ανταγωγή.</span>
 <h4>Υποχρέωση κατάθεσης και προθεσμία</h4>
-Ο διάδικος <span data-show="if17"> δεν</span> υποχρεούται να καταθέσει προτάσεις<cite> </cite><cite> </cite>.
-Για να είναι εμπρόθεσμες, οι προτάσεις πρέπει να κατατεθούν <span data-show="if18 if19">τουλάχιστον 5|8|20|30 ημέρες πριν</span><span>το αργότερο κατά</span> την δικάσιμο.
+Ο διάδικος <span data-show="if7 if17"> δεν</span> υποχρεούται να καταθέσει προτάσεις<cite data-show="if7"> ΑΠ 956/2007</cite><cite data-show="if17"> αρ. 115 παρ. 3 ΚΠολΔ</cite>.
+Για να είναι εμπρόθεσμες, οι προτάσεις πρέπει να κατατεθούν 
+<span data-show="if18 if19">τουλάχιστον 
+  <span data-show="if15+if16">5</span>
+  <span data-show="if16+if18">8</span>
+  <span data-show="if19" data-hide="lvl2(if16+if19)">20</span>
+  <span data-show="lvl2(if16+if19)" data-hide="if19">30</span> ημέρες πριν</span>
+<span>το αργότερο κατά</span> την συζήτηση<cite data-show="if5+if17 if5+if18" data-hide="lvl2(if6) lvl2(if7)"> 238 εδ. πρώτο ΚΠολΔ</cite>.
 Η προθεσμία τρέχει από την επόμενη της ημερομηνίας κατάθεσης έως και την προηγούμενη της συζήτησης εργάσιμη<cite> 144 ΚΠολΔ</cite><cite>ΠΠρ Θεσ 6590/2004</cite><cite>ΠΠρ Αθ 21/2010</cite>
 </span>
 </span>
@@ -238,16 +244,16 @@
 <td></td>
 <td></td>
 <td>Όπως πρωτοβάθμια</td>
-<td>Επί πρωτόδικης απόφασης κατ' αντιμωλία, έως την έναρξη της συζήτησης</td>
-<td><cite> 524 παρ1, παρ2 ΚΠολΔ</cite><cite> <a href="https://docs.google.com/viewer?a=v&amp;q=cache:o9N5J9nsIucJ:www.ethemis.gr/WPC-edit-content/uploads/2008/05/efeteio.pdf+&amp;hl=en&amp;gl=gr&amp;pid=bl&amp;srcid=ADGEESh6qkdGXBiEk2uPRSFGKWmQDrfVdahoW2OF6hZDDOi85KIzknlf-Ihy5biw7--MCT2Nn8l9S3L-NPLxyWhXDJ0Voe5B2VqoPeco5SzJQl6UgyezO3Fvn1NB1VwGB0NJlhT14o2h&amp;sig=AHIEtbT_MYMGzFXPnRgJKtn5MHMavGdf6g">έγγραφο Εφετείου Αθηνών</a></cite></td>
+<td>Αν η πρωτόδικη απόφαση εκδόθηκε κατ' αντιμωλία, έως την έναρξη της συζήτησης</td>
+<td><cite> 524 παρ2 εδ.2 ΚΠολΔ</cite></td>
 </tr>
 <tr>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td>Επί πρωτόδικης ερήμην απόφασης, όπως στην αντίστοιχη πρωτόδικη διαδικασία</td>
-<td><cite> 524 παρ1 ΚΠολΔ</cite><cite> <a href="https://docs.google.com/viewer?a=v&amp;q=cache:o9N5J9nsIucJ:www.ethemis.gr/WPC-edit-content/uploads/2008/05/efeteio.pdf+&amp;hl=en&amp;gl=gr&amp;pid=bl&amp;srcid=ADGEESh6qkdGXBiEk2uPRSFGKWmQDrfVdahoW2OF6hZDDOi85KIzknlf-Ihy5biw7--MCT2Nn8l9S3L-NPLxyWhXDJ0Voe5B2VqoPeco5SzJQl6UgyezO3Fvn1NB1VwGB0NJlhT14o2h&amp;sig=AHIEtbT_MYMGzFXPnRgJKtn5MHMavGdf6g">έγγραφο Εφετείου Αθηνών</a></cite></td>
+<td>Αν η πρωτόδικη απόφαση εκδόθηκε ερήμην, ή πλασματικά κατ' αντιμωλία, κατά την ίδια προθεσμία που κατατίθενται προτάσεις στο πρωτόδικο δικαστήριο με την διαδικασία της πρωτόδικης απόφασης</td>
+<td><cite> 524 παρ1 ΚΠολΔ</cite><cite> 238 παρ1 εδ1 ΚΠολΔ</cite><cite> 237 παρ1 εδ1 ΚΠολΔ</cite></cite><cite> ΑΠ 293/2005</cite></td>
 </tr>
 </tbody>
 </table>
