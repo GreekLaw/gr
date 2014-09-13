@@ -121,6 +121,17 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 }
 
+.expanded-results {
+	position: absolute;
+	top: 3em;
+	z-index: -1;
+	width: 5em;
+	height: 3em;
+	white-space: nowrap;
+	text-indent: 6em;
+	overflow: hidden;
+}
+
 h2 a       { color: #312f30; }
 h2 a:hover { color: #312f30; }
 
