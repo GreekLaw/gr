@@ -10,6 +10,7 @@ body > header {
 	background-size: 100% 5px;
 	background-position: bottom center;
 	background-repeat: no-repeat;
+	box-shadow: 0px 8px 5px -7px #4D6C9E;
 }
 body > header a:hover,
 body > header a:link,
