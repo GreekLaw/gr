@@ -18,7 +18,7 @@ body > header a:link,
 body > header a:visited { text-decoration: none; color: black; }
 
 nav li a {
-	font: 16px/1.3em 'Lucida Grande', 'Lucida Sans', Verdana, Arial, sans-serif;
+	font: 16px/1.3em "Lucida Grande", "Lucida Sans", Verdana, Arial, sans-serif;
 }
 nav li a       { color: #afbbcd; }
 nav li a:hover { color: white; }
@@ -32,7 +32,7 @@ nav li a {
 }
 
 hr { display: inline; border: 0px; }
-hr::after { content: ''; padding-right: 2.5em; }
+hr::after { content: ""; padding-right: 2.5em; }
 a       { text-decoration:      none; }
 a:hover { text-decoration: underline; }
 
@@ -52,8 +52,6 @@ dd, dt { padding: 0 }
 main li a { color: #255DB1; }
 main li a:hover { color: #859DBD; }
 
-.white-space-normal {white-space: normal;}
-.block {display: block;}
 main {
 	display: inline-block;
 	width: 100%;
@@ -61,29 +59,23 @@ main {
 	padding-bottom: 30px;
 	padding-top: 20px;
 	padding-left: 1em;
-	font: 14px/22px 'Lucida Grande', 'Lucida Sans', Verdana, Arial, sans-serif;
+	font: 14px/22px "Lucida Grande", "Lucida Sans", Verdana, Arial, sans-serif;
 	white-space: pre-line;
 	min-height: 400px;
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
 	        box-sizing: border-box;
 }
-.fill-the-blank{
-	border:none;
-	border-bottom: 1px dotted;
-	text-align: right;
-}
+
 h1 ~ div { white-space: pre-wrap; }
 
 cite { color: grey; font-size: 10px }
-cite + cite::before {content: ', '}
+cite + cite::before {content: ", "}
 
 dt {
 	padding-top: 1.5em;
 	font-weight: bold;
 }
-
-.inlined { display: inline; }
 
 footer {
 	color: #a7adb1;
@@ -91,6 +83,9 @@ footer {
 	text-align: center;
 	text-shadow: 0 1px 0 rgba(255,255,255,.3)
 }
+
+table { width: 99.9%; border-collapse: collapse; }
+td { border: 1px solid grey; }
 
 .nav-tree {
 	display: block;
@@ -114,9 +109,6 @@ footer {
 	padding-top: 10px;
 }
 
-table { width: 99.9%; border-collapse: collapse; }
-td { border: 1px solid grey; }
-
 h1, h2, h3, h4, h5, h6 {
 	display: inline-block;
 	margin: 0;
@@ -132,6 +124,18 @@ h1, h2, h3, h4, h5, h6 {
 	text-indent: 6em;
 	overflow: hidden;
 }
+
+.fill-the-blank{
+	border:none;
+	border-bottom: 1px dotted;
+	text-align: right;
+}
+
+.question { height: 2em;      }
+.padded   { padding-top: 2em; }
+.inlined  { display: inline;  }
+.block    { display: block;   }
+.white-space-normal { white-space: normal; }
 
 h2 a       { color: #312f30; }
 h2 a:hover { color: #312f30; }
