@@ -140,12 +140,12 @@ h1, h2, h3, h4, h5, h6 {
 h2 a       { color: #312f30; }
 h2 a:hover { color: #312f30; }
 
-h1 { font-size:     33px; line-height:     44px;                    }
-h2 { font-size:     22px; line-height:     44px;                    }
-h3 { font-size:      1em; line-height:     22px;                    }
-h4 { font-size:      1em; line-height:     22px; text-indent: 4em;  }
-h5 { font-size:      1em; line-height:     22px; text-indent: 8em;  }
-h6 { font-size:      1em; line-height:     22px; text-indent: 12em; }
+h1 { font-size:     28px; line-height:     33px; padding-top: 11px;                 }
+h2 { font-size:     24px; line-height:     33px; padding-top: 11px; color: #3C4C6C; }
+h3 { font-size:     18px; line-height:     22px;                                    }
+h4 { font-size:      1em; line-height:     22px; text-indent: 4em;                  }
+h5 { font-size:      1em; line-height:     22px; text-indent: 8em;                  }
+h6 { font-size:      1em; line-height:     22px; text-indent: 12em;                 }
 h3, h4, h5 { font-weight: bold; }
 
 @media (max-width: 35em) {
