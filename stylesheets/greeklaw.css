@@ -131,10 +131,10 @@ h1, h2, h3, h4, h5, h6 {
 	text-align: right;
 }
 
-.question { height: 2em;      }
-.padded   { padding-top: 2em; }
-.inlined  { display: inline;  }
-.block    { display: block;   }
+.question { height: 2em; width: 100%; }
+.padded   { padding-top: 2em;         }
+.inlined  { display: inline;          }
+.block    { display: block;           }
 .white-space-normal { white-space: normal; }
 
 h2 a       { color: #312f30; }
