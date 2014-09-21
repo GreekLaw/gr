@@ -17,10 +17,11 @@ menu label,
 }
 
 menu {
-	display: inline-block;
+	display: inline;
 	margin: 0;
 	padding: 0;
 }
+
 menu label {
 	border: 1px solid #AFD7F5;
 	border-right: 1px solid #AFD7F5;
@@ -28,6 +29,7 @@ menu label {
 	background: transparent;
 	color: rgba(182, 190, 196, 1);
 	padding: 1px .5em 2px;
+	border-radius: 0px;
 }
 
 menu :first-child {	
