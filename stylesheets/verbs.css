@@ -19,6 +19,7 @@ menu label,
 menu {
 	display: inline-block;
 	margin: 0;
+	padding: 0;
 }
 menu label {
 	border: 1px solid #AFD7F5;
