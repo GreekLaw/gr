@@ -13,13 +13,34 @@
 <body>
   <header><a href="./index.html">Greek Law</a></header>
 <!--
-    serveWhat         : lawsuit | records | decision | orderTitle
-    serveWhom         : defendant | lawyer
-    entityOfDefendant : person | company
-    genderOfDefendant : male | female | neutral
-    genderOfLawyer    : male | female
-    orderToBePresent
-    peaceCourtTitle
+    if1:  lawsuit                if11: neutral
+    if2:  records                if12: male
+    if3:  decision               if13: female
+    if4:  orderTitle             if14: orderedToBePresent
+    if5:  defendant              if15: peaceCourtTitle
+    if6:  lawyer       
+    if7:  person 
+    if8:  company
+    if9:  male
+    if10: female
+
+    serveWhat:          if1  | if2  | if3 | if4
+    serveWhom:          if5  | if6
+    defendantEntity:    if7  | if8
+    defendantGender:    if9  | if10 | if11
+    lawyerGender:       if12 | if13
+    orderedToBePresent: if14
+    peaceCourtTitle:    if15
+    
+    function show{this.className="shown"}
+    function hide{this.className="hidden"}
+    function select{this.className="selected"}
+    Categories present exclusive results. Only 1 result in the category can be active.
+    When a click occurs in an element, say data-toggle="if1", run all the commands regulated by if1
+    so I need to make a list of all commands regulated by if1
+    so go through data-show="if1 if2 if3", and register if1, if2, if3 as regulators for it
+    data-show="if1+if2" gets (if1 AND if2) as its regulator
+    data-show="if1-if2" gets (if1 NOT if2) as its regulator
 !-->
 <main role="main" class="white-space-normal">
 <input class="if1"  id="serveLawsuit"     type="radio"    name="serveWhat"       checked>
@@ -34,7 +55,7 @@
 <input class="if10" id="defendantFemale"  type="radio"    name="defendantGender"        >
 <input class="if11" id="defendantNeutral" type="radio"    name="defendantGender"        >
 <input class="if12" id="lawyerMale"       type="radio"    name="lawyerGender"    checked>
-<input class="if13" id="lawyerFeMale"     type="radio"    name="lawyerGender"           >
+<input class="if13" id="lawyerFemale"     type="radio"    name="lawyerGender"           >
 <input class="if14" id="orderToBePresent" type="checkbox"                        checked>
 <input class="if15" id="peaceCourtTitle"  type="checkbox"                        checked>
 <span class="then" style="white-space:pre-line;">
