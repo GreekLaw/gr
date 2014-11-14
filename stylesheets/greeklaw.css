@@ -49,6 +49,11 @@ li, dd, dt {
 }
 dd, dt { padding: 0 }
 
+dt {
+	padding-top: 1.5em;
+	font-weight: bold;
+}
+
 main li a { color: #255DB1; }
 main li a:hover { color: #859DBD; }
 
@@ -67,13 +72,8 @@ main {
 
 h1 ~ div { white-space: pre-wrap; }
 
-cite { color: grey; font-size: 10px }
+cite { color: grey; font-size: 11px; line-height: 1em; }
 cite + cite::before {content: ", "}
-
-dt {
-	padding-top: 1.5em;
-	font-weight: bold;
-}
 
 footer {
 	color: #a7adb1;
@@ -150,11 +150,8 @@ h6 { font-size:  1em; line-height: 22px; padding: 11px 0 11px 0; text-indent: 12
 h3, h4, h5 { font-weight: bold; }
 
 @media (max-width: 35em) {
-	.nav-tree {
-		white-space: normal;
-	}
+	.nav-tree { white-space: normal; }
 	
-	.nav-tree h2, .nav-tree-branch {
-		width: 100%;
-	}
+	.nav-tree h2,
+	.nav-tree-branch { width: 100%; }
 }
