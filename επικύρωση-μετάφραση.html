@@ -14,28 +14,39 @@
   <header><a href="./index.html">Greek Law</a></header>
   <nav role="navigation"></nav>
 <main role="main">
-<!-- [Επικύρωση || Μετάφραση]
-Q: {ifEpikirosi{Το επικυρωμένο αντίγραφο}//ifMetafrasi{Η μετάφραση}} θα προσκομιστεί {ifEpikirosi{για δικαστική χρήση} // ifMetafrasi{[για δικαστική χρήση || στη Δημόσια Αρχή || πέραν της Δημόσιας Αρχής]}}
-ifEpikirosi{Q: Το πρωτότυπο έγγραφο είναι [Δημόσιο || Διοικητικής Αρχής || Αλλοδαπής Αρχής || Ιδιωτικό]}
+<!-- 
+  <input class="if1"  id="epikirosi"             type="radio"    name="mainVerb"         >
+  <input class="if2"  id="metafrasi"             type="radio"    name="mainVerb"  checked>
+  <input class="if3"  id="epikirosiDikastirio"   type="checkbox"                         >
+  <input class="if4"  id="dikastirio"            type="radio"    name="broughtTo" checked>
+  <input class="if5"  id="dimosio"               type="radio"    name="broughtTo"        >
+  <input class="if6"  id="beyondDimosio"         type="radio"    name="broughtTo"        >
+  <input class="if7"  id="dimosioEggrafo"        type="radio"    name="docType"          >
+  <input class="if8"  id="dioikitikoEggrafo"     type="radio"    name="docType"          >
+  <input class="if9"  id="allodapisArxisEggrafo" type="radio"    name="docType"          >
+  <input class="if10" id="IdiotikoEggrafo"       type="radio"    name="docType"   checked>
+<menu><label for="epikirosi" data-select="if1">Επικύρωση</label><label for="metafrasi" data-select="if2">Μετάφραση</label></menu>
+Q: <span data-show="if1">Το επικυρωμένο αντίγραφο</span><span data-show="if2">Η μετάφραση</span><menu data-show="if1"><label for="epikirosiDikastirio"><span data-hide="if3">δεν</span> θα προσκομιστεί</label></menu> θα προσκομιστεί <span data-hide="if2">για δικαστική χρήση</span><menu data-hide="if1"><label for="dikastirio" data-select="if4">για δικαστική χρήση</label><label for="dimosio" data-select="if5"> στη Δημόσια Αρχή</label><label for="beyondDimosio" data-select="if6">πέραν της Δημόσιας Αρχής</label></menu>
+<span data-show="if1">Το πρωτότυπο έγγραφο είναι <menu><label for="dimosioEggrafo" data-select="if7">Δημόσιο</label><label for="dioikitikoEggrafo" data-select="if8">Διοικητικής Αρχής</label><label for="allodapisArxisEggrafo" data-select="if9"> Αλλοδαπής Αρχής</label><label for="IdiotikoEggrafo" data-select="if10">Ιδιωτικό</label></menu></span>
 
 Στον όρο Δημόσια Αρχή περιλαμβάνονται τα ∆ικαστήρια όλων των βαθµών, το Δημόσιο, οι ΟΤΑ, τα ΝΠΔΔ, τα ΝΠΙΔ που ανήκουν στο κράτος ή επιχορηγούνται τακτικώς, σύµφωνα µε τις κείµενες διατάξεις, από κρατικούς πόρους κατά 50% τουλάχιστον του ετήσιου προϋπολογισµού τους, οι δηµόσιες επιχειρήσεις και οι οργανισµοί που προβλέπονται στις διατάξεις του αρ.1 του ν. 3429/2005, καθώς και τα νοµικά πρόσωπα και οι επιχειρήσεις των ΟΤΑ<cite> αρ.11 παρ.2α ν. 2690/1999 όπως τροποποιήθηκε με τον ν. 4250/2014 αρ.1 παρ.2</cite>.
-ifEpikirosi{Στον όρο Διοικητική Αρχή περιλαμβάνεται το Δημόσιο, οι ΟΤΑ και τα άλλα ΝΠΔΔ<cite> αρ.1 ν 2690/1999</cite>.}
-ifEpikirosi{
-  ifDimosio{Δημόσιο έγγραφο είναι το έγγραφο που εκδόθηκε από Δημόσια Αρχή}
-// ifDioikitiko{Έγγραφο Διοικητικής Αρχής είναι το έγγραφο που εκδόθηκε από Διοικητική Αρχή}
-// ifForeign{Έγγραφο Αλλοδαπής Αρχής είναι το έγγραφο που εκδόθηκε από αλλοδαπή αρχή} 
-// if Civil{Ιδιωτικό έγγραφο είναι το έγγραφο που εκδόθηκε από ιδιώτη, και όχι από Δημόσια, Διοικητική ή Αλλοδαπή Αρχή}
-}
-Ο δικηγόρος μπορεί να {ifEpikirosi{επικυρώσει} // ifMetafrasi{μεταφράσει}} κάθε έγγραφο που του προσκομίζεται.
-ifMetafrasi{Η μετάφραση περιλαμβάνει συνημμένα το προς μετάφραση έγγραφο και το μεταφρασμένο κείμενο.}
-Στο φωτοαντίγραφο του προς {ifEpikirosi{επικύρωση} // ifMetafrasi{μετάφραση}} εγγράφου να περιληφθεί η παρακάτω σημείωση:
+<span data-show="if1">Στον όρο Διοικητική Αρχή περιλαμβάνεται το Δημόσιο, οι ΟΤΑ και τα άλλα ΝΠΔΔ<cite> αρ.1 ν 2690/1999</cite>.</span>
+<span data-show="if1">
+<span data-show="if6">Δημόσιο έγγραφο είναι το έγγραφο που εκδόθηκε από Δημόσια Αρχή.</span>
+<span data-show="if7">Έγγραφο Διοικητικής Αρχής είναι το έγγραφο που εκδόθηκε από Διοικητική Αρχή.</span>
+<span data-show="if8">Έγγραφο Αλλοδαπής Αρχής είναι το έγγραφο που εκδόθηκε από αλλοδαπή αρχή.</span>
+<span data-show="if9">Ιδιωτικό έγγραφο είναι το έγγραφο που εκδόθηκε από ιδιώτη, και όχι από Δημόσια, Διοικητική ή Αλλοδαπή Αρχή.</span>
+</span>
+Ο δικηγόρος μπορεί να <span data-show="if1">επικυρώσει</span><span data-show="if2">μεταφράσει</span> κάθε έγγραφο που του προσκομίζεται.
+<span data-show="if2">Η μετάφραση περιλαμβάνει συνημμένα το προς μετάφραση έγγραφο και το μεταφρασμένο κείμενο.</span>
+Στο φωτοαντίγραφο του προς <span data-show="if1">επικύρωση</span><span data-show="if2">μετάφραση</span> εγγράφου να περιληφθεί η παρακάτω σημείωση:
 
-ifMetafrasi{Στο μεταφρασμένο κείμενο να περιληφθεί η παρακάτω σημείωση:}
+<span data-show="if2">Στο μεταφρασμένο κείμενο να περιληφθεί η παρακάτω σημείωση:
 
-ifMetafrasi{Μετά το επικυρωμένο αντίγραφο ή το πρωτότυπο από το προς μετάφραση έγγραφο να επισυναφθεί το μεταφρασμένο κείμενο.}
+Μετά το επικυρωμένο αντίγραφο ή το πρωτότυπο από το προς μετάφραση έγγραφο να επισυναφθεί το μεταφρασμένο κείμενο.
 
-Η ως άνω μετάφραση από δικηγόρο, όταν κατατίθεται {ifDikastiki{για δικαστική χρήση} // ifDimosio{στην Δημόσια Αρχή} // ifBeyondDimosio{σε φορέα ή υπηρεσία πέραν της Δημόσιας Αρχής}}, μπορεί να προσκομιστεί αυτούσια ifDimosio{ ή σε ευκρινές φωτοαντίγραφό της }ifBeyondDimosio{ ή σε επικυρωμένο, από ΚΕΠ ή Διοικητική Αρχή, αντίγραφό της } ή σε επικυρωμένο από δικηγόρο αντίγραφό της.
-
+Η ως άνω μετάφραση από δικηγόρο, όταν κατατίθεται <span data-show="if4">για δικαστική χρήση</span><span data-show="if5">στην Δημόσια Αρχή</span><span data-show="if6">σε φορέα ή υπηρεσία πέραν της Δημόσιας Αρχής</span>, μπορεί να προσκομιστεί αυτούσια <span data-show="if5"> ή σε ευκρινές φωτοαντίγραφό της</span><span data-show="if6"> ή σε επικυρωμένο, από ΚΕΠ ή Διοικητική Αρχή, αντίγραφό της</span> ή σε επικυρωμένο από δικηγόρο αντίγραφό της.
+</span>
 Ο ενδιαφερόμενος να καταθέσει Δημόσιο έγγραφο για δικαστική χρήση, μπορεί να προσκομίσει
 το πρωτότυπο έγγραφο
 ή επικυρωμένο, από ΚΕΠ ή Διοικητική Αρχή, αντίγραφο του πρωτότυπου εγγράφου,
