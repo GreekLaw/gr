@@ -10,9 +10,9 @@
   <link rel ="stylesheet"       href   ="./stylesheets/verbs.css">
   <script                 async src    ="./javascripts/nav.js"></script>
   <style>
-  .stamp-header{display:block;float:left;width:60%;}
-  .stamp-note{display:block;float:right;width:40%;}
-  .tall{line-height:3}label{line-height:1.5 !important;display:inline-block !important;}.heading{font-size:22px !important;margin:0 0 0 33% !important;}.menu-block{display:block !important;}</style>
+  .stamp-header{display:block;float:left;width:60%;text-align:left;}
+  .stamp-note{display:block;float:right;width:40%;text-align:right;}
+  .tall{line-height:3}label{line-height:1.5 !important;display:inline-block !important;}.heading{font-size:22px !important;margin:0 0 0 32% !important;}.menu-block{display:block !important;}</style>
 </head>
 <body>
   <header><a href="./index.html">Greek Law</a></header>
@@ -42,8 +42,8 @@
 <input type="text" placeholder="ΥΠΟΓΡΑΦΗ" class="fill-the-blank block float-right tall">
 <input type="text" placeholder="ΣΦΡΑΓΙΔΑ" class="fill-the-blank block float-right tall">
 </div></div>
-<span data-show="if2"><h3>Στο μεταφρασμένο κείμενο:</h3>
-<div class="stamp"><span class="align-right block">Πιστό αντίγραφο της μετάφρασής μου 
+<span data-show="if2"><div class="stamp"><h3 class="stamp-header">Στο μεταφρασμένο κείμενο:</h3>
+<div class="stamp-note"><span class="align-right block">Πιστό αντίγραφο της μετάφρασής μου 
 του συνημμένου εγγράφου, 
 συνταγμένου στην Αγγλική, 
 της οποίας έχω επαρκή γνώση.
@@ -55,7 +55,7 @@
 ΕΠΙΚΥΡΩΣΗΜΟ
 <input type="text" placeholder="ΥΠΟΓΡΑΦΗ" class="fill-the-blank block float-right tall">
 <input type="text" placeholder="ΣΦΡΑΓΙΔΑ" class="fill-the-blank block float-right tall">
-</div></div>
+</div></div></div>
 <span data-show="if1">Το επικυρωμένο αντίγραφο </span><span data-show="if2">Η μετάφραση </span><label for="epikirosiDikastirio" data-hide="if2" data-show="lvl2(if1)" role="button"><span data-hide="if3"> δεν </span> θα προσκομιστεί</label> <span data-hide="if1">θα προσκομιστεί </span><span data-hide="if2">για δικαστική χρήση</span>
 <menu data-hide="lvl2(if1)" class="menu-block"><label for="dikastirio" data-select="if4">για δικαστική χρήση</label><label for="dimosio" data-select="if5"> στη Δημόσια Αρχή</label><label for="beyondDimosio" data-select="if6">πέραν της Δημόσιας Αρχής</label></menu><span data-show="if1">Το πρωτότυπο έγγραφο είναι <menu><label for="dimosioEggrafo" data-select="if7">Δημόσιο</label><label for="dioikitikoEggrafo" data-select="if8">Διοικητικής Αρχής</label><label for="allodapisArxisEggrafo" data-select="if9"> Αλλοδαπής Αρχής</label><label for="IdiotikoEggrafo" data-select="if10">Ιδιωτικό</label></menu></span>
 
