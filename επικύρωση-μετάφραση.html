@@ -25,6 +25,7 @@
   <input class="if8"  id="dioikitikoEggrafo"     type="radio"    name="docType"          >
   <input class="if9"  id="allodapisArxisEggrafo" type="radio"    name="docType"          >
   <input class="if10" id="IdiotikoEggrafo"       type="radio"    name="docType"   checked>
+<span class="then">
 <menu><label for="epikirosi" data-select="if1">Επικύρωση</label><label for="metafrasi" data-select="if2">Μετάφραση</label></menu>
 Q: <span data-show="if1">Το επικυρωμένο αντίγραφο</span><span data-show="if2">Η μετάφραση</span><menu data-show="if1"><label for="epikirosiDikastirio"><span data-hide="if3">δεν</span> θα προσκομιστεί</label></menu> θα προσκομιστεί <span data-hide="if2">για δικαστική χρήση</span><menu data-hide="if1"><label for="dikastirio" data-select="if4">για δικαστική χρήση</label><label for="dimosio" data-select="if5"> στη Δημόσια Αρχή</label><label for="beyondDimosio" data-select="if6">πέραν της Δημόσιας Αρχής</label></menu>
 <span data-show="if1">Το πρωτότυπο έγγραφο είναι <menu><label for="dimosioEggrafo" data-select="if7">Δημόσιο</label><label for="dioikitikoEggrafo" data-select="if8">Διοικητικής Αρχής</label><label for="allodapisArxisEggrafo" data-select="if9"> Αλλοδαπής Αρχής</label><label for="IdiotikoEggrafo" data-select="if10">Ιδιωτικό</label></menu></span>
@@ -40,12 +41,32 @@ Q: <span data-show="if1">Το επικυρωμένο αντίγραφο</span><s
 Ο δικηγόρος μπορεί να <span data-show="if1">επικυρώσει</span><span data-show="if2">μεταφράσει</span> κάθε έγγραφο που του προσκομίζεται.
 <span data-show="if2">Η μετάφραση περιλαμβάνει συνημμένα το προς μετάφραση έγγραφο και το μεταφρασμένο κείμενο.</span>
 Στο φωτοαντίγραφο του προς <span data-show="if1">επικύρωση</span><span data-show="if2">μετάφραση</span> εγγράφου να περιληφθεί η παρακάτω σημείωση:
+<div class="stamp">Ακριβές αντίγραφο του πρωτότυπου που μου επέδειξε.
+<div class="align-right"><input type="text" placeholder="ΤΟΠΟΘΕΣΙΑ" class="fill-the-blank inline-block"><input type="text" placeholder="ΧΡΟΝΟΛΟΓΙΑ" class="fill-the-blank inline-block">
+Ο επικυρών δικηγόρος
+<input type="text" placeholder="ΥΠΟΓΡΑΦΗ" class="fill-the-blank block float-right">
+<input type="text" placeholder="ΣΦΡΑΓΙΔΑ" class="fill-the-blank block float-right">
 
+ΕΠΙΚΥΡΩΣΗΜΟ
+<input type="text" placeholder="ΥΠΟΓΡΑΦΗ" class="fill-the-blank block float-right">
+<input type="text" placeholder="ΣΦΡΑΓΙΔΑ" class="fill-the-blank block float-right">
+</div></div>
 <span data-show="if2">Στο μεταφρασμένο κείμενο να περιληφθεί η παρακάτω σημείωση:
 
+<div class="stamp">Πιστό αντίγραφο της μετάφρασής μου του συνημμένου εγγράφου, συνταγμένου στην Αγγλική, της οποίας έχω επαρκή γνώση.
+<div class="align-right"><input type="text" placeholder="ΤΟΠΟΘΕΣΙΑ" class="fill-the-blank inline-block"><input type="text" placeholder="ΧΡΟΝΟΛΟΓΙΑ" class="fill-the-blank inline-block">
+Ο μεταφράσας και επικυρών δικηγόρος
+<input type="text" placeholder="ΥΠΟΓΡΑΦΗ" class="fill-the-blank block float-right">
+<input type="text" placeholder="ΣΦΡΑΓΙΔΑ" class="fill-the-blank block float-right">
+
+ΕΠΙΚΥΡΩΣΗΜΟ
+<input type="text" placeholder="ΥΠΟΓΡΑΦΗ" class="fill-the-blank block float-right">
+<input type="text" placeholder="ΣΦΡΑΓΙΔΑ" class="fill-the-blank block float-right">
+</div>
 Μετά το επικυρωμένο αντίγραφο ή το πρωτότυπο από το προς μετάφραση έγγραφο να επισυναφθεί το μεταφρασμένο κείμενο.
 
 Η ως άνω μετάφραση από δικηγόρο, όταν κατατίθεται <span data-show="if4">για δικαστική χρήση</span><span data-show="if5">στην Δημόσια Αρχή</span><span data-show="if6">σε φορέα ή υπηρεσία πέραν της Δημόσιας Αρχής</span>, μπορεί να προσκομιστεί αυτούσια <span data-show="if5"> ή σε ευκρινές φωτοαντίγραφό της</span><span data-show="if6"> ή σε επικυρωμένο, από ΚΕΠ ή Διοικητική Αρχή, αντίγραφό της</span> ή σε επικυρωμένο από δικηγόρο αντίγραφό της.
+</div>
 </span>
 Ο ενδιαφερόμενος να καταθέσει Δημόσιο έγγραφο για δικαστική χρήση, μπορεί να προσκομίσει
 το πρωτότυπο έγγραφο
@@ -92,6 +113,7 @@ Q: <span data-show="if1">Το επικυρωμένο αντίγραφο</span><s
 το πρωτότυπο έγγραφο
 ή επικυρωμένο, από ΚΕΠ ή Διοικητική Αρχή, αντίγραφο από επικυρωμένο από δικηγόρο αντίγραφο του πρωτότυπου εγγράφου
 ή επικυρωμένο από δικηγόρο αντίγραφο του πρωτότυπου εγγράφου.
+</span>
 !-->
 
 <h1 class="heading">Επικύρωση αντιγράφου</h1>
