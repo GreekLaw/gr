@@ -98,6 +98,7 @@ td { border: 1px solid grey; }
 	display: inline-block;
 	width: 25%;
 	padding-top: 0;
+	padding-right: 0;
 	vertical-align: top;
 }
 
