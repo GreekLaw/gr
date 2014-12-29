@@ -98,7 +98,6 @@ td { border: 1px solid grey; }
 	display: inline-block;
 	width: 25%;
 	padding-top: 0;
-	padding-right: 0;
 	vertical-align: top;
 }
 
@@ -106,6 +105,7 @@ td { border: 1px solid grey; }
 	display: inline-block;
 	width: 75%;
 	padding-top: 10px;
+	padding-right: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
