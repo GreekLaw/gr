@@ -205,7 +205,7 @@ h1, h2, h3, h4, h5 { font-weight: 500; }
 	text-align: center;
 }
 
-.seal-stamp {
+.seal .stamp {
 	position: absolute;
 	margin-left: -147px;
 	z-index: -1;
