@@ -157,16 +157,6 @@ h1, h2, h3, h4, h5, h6 {
 	text-align: right;
 }
 
-.question { height: 2em; width: 100%; }
-.padded   { padding-top: 2em;         }
-.inlined  { display: inline;          }
-.block    { display: block;           }
-.white-space-normal { white-space: normal; }
-.inline-block { display: inline-block; }
-.align-right { text-align: right; }
-.float-right { float: right; }
-.clear-both { clear: both; }
-
 h2 a      , h3 a      , h4 a      , h5 a      , h6 a       { color: #312f30; }
 h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { color: #312f30; }
 
@@ -177,6 +167,38 @@ h4 { font-size:  1em; line-height: 22px; padding: 11px 0 11px  4em;             
 h5 { font-size:  1em; line-height: 22px; padding: 11px 0 11px  8em;                 }
 h6 { font-size:  1em; line-height: 22px; padding: 11px 0 11px 12em;                 }
 h1, h2, h3, h4, h5 { font-weight: 500; }
+
+.stamp {
+	letter-spacing: -1em;
+	white-space: normal;
+}
+
+.stamp-note {
+	float: right;
+	width: 40%;
+	letter-spacing: normal;
+	white-space: pre;
+}
+
+.stamp-header {
+	float: left;
+	width: 60%;
+	font-weight: 300;
+	letter-spacing: normal;
+	padding: 0;
+	white-space: normal;
+}
+
+.question { height: 2em; width: 100%; }
+.padded   { padding-top: 2em;         }
+.inlined  { display: inline;          }
+.block    { display: block;           }
+.white-space-normal { white-space: normal; }
+.inline-block { display: inline-block; }
+.align-right { text-align: right; }
+.float-right { float: right; }
+.clear-both { clear: both; }
+
 
 @media (max-width: 35em) {
 	.nav-tree { white-space: normal; }
