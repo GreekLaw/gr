@@ -182,7 +182,7 @@ h1, h2, h3, h4, h5 { font-weight: 500; }
 	white-space: normal;
 }
 
-.seal-note {
+.seal-text {
 	float: right;
 	width: 40%;
 	text-align: center;
@@ -192,14 +192,20 @@ h1, h2, h3, h4, h5 { font-weight: 500; }
 
 .stamp {
 	display: inline-block;
-	width: 80px;
+	width: 74px;
 	height: 80px;
+	padding: 4px;
 	word-break: break-word;
 	text-align: center;
 }
 
 .epikyrosimo {
 	background: #DA9F74;
+	color: white;
+}
+
+.megorosimo {
+	background: #55CA68;
 	color: white;
 }
 
