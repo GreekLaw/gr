@@ -200,10 +200,12 @@ h1, h2, h3, h4, h5 { font-weight: 500; }
 	display: inline-block;
 	width: 74px;
 	height: 80px;
-	padding: 4px;
+	padding: 20px 5px 0px;
 	word-break: break-word;
 	text-align: center;
 }
+
+.seal + .seal { margin-top: 2.5em; }
 
 .seal .stamp {
 	position: absolute;
