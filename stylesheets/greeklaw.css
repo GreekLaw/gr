@@ -215,7 +215,8 @@ h1, h2, h3, h4, h5 { font-weight: 500; }
 
 .epikyrosimo {
 	background: #DA9F74;
-	color: white;
+	background: rgba(218, 159, 116, 0.5);
+	color: rgba(0, 0, 0, 0.5);
 }
 
 .megarosimo {
