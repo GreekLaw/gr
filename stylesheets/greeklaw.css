@@ -1,6 +1,11 @@
-body, html { margin: 0; padding: 0; }
-body { background: white; position: relative; }
-body {max-width: 768px; margin: auto;}
+html { font: 14px/22px Helvetica Neue, sans-serif; }
+
+body {
+	margin: 0 auto;
+	max-width: 768px;
+	background: white;
+}
+
 body > header { 
 	font: small-caps 44px/66px serif;
 	text-align: center;
@@ -13,17 +18,25 @@ body > header {
 	box-shadow: 0px 8px 5px -7px #4D6C9E;
 }
 body > header a { display: block; }
-body > header a:hover,
-body > header a:link,
-body > header a:visited { text-decoration: none; color: black; }
+
+body > header a:hover, body > header a:link, body > header a:visited {
+	text-decoration: none;
+	color: black;
+}
+
+nav ul {
+	list-style: none;
+	padding: 0 1em;
+}
 
 nav li a {
-	font: 16px/1.3em "Lucida Grande", "Lucida Sans", Verdana, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.3em;
 }
-nav li a       { color: #afbbcd; }
-nav li a:hover { color: white; }
 
-nav ul { list-style: none; padding: 0 1em; }
+nav li a       { color: #afbbcd; }
+nav li a:hover { color: white  ; }
+
 
 nav li a {
 	display: inline-block;
@@ -31,22 +44,31 @@ nav li a {
 	padding: 3px 0px 2px 0px;
 }
 
-hr { display: inline; border: 0px; }
-hr::after { content: ""; padding-right: 2.5em; }
-a       { text-decoration:      none; }
+hr {
+	display: inline;
+	border: 0px;
+}
+hr::after {
+	content: "";
+	padding-right: 2.5em;
+}
+
+a       { text-decoration: none     ; }
 a:hover { text-decoration: underline; }
 
-ul {padding: 0 1em;}
+ul { padding: 0 1em; }
 
 ol, ul, dl {
 	display: inline-block;
 	white-space: normal;
 	margin: 0;
 }
+
 li, dd, dt {
 	white-space: pre-line;
 	margin: 0;
 }
+
 dd, dt { padding: 0 }
 
 dt {
@@ -54,7 +76,7 @@ dt {
 	font-weight: bold;
 }
 
-main li a { color: #255DB1; }
+main li a       { color: #255DB1; }
 main li a:hover { color: #859DBD; }
 
 main {
@@ -62,7 +84,6 @@ main {
 	width: 100%;
 	margin-top: 0em;
 	padding: 20px 1em 30px 1em;
-	font: 14px/22px "Lucida Grande", "Lucida Sans", Verdana, Arial, sans-serif;
 	white-space: pre-line;
 	min-height: 400px;
 	-webkit-box-sizing: border-box;
@@ -72,17 +93,26 @@ main {
 
 h1 ~ div { white-space: pre-wrap; }
 
-cite { color: grey; font-size: 11px; line-height: 1em; }
-cite + cite::before {content: ", "}
+cite {
+	color: grey;
+	font-size: 11px;
+	line-height: 1em;
+}
+cite + cite::before { content: ", " }
 
 footer {
 	color: #a7adb1;
-	font: 13px/30px Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	line-height: 30px;
 	text-align: center;
 	text-shadow: 0 1px 0 rgba(255,255,255,.3)
 }
 
-table { width: 99.9%; border-collapse: collapse; }
+table {
+	width: 99.9%;
+	border-collapse: collapse;
+}
+
 td { border: 1px solid grey; }
 
 .nav-tree {
@@ -143,11 +173,11 @@ h1, h2, h3, h4, h5, h6 {
 h2 a      , h3 a      , h4 a      , h5 a      , h6 a       { color: #312f30; }
 h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { color: #312f30; }
 
-h1 { font-size: 28px; line-height: 33px; padding-top: 11px;                         }
-h2 { font-size: 24px; line-height: 33px; padding-top: 11px;      color: #303438;    }
+h1 { font-size: 28px; line-height: 33px; padding: 11px 0  0px 0;                    }
+h2 { font-size: 24px; line-height: 33px; padding: 11px 0  0px 0; color: #303438;    }
 h3 { font-size: 18px; line-height: 22px; padding: 11px 0 11px 0;                    }
-h4 { font-size:  1em; line-height: 22px; padding: 11px 0 11px 0; text-indent: 4em;  }
-h5 { font-size:  1em; line-height: 22px; padding: 11px 0 11px 0; text-indent: 8em;  }
+h4 { font-size:  1em; line-height: 22px; padding: 11px 0 11px 0; text-indent:  4em; }
+h5 { font-size:  1em; line-height: 22px; padding: 11px 0 11px 0; text-indent:  8em; }
 h6 { font-size:  1em; line-height: 22px; padding: 11px 0 11px 0; text-indent: 12em; }
 h3, h4, h5 { font-weight: bold; }
 
