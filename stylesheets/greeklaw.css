@@ -17,6 +17,7 @@ body > header {
 	background-repeat: no-repeat;
 	box-shadow: 0px 8px 5px -7px #4D6C9E;
 }
+
 body > header a { display: block; }
 
 body > header a:hover, body > header a:link, body > header a:visited {
@@ -45,6 +46,7 @@ hr {
 	display: inline;
 	border: 0px;
 }
+
 hr::after {
 	content: "";
 	padding-right: 2.5em;
@@ -59,11 +61,17 @@ ol, ul, dl {
 	display: inline-block;
 	white-space: normal;
 	margin: 0;
+	list-style: none;
 }
 
 li, dd, dt {
 	white-space: pre-line;
 	margin: 0;
+}
+
+li {
+	padding-left: 1.5em;
+	text-indent: -1.5em;
 }
 
 dd, dt { padding: 0 }
@@ -95,6 +103,7 @@ cite {
 	font-size: 0.6875em;
 	line-height: 1em;
 }
+
 cite + cite::before { content: ", " }
 
 footer {
@@ -135,11 +144,6 @@ td { border: 1px solid grey; }
 	padding-right: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	display: inline-block;
-	margin: 0;
-}
-
 .expanded-results {
 	position: absolute;
 	top: 3em;
@@ -157,8 +161,11 @@ h1, h2, h3, h4, h5, h6 {
 	text-align: right;
 }
 
-h2 a      , h3 a      , h4 a      , h5 a      , h6 a       { color: #312f30; }
-h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { color: #312f30; }
+h1, h2, h3, h4, h5, h6 {
+	display: inline-block;
+	margin: 0;
+	font-weight: 500; 
+}
 
 h1 { font-size: 24px; line-height: 33px; padding: 11px 0  0px  0  ;                 }
 h2 { font-size: 21px; line-height: 33px; padding: 11px 0  0px  0  ; color: #303438; }
@@ -166,7 +173,9 @@ h3 { font-size: 18px; line-height: 22px; padding: 11px 0 11px  0  ;             
 h4 { font-size:  1em; line-height: 22px; padding: 11px 0 11px  4em;                 }
 h5 { font-size:  1em; line-height: 22px; padding: 11px 0 11px  8em;                 }
 h6 { font-size:  1em; line-height: 22px; padding: 11px 0 11px 12em;                 }
-h1, h2, h3, h4, h5 { font-weight: 500; }
+
+h2 a      , h3 a      , h4 a      , h5 a      , h6 a       { color: #312f30; }
+h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { color: #312f30; }
 
 .seal {
 	letter-spacing: -1em;
@@ -206,8 +215,6 @@ h1, h2, h3, h4, h5 { font-weight: 500; }
 	text-align: center;
 }
 
-.seal + .seal { margin-top: 2.5em; }
-
 .seal .stamp {
 	position: absolute;
 	margin-left: -147px;
@@ -222,7 +229,8 @@ h1, h2, h3, h4, h5 { font-weight: 500; }
 
 .megarosimo {
 	background: #55CA68;
-	color: white;
+	background: rgba(116, 218, 125, 0.5);
+	color: rgba(0, 0, 0, 0.5);
 }
 
 .centered { text-align: center; }
