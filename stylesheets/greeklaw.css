@@ -204,11 +204,12 @@ h1, h2, h3, h4, h5 { font-weight: 500; }
 	color: white;
 }
 
-.megorosimo {
+.megarosimo {
 	background: #55CA68;
 	color: white;
 }
 
+.centered { text-align: center; }
 .question { height: 2em; width: 100%; }
 .padded   { padding-top: 2em;         }
 .inlined  { display: inline;          }
