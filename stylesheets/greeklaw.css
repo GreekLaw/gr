@@ -171,6 +171,7 @@ h1, h2, h3, h4, h5 { font-weight: 500; }
 .seal {
 	letter-spacing: -1em;
 	white-space: normal;
+	margin-top: 1.5em !important;
 }
 
 .seal-header {
@@ -190,6 +191,11 @@ h1, h2, h3, h4, h5 { font-weight: 500; }
 	white-space: pre;
 }
 
+.seal-stamp-placeholder {
+	width: 100%;
+	background: transparent;
+}
+
 .stamp {
 	display: inline-block;
 	width: 74px;
@@ -197,6 +203,12 @@ h1, h2, h3, h4, h5 { font-weight: 500; }
 	padding: 4px;
 	word-break: break-word;
 	text-align: center;
+}
+
+.seal-stamp {
+	position: absolute;
+	margin-left: -147px;
+	z-index: -1;
 }
 
 .epikyrosimo {
