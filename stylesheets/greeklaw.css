@@ -1,4 +1,4 @@
-html { font: 14px/22px Helvetica Neue, sans-serif; }
+html { font: 16px/22px Helvetica Neue, sans-serif; }
 
 body {
 	margin: 0 auto;
@@ -170,13 +170,13 @@ h1, h2, h3, h4, h5, h6 {
 h2 a      , h3 a      , h4 a      , h5 a      , h6 a       { color: #312f30; }
 h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { color: #312f30; }
 
-h1 { font-size: 28px; line-height: 33px; padding: 11px 0  0px 0;                    }
-h2 { font-size: 24px; line-height: 33px; padding: 11px 0  0px 0; color: #303438;    }
-h3 { font-size: 18px; line-height: 22px; padding: 11px 0 11px 0;                    }
-h4 { font-size:  1em; line-height: 22px; padding: 11px 0 11px 0; text-indent:  4em; }
-h5 { font-size:  1em; line-height: 22px; padding: 11px 0 11px 0; text-indent:  8em; }
-h6 { font-size:  1em; line-height: 22px; padding: 11px 0 11px 0; text-indent: 12em; }
-h3, h4, h5 { font-weight: bold; }
+h1 { font-size: 24px; line-height: 33px; padding: 11px 0  0px  0  ;                 }
+h2 { font-size: 21px; line-height: 33px; padding: 11px 0  0px  0  ; color: #303438; }
+h3 { font-size: 18px; line-height: 22px; padding: 11px 0 11px  0  ;                 }
+h4 { font-size:  1em; line-height: 22px; padding: 11px 0 11px  4em;                 }
+h5 { font-size:  1em; line-height: 22px; padding: 11px 0 11px  8em;                 }
+h6 { font-size:  1em; line-height: 22px; padding: 11px 0 11px 12em;                 }
+h1, h2, h3, h4, h5 { font-weight: 300; }
 
 @media (max-width: 35em) {
 	.nav-tree { white-space: normal; }
