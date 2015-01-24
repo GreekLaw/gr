@@ -176,7 +176,7 @@ h3 { font-size: 18px; line-height: 22px; padding: 11px 0 11px  0  ;             
 h4 { font-size:  1em; line-height: 22px; padding: 11px 0 11px  4em;                 }
 h5 { font-size:  1em; line-height: 22px; padding: 11px 0 11px  8em;                 }
 h6 { font-size:  1em; line-height: 22px; padding: 11px 0 11px 12em;                 }
-h1, h2, h3, h4, h5 { font-weight: 300; }
+h1, h2, h3, h4, h5 { font-weight: 500; }
 
 @media (max-width: 35em) {
 	.nav-tree { white-space: normal; }
