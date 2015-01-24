@@ -168,25 +168,25 @@ h5 { font-size:  1em; line-height: 22px; padding: 11px 0 11px  8em;             
 h6 { font-size:  1em; line-height: 22px; padding: 11px 0 11px 12em;                 }
 h1, h2, h3, h4, h5 { font-weight: 500; }
 
-.stamp {
+.seal {
 	letter-spacing: -1em;
 	white-space: normal;
 }
 
-.stamp-note {
-	float: right;
-	width: 40%;
-	letter-spacing: normal;
-	white-space: pre;
-}
-
-.stamp-header {
+.seal-header {
 	float: left;
 	width: 60%;
 	font-weight: 300;
 	letter-spacing: normal;
 	padding: 0;
 	white-space: normal;
+}
+
+.seal-note {
+	float: right;
+	width: 40%;
+	letter-spacing: normal;
+	white-space: pre;
 }
 
 .question { height: 2em; width: 100%; }
