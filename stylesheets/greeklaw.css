@@ -185,8 +185,22 @@ h1, h2, h3, h4, h5 { font-weight: 500; }
 .seal-note {
 	float: right;
 	width: 40%;
+	text-align: center;
 	letter-spacing: normal;
 	white-space: pre;
+}
+
+.stamp {
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	word-break: break-word;
+	text-align: center;
+}
+
+.epikyrosimo {
+	background: #DA9F74;
+	color: white;
 }
 
 .question { height: 2em; width: 100%; }
