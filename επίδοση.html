@@ -13,34 +13,22 @@
 <body>
   <header><a href="./index.html">Greek Law</a></header>
 <!--
-    if1:  serveLawsuit                if11: defendantNeutral
-    if2:  serveRecords                if12: lawyerMale
-    if3:  serveDecision               if13: lawyerFemale
-    if4:  serveOrderTitle             if14: orderedToBePresent
-    if5:  serveDefendant              if15: peaceCourtTitle
-    if6:  serveLawyer       
-    if7:  defendantPerson 
+    if1:  serveLawsuit                serveWhat:          if1  | if2  | if3 | if4
+    if2:  serveRecords                serveWhom:          if5  | if6
+    if3:  serveDecision               defendantEntity:    if7  | if8
+    if4:  serveOrderTitle             defendantGender:    if9  | if10 | if11
+    if5:  serveDefendant              lawyerGender:       if12 | if13
+    if6:  serveLawyer                 orderedToBePresent: if14
+    if7:  defendantPerson             peaceCourtTitle:    if15
     if8:  defendantCompany
     if9:  defendantMale
     if10: defendantFemale
+    if11: defendantNeutral
+    if12: lawyerMale
+    if13: lawyerFemale
+    if14: orderedToBePresent
+    if15: peaceCourtTitle
 
-    serveWhat:          if1  | if2  | if3 | if4
-    serveWhom:          if5  | if6
-    defendantEntity:    if7  | if8
-    defendantGender:    if9  | if10 | if11
-    lawyerGender:       if12 | if13
-    orderedToBePresent: if14
-    peaceCourtTitle:    if15
-    
-    functions: show:   function show(){this.className="shown"},
-               hide:   function hide(){this.className="hidden"},
-               select: function select(){this.className="selected"}
-    Categories present exclusive results. Only 1 result in the category can be active.
-    When a click occurs in an element, say data-toggle="if1", run all the commands regulated by if1
-    so I need to make a list of all commands regulated by if1
-    so go through data-show="if1 if2 if3", and register if1, if2, if3 as regulators for it
-    data-show="if1+if2" gets (if1 AND if2) as its regulator
-    data-show="if1-if2" gets (if1 NOT if2) as its regulator
 !-->
 <main role="main" class="white-space-normal">
 <input class="if1"  id="serveLawsuit"     type="radio"    name="serveWhat"       checked>
