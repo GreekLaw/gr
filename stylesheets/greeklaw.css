@@ -252,8 +252,7 @@ h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { color: #312f30; }
 .float-right { float: right; }
 .clear-both { clear: both; }
 label { line-height:1.5; }
-.heading{ font-size: 22px; margin: 0 0 0 30%; }
-.menu-block{ display: block; }
+.heading { font-size: 22px; margin: 0 0 0 30%; }
 
 @media (max-width: 35em) {
 	.nav-tree { white-space: normal; }
