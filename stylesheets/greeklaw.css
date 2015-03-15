@@ -232,6 +232,8 @@ h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { color: #312f30; }
 
 .eidiki-eisfora {
 	right: 0;
+	margin-top: -1.3em;
+	background-color: #EDE0B9;
 }
 
 .megarosimo {
