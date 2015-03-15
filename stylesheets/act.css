@@ -25,6 +25,7 @@ menu label,
 	        box-decoration-break: clone;
 }
 
+
 menu {
 	display: inline-table;
 	margin: 0;
@@ -102,3 +103,4 @@ menu.vertical label { display: block; }
 
 .question-part, menu { vertical-align: middle; }
 .concealed { visibility: hidden; }
+.text-space { white-space: normal; }
