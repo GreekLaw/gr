@@ -11,7 +11,7 @@ menu label, [role="button"] {
 input[id^=if] { display: none; }
 
 menu label,
-[role="button"]{
+[role="button"] {
 	display: inline-block;
 	padding: 1px .5em 2px;
 	line-height: 44px;
@@ -41,6 +41,7 @@ menu label {
 	color: #586066;
 	padding: 1px .5em 2px;
 	border-radius: 0px;
+	vertical-align: middle;
 }
 
 menu :first-child {	
