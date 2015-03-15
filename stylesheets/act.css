@@ -81,4 +81,20 @@ menu :last-child {
 	        box-decoration-break: clone;
 }
 
+.question { display: table; width: 100%; }
+.question-part { display: table-cell; width: auto; padding: 2px; }
+.question menu { display: table-cell; width: auto;}
+.question-header { display: table-caption; }
+menu label { display: table-cell; min-width: 99px; }
+
+menu.vertical label { display: block; }
+
+.question {
+	margin: 0;
+	-webkit-animation: fadeIn .5s;
+	   -moz-animation: fadeIn .5s;
+	        animation: fadeIn .5s;
+}
+
+.question-part, menu { vertical-align: middle; }
 .concealed { visibility: hidden; }
