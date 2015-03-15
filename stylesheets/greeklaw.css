@@ -185,20 +185,15 @@ h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { color: #312f30; }
 }
 
 .seal-header {
-	position:relative;
-	left: 40%;
-	width: 60%;
+	width: 320px;
 	font-weight: 300;
 	letter-spacing: normal;
 	padding: 0;
-	white-space: pre-wrap;
 }
 
 .seal-text {
-	position: relative;
-	left: 60%;
-	width: 40%;
-	text-align: center;
+	float: right;
+	width: 320px;
 	letter-spacing: normal;
 	white-space: pre;
 	color: #3C3C3C;
