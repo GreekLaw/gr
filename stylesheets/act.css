@@ -81,6 +81,9 @@ menu :last-child {
 	        box-decoration-break: clone;
 }
 
+.shown               { display: ;     }
+.not-shown.not-shown { display: none; }
+
 .question { display: table; width: 100%; }
 .question-part { display: table-cell; width: auto; padding: 2px; }
 .question menu { display: table-cell; width: auto;}
