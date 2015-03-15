@@ -180,7 +180,6 @@ h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { color: #312f30; }
 .seal {
 	letter-spacing: -1em;
 	white-space: normal;
-	margin-top: 1.5em !important;
 	width: 100%;
 }
 
@@ -194,6 +193,7 @@ h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { color: #312f30; }
 }
 
 .seal-text {
+	position: relative;
 	float: right;
 	clear: both;
 	padding-bottom: 3em;
@@ -228,6 +228,10 @@ h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { color: #312f30; }
 	background: #DA9F74;
 	background: rgba(218, 159, 116, 0.5);
 	color: rgba(0, 0, 0, 0.5);
+}
+
+.eidiki-eisfora {
+	right: 0;
 }
 
 .megarosimo {
