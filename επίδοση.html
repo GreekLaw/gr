@@ -6,50 +6,32 @@
   <meta name="robots"           content="archive, follow, index, snippet">
   <meta name="viewport"         content="initial-scale = 1">
   <meta name="format-detection" content="telephone = no">
-  <link rel ="stylesheet"       href   ="./stylesheets/greeklaw.css">
-  <link rel ="stylesheet"       href   ="./stylesheets/verbs.css">
-  <script                 async src    ="./javascripts/nav.js"></script>
+  <link rel="stylesheet"        href="./stylesheets/greeklaw.css">
+  <link rel="stylesheet"        href="./stylesheets/act.css">
+  <script async                 src="./javascripts/act.js"></script>
 </head>
 <body>
   <header><a href="./index.html">Greek Law</a></header>
-<!--
-    if1:  serveLawsuit                serveWhat:          if1  | if2  | if3 | if4
-    if2:  serveRecords                serveWhom:          if5  | if6
-    if3:  serveDecision               defendantEntity:    if7  | if8
-    if4:  serveOrderTitle             defendantGender:    if9  | if10 | if11
-    if5:  serveDefendant              lawyerGender:       if12 | if13
-    if6:  serveLawyer                 orderedToBePresent: if14
-    if7:  defendantPerson             peaceCourtTitle:    if15
-    if8:  defendantCompany
-    if9:  defendantMale
-    if10: defendantFemale
-    if11: defendantNeutral
-    if12: lawyerMale
-    if13: lawyerFemale
-    if14: orderedToBePresent
-    if15: peaceCourtTitle
-
-!-->
 <main role="main" class="white-space-normal">
-<input class="if1"  id="serveLawsuit"     type="radio"    name="serveWhat"       checked>
-<input class="if2"  id="serveRecords"     type="radio"    name="serveWhat"              >
-<input class="if3"  id="serveDecision"    type="radio"    name="serveWhat"              >
-<input class="if4"  id="serveOrderTitle"  type="radio"    name="serveWhat"              >
-<input class="if5"  id="serveDefendant"   type="radio"    name="serveWhom"       checked>
-<input class="if6"  id="serveLawyer"      type="radio"    name="serveWhom"              >
-<input class="if7"  id="defendantPerson"  type="radio"    name="defendantEntity" checked>
-<input class="if8"  id="defendantCompany" type="radio"    name="defendantEntity"        >
-<input class="if9"  id="defendantMale"    type="radio"    name="defendantGender" checked>
-<input class="if10" id="defendantFemale"  type="radio"    name="defendantGender"        >
-<input class="if11" id="defendantNeutral" type="radio"    name="defendantGender"        >
-<input class="if12" id="lawyerMale"       type="radio"    name="lawyerGender"    checked>
-<input class="if13" id="lawyerFemale"     type="radio"    name="lawyerGender"           >
-<input class="if14" id="orderToBePresent" type="checkbox"                        checked>
-<input class="if15" id="peaceCourtTitle"  type="checkbox"                        checked>
+<input id="if1"  name="είδος-εγγράφου"  class="αγωγή"                 type="radio"    checked>
+<input id="if2"  name="είδος-εγγράφου"  class="πρακτικά"              type="radio"           >
+<input id="if3"  name="είδος-εγγράφου"  class="απόφαση"               type="radio"           >
+<input id="if4"  name="είδος-εγγράφου"  class="επιταγή-πληρωμής"      type="radio"           >
+<input id="if5"  name="αποδέκτης"       class="εναγόμενος"            type="radio"    checked>
+<input id="if6"  name="αποδέκτης"       class="δικηγόρος"             type="radio"           >
+<input id="if7"  name="νομική-φύση"     class="φυσικό-πρόσωπο"        type="radio"    checked>
+<input id="if8"  name="νομική-φύση"     class="νομικό-πρόσωπο"        type="radio"           >
+<input id="if9"  name="γένος-αποδέκτη"  class="εναγόμενος-αρσενικό"   type="radio"    checked>
+<input id="if10" name="γένος-αποδέκτη"  class="εναγόμενος-θηλυκό"     type="radio"           >
+<input id="if11" name="γένος-αποδέκτη"  class="εναγόμενος-ουδέτερο"   type="radio"           >
+<input id="if12" name="γένος-δικηγόρου" class="δικηγόρος-άδρας"       type="radio"    checked>
+<input id="if13" name="γένος-δικηγόρου" class="δικηγόρος-γυναίκα"     type="radio"           >
+<input id="if14"                        class="παραγγελία-παράστασης" type="checkbox" checked>
+<input id="if15"                        class="ειρηνοδικείο"          type="checkbox" checked>
 <span class="then" style="white-space:pre-line;">
-<div class="question">Θέλω να επιδώσω <menu><label for="serveLawsuit" data-select="if1">Αγωγή</label><label for="serveRecords" data-select="if2">Πρακτικά</label><label for="serveDecision" data-select="if3">Απόφαση</label><label for="serveOrderTitle" data-select="if4">Απόγραφο</label></span></menu></div><div class="question"><menu><label for="defendantMale" data-select="if9">Ο</label><label for="defendantFemale" data-select="if10">Η</label><label for="defendantNeutral" data-select="if11">Το</label></menu> αντίδικο<span data-show="if9 if10">ς</span> είναι <menu><label for="defendantPerson" data-select="if7">φυσικό</label><label for="defendantCompany" data-select="if8">νομικό</label></menu> πρόσωπο.</div><div class="question" data-hide="if1">Η επίδοση να γίνει στον <menu><label for="serveDefendant" data-select="if5">αντίδικο</label><label for="serveLawyer" data-select="if6">πληρεξούσιο δικηγόρο</label></menu>.</div><div class="question" data-show="if1 if2"><br>Ο παραλαβών <label for="orderToBePresent" role="button"><span data-hide="if14">δεν</span> καλείται</label> να παραστεί στην συζήτηση.</div>
-<h2 class="padded block">Επίδοση <span data-show="if1">Αγωγής</span><span data-show="if2">Πρακτικών Δικαστηρίου</span><span data-show="if3">Απόφασης ή Διαταγής πληρωμής</span><span data-show="if4">Αντιγράφου του Απογράφου </span> <span data-show="if1 if2 if3">προς γνώση</span><span data-show="if4">με επιταγή προς πληρωμή</span>
-</h2><span data-show="if4">Αυτό είναι ακριβές αντίγραφο από το εκτελεστό α' απόγραφο που έχω στα χέρια μου και αρμόδιος</span><span data-show="if1 if2 if3">Αρμόδιος</span> δικαστικός επιμελητής παραγγέλλεται να <span data-show="if4">το</span> επιδώσει νόμιμα <span data-show="if1 if3">την παρούσα </span><span data-show="if2">τα παρόντα </span> προς <span data-show="if6"> τον <input type="text" placeholder="όνοματεπώνυμο" class="fill-the-blank">, δικηγόρο του Πρωτοδικείου <input type="text" placeholder="Πρωτοδικείο έδρας" class="fill-the-blank">   ως πληρεξούσι<span data-show="if12">ο</span><span data-show="if13">α</span> δικηγόρο </span> <span data-show="if9" > το<span data-show="if5">ν</span><span data-show="if6">υ</span></span><span data-show="if10"> τη<span data-show="if5">ν</span><span data-show="if6">ς</span></span><span data-show="if11"> τ<span  data-show="if5">ο</span><span data-show="if6">oυ</span></span> <input type="text" placeholder="όνοματεπώνυμο" class="fill-the-blank">, που <span data-show="if7"> κατοικεί</span><span data-show="if8"> εδρεύει</span> <input type="text" placeholder="διεύθυνση" class="fill-the-blank"><span data-show="if8">, νόμιμα εκπροσωπούμεν<span data-show="if9">ο</span><span data-show="if10">η</span><span data-show="if11">ο</span></span><span data-show="if1 if2 if3">, προς γνώση <span data-show="if9" >του</span><span data-show="if10">της</span><span data-show="if11">του</span> και για τις νόμιμες συνέπειες<span data-show="if1 if2 if3" data-hide=" default lvl2(if14)">.</span></span><span data-show="if14" data-hide="default lvl2(if3) lvl2(if4)">, καλούμεν<span data-show="if9">ον</span><span data-show="if10">η</span><span data-show="if11">ο</span> συγχρόνως να παραστεί κατά την συζήτηση όταν και όπου ορίζεται με <span data-show="if1">την παραπάνω πράξη.</span><span data-show="if2">τα παραπάνω πρακτικά.</span> </span><span data-show="if4">, καλούμεν<span data-show="if9">ον</span><span data-show="if10">η</span><span data-show="if11">ο</span> συγχρόνως να καταβάλλει σε μένα ή στον πληρεξούσιο και αντίκλητο Δικηγόρο μου κ. <input type="text" placeholder="ονοματεπώνυμο" class="fill-the-blank"> που έχω  <input type="text" placeholder="πόλη δικηγόρου" class="fill-the-blank"> και είναι δεκτικός καταβολής τα εξής χρηματικά ποσά:<br>
+<div class="question">Θέλω να επιδώσω <menu><label for="if1" data-select="if1">Αγωγή</label><label for="if2" data-select="if2">Πρακτικά</label><label for="if3" data-select="if3">Απόφαση</label><label for="if4" data-select="if4">Επιταγή προς πληρωμή</label></span></menu></div><div class="question"><menu><label for="if9" data-select="if9">Ο</label><label for="if10" data-select="if10">Η</label><label for="if11" data-select="if11">Το</label></menu> αντίδικο<span data-show="if9 if10">ς</span> είναι <menu><label for="if7" data-select="if7">φυσικό</label><label for="if8" data-select="if8">νομικό</label></menu> πρόσωπο.</div><div class="question" data-hide="if1">Η επίδοση να γίνει στον <menu><label for="if5" data-select="if5">αντίδικο</label><label for="if6" data-select="if6">πληρεξούσιο δικηγόρο</label></menu>.</div><div class="question" data-show="if1 if2"><br>Ο παραλαβών <label for="if14" data-select="if14" role="button"><span data-show="-if14">δεν</span> καλείται</label> να παραστεί στην συζήτηση.</div>
+<h2 class="padded block">Επίδοση <span data-show="if1">Αγωγής</span><span data-show="if2">Πρακτικών Δικαστηρίου</span><span data-show="if3">Απόφασης ή Διαταγής πληρωμής</span><span data-show="if4">αντιγράφου του Απογράφου με επιταγή προς πληρωμή</span> <span data-show="if1 if2 if3"> προς γνώση</span>
+</h2><span data-show="if4">Αυτό είναι ακριβές αντίγραφο από το εκτελεστό α' απόγραφο που έχω στα χέρια μου και αρμόδιος</span><span data-show="if1 if2 if3">Αρμόδιος</span> δικαστικός επιμελητής παραγγέλλεται να <span data-show="if4">το</span> επιδώσει νόμιμα <span data-show="if1 if3">την παρούσα </span><span data-show="if2">τα παρόντα </span> προς <span data-show="if6"> τον <input type="text" placeholder="όνοματεπώνυμο" class="fill-the-blank">, δικηγόρο του Πρωτοδικείου <input type="text" placeholder="έδρα Πρωτοδικείου" class="fill-the-blank"> ως πληρεξούσι<span data-show="if12">ο</span><span data-show="if13">α</span> δικηγόρο </span> <span data-show="if9" > το<span data-show="if5">ν</span><span data-show="if6">υ</span></span><span data-show="if10"> τη<span data-show="if5">ν</span><span data-show="if6">ς</span></span><span data-show="if11"> τ<span  data-show="if5">ο</span><span data-show="if6">oυ</span></span> <input type="text" placeholder="όνοματεπώνυμο" class="fill-the-blank">, που <span data-show="if7"> κατοικεί</span><span data-show="if8"> εδρεύει</span> <input type="text" placeholder="διεύθυνση" class="fill-the-blank"><span data-show="if8">, νόμιμα εκπροσωπούμεν<span data-show="if9">ο</span><span data-show="if10">η</span><span data-show="if11">ο</span></span><span data-show="if1 if2 if3">, προς γνώση <span data-show="if9" >του</span><span data-show="if10">της</span><span data-show="if11">του</span> και για τις νόμιμες συνέπειες<span data-show="-if14+if1 -if14+if2 -if14+if3">.</span></span><span data-show="if14+if1 if14+if2">, καλούμεν<span data-show="if9">ον</span><span data-show="if10">η</span><span data-show="if11">ο</span> συγχρόνως να παραστεί κατά την συζήτηση όταν και όπου ορίζεται με <span data-show="if1">την παραπάνω πράξη.</span><span data-show="if2">τα παραπάνω πρακτικά.</span> </span><span data-show="if4">, καλούμεν<span data-show="if9">ον</span><span data-show="if10">η</span><span data-show="if11">ο</span> συγχρόνως να καταβάλλει σε μένα ή στον πληρεξούσιο και αντίκλητο Δικηγόρο μου κ. <input type="text" placeholder="ονοματεπώνυμο" class="fill-the-blank"> που έχω  <input type="text" placeholder="πόλη δικηγόρου" class="fill-the-blank"> και είναι δεκτικός καταβολής τα εξής χρηματικά ποσά:<br>
 1) Για επιδικασθείσα απαίτηση <input type="text" placeholder="ποσό" class="fill-the-blank"> €,
 2) για δεδουλευμένους τόκους από <input type="text" placeholder="ημερομηνία" class="fill-the-blank"> μέχρι <input type="text" placeholder="ημερομηνία" class="fill-the-blank"> <input type="text" placeholder="ποσό" class="fill-the-blank"> €,
 3) για επιδικασθείσα δικαστική δαπάνη <input type="text" placeholder="ποσό" class="fill-the-blank"> €,
@@ -58,18 +40,19 @@
 6) για έξοδα επίδοσης του παρόντος <input type="text" placeholder="ποσό" class="fill-the-blank"> € με ΦΠΑ, δηλαδή συνολικά 
   <input type="text" placeholder="ποσό" class="fill-the-blank"> € και όλα νομιμότοκα, πλην των τόκων, διαφορετικά θα εισπραχθούν αναγκαστικά και σύμφωνα με τον νόμο, οπότε θα προστεθούν και 89,79 € για παραγγελία εκτέλεσης.<br>
 Στην παρούσα επικολλήθηκε επικυρώσημο αξίας 2 € και ένσημο ειδικής εισφοράς αξίας <input class="fill-the-blank" type="text" placeholder="ποσό" style="width: 4em;"> €.</span>
-<div class="align-right">
-  <input type="text" placeholder="ΤΟΠΟΘΕΣΙΑ" class="fill-the-blank inline-block">
-  <input type="text" placeholder="ΧΡΟΝΟΛΟΓΙΑ" class="fill-the-blank inline-block">
-Ο πληρεξούσιος Δικηγόρος
+<div class="seal">
+<div class="seal-text">
+<input type="text" placeholder="ΤΟΠΟΘΕΣΙΑ" class="fill-the-blank centered">,<input type="text" placeholder="ΧΡΟΝΟΛΟΓΙΑ" class="fill-the-blank centered">
+<span class="seal-text-certifier">Ο πληρεξούσιος δικηγόρος</span>
+<input type="text" placeholder="ΣΦΡΑΓΙΔΑ" class="fill-the-blank centered seal-stamp-placeholder">
+<input type="text" placeholder="ΥΠΟΓΡΑΦΗ" class="fill-the-blank centered seal-stamp-placeholder">
 
-<input type="text" placeholder="ΥΠΟΓΡΑΦΗ" class="fill-the-blank float-right">
-<input type="text" placeholder="ΣΦΡΑΓΙΔΑ" class="fill-the-blank float-right clear-both">
-<span class="block" data-show="if4" style="width: 100%"><br>
-ΕΠΙΚΥΡΩΣΗΜΟ , ΕΙΔΙΚΗ ΕΙΣΦΟΡΑ
-<input type="text" placeholder="ΥΠΟΓΡΑΦΗ" class="fill-the-blank block float-right">
-<input type="text" placeholder="ΣΦΡΑΓΙΔΑ" class="fill-the-blank block float-right clear-both"></span></div>
-</span><br><br>
+<span class="stamp epikyrosimo">ΕΠΙΚΥΡΩΣΗΜΟ</span>
+<span class="stamp eidiki-eisforaa">ΕΙΔΙΚΗ ΕΙΣΦΟΡΑ</span>
+<input type="text" placeholder="ΣΦΡΑΓΙΔΑ" class="fill-the-blank centered seal-stamp-placeholder">
+<input type="text" placeholder="ΥΠΟΓΡΑΦΗ" class="fill-the-blank centered seal-stamp-placeholder">
+</div></div>
+
 <span class="expanded-results" aria-hidden="true">
 <h2>Αγωγής</h2> (αντίγραφο με πράξη προσδιορισμού δικασίμου, στον πληρεξούσιο δικηγόρο)
 Αρμόδιος δικαστικός επιμελητής παραγγέλλεται να επιδώσει νόμιμα την παρούσα προς τον (Στοιχεία πληρεξουσίου δικηγόρου: <u>όνομα, επίθετο, πατρώνυμο</u>), δικηγόρο του Πρωτοδικείου (Στοιχεία πληρεξουσίου δικηγόρου: <u>έδρα Πρωτοδικείου</u>), ως πληρεξούσιο δικηγόρο της εταιρείας με την επωνυμία (Στοιχεία εναγόμενης εταιρείας: <u>όνομασία</u>), η οποία εδρεύει στην (Στοιχεία εναγόμενης εταιρείας: <u>διεύθυνση έδρας</u>),νόμιμα εκπροσωπούμενης, προς γνώση του και για τις νόμιμες συνέπειες, καλούμενον συγχρόνως να  παραστεί κατά την συζήτηση αυτής όταν και όπου με την ανωτέρω πράξη ορίζεται.
