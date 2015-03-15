@@ -14,16 +14,16 @@
 <body>
   <header><a href="./index.html">Greek Law</a></header>
   <nav role="navigation"></nav>
-  <input id="if1"  name="mainVerb"  class="epikirosi"             type="radio"           >
-  <input id="if2"  name="mainVerb"  class="metafrasi"             type="radio"    checked>
-  <input id="if3"                   class="epikirosiDikastirio"   type="checkbox"        >
-  <input id="if4"  name="broughtTo" class="dikastirio"            type="radio"    checked>
-  <input id="if5"  name="broughtTo" class="dimosio"               type="radio"           >
-  <input id="if6"  name="broughtTo" class="beyondDimosio"         type="radio"           >
-  <input id="if7"  name="docType"   class="dimosioEggrafo"        type="radio"           >
-  <input id="if8"  name="docType"   class="dioikitikoEggrafo"     type="radio"           >
-  <input id="if9"  name="docType"   class="allodapisArxisEggrafo" type="radio"           >
-  <input id="if10" name="docType"   class="IdiotikoEggrafo"       type="radio"    checked>
+  <input id="if1"  name="υπηρεσία"       class="επικύρωση"               type="radio"           >
+  <input id="if2"  name="υπηρεσία"       class="μετάφραση"               type="radio"    checked>
+  <input id="if3"                        class="επικύρωση-δικαστήριο"    type="checkbox"        >
+  <input id="if4"  name="κατάθεση"       class="δικαστήριο"              type="radio"    checked>
+  <input id="if5"  name="κατάθεση"       class="Δημόσιο"                 type="radio"           >
+  <input id="if6"  name="κατάθεση"       class="πέραν-Δημοσίου"          type="radio"           >
+  <input id="if7"  name="είδος-εγγράφου" class="δημόσιο-έγγραφο"         type="radio"           >
+  <input id="if8"  name="είδος-εγγράφου" class="διοικητικό-έγγραφο"      type="radio"           >
+  <input id="if9"  name="είδος-εγγράφου" class="έγγραφο-αλλοδαπής-αρχής" type="radio"           >
+  <input id="if10" name="είδος-εγγράφου" class="ιδιωτικό-έγγραφο"        type="radio"    checked>
 <main role="main" class="then">
 <menu class="heading"><label for="if1" data-select="if1">Επικύρωση</label><label for="if2" data-select="if2">Μετάφραση</label></menu>
 <div class="seal"><h3 class="seal-header">Σημείωση στο φωτοαντίγραφο του 
@@ -49,36 +49,43 @@
 </div></div>
 <div class="clear-both">
 <span data-show="if1">Το επικυρωμένο αντίγραφο </span><span data-show="if2">Η μετάφραση </span><label for="if3" data-show="-if2" role="button"><span data-show="-if3"> δεν </span> θα προσκομιστεί</label> <span data-show="-if1">θα προσκομιστεί </span><span data-show="-if2">για δικαστική χρήση</span></div>
-<menu data-show="-if1" class="menu-block"><label for="if4" data-select="if4">για δικαστική χρήση</label><label for="if5" data-select="if5"> σε Δημόσια Αρχή</label><label for="if6" data-select="if6">πέραν της Δημόσιας Αρχής</label></menu><span data-show="if1">Το πρωτότυπο έγγραφο είναι <menu><label for="if7" data-select="if7">Δημόσιο</label><label for="if8" data-select="if8">Διοικητικής Αρχής</label><label for="if9" data-select="if9"> Αλλοδαπής Αρχής</label><label for="if10" data-select="if10">Ιδιωτικό</label></menu></span>
-
-Η μετάφραση από δικηγόρο με τις ως άνω διατυπώσεις, όταν κατατίθεται <span data-show="if4">για δικαστική χρήση</span><span data-show="if5">σε φορέα ή υπηρεσία της Δημόσιας Αρχής</span><span data-show="if6">σε φορέα ή υπηρεσία πέραν της Δημόσιας Αρχής</span>, μπορεί να προσκομιστεί 
-<ul><li>αυτούσια <span data-show="if4"><cite> αρ.11 παρ.2β εδ.1 ν.2690/1999 όπως τροποποιήθηκε με τον ν.4250/2014 αρ.1 παρ.2</cite></li><span data-show="if5"><li
->ή σε ευκρινές φωτοαντίγραφό της<cite> αρ.11 παρ.2β εδ.3 ν.2690/1999 όπως τροποποιήθηκε με τον ν.4250/2014 αρ.1 παρ.2</cite><cite> αρ.11 παρ.2β εδ.3 ν.2690/1999 όπως τροποποιήθηκε με τον ν.4250/2014 αρ.1 παρ.2</cite></li></span><span data-show="if6"><li
->ή σε επικυρωμένο, από ΚΕΠ ή Διοικητική Αρχή, αντίγραφό της<cite> αρ.11 παρ.2γ εδ.2 ν.2690/1999 όπως τροποποιήθηκε με τον ν.4250/2014 αρ.1 παρ.2</cite></li></span><li
->ή σε επικυρωμένο από δικηγόρο αντίγραφό της<cite data-show="if4"> αρ.11 παρ.2β εδ.1 ν.2690/1999 όπως τροποποιήθηκε με τον ν.4250/2014 αρ.1 παρ.2</cite>.</li></ul>
+Αν η μετάφραση θα κατατεθεί 
+<menu data-show="if2" class="menu-block"><label for="if4" data-select="if4">για δικαστική χρήση</label>
+                                          <label for="if5" data-select="if5">σε Δημόσια Αρχή</label>
+                                          <label for="if6" data-select="if6">πέραν της Δημόσιας Αρχής</label>
+</menu>
+<span data-show="if1">και το πρωτότυπο έγγραφο είναι 
+<menu><label for="if7" data-select="if7">Δημόσιο έγγραφο</label>
+  <label for="if8" data-select="if8">έγγραφο Διοικητικής Αρχής</label>
+  <label for="if9" data-select="if9">έγγραφο Αλλοδαπής Αρχής</label>
+  <label for="if10" data-select="if10">Ιδιωτικό έγγραφο</label>
+ </menu>
+</span>, μπορεί να προσκομιστεί 
+<ul data-show="if2">
+  <li>αυτούσια η μετάφραση<span data-show="if4"><cite> αρ.11 παρ.2β εδ.1 ν.2690/1999 όπως τροποποιήθηκε με τον ν.4250/2014 αρ.1 παρ.2</cite></li><span data-show="if5">
+  <li>ή σε ευκρινές φωτοαντίγραφό της<cite> αρ.11 παρ.2β εδ.3 ν.2690/1999 όπως τροποποιήθηκε με τον ν.4250/2014 αρ.1 παρ.2</cite><cite> αρ.11 παρ.2β εδ.3 ν.2690/1999 όπως τροποποιήθηκε με τον ν.4250/2014 αρ.1 παρ.2</cite></li></span><span data-show="if6">
+  <li>ή σε επικυρωμένο, από ΚΕΠ ή Διοικητική Αρχή, αντίγραφό της<cite> αρ.11 παρ.2γ εδ.2 ν.2690/1999 όπως τροποποιήθηκε με τον ν.4250/2014 αρ.1 παρ.2</cite></li></span>
+  <li>ή σε επικυρωμένο από δικηγόρο αντίγραφό της<cite data-show="if4"> αρ.11 παρ.2β εδ.1 ν.2690/1999 όπως τροποποιήθηκε με τον ν.4250/2014 αρ.1 παρ.2</cite>.</li>
+</ul>
 </div>
 </span>
-<span data-show="if1" style="width: 100%; clear: both;">
-Ο ενδιαφερόμενος να καταθέσει <span data-show="if7">Δημόσιο </span><span data-show="if10">ιδιωτικό</span> έγγραφο <span data-show="if8">Διοικητικής Αρχής</span><span data-show="if9">Αλλοδαπής Αρχής</span> <span data-show="if3">για δικαστική χρήση</span><span data-show="if5">στη Δημόσια Αρχή</span><span data-show="if6">σε φορέα ή υπηρεσία που δεν ανήκει στη Δημόσια Αρχή</span>, μπορεί να προσκομίσει
-<ul><li>το πρωτότυπο έγγραφο</li>
-<span data-show="if5+if7"><li>ή ευανάγνωστο φωτοαντίγραφο του πρωτότυπου εγγράφου</li></span>
-<span data-show="if5+if7"><li>ή ευανάγνωστο φωτοαντίγραφο από ακριβές αντίγραφο του πρωτότυπου εγγράφου</li></span>
-<span data-show="if5+if10"><li>ή ευκρινές φωτοαντίγραφο του πρωτότυπου εγγράφου, αν το έγγραφο φέρει θεώρηση από Δημόσια Αρχή,</li></span>
-<span data-show="if5+if7"><li>ή ακριβές αντίγραφο του πρωτότυπου εγγράφου</li></span>
+<ul data-show="if1"><li>το πρωτότυπο έγγραφο</li>
+<span data-show="if5+if7"                ><li>ή ευανάγνωστο φωτοαντίγραφο του πρωτότυπου εγγράφου</li></span>
+<span data-show="if5+if7"                ><li>ή ευανάγνωστο φωτοαντίγραφο από ακριβές αντίγραφο του πρωτότυπου εγγράφου</li></span>
+<span data-show="if5+if10"               ><li>ή ευκρινές φωτοαντίγραφο του πρωτότυπου εγγράφου, αν το έγγραφο φέρει θεώρηση από Δημόσια Αρχή,</li></span>
+<span data-show="if5+if7"                ><li>ή ακριβές αντίγραφο του πρωτότυπου εγγράφου</li></span>
 <span data-show="if3+if7 if4+if8 if6+if8"><li>ή επικυρωμένο, από ΚΕΠ ή Διοικητική Αρχή, αντίγραφο του πρωτότυπου εγγράφου,</li></span>
-<span data-show="if6+if8"><li>ή επικυρωμένο, από ΚΕΠ ή Διοικητική Αρχή, αντίγραφο από ακριβές αντίγραφο του πρωτότυπου εγγράφου</li></span>
-<span data-show="if6+if9 if6+if10"><li>ή επικυρωμένο, από ΚΕΠ ή Διοικητική Αρχή, αντίγραφο από επικυρωμένο από δικηγόρο αντίγραφο του πρωτότυπου εγγράφου</li></span>
-<span data-show="if5+if9 if5+if10"><li>ή ευκρινές φωτοαντίγραφο από επικυρωμένο από δικηγόρο αντίγραφο του πρωτότυπου εγγράφου</li></span>
-<li>ή επικυρωμένο από δικηγόρο αντίγραφο του πρωτότυπου εγγράφου</li>
-<span data-show="if6+if8"><li>ή επικυρωμένο από δικηγόρο αντίγραφο από ακριβές αντίγραφο του πρωτότυπου εγγράφου.</li></span></ul>
-<span data-show="if1">
-<cite><b>Δημόσια Αρχή</b>: τα ∆ικαστήρια όλων των βαθµών, το Δημόσιο, οι ΟΤΑ, τα ΝΠΔΔ, τα ΝΠΙΔ που ανήκουν στο κράτος ή επιχορηγούνται τακτικώς, σύµφωνα µε τις κείµενες διατάξεις, από κρατικούς πόρους κατά 50% τουλάχιστον του ετήσιου προϋπολογισµού τους, οι δηµόσιες επιχειρήσεις και οι οργανισµοί που προβλέπονται στις διατάξεις του αρ.1 του ν.3429/2005, καθώς και τα νοµικά πρόσωπα και οι επιχειρήσεις των ΟΤΑ</cite><cite> αρ.11 παρ.2α ν.2690/1999 όπως τροποποιήθηκε με τον ν.4250/2014 αρ.1 παρ.2</cite>.
-<cite><b>Διοικητική Αρχή</b>: το Δημόσιο, οι ΟΤΑ και τα άλλα ΝΠΔΔ</cite><cite> αρ.1 ν.2690/1999</cite>.</span><span data-show="if1">
-<span data-show="if6">Δημόσιο έγγραφο είναι το έγγραφο που εκδόθηκε από Δημόσια Αρχή.</span>
-<span data-show="if7">Έγγραφο Διοικητικής Αρχής είναι το έγγραφο που εκδόθηκε από Διοικητική Αρχή.</span>
-<span data-show="if8">Έγγραφο Αλλοδαπής Αρχής είναι το έγγραφο που εκδόθηκε από αλλοδαπή αρχή.</span>
-<span data-show="if9">Ιδιωτικό έγγραφο είναι το έγγραφο που εκδόθηκε από ιδιώτη, και όχι από Δημόσια, Διοικητική ή Αλλοδαπή Αρχή.</span>
-</span>
+<span data-show="if6+if8"                ><li>ή επικυρωμένο, από ΚΕΠ ή Διοικητική Αρχή, αντίγραφο από ακριβές αντίγραφο του πρωτότυπου εγγράφου</li></span>
+<span data-show="if6+if9 if6+if10"       ><li>ή επικυρωμένο, από ΚΕΠ ή Διοικητική Αρχή, αντίγραφο από επικυρωμένο από δικηγόρο αντίγραφο του πρωτότυπου εγγράφου</li></span>
+<span data-show="if5+if9 if5+if10"       ><li>ή ευκρινές φωτοαντίγραφο από επικυρωμένο από δικηγόρο αντίγραφο του πρωτότυπου εγγράφου</li></span>
+<li                                      >ή επικυρωμένο από δικηγόρο αντίγραφο του πρωτότυπου εγγράφου</li>
+<span data-show="if6+if8"                ><li>ή επικυρωμένο από δικηγόρο αντίγραφο από ακριβές αντίγραφο του πρωτότυπου εγγράφου.</li></span></ul>
+  <cite><b>Δημόσια Αρχή</b>: τα ∆ικαστήρια όλων των βαθµών, το Δημόσιο, οι ΟΤΑ, τα ΝΠΔΔ, τα ΝΠΙΔ που ανήκουν στο κράτος ή επιχορηγούνται τακτικώς, σύµφωνα µε τις κείµενες διατάξεις, από κρατικούς πόρους κατά 50% τουλάχιστον του ετήσιου προϋπολογισµού τους, οι δηµόσιες επιχειρήσεις και οι οργανισµοί που προβλέπονται στις διατάξεις του αρ.1 του ν.3429/2005, καθώς και τα νοµικά πρόσωπα και οι επιχειρήσεις των ΟΤΑ</cite><cite> αρ.11 παρ.2α ν.2690/1999 όπως τροποποιήθηκε με τον ν.4250/2014 αρ.1 παρ.2</cite>.
+  <cite data-show="if1+if7"><b>Διοικητική Αρχή</b>: το Δημόσιο, οι ΟΤΑ και τα άλλα ΝΠΔΔ</cite><cite> αρ.1 ν.2690/1999</cite>.</span><span data-show="if1">
+  <span data-show="if1+if6">Δημόσιο έγγραφο είναι το έγγραφο που εκδόθηκε από Δημόσια Αρχή.</span>
+  <span data-show="if1+if7">Έγγραφο Διοικητικής Αρχής είναι το έγγραφο που εκδόθηκε από Διοικητική Αρχή.</span>
+  <span data-show="if1+if8">Έγγραφο Αλλοδαπής Αρχής είναι το έγγραφο που εκδόθηκε από αλλοδαπή αρχή.</span>
+  <span data-show="if1+if9">Ιδιωτικό έγγραφο είναι το έγγραφο που εκδόθηκε από ιδιώτη, και όχι από Δημόσια, Διοικητική ή Αλλοδαπή Αρχή.</span>
 </span>
 </div>
 
