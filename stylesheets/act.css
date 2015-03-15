@@ -88,7 +88,7 @@ menu :last-child {
 .question-part { display: table-cell; width: auto; padding: 2px; }
 .question menu { display: table-cell; width: auto;}
 .question-header { display: table-caption; }
-menu label { display: table-cell; min-width: 99px; }
+menu label { display: table-cell; }
 
 menu.vertical label { display: block; }
 
