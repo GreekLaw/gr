@@ -89,7 +89,7 @@ menu :last-child {
 .question { display: table; width: 100%; }
 .question-part { display: table-cell; width: auto; padding: 2px; }
 .question menu { display: inline-table; width: auto;}
-.question-header { display: table-caption; }
+!.question-header { display: table-caption; }
 menu label { display: table-cell; }
 
 menu.vertical label { display: block; }
