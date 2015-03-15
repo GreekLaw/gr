@@ -188,17 +188,19 @@ h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { color: #312f30; }
 	width: 320px;
 	font-weight: 300;
 	letter-spacing: normal;
-	padding: 0;
+	padding: 0 0 1em;
+	float: right;
 	clear: both;
 }
 
 .seal-text {
 	float: right;
+	clear: both;
+	padding-bottom: 3em;
 	width: 320px;
 	letter-spacing: normal;
 	white-space: pre;
 	color: #3C3C3C;
-	clear: both;
 }
 
 .seal-stamp-placeholder {
@@ -217,7 +219,6 @@ h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { color: #312f30; }
 
 .seal .stamp {
 	position: absolute;
-	margin-left: -147px;
 	z-index: -1;
 	white-space: normal;
 	word-break: break-all;
