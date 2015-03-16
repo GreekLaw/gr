@@ -9,6 +9,14 @@ ga('send', 'pageview')
 
 document.body.addEventListener('click',
 function(e){
-e.target.id ? ga('send', 'event', decodeURI(location.pathname.match(/.+\/(.+?)\.html?$/)[1]), 'click', e.target.id, {'nonInteraction': 1}) :
-              void(null)
+var elementDescription, id, For
+
+    id  = e.target.id
+    For = e.target.htmlFor
+
+    elementDescription = id   ? e.target.id                                                                      :
+                         For  ? document.getElementById(For).name + ':' + document.getElementById(For).className :
+                         null
+    elementDescription ? ga('send', 'event', decodeURI(location.pathname.match(/.+\/(.+?)\.html?$/)[1]), 'click', elementDescription, {'nonInteraction': 1}) :
+                         void(null)
 })
