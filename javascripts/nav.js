@@ -18,6 +18,6 @@ var id, For, reference, description
     description = id   ? e.target.id                                :
                   For  ? reference.name + ':' + reference.className :
                   null
-    description ? ga('send', 'event', decodeURI(location.pathname.match(/.+\/(.+?)\.html?$/)[1]), 'click', elementDescription, {'nonInteraction': 1}) :
+    description ? ga('send', 'event', decodeURI(location.pathname.match(/.+\/(.+?)\.html?$/)[1]), 'click', description, {'nonInteraction': 1}) :
                   void(null)
 })
