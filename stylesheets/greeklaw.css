@@ -226,19 +226,19 @@ h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { color: #312f30; }
 
 .epikyrosimo {
 	background: #DA9F74;
-	background: rgba(218, 159, 116, 0.5);
+	background: rgba(218, 159, 116, 0.16);
 	color: rgba(0, 0, 0, 0.5);
 }
 
 .eidiki-eisfora {
 	right: 0;
 	margin-top: -1.3em;
-	background-color: #EDE0B9;
+	background-color: rgba(237, 224, 185, 0.16);
 }
 
 .megarosimo {
 	background: #55CA68;
-	background: rgba(116, 218, 125, 0.5);
+	background: rgba(116, 218, 125, 0.16);
 	color: rgba(0, 0, 0, 0.5);
 }
 
