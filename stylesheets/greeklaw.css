@@ -242,10 +242,11 @@ h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { color: #312f30; }
 	color: rgba(0, 0, 0, 0.5);
 }
 
+h1.centered { width: 100%; white-space: normal; }
 .centered { text-align: center; }
-.padded   { padding-top: 2em;         }
-.inlined  { display: inline;          }
-.block    { display: block;           }
+.padded   { padding-top: 2em; }
+.inlined  { display: inline;  }
+.block    { display: block;   }
 .white-space-normal { white-space: normal; }
 .inline-block { display: inline-block; }
 .align-right { text-align: right; }
