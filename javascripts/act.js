@@ -35,9 +35,9 @@ for (action in actions){
 	}
 }
 // actor -> actions -> triggers -> conditions
-document.addEventListener   ? document.addEventListener('DOMContentLoaded', applyAddressBarParameters) :
-document.onreadystatechange ? document.onreadystatechange = applyAddressBarParameters                  :
-                              void(null)
+//document.addEventListener   ? document.addEventListener('DOMContentLoaded', applyAddressBarParameters) :
+document.onreadystatechange ? document.onreadystatechange = applyAddressBarParameters   //               :
+//                              void(null)
 
 document.onclick = refreshState
 refreshState()
@@ -45,13 +45,15 @@ refreshState()
 function applyAddressBarParameters(){
 	var parametersString, parameters, element, i
 
-	parametersString = decodeURI ? decodeURI(document.location.search.substring(1)) : ''
-	parameters       = parametersString.split(',')
+	if (document.readyState === 'interactive'){
+		parametersString = decodeURI ? decodeURI(document.location.search.substring(1)) : ''
+		parameters       = parametersString.split(',')
 
-	if (parameters.length === 1 && parameters[0] === '') { return }
-	for (i = 0; i < parameters.length; i++){
-		element = document.querySelector('.' + parameters[i])
-		element && !element.checked ? element.click() : void(null)
+		if (parameters.length === 1 && parameters[0] === '') { return }
+		for (i = 0; i < parameters.length; i++){
+			element = document.querySelector('.' + parameters[i])
+			element && !element.checked ? element.click() : void(null)
+		}
 	}
 }
 
