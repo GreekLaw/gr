@@ -35,8 +35,24 @@ for (action in actions){
 	}
 }
 // actor -> actions -> triggers -> conditions
+document.addEventListener   ? document.addEventListener('DOMContentLoaded', applyAddressBarParameters) :
+document.onreadystatechange ? document.onreadystatechange = applyAddressBarParameters                  :
+                              void(null)
+
 document.onclick = refreshState
 refreshState()
+
+function applyAddressBarParameters(){
+	var parametersString, parameters, element, i
+
+	parametersString = decodeURI ? decodeURI(document.location.search.substring(1)) : ''
+	parameters       = parametersString.split(',')
+
+	for (i = 0; i < parameters.length; i++){
+		element = document.querySelector('.'+ parameters[i])
+		element ? element.click() : void(null)
+	}
+}
 
 function refreshState(){
 	var action, actors, actor, triggerValidity, i, k, result
