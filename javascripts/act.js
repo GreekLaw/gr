@@ -58,7 +58,6 @@ function applyAddressBarParameters(){
 function refreshState(){
 	var action, actors, actor, triggerValidity, i, k, result
 
-
 	for (action in actions){
 		actors = actions[action].actors
 		for (i = 0; i < actors.length; i++){
