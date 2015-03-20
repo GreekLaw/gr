@@ -45,7 +45,7 @@ refreshState()
 function applyAddressBarParameters(){
 	var parametersString, parameters, element, i
 
-	if (document.readyState === 'interactive' || document.readyState === 'interactive'){
+	if (document.readyState === 'interactive' || document.readyState === 'complete'){
 		parametersString = decodeURI ? decodeURI(document.location.search.substring(1)) : ''
 		parameters       = parametersString.split(',')
 
