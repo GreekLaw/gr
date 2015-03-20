@@ -7,7 +7,7 @@ ga('create', 'UA-33952776-3', 'greeklaw.github.io')
 ga('require', 'displayfeatures')
 ga('send', 'pageview')
 
-document.body.addEventListener('click',
+document.addEventListener('click',
 function(e){
 var id, For, reference, description
 
