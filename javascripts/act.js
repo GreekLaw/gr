@@ -35,9 +35,7 @@ for (action in actions){
 	}
 }
 // actor -> actions -> triggers -> conditions
-//document.addEventListener   ? document.addEventListener('DOMContentLoaded', applyAddressBarParameters) :
-document.onreadystatechange = applyAddressBarParameters   //               :
-//                              void(null)
+document.onreadystatechange = applyAddressBarParameters
 
 document.onclick = refreshState
 refreshState()
