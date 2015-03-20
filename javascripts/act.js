@@ -48,9 +48,10 @@ function applyAddressBarParameters(){
 	parametersString = decodeURI ? decodeURI(document.location.search.substring(1)) : ''
 	parameters       = parametersString.split(',')
 
+	if (parameters.length === 1 && parameters[0] === '') { return }
 	for (i = 0; i < parameters.length; i++){
-		element = document.querySelector('.'+ parameters[i])
-		element ? element.click() : void(null)
+		element = document.querySelector('.' + parameters[i])
+		element && !element.checked ? element.click() : void(null)
 	}
 }
 
