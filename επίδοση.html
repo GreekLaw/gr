@@ -17,7 +17,7 @@
 <input id="if1"  name="είδος-εγγράφου"  class="αγωγή"                 type="radio"    checked>
 <input id="if2"  name="είδος-εγγράφου"  class="πρακτικά"              type="radio"           >
 <input id="if3"  name="είδος-εγγράφου"  class="απόφαση"               type="radio"           >
-<input id="if4"  name="είδος-εγγράφου"  class="επιταγή-πληρωμής"      type="radio"           >
+<input id="if4"  name="είδος-εγγράφου"  class="επιταγή-προς-πληρωμή"  type="radio"           >
 <input id="if5"  name="αποδέκτης"       class="εναγόμενος"            type="radio"    checked>
 <input id="if6"  name="αποδέκτης"       class="δικηγόρος"             type="radio"           >
 <input id="if7"  name="νομική-φύση"     class="φυσικό-πρόσωπο"        type="radio"    checked>
@@ -70,10 +70,11 @@
 <input type="text" placeholder="ΣΦΡΑΓΙΔΑ" class="fill-the-blank centered seal-stamp-placeholder">
 <input type="text" placeholder="ΥΠΟΓΡΑΦΗ" class="fill-the-blank centered seal-stamp-placeholder">
 
-<span class="stamp epikyrosimo">ΕΠΙΚΥΡΩΣΗΜΟ</span>
+<span data-show="if4"><span class="stamp epikyrosimo">ΕΠΙΚΥΡΩΣΗΜΟ</span>
 <span class="stamp eidiki-eisfora">ΕΙΔΙΚΗ ΕΙΣΦΟΡΑ</span>
 <input type="text" placeholder="ΣΦΡΑΓΙΔΑ" class="fill-the-blank centered seal-stamp-placeholder">
 <input type="text" placeholder="ΥΠΟΓΡΑΦΗ" class="fill-the-blank centered seal-stamp-placeholder">
+</span>
 </div>
 </div>
 
