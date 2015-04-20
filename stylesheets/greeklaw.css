@@ -30,7 +30,7 @@ nav ul {
 	padding: 0 1em;
 }
 
-nav li a { line-height: 1.3em; }
+nav li a { line-height: 34px; }
 
 nav li a       { color: #afbbcd; }
 nav li a:hover { color: white  ; }
@@ -140,7 +140,7 @@ td { border: 1px solid grey; }
 .nav-tree-branch {
 	display: inline-block;
 	width: 75%;
-	padding-top: 10px;
+	padding-top: 0;
 	padding-right: 0;
 }
 
@@ -260,6 +260,7 @@ label { line-height:1.5; }
 	
 	.nav-tree h2,
 	.nav-tree-branch { width: 100%; }
+	.nav-tree-branch li { text-indent: 0;}
 	
 	.seal-text, .seal-header { width: 100%; }
 }
