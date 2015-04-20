@@ -109,7 +109,7 @@ cite + cite::before { content: ", " }
 footer {
 	color: #a7adb1;
 	font-size: 13px;
-	line-height: 30px;
+	line-height: 44px;
 	text-align: center;
 	text-shadow: 0 1px 0 rgba(255,255,255,.3)
 }
