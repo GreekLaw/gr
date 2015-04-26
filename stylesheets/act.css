@@ -33,6 +33,7 @@ menu label, [role=button] {
 menu label:before, [role=button]:before {
 	content: '';
 	position: absolute;
+	left: 0;
 	bottom: 0;
 	display: block;
 	margin: 0 -.5em 0 0;
