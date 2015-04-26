@@ -5,48 +5,45 @@
 
 input[id^="if"] { display: none; }
 
-menu label,
-[role="button"] {
-	display: inline-block;
+menu {
+	display: inline-table;
+	margin: 0;
+	padding: 0;
+	line-height: 44px;
+	text-align: center;
+}
+
+menu label, [role=button] {
+	display: table-cell;
 	margin: 2px 0;
 	padding: 1px .5em 2px;
 	min-width: 44px;
 	line-height: 40px;
-	/*background: #AFD7F5;*/
 	text-align: center;
-	color: rgba(52, 62, 71, 1);
-	border-radius: 3px;
-	border: 1px solid #0088E0;
+	vertical-align: middle;
+	color: #586066;
+	background: transparent;
 	cursor: pointer;
 	transition: .5s;
 	-webkit-box-decoration-break: clone;
 	        box-decoration-break: clone;
 }
 
-menu {
-	display: inline-table;
-	margin: 2px 0;
-	padding: 0;
-	line-height: 44px;
-	text-align: center;
-}
-
-menu label {
+menu label:before, [role=button]:before {
 	border: 1px solid #0088E0;
-	border-right: 1px solid #0088E0;
 	border-left: none;
-	background: transparent;
-	color: #586066;
 	border-radius: 0px;
-	vertical-align: middle;
 }
 
-menu :first-child {	
+menu label:first-child:before {
+	content: "";
+	display: block;
+	position: absolute;
 	border-left: 1px solid #0088E0;
 	border-radius: 4px 0 0 4px;
 }
 
-menu :last-child {
+menu label:last-child:before {
 	border-right: 1px solid #0088E0;
 	border-radius: 0 4px 4px 0;
 }
@@ -55,38 +52,36 @@ menu :last-child {
 .vertical label {
 	display: inline-block;
 	width: 90%;
-	border: 1px solid #0088E0;
-	border-top: none;
-	border-radius: 0;
 	cursor: pointer;
 }
 
-.vertical label:first-child {
+.verticla label:before {
+	border: 1px solid #0088E0;
+	border-top: none;
+	border-radius: 0;
+}
+
+.vertical label:first-child:before {
 	border-top: 1px solid #0088E0;
 	border-radius: 4px 4px 0 0;
 }
 
-.vertical label:last-child {
+.vertical label:last-child:before {
 	border-radius: 0 0 4px 4px;
 }
 
-
-.selected {
+.selected:before {
 	background: #DBECF9;
-	color: black;
-	padding: 1px .5em 2px;
-	-webkit-box-decoration-break: clone;
-	        box-decoration-break: clone;
+	color: #0088E0;
 }
 
-.shown               { display: ;     }
+.shown               { display:     ; }
 .not-shown.not-shown { display: none; }
 
-.question { display: table; width: 100%; }
-.question-part { display: table-cell; width: auto; padding: 2px; }
-.question menu { display: inline-table; width: auto;}
+.question      { display: table       ; width: 100%;               }
+.question-part { display: table-cell  ; width: auto; padding: 2px; }
+.question menu { display: inline-table; width: auto;               }
 !.question-header { display: table-caption; }
-menu label { display: table-cell; }
 
 menu.vertical label { display: block; }
 
