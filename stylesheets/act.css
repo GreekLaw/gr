@@ -31,9 +31,11 @@ menu label, [role=button] {
 }
 
 menu label:before, [role=button]:before {
+	content: '';
 	position: absolute;
 	bottom: 0;
 	display: block;
+	margin: 0 -.5em 0 0;
 	width: 100%;
 	height: 5px;
 	border: 1px solid #0088E0;
@@ -42,9 +44,6 @@ menu label:before, [role=button]:before {
 }
 
 menu label:first-child:before {
-	content: "";
-	display: block;
-	position: absolute;
 	border-left: 1px solid #0088E0;
 	border-radius: 4px 0 0 4px;
 }
