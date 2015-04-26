@@ -83,7 +83,7 @@ menu label:last-child:before {
 .shown               { display:     ; }
 .not-shown.not-shown { display: none; }
 
-.question      { display: table       ; width: 100%;               }
+.question      { display: table       ; width: auto;               }
 .question-part { display: table-cell  ; width: auto; padding: 2px; }
 .question menu { display: inline-table; width: auto;               }
 !.question-header { display: table-caption; }
@@ -92,6 +92,7 @@ menu.vertical label { display: block; }
 
 .question {
 	margin: 0;
+	line-height: 44px;
 	-webkit-animation: fadeIn .5s;
 	   -moz-animation: fadeIn .5s;
 	        animation: fadeIn .5s;
