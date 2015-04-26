@@ -22,7 +22,7 @@ menu label, [role=button] {
 	line-height: 40px;
 	text-align: center;
 	vertical-align: middle;
-	color: #586066;
+	color: #A5B1B9;
 	background: transparent;
 	cursor: pointer;
 	transition: .5s;
@@ -76,7 +76,7 @@ menu label:last-child:before {
 	border-radius: 0 0 4px 4px;
 }
 
-.selected { color: #0088E0; }
+.selected { color: inherit; }
 
 .selected:before { background: #DBECF9; }
 
