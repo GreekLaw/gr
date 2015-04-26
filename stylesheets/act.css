@@ -83,7 +83,10 @@ menu label:last-child:before {
 
 .selected { color: inherit; }
 
-.selected:before { background: #DBECF9; }
+.selected:before {
+	background: #DBECF9;
+	border-left: 1px solid #0088E0;
+}
 
 .shown               { display:     ; }
 .not-shown.not-shown { display: none; }
