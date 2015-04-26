@@ -41,7 +41,7 @@ menu label:before, [role=button]:before {
 	height: 5px;
 	border: 1px solid #0088E0;
 	border-left: none;
-	border-radius: 4px;
+	border-radius: 0px;
 }
 
 menu label:first-child:before {
@@ -54,7 +54,10 @@ menu label:last-child:before {
 	border-radius: 0 4px 4px 0;
 }
 
-[role=button]:before { border-left: 1px solid #0088E0; }
+[role=button]:before {
+	border-left: 1px solid #0088E0;
+	border-radius: 4px;
+}
 
 .vertical { display: block; }
 .vertical label {
