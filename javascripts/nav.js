@@ -7,7 +7,7 @@ ga('create', 'UA-33952776-3', 'greeklaw.github.io')
 ga('require', 'displayfeatures')
 ga('send', 'pageview')
 
-document.addEventListener('click', handle)
+document.addEventListener('click', 
 function handle(e){
     var id, For, reference, description
 
@@ -22,4 +22,4 @@ function handle(e){
                           null
     description ? ga('send', 'event', decodeURI(location.pathname.match(/.+\/(.+?)\.html?$/)[1]), 'click', description, {'nonInteraction': 1}) :
                   void(null)
-}
+})
