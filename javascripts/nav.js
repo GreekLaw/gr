@@ -14,10 +14,12 @@ function handle(e){
     id        = e.target.id
     For       = e.target.htmlFor
     reference = document.getElementById(For)
+    input     = e.target.tagName.toLowerCase() === 'input'
 
-    description = id   ? e.target.id                                :
-                  For  ? reference.name + ':' + reference.className :
-                  null
+    description = input ? null                                       :
+                  id    ? e.target.id                                :
+                  For   ? reference.name + ':' + reference.className :
+                          null
     description ? ga('send', 'event', decodeURI(location.pathname.match(/.+\/(.+?)\.html?$/)[1]), 'click', description, {'nonInteraction': 1}) :
                   void(null)
 }
