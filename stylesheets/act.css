@@ -17,9 +17,9 @@ menu label, [role=button] {
 	position: relative;
 	display: table-cell;
 	margin: 2px 0;
-	padding: 1px .5em 2px;
+	padding: 0px .5em;
 	min-width: 44px;
-	line-height: 40px;
+	line-height: 44px;
 	text-align: center;
 	vertical-align: middle;
 	color: #A5B1B9;
