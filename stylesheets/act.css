@@ -34,7 +34,7 @@ menu label:before, [role=button]:before {
 	content: '';
 	position: absolute;
 	left: 0;
-	bottom: 0;
+	bottom: 2px;
 	display: block;
 	margin: 0 -.5em 0 0;
 	width: 100%;
@@ -100,6 +100,7 @@ menu.vertical label { display: block; }
 
 .question {
 	margin: 0;
+	padding-top: 11px;
 	line-height: 44px;
 	-webkit-animation: fadeIn .5s;
 	   -moz-animation: fadeIn .5s;
