@@ -164,15 +164,14 @@ td { border: 1px solid grey; }
 h1, h2, h3, h4, h5, h6 {
 	display: inline-block;
 	margin: 0;
-	font-weight: 500; 
 }
 
-h1 { font-size: 24px; line-height: 33px; padding: 11px 0  0px  0  ;                 }
-h2 { font-size: 21px; line-height: 33px; padding: 11px 0  0px  0  ; color: #303438; }
-h3 { font-size: 18px; line-height: 22px; padding: 11px 0 11px  0  ;                 }
-h4 { font-size:  1em; line-height: 22px; padding: 11px 0 11px  4em;                 }
-h5 { font-size:  1em; line-height: 22px; padding: 11px 0 11px  8em;                 }
-h6 { font-size:  1em; line-height: 22px; padding: 11px 0 11px 12em;                 }
+h1 { font-size: 24px; line-height: 33px; padding: 11px 0  0px  0  ; font-weight: 500; }
+h2 { font-size: 24px; line-height: 28px; padding: 10px 0  6px  0  ; font-weight: 300; }
+h3 { font-size: 21px; line-height: 25px; padding: 13px 0  6px  0  ; font-weight: 300; }
+h4 { font-size:  1em; line-height: 22px; padding: 16px 0  6px  4em; font-weight: 300; }
+h5 { font-size:  1em; line-height: 22px; padding: 16px 0  6px  8em; font-weight: 300; }
+h6 { font-size:  1em; line-height: 22px; padding: 16px 0  6px 12em; font-weight: 300; }
 
 h2 a      , h3 a      , h4 a      , h5 a      , h6 a       { color: #312f30; }
 h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { color: #312f30; }
