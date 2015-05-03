@@ -100,8 +100,8 @@ h1 ~ div { white-space: pre-wrap; }
 
 cite {
 	color: grey;
-	font-size: 0.6875em;
-	line-height: 1em;
+	font-size: 12px;
+	line-height: 22px;
 }
 
 cite + cite::before { content: ", " }
