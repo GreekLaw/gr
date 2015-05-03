@@ -1,4 +1,4 @@
-html { font: 16px/22px Helvetica Neue, sans-serif; }
+html { font: 300 15px/22px Helvetica Neue, sans-serif; }
 
 body {
 	margin: 0 auto;
@@ -166,7 +166,7 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 }
 
-h1 { font-size: 24px; line-height: 33px; padding: 11px 0  0px 0  ; font-weight: 500; }
+h1 { font-size: 24px; line-height: 28px; padding: 11px 0  0px 0  ; font-weight: 500; }
 h2 { font-size: 24px; line-height: 28px; padding: 26px 0 12px 0  ; font-weight: 300; }
 h3 { font-size: 21px; line-height: 25px; padding: 26px 0 12px 0  ; font-weight: 300; }
 h4 { font-size: 18px; line-height: 22px; padding: 16px 0  6px 2em; font-weight: 400; }
