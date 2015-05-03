@@ -78,7 +78,7 @@ dd, dt { padding: 0 }
 
 dt {
 	padding-top: 1.5em;
-	font-weight: bold;
+	font-weight: 400;
 }
 
 main li a       { color: #255DB1; }
