@@ -9,7 +9,7 @@ ga('send', 'pageview')
 
 document.addEventListener('click', 
 function handle(e){
-    var id, For, reference, description
+    var id, For, reference, input, description
 
     id        = e.target.id
     For       = e.target.htmlFor
