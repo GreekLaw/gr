@@ -241,6 +241,22 @@ h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { color: #312f30; }
 	color: rgba(0, 0, 0, 0.5);
 }
 
+.ad {
+	display: block;
+	width: 100%;
+	height: 44px;
+	line-height: 44px;
+	background: #4B56FF;
+	color: white;
+	clear: both;
+	letter-spacing: .6px;
+	border-radius: 5px;
+}
+
+.ad, .ad:hover, .ad:active, .ad:focus {
+	text-decoration: none;
+}
+
 h1.centered { width: 100%; white-space: normal; }
 .centered { text-align: center; }
 .padded   { padding-top: 2em; }
