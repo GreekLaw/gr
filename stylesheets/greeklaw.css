@@ -274,7 +274,7 @@ label.qualified { position: relative; display: table-cell; }
 
 .fill-width { width: 100%; }
 
-.party { box-sizing: border-box; }
+.party { box-sizing: border-box; vertical-align: top; }
 
 .drawee           { width: 45%; padding-right: 10px; }
 .acceptor         { width: 20%; padding-right: 10px; }
