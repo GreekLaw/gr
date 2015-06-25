@@ -262,8 +262,9 @@ input.paper {
 label.qualified { position: relative; display: table-cell; }
 .qualifier { position: absolute; left: 0; top: 0; background:inherit; }
 .qualified input { width: 100%; }
-.payment-date.qualified { width:  55%; }
-        .year.qualified { width: 44px; }
+.payment-date.short { width: 55%;  }
+.payment-date.long  { width: 55%;  }
+.year.qualified     { width: 44px; }
 
 .line.one { font-size: 16px; }
 
