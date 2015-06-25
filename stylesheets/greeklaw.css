@@ -249,6 +249,13 @@ h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { color: #312f30; }
 	font-style: italic;
 	box-shadow: 0 0 1px grey;
 }
+
+.paper-input {
+	background: transparent;
+	border: 0px solid;
+	border-bottom: 1px dotted;
+}
+
 .link {
 	display: block;
 	margin-top: 22px;
