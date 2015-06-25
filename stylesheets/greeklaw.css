@@ -256,6 +256,13 @@ input.paper {
 	border-bottom: 1px dotted;
 }
 
+.involved-parties { display: table;        }
+.party            { display: inline-block; }
+
+.drawee           { width: 45%; }
+.acceptor         { width: 20%; }
+.drawer-guarantor { width: 35%; }
+
 .link {
 	display: block;
 	margin-top: 22px;
