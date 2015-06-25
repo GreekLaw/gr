@@ -279,7 +279,7 @@ label.qualified { position: relative; display: table-cell; }
 .issuer.signature { vertical-align: bottom; }
 
 .drawee.signature::before {
-	content: "\A\A\A";
+	content: "\0A \0A \0A";
 	display: block;
 	white-space: pre;
 }
