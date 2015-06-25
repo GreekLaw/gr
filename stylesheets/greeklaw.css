@@ -264,6 +264,7 @@ label.qualified { position: relative; display: table-cell; }
 .qualifier { position: absolute; left: 0; top: 0; background:inherit; }
 .qualified input    { width: 100%; }
 .payment.date.short { width:  45%; }
+.payment.date.long  { width:  50%; }
 
 .line.one   { font-size: 16px; }
 .line.seven { padding-top: 20px; }
@@ -272,7 +273,7 @@ label.qualified { position: relative; display: table-cell; }
 .party      { display: inline-block; }
 
 .line label,
-.line input { line-height: inherit; }
+.line input { line-height: inherit; box-sizing: border-box; }
 
 .drawee.signature { vertical-align: bottom; }
 .issuer.signature { vertical-align: bottom; }
