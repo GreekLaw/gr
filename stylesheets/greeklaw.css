@@ -273,13 +273,14 @@ label.qualified { position: relative; display: table-cell; }
 .not-shown {display: none;}
 .party            { display: inline-block; }
 
-.fill-width { width: 100%; }
+
 
 .party { box-sizing: border-box; vertical-align: top; }
 
 .drawee           { width: 45%; padding-right: 10px; }
 .acceptor         { width: 20%; padding-right: 10px; }
 .drawer-guarantor { width: 35%; }
+.issuer { display: block; text-align: center; }
 
 .link {
 	display: block;
