@@ -260,13 +260,12 @@ input.paper {
 .line { display: table; width: 100%; }
 
 label.qualified { position: relative; display: table-cell; }
-.qualifier { position: absolute; left: 0; top: 0; background:inherit;}
+.qualifier { position: absolute; left: 0; top: 0; background:inherit; }
 .qualified input { width: 100%; }
-.year.qualified { width: 44px; }
-.payed-on { font-size: 16px; }
-.payed-on { width: ; }
-
-.year      { width:  30px; }
+.payment-date.qualified { width:  55%; }
+        .year.qualified { width: 44px; }
+        
+.line.one { font-size: 16px; }
 
 .involved-parties { display: table;        }
 .party            { display: inline-block; }
