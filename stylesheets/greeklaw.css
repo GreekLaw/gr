@@ -243,10 +243,11 @@ h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { color: #312f30; }
 
 .bill-of-exchange {
 	background-color: #F8FAFF;
-	padding: 30px 30px 0 30px;
+	padding: 20px;
 	border-bottom: 60px solid white;
 	font-family: serif;
 	font-style: italic;
+	white-space: normal;
 	box-shadow: 0 0 1px grey;
 }
 
@@ -267,7 +268,7 @@ label.qualified { position: relative; display: table-cell; }
 .year.qualified     { width: 44px; }
 
 .line.one { font-size: 16px; }
-
+.line.seven { white-space: pre-line; }
 .invisible { visibility: hidden; }
 .not-shown {display: none;}
 .party            { display: inline-block; }
