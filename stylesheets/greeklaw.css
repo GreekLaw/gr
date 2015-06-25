@@ -256,6 +256,10 @@ input.paper {
 	border-bottom: 1px dotted;
 }
 
+.payed-on { font-size: 16px; }
+.day-month { width: 180px; }
+.year      { width:  30px; }
+
 .involved-parties { display: table;        }
 .party            { display: inline-block; }
 
