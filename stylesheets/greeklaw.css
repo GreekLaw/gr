@@ -245,6 +245,8 @@ h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { color: #312f30; }
 	background-color: #F8FAFF;
 	padding: 30px 30px 0 30px;
 	border-bottom: 60px solid white;
+	font-family: serif;
+	font-style: italic;
 	box-shadow: 0 0 1px grey;
 }
 .link {
