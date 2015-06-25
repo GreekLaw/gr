@@ -254,20 +254,24 @@ input.paper {
 	background: transparent;
 	border: 0px solid;
 	border-bottom: 1px dotted;
+	text-align: right;
 }
 
+.line { display: table; }
+
+label.qualified { position: relative; dislay: table-cell;}
+.qualifier { position: absolute; left: 0; top: 0; background:inherit;}
+.qualified input { width: 100%; }
+.year.qualified { width: 44px; }
 .payed-on { font-size: 16px; }
-.day-month { width: 180px; }
+.payed-on { width: ; }
+
 .year      { width:  30px; }
 
 .involved-parties { display: table;        }
 .party            { display: inline-block; }
 
 .fill-width { width: 100%; }
-
-label.qualified { position: relative; }
-.qualifier { position: absolute; left: 0; top: 0; background:inherit;}
-.qualified input { width: 100%; }
 
 .drawee           { width: 45%; }
 .acceptor         { width: 20%; }
