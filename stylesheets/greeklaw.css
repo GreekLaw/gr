@@ -274,8 +274,10 @@ label.qualified { position: relative; display: table-cell; }
 
 .fill-width { width: 100%; }
 
-.drawee           { width: 45%; }
-.acceptor         { width: 20%; }
+.party { box-sizing: border-box; }
+
+.drawee           { width: 45%; padding-right: 10px; }
+.acceptor         { width: 20%; padding-right: 10px; }
 .drawer-guarantor { width: 35%; }
 
 .link {
