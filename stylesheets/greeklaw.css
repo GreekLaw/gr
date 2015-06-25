@@ -264,10 +264,10 @@ label.qualified { position: relative; display: table-cell; }
 .qualified input { width: 100%; }
 .payment-date.qualified { width:  55%; }
         .year.qualified { width: 44px; }
-        
+
 .line.one { font-size: 16px; }
 
-.involved-parties { display: table;        }
+.invisible { visibility: hidden; }
 .party            { display: inline-block; }
 
 .fill-width { width: 100%; }
