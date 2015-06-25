@@ -275,7 +275,7 @@ input.paper {
 	border-bottom: 1px dotted;
 	text-align: right;
 }
-
+.payment.amount input { box-shadow 0 0 0 1px; }
 .drawee.signature { vertical-align: bottom; }
 .issuer.signature { vertical-align: bottom; }
 
