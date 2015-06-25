@@ -262,16 +262,14 @@ input.paper {
 
 label.qualified { position: relative; display: table-cell; }
 .qualifier { position: absolute; left: 0; top: 0; background:inherit; }
-.qualified input { width: 100%; }
-.payment.date.short { width: 35%;  }
-.payment.date.long  { width: 40%;  }
-.year.qualified     { width: 44px; }
+.qualified input    { width: 100%; }
+.payment.date.short { width:  35%; }
+.payment.date.long  { width:  40%; }
 
-.line.one { font-size: 16px; }
-.line.seven { white-space: pre-line; }
-.invisible { visibility: hidden; }
-.not-shown {display: none;}
-.party            { display: inline-block; }
+.line.one   { font-size: 16px; }
+.invisible  { visibility: hidden; }
+.not-shown  { display: none; }
+.party      { display: inline-block; }
 
 .drawee.signature { line-height: 3; }
 .issuer.signature { line-height: 2; }
