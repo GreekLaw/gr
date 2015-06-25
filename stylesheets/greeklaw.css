@@ -266,17 +266,16 @@ label.qualified { position: relative; display: table-cell; }
 .payment.date.short { width:  45%; }
 
 .line.one   { font-size: 16px; }
+.line.seven { padding-top: 20px; }
 .invisible  { visibility: hidden; }
 .not-shown  { display: none; }
 .party      { display: inline-block; }
 
+.line label,
 .line input { line-height: inherit; }
 
 .drawee.signature { vertical-align: bottom; }
 .issuer.signature { vertical-align: bottom; }
-
-.drawee.signature input { line-height: 7; }
-.issuer.signature input { line-height: 3; }
 
 .date input::-webkit-input-placeholder { color: inherit; font: inherit; }
 .date input:-ms-input-placeholder      { color: inherit; font: inherit; }
