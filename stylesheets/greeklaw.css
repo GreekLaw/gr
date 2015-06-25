@@ -275,6 +275,10 @@ input.paper {
 	border-bottom: 1px dotted;
 	text-align: right;
 }
+
+input.paper:required { border-bottom: 1px dashed red; }
+.line.one .payment.amount input { box-shadow: 0 0 0 1px red; }
+
 .payment.amount input { box-shadow: 0 0 0 1px; text-align: right; }
 .drawee.signature { vertical-align: bottom; }
 .issuer.signature { vertical-align: bottom; }
