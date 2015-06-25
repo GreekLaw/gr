@@ -247,6 +247,7 @@ h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { color: #312f30; }
 	border-bottom: 60px solid white;
 	font-family: serif;
 	font-style: italic;
+	line-height: 1.5;
 	white-space: normal;
 	box-shadow: 0 0 1px grey;
 }
@@ -273,7 +274,7 @@ label.qualified { position: relative; display: table-cell; }
 .party      { display: inline-block; }
 
 .line label,
-.line input { line-height: inherit; box-sizing: border-box; }
+.line input { font-size: inherit; line-height: inherit; box-sizing: border-box; }
 
 .drawee.signature { vertical-align: bottom; }
 .issuer.signature { vertical-align: bottom; }
@@ -285,7 +286,7 @@ label.qualified { position: relative; display: table-cell; }
 }
 
 .issuer.signature::before {
-	content: "\0A \0A";
+	content: "\0A";
 	display: block;
 	white-space: pre;
 }
