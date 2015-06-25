@@ -273,7 +273,13 @@ label.qualified { position: relative; display: table-cell; }
 .not-shown {display: none;}
 .party            { display: inline-block; }
 
+.drawee.signature { line-height: 3; }
+.issuer.signature { line-height: 2; }
 
+.date input::-webkit-input-placeholder { color: inherit; font: inherit; }
+.date input:-ms-input-placeholder      { color: inherit; font: inherit; }
+.date input::-moz-placeholder          { color: inherit; font: inherit; }
+.date input:-moz-placeholder           { color: inherit; font: inherit; }
 
 .party { box-sizing: border-box; vertical-align: top; }
 
