@@ -257,9 +257,9 @@ input.paper {
 	text-align: right;
 }
 
-.line { display: table; }
+.line { display: table; width: 100%; }
 
-label.qualified { position: relative; dislay: table-cell;}
+label.qualified { position: relative; display: table-cell; }
 .qualifier { position: absolute; left: 0; top: 0; background:inherit;}
 .qualified input { width: 100%; }
 .year.qualified { width: 44px; }
