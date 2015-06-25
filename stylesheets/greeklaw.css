@@ -263,6 +263,12 @@ input.paper {
 .involved-parties { display: table;        }
 .party            { display: inline-block; }
 
+.fill-width { width: 100%; }
+
+label.qualified { position: relative; }
+.qualifier { position: absolute; left: 0; top: 0; background:inherit;}
+.qualified input { width: 100%; }
+
 .drawee           { width: 45%; }
 .acceptor         { width: 20%; }
 .drawer-guarantor { width: 35%; }
