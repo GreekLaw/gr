@@ -300,10 +300,10 @@ input.paper:required { border-bottom: 1px dashed red; }
 .date input::-moz-placeholder          { color: inherit; font: inherit; }
 .date input:-moz-placeholder           { color: inherit; font: inherit; }
 
-input:required::-webkit-input-placeholder { color: #FF8787; padding-right: 10px; }
-input:required:-ms-input-placeholder      { color: #FF8787; padding-right: 10px; }
-input:required::-moz-placeholder          { color: #FF8787; padding-right: 10px; }
-input:required:-moz-placeholder           { color: #FF8787; padding-right: 10px; }
+input:required::-webkit-input-placeholder { color: #FF8787; font-size: 12px; padding-right: 10px; }
+input:required:-ms-input-placeholder      { color: #FF8787; font-size: 12px; padding-right: 10px; }
+input:required::-moz-placeholder          { color: #FF8787; font-size: 12px; padding-right: 10px; }
+input:required:-moz-placeholder           { color: #FF8787; font-size: 12px; padding-right: 10px; }
 
 .party { box-sizing: border-box; vertical-align: top; }
 
