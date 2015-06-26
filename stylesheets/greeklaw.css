@@ -333,7 +333,7 @@ input:required:-moz-placeholder           { color: #FF8787; padding-right: 10px;
 h1.centered { width: 100%; white-space: normal; }
 .centered { text-align: center; }
 .padded   { padding-top: 2em; }
-.inlined  { display: inline;  }
+.inlined  { display: inline; padding: 0; }
 .block    { display: block;   }
 .white-space-normal { white-space: normal; }
 .inline-block { display: inline-block; }
