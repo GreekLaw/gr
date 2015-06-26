@@ -21,18 +21,18 @@
 Ο αποδέκτης και οι οπισθογράφοι λέγονται πληρωτές.
 <span style="display:none">
   <div class="bill-of-exchange">
-    <span class="line one"><label class="payment date short qualified"><span class="qualifier">Λήξη την </span><input class="paper payment-day-month" placeholder="20    " required></label>
-      <label class="payment amount short qualified"><span class="qualifier"> Συναλλαγματική ΕΥΡΩ </span><input required></label></span>
+    <span class="line one"><label class="payment date short qualified"><span class="qualifier">Λήξη την </span><input class="paper payment-day-month" placeholder="Ημερομηνία λήξης " required></label>
+      <label class="payment amount short qualified"><span class="qualifier"> Συναλλαγματική ΕΥΡΩ </span><input placeholder="ποσό (αριθμητικά)" required></label></span>
     <span class="line two"><label class="payment date long qualified"><span class="qualifier">Την </span><input class="paper payment-day-month" placeholder="20    "></label>
     <label class="payment request qualified">πληρώστε με την παρούσα μόνη συναλλαγματική σε</label></span>
-    <span class="line three"><label class="payment to qualified"><span class="qualifier">διαταγή </span><input class="paper" required></label></span>
-    <span class="line four"><label class="payment to qualified"><span class="qualifier">και στο Κατάστημα </span><input class="paper" required></label>
+    <span class="line three"><label class="payment to qualified"><span class="qualifier">διαταγή </span><input class="paper" placeholder="Όνομα εκδότη-λήπτη" required></label></span>
+    <span class="line four"><label class="payment to qualified"><span class="qualifier">και στο Κατάστημα </span><input class="paper" placeholder="τόπος πληρωμής" required></label>
       <label class="payment to qualified"><span class="qualifier"> της </span><input class="paper"></label></span>
     <span class="line five"><label class="payment bank-2 qualified"><span class="qualifier invisible">της </span><input class="paper"></label>
       <label class="payment amount long qualified"><span class="qualifier">το ποσό των ΕΥΡΩ </span><input></label></span>
     <span class="line six"><label class="payment amount long qualified"><span class="qualifier invisible">το ποσό των ευρώ </span><input></span>
     <span class="line seven">
-      <div class="party drawee"><span class="line"><label class="drawee name qualified"><span class="qualifier">Προς </span> <input class="paper" required></label></span>
+      <div class="party drawee"><span class="line"><label class="drawee name qualified"><span class="qualifier">Προς </span> <input class="paper" placeholder="Όνομα αποδέκτη-πληρωτή" required></label></span>
         <span class="line"><label class="qualified"><span class="qualifier invisible">Προς </span><input class="paper"></label></span>
         <span class="line"><label class="qualified"><span class="qualifier">Όνομα πατέρα ή συζύγου </span><input class="paper"></label></span>
         <span class="line"><label class="qualified"><span class="qualifier">Οδός</span><input class="paper"></label><label class="qualified"><span class="qualifier">αριθ.</span><input class="paper"></label></span>
@@ -43,10 +43,10 @@
         <label class="date qualified"><span class="qualifier invisible not-shown">Χρόνος αποδοχής</span><input class="paper" placeholder="20    "></label></span>
       <span class="line"><label class="drawee signature qualified"><span class="qualifier invisible">Υπογραφή αποδέκτη</span><input class="paper"></label></span>
       </div>
-      <div class="party drawer-guarantor"><span class="line"><label class="qualified"><span class="qualifier invisible not-shown">Τόπος έκδοσης</span><input class="paper" required></label>
-        <label class="date qualified"><span class="qualifier invisible not-shown">Χρόνος έκδοσης</span><input class="paper" placeholder="20    " required></label></span>
+      <div class="party drawer-guarantor"><span class="line"><label class="qualified"><span class="qualifier invisible not-shown">Τόπος έκδοσης</span><input class="paper" "Τόπος" required></label>
+        <label class="date qualified"><span class="qualifier invisible not-shown">Χρόνος έκδοσης</span><input class="paper" placeholder="Ημερομηνία έκδοσης" required></label></span>
         <span class="line"><label class="qualified"><span class="qualifier">Ο εκδότης</span></label></span>
-        <span class="line"><label class="issuer signature qualified"><span class="qualifier invisible">Υπογραφή εκδότη</span><input class="paper" required></label></span>
+        <span class="line"><label class="issuer signature qualified"><span class="qualifier invisible">Υπογραφή εκδότη</span><input class="paper" placeholder="Υπογραφή εκδότη" required></label></span>
         <span class="line"><label class="qualified"><span class="qualifier">Τριτεγγυώμαι υπέρ τ</span><input class="paper"></label></span>
         <span class="line"><label class="qualified"><span class="qualifier invisible">Υπογραφή τριτεγγυητή</span><input class="paper"></label></span>
         <span class="line"><label class="qualified"><span class="qualifier invisible">Ονοματεπώνυμο τριτεγγυητή</span><input class="paper"></label></span>
