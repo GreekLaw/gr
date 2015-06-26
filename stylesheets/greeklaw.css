@@ -295,15 +295,15 @@ input.paper:required { border-bottom: 1px dashed red; }
 	white-space: pre;
 }
 
-.date input::-webkit-input-placeholder { color: inherit; font: inherit; padding-right: 10px;}
-.date input:-ms-input-placeholder      { color: inherit; font: inherit; padding-right: 10px;}
-.date input::-moz-placeholder          { color: inherit; font: inherit; padding-right: 10px;}
-.date input:-moz-placeholder           { color: inherit; font: inherit; padding-right: 10px;}
+.date input::-webkit-input-placeholder { color: inherit; font: inherit; }
+.date input:-ms-input-placeholder      { color: inherit; font: inherit; }
+.date input::-moz-placeholder          { color: inherit; font: inherit; }
+.date input:-moz-placeholder           { color: inherit; font: inherit; }
 
-input:required::-webkit-input-placeholder { color: red; }
-input:required:-ms-input-placeholder      { color: red; }
-input:required::-moz-placeholder          { color: red; }
-input:required:-moz-placeholder           { color: red; }
+input:required::-webkit-input-placeholder { color: #FF8787; padding-right: 10px; }
+input:required:-ms-input-placeholder      { color: #FF8787; padding-right: 10px; }
+input:required::-moz-placeholder          { color: #FF8787; padding-right: 10px; }
+input:required:-moz-placeholder           { color: #FF8787; padding-right: 10px; }
 
 .party { box-sizing: border-box; vertical-align: top; }
 
