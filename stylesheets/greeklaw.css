@@ -35,7 +35,6 @@ nav li a { line-height: 34px; }
 nav li a       { color: #afbbcd; }
 nav li a:hover { color: white  ; }
 
-
 nav li a {
 	display: inline-block;
 	width: 100%;
@@ -251,6 +250,8 @@ h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { color: #312f30; }
 	white-space: normal;
 	box-shadow: 0 0 1px grey;
 }
+
+strong, b { font-weight: bold; }
 
 .line { display: table; width: 100%; }
 
