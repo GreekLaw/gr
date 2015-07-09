@@ -325,7 +325,7 @@ input:required:-moz-placeholder           { color: #FF8787; font-size: 12px; pad
 .drawer-guarantor { width: 35%; }
 .issuer { display: block; text-align: center; }
 
-.link { text-decoration: underline; }
+.ad { text-decoration: underline; }
 
 h1.centered { width: 100%; white-space: normal; }
 .centered { text-align: center; }
