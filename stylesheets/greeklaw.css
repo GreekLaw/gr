@@ -17,6 +17,7 @@ body > header {
 	background-repeat: no-repeat;
 	box-shadow: 0px 8px 5px -7px #4D6C9E;
 }
+
 body > header a {
 	display: block;
 	font: small-caps 44px/66px serif;
@@ -26,7 +27,7 @@ body > header a {
 .last-updated {
 	position: absolute;
 	right: 0;
-	bottom: 0;
+	bottom: -26px;
 	font-size: 11px;
 	color: grey;
 }
