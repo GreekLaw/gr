@@ -23,3 +23,24 @@ function handle(e){
     description ? ga('send', 'event', decodeURI(location.pathname.match(/.+\/(.+?)\.html?$/)[1]), 'click', description, {'nonInteraction': 1}) :
                   void(null)
 })
+
+function gitData(data){
+    var months, noteOfUpdate, dateOfUpdate, months
+    
+    months       = ['Ιαν', 'Φεβ', 'Μαρ', 'Απρ', 'Μαϊ', 'Ιουν', 'Ιουλ', 'Αυγ', 'Σεπ', 'Οκτ', 'Νοε', 'Δεκ']
+    noteOfUpdate = document.createElement('div')
+    dateOfUpdate = new Date(data.data[0]commit.author.date)
+    dateText     = dateOfUpdate.getUTCDate() + " " + months[dateOfUpdate.getUTCMonth() + 1] + " " + dateOfUpdate.getUTCFullYear()
+    noteOfUpdate.innerHTML = 'Τροποποίηση στις ' + dateText
+    noteOfUpdate.className = "last-updated"
+    document.getElementsByTagName('header')[0].appendChild(noteOfUpdate)
+}
+
+void function getUpdateDate(gitData){
+    var script, fileName
+    
+    script     = document.createElement('script')
+    fileName   = document.location.pathname.substring(document.location.pathname.lastIndexOf('/') + 1)
+    script.src = 'https://api.github.com/repos/GreekLaw/gr/commits?path=' + fileName + '&page=1&per_page=1&callback=gitData'
+    document.head.appendChild(script)
+}()
