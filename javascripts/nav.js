@@ -25,7 +25,7 @@ function handle(e){
 })
 
 function gitData(data){
-    var months, noteOfUpdate, dateOfUpdate, months
+    var months, noteOfUpdate, dateOfUpdate, dateText
     
     months       = ['Ιαν', 'Φεβ', 'Μαρ', 'Απρ', 'Μαϊ', 'Ιουν', 'Ιουλ', 'Αυγ', 'Σεπ', 'Οκτ', 'Νοε', 'Δεκ']
     noteOfUpdate = document.createElement('div')
