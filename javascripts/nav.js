@@ -31,7 +31,7 @@ function gitData(data){
     noteOfUpdate = document.createElement('div')
     dateOfUpdate = new Date(data.data[0].commit.author.date)
     if (isNaN(dateOfUpdate.getTime())){ return }
-    dateText     = dateOfUpdate.getUTCDate() + " " + months[dateOfUpdate.getUTCMonth() + 1] + " " + dateOfUpdate.getUTCFullYear()
+    dateText     = dateOfUpdate.getUTCDate() + " " + months[dateOfUpdate.getUTCMonth()] + " " + dateOfUpdate.getUTCFullYear()
     noteOfUpdate.innerHTML = 'Τροποποίηση στις ' + dateText
     noteOfUpdate.className = "last-updated"
     document.getElementsByTagName('header')[0].appendChild(noteOfUpdate)
