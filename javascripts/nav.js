@@ -9,19 +9,17 @@ ga('send', 'pageview')
 
 document.addEventListener('click', 
 function handle(e){
-    var id, For, reference, input, description
+    var id, selected, reference, description
 
-    id        = e.target.id
-    For       = e.target.htmlFor
-    reference = document.getElementById(For)
-    input     = e.target.tagName.toLowerCase() === 'input'
+    id          = e.target.id
+    selected    = e.target.getAttribute('data-select')
+    reference   = document.getElementById(selected)
 
-    description = input ? null                                       :
-                  id    ? e.target.id                                :
-                  For   ? reference.name + ':' + reference.className :
-                          null
+    description = id                    ? id                                         :
+                  selected && reference ? reference.name + ':' + reference.className :
+                                          null
     description ? ga('send', 'event', decodeURI(location.pathname.match(/.+\/(.+?)\.html?$/)[1]), 'click', description, {'nonInteraction': 1}) :
-                  void(null)
+                  void Function
 })
 
 function gitData(data){
