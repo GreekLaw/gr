@@ -26,9 +26,9 @@
 
 <main role="main" class="then">
 <h1 class="centered">
-  <menu class="heading">
-    <label for="if1" data-select="if1">Επικύρωση</label>
-    <label for="if2" data-select="if2">Μετάφραση</label>
+  <menu class="heading" role="radiogroup">
+    <button role="radio" data-select="if1">Επικύρωση</button>
+    <button role="radio" data-select="if2">Μετάφραση</button>
 </menu>
 </h1>
 <div class="seal"><h3 class="seal-header">Σημείωση στο φωτοαντίγραφο του προς <span data-show="if1"> επικύρωση </span><span data-show="if2"> μετάφραση </span> εγγράφου:</h3>
@@ -59,16 +59,18 @@
 </div></div>
 <div class="clear-both">
 Αν <span data-show="if1">το επικυρωμένο αντίγραφο </span><span data-show="if2">η μετάφραση </span> κατατεθεί 
-<menu class="menu-block"><label for="if4" data-select="if4">για δικαστική χρήση</label>
-                         <label for="if5" data-select="if5">σε Δημόσια Αρχή</label>
-                         <label for="if6" data-select="if6">πέραν της Δημόσιας Αρχής</label>
+<menu class="menu-block" role="radiogroup">
+  <button role="radio" data-select="if4">για δικαστική χρήση</button>
+  <button role="radio" data-select="if5">σε Δημόσια Αρχή</button>
+  <button role="radio" data-select="if6">πέραν της Δημόσιας Αρχής</button>
 </menu>
 <span data-show="if1-if4">και το πρωτότυπο έγγραφο είναι 
-<menu><label for="if7"  data-select="if7" >Δημόσιο έγγραφο</label>
-      <label for="if8"  data-select="if8" >έγγραφο Διοικητικής Αρχής</label>
-      <label for="if9"  data-select="if9" >έγγραφο Αλλοδαπής Αρχής</label>
-      <label for="if10" data-select="if10">Ιδιωτικό έγγραφο</label>
- </menu>
+<menu role="radiogroup">
+  <button role="radio" data-select="if7" >Δημόσιο έγγραφο</button>
+  <button role="radio" data-select="if8" >έγγραφο Διοικητικής Αρχής</button>
+  <button role="radio" data-select="if9" >έγγραφο Αλλοδαπής Αρχής</button>
+  <button role="radio" data-select="if10">Ιδιωτικό έγγραφο</button>
+</menu>
 </span>μπορεί να προσκομιστεί 
 <ul data-show="if2">
   <li>η ως άνω μετάφραση αυτούσια <cite data-show="if4"> αρ.11 παρ.2β εδ.1 ν.2690/1999 όπως τροποποιήθηκε με τον ν.4250/2014 αρ.1 παρ.2</cite></li>
