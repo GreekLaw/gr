@@ -58,12 +58,12 @@ function applyAddressBarParameters(){
 	}
 }
 
-function refreshState(){
-	refreshModel()
-	refreshView()
+function refreshState(event){
+	refreshModel(event)
+	refreshView(event)
 }
 
-function refreshModel(){
+function refreshModel(event){
 	var action, actors, actor, triggerValidity, i, k, result
 
 	for (action in actions){
@@ -75,12 +75,12 @@ function refreshModel(){
 				triggerValidity = verifyTrigger(actor.triggers[k])
 				result = result || triggerValidity
 			}
-			actions[action].model(actor, result)
+			actions[action].model(actor, result, event)
 		}
 	}
 }
 
-function refreshView(){
+function refreshView(event){
 		var action, actors, actor, triggerValidity, i, k, result
 
 	for (action in actions){
@@ -92,7 +92,7 @@ function refreshView(){
 				triggerValidity = verifyTrigger(actor.triggers[k])
 				result = result || triggerValidity
 			}
-			actions[action].view(actor, result)
+			actions[action].view(actor, result, event)
 		}
 	}
 }
@@ -114,7 +114,7 @@ function verifyCondition(condition){
 	return condition.flag ? document.getElementById(condition.term).checked : !document.getElementById(condition.term).checked
 }
 
-function show(actor, value){
+function show(actor, value, event){
 	if (value === null) { return }
 	value ? actor.className = actor.className.replace(/^(?!(?:.*\s)?shown(?:\s|$))/g    , 'shown '    )
 	                                         .replace(/(^|\s)not-shown(\s|$)/g          , '$1$2'      )
@@ -123,7 +123,7 @@ function show(actor, value){
 	                                         .replace(/(^|\s)shown(\s|$)/g              , '$1$2'      )
 	                                         .replace(/\s+/g                            , ' '         )
 }
-function selectModel(actor, value){
+function selectModel(actor, value, event){
 	if (event && actor.tagName.toLowerCase() === 'button' && actor.getAttribute('aria-pressed') && actor === event.target){
 		document.getElementById(actor.getAttribute('data-select')).checked =
 		!document.getElementById(actor.getAttribute('data-select')).checked
@@ -142,7 +142,7 @@ function selectModel(actor, value){
 		return
 	}
 }
-function select(actor, value){
+function select(actor, value, event){
 	if (value === null) { return }
 	value ? actor.className = actor.className.replace(/^(?!(?:.*\s)?selected(?:\s|$))/g    , 'selected '    )
 	                                         .replace(/(^|\s)not-selected(\s|$)/g          , '$1$2'         )
@@ -158,7 +158,7 @@ function select(actor, value){
 		                                                 void Function 
 	}
 }
-function conceal(actor, value){
+function conceal(actor, value, event){
 	if (value === null) { return }
 	value ? actor.className = actor.className.replace(/^(?!(?:.*\s)?concealed(?:\s|$))/g    , 'concealed '    )
 	                                         .replace(/(^|\s)not-concealed(\s|$)/g          , '$1$2'          )
@@ -167,10 +167,10 @@ function conceal(actor, value){
 	                                         .replace(/(^|\s)concealed(\s|$)/g              , '$1$2'          )
 	                                         .replace(/\s+/g                                , ' '             )
 }
-function disableModel(actor, value){
+function disableModel(actor, value, event){
 	value ? actor.setAttribute('aria-disabled', true) : actor.removeAttribute('aria-disabled')
 }
-function disable(actor, value){}
+function disable(actor, value, event){}
 /*
 	for action in actions {
 		action.actors = document.querySelectorAll('do' + action.key)
