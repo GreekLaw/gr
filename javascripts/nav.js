@@ -9,15 +9,15 @@ ga('send', 'pageview')
 
 document.addEventListener('click', 
 function handle(e){
-    var id, selected, reference, description
+    var id, controlOf, reference, description
 
     id          = e.target.id
-    selected    = e.target.getAttribute('data-select')
-    reference   = document.getElementById(selected)
+    controlOf   = e.target.getAttribute('data-controls')
+    reference   = document.getElementById(controlOf)
 
-    description = id                    ? id                                         :
-                  selected && reference ? reference.name + ':' + reference.className :
-                                          null
+    description = id                   ? id                                         :
+                  checked && reference ? reference.name + ':' + reference.className :
+                                         null
     description ? ga('send', 'event', decodeURI(location.pathname.match(/.+\/(.+?)\.html?$/)[1]), 'click', description, {'nonInteraction': 1}) :
                   void Function
 })
