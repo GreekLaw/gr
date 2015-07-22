@@ -18,6 +18,7 @@ input[id^="if"] { display: none; }
 
 [role=radio] {
 	vertical-align: bottom;
+	letter-spacing: 0px;
 }
 
 .question, 
