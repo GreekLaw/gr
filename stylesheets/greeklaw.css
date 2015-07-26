@@ -191,6 +191,7 @@ h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { color: #312f30; }
 	letter-spacing: -1em;
 	white-space: normal;
 	width: 100%;
+	overflow: scroll;
 }
 
 .seal-header {
