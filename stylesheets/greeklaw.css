@@ -75,6 +75,8 @@ ol, ul, dl {
 	list-style: none;
 }
 
+.with-bullets { list-style: square; }
+
 li, dd, dt {
 	white-space: pre-line;
 	margin: 0;
