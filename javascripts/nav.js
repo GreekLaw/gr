@@ -7,20 +7,21 @@ ga('create', 'UA-33952776-3', 'greeklaw.github.io')
 ga('require', 'displayfeatures')
 ga('send', 'pageview')
 
-document.addEventListener('click', 
-function handle(e){
+document.addEventListener('click', handleIt)
+
+function handleIt(event){
     var id, controlOf, reference, description
 
-    id          = e.target.id
-    controlOf   = e.target.getAttribute('data-controls')
+    id          = event.target.id
+    controlOf   = event.target.getAttribute('data-controls')
     reference   = document.getElementById(controlOf)
 
-    description = id                   ? id                                         :
-                  checked && reference ? reference.name + ':' + reference.className :
-                                         null
+    description = id        ? id                                         :
+                  reference ? reference.name + ':' + reference.className :
+                              null
     description ? ga('send', 'event', decodeURI(location.pathname.match(/.+\/(.+?)\.html?$/)[1]), 'click', description, {'nonInteraction': 1}) :
                   void Function
-})
+}
 
 function gitData(data){
     var months, noteOfUpdate, dateOfUpdate, dateText
