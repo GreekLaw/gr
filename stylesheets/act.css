@@ -177,7 +177,8 @@ button[aria-pressed=false]:before {
 	counter-increment: questions 1;
 }
 
-.question:before {
+.question:before,
+.answer:before {
 	content: counter(questions);
 	display: inline-table;
 	width: 22px;
@@ -187,6 +188,10 @@ button[aria-pressed=false]:before {
 	vertical-align: middle;
 	border-radius: 50%;
 	box-shadow: 0 0 0 1px grey;
+}
+
+.answer:before {
+	content: "→";
 }
 
 .concealed { visibility: hidden; }
