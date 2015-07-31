@@ -179,6 +179,10 @@ button[aria-pressed=false]:before {
 	counter-increment: questions 1;
 }
 
+.answer {
+	line-height: 22px;
+}
+
 .question:before,
 .answer:before {
 	content: counter(questions);
@@ -210,7 +214,7 @@ button[aria-pressed=false]:before {
 	}
 
 	.question:before,
-	.asnwer:before {
+	.answer:before {
 		margin: 0 9px 0 -31px;
 	}
 
