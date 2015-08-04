@@ -304,8 +304,7 @@ button[aria-pressed=false]:before {
 	[role=radio]:before {
 		width: 7px;
 		height: 100%;
-		left: auto;
-		right: 0px;
+		left: 0;
 		top: 0;
 	}
 
