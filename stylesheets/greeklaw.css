@@ -133,6 +133,7 @@ table {
 }
 
 td { border: 1px solid grey; }
+td { white-space: pre-line; }
 
 .nav-tree {
 	display: block;
