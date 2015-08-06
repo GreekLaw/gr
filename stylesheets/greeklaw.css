@@ -312,6 +312,12 @@ input.paper:required { border-bottom: 1px dashed red; }
 	white-space: pre;
 }
 
+.note {
+	display: inline-block;
+	padding: 0;
+	vertical-align: text-top;
+}
+
 input { font-size: 16px; }
 
 .date input::-webkit-input-placeholder { color: inherit; font: inherit; }
