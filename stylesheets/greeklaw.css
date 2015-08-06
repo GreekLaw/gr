@@ -312,6 +312,8 @@ input.paper:required { border-bottom: 1px dashed red; }
 	white-space: pre;
 }
 
+.input { font-size: 16px; }
+
 .date input::-webkit-input-placeholder { color: inherit; font: inherit; }
 .date input:-ms-input-placeholder      { color: inherit; font: inherit; }
 .date input::-moz-placeholder          { color: inherit; font: inherit; }
