@@ -270,10 +270,12 @@ button[aria-pressed=false]:before {
 
 	[role=radiogroup] {
 		float: right;
+		width: 100%;
 	}
 
 	[role=radiogroup][aria-haspopup] {
 		float: none;
+		width: auto;
 	}
 
 	.question:before,
