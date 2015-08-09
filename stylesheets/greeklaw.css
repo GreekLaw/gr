@@ -72,7 +72,7 @@ ol, ul, dl {
 	display: inline-block;
 	white-space: normal;
 	margin: 0;
-	list-style: none;
+	list-style: inside circle;
 }
 
 .with-bullets { list-style: square; }
