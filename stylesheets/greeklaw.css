@@ -72,9 +72,10 @@ ol, ul, dl {
 	display: inline-block;
 	white-space: normal;
 	margin: 0;
-	list-style: inside circle;
+	list-style: inside;
 }
 
+.table-of-contents { list-style: inherit; }
 .with-bullets { list-style: square; }
 
 li, dd, dt {
