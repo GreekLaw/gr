@@ -179,9 +179,8 @@ button[aria-pressed=false]:before {
 	counter-increment: questions 1;
 }
 
-.answer {
-	line-height: 22px;
-}
+.answer { line-height: 22px; }
+.question { padding-top: 22px; }
 
 .question:before,
 .answer:before {
