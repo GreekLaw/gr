@@ -19,20 +19,24 @@
 <input id="if3"  class="Ειρηνοδικείο"                         type="radio"    name="καθ-ύλην-αρμοδιότητα"  checked>
 <input id="if4"  class="Μονομελές-Πρωτοδικείο"                type="radio"    name="καθ-ύλην-αρμοδιότητα"         >
 <input id="if5"  class="Πολυμελές-Πρωτοδικείο"                type="radio"    name="καθ-ύλην-αρμοδιότητα"         >
-<input id="if8"  class="πρωτόδικο"                            type="radio"    name="βαθμός-δικαστηρίου"    checked>
-<input id="if9"  class="δευτεροβάθμιο"                        type="radio"    name="βαθμός-δικαστηρίου"           >
-<input id="if10" class="κατ-αντιμωλία"                        type="radio"    name="διεξαγωγή-συζήτησης"   checked>
-<input id="if11" class="ερήμην"                               type="radio"    name="διεξαγωγή-συζήτησης"          >
-<input id="if12" class="ερήμην-κατα-πλάσμα-δικαίου"           type="radio"    name="διεξαγωγή-συζήτησης"          >
-<input id="if13" class="άσκηση-ανταγωγής"                     type="checkbox"                                     >
-<input id="if14" class="γαμικές-διαφορές"                     type="radio"    name="ειδική-διαδικασία"            >
-<input id="if15" class="διαφορές-από-σχέσεις-γονέων-τέκνου"   type="radio"    name="ειδική-διαδικασία"            >
-<input id="if16" class="μισθωτικές-διαφορές"                  type="radio"    name="ειδική-διαδικασία"            >
-<input id="if17" class="εργατικές-διαφορές"                   type="radio"    name="ειδική-διαδικασία"            >
-<input id="if18" class="διαφορές-παροχής-εργασίας"            type="radio"    name="ειδική-διαδικασία"            >
-<input id="if19" class="διαφορές-από-ζημίες-αυτοκινήτου"      type="radio"    name="ειδική-διαδικασία"     checked>
-<input id="if20" class="διαφορές-από-διατροφή-τέκνου"         type="radio"    name="ειδική-διαδικασία"            >
-<input id="if21" class="διαφορές-από-προσβολές-δημοσιευμάτων" type="radio"    name="ειδική-διαδικασία"            >
+<input id="if6"  class="τακτική"                              type="radio"    name="είδος-διαδικασίας"            >
+<input id="if7"  class="ειδική"                               type="radio"    name="είδος-διαδικασίας"            >
+<input id="if8"  class="ασφαλιστικά-μέτρα"                    type="radio"    name="είδος-διαδικασίας"            >
+<input id="if9"  class="εκούσια-δικαιοδοσία"                  type="radio"    name="είδος-διαδικασίας"            >
+<input id="if10" class="γαμικές-διαφορές"                     type="radio"    name="ειδική-διαδικασία"            >
+<input id="if11" class="διαφορές-από-σχέσεις-γονέων-τέκνου"   type="radio"    name="ειδική-διαδικασία"            >
+<input id="if12" class="μισθωτικές-διαφορές"                  type="radio"    name="ειδική-διαδικασία"            >
+<input id="if13" class="εργατικές-διαφορές"                   type="radio"    name="ειδική-διαδικασία"            >
+<input id="if14" class="διαφορές-παροχής-εργασίας"            type="radio"    name="ειδική-διαδικασία"            >
+<input id="if15" class="διαφορές-από-ζημίες-αυτοκινήτου"      type="radio"    name="ειδική-διαδικασία"     checked>
+<input id="if16" class="διαφορές-από-διατροφή-τέκνου"         type="radio"    name="ειδική-διαδικασία"            >
+<input id="if17" class="διαφορές-από-προσβολές-δημοσιευμάτων" type="radio"    name="ειδική-διαδικασία"            >
+<input id="if18" class="πρωτόδικο"                            type="radio"    name="βαθμός-δικαστηρίου"    checked>
+<input id="if19" class="δευτεροβάθμιο"                        type="radio"    name="βαθμός-δικαστηρίου"           >
+<input id="if20" class="κατ-αντιμωλία"                        type="radio"    name="πρωτόδικη-απόφαση"     checked>
+<input id="if21" class="ερήμην"                               type="radio"    name="πρωτόδικη-απόφαση"            >
+<input id="if22" class="πλασματικά-κατ-αντιμωλία"             type="radio"    name="πρωτόδικη-απόφαση"            >
+<input id="if23" class="άσκηση-ανταγωγής"                     type="checkbox"                                     >
 <main role="main">
 <h2>Προθεσμία κατάθεσης προτάσεων / προσθήκης</h2>
 <div class="question">θέλω να καταθέσω 
@@ -48,49 +52,49 @@
     <button role="radio" data-controls="if5" data-checked="if5">Πολ. Πρωτοδικείο</button>
   </menu>
 </div>
+<div class="question">Κατά τη συζήτηση ακολουθείται η 
+  <menu role="radiogroup">
+    <button role="radio" data-controls="if6" data-checked="if6">τακτική διαδικασία</button>
+    <button role="radio" data-controls="if7" data-checked="if7">ειδική διαδικασία</button>
+    <button role="radio" data-controls="if8" data-checked="if8">διαδ. ασφαλιστικών μέτρων</button>
+    <button role="radio" data-controls="if9" data-checked="if9">διαδ. εκούσιας δικαιοδοσίας</button>
+  </menu>
+</div>
+<div class="question">Η ειδική διαδικασία αφορά σε
+  <menu role="radiogroup" aria-haspopup>
+    <button role="radio" data-controls="if10" data-checked="if10">γαμικές διαφορές</button>
+    <button role="radio" data-controls="if11" data-checked="if11">σχέσεις γονέων και τέκνου</button>
+    <button role="radio" data-controls="if12" data-checked="if12">μισθωτικές διαφορές και χρήσης ιδιοκτησίας κατ' ορόφους</button>
+    <button role="radio" data-controls="if13" data-checked="if13">εργατικές διαφορές</button>
+    <button role="radio" data-controls="if14" data-checked="if14">αμοιβές για παροχή εργασίας</button>
+    <button role="radio" data-controls="if15" data-checked="if15">ζημίες από αυτοκίνητο ή σύμβαση ασφάλισης</button>
+    <button role="radio" data-controls="if16" data-checked="if16">διατροφή ή επιμέλεια τέκνου</button>
+    <button role="radio" data-controls="if17" data-checked="if17">προσβολές από δημοσιεύματα ή ραδιοτηλεοπτικές εκπομπές</button>
+  </menu>
+</div>
 <div class="question">Το δικαστήριο ενεργεί ως 
   <menu role="radiogroup">
-    <button role="radio" data-controls="if6" data-checked="if6">Πρωτοβάθμιο δικαστήριο</button>
-    <button role="radio" data-controls="if7" data-checked="if7">Δευτεροβάθμιο δικαστήριο</button>
+    <button role="radio" data-controls="if18" data-checked="if18">Πρωτοβάθμιο δικαστήριο</button>
+    <button role="radio" data-controls="if19" data-checked="if19">Δευτεροβάθμιο δικαστήριο</button>
   </menu>
 </div>
 <div class="question">Η πρωτόδικη απόφαση εκδόθηκε 
   <menu role="radiogroup">
-    <button role="radio" data-controls="if8"  data-checked="if8" >κατ' αντιμωλία</button>
-    <button role="radio" data-controls="if9"  data-checked="if9" >ερήμην</button>
-    <button role="radio" data-controls="if10" data-checked="if10">πλασματικά κατ' αντιμωλία</button>
+    <button role="radio" data-controls="if20" data-checked="if20" >κατ' αντιμωλία</button>
+    <button role="radio" data-controls="if21" data-checked="if21" >ερήμην</button>
+    <button role="radio" data-controls="if22" data-checked="if22">πλασματικά κατ' αντιμωλία</button>
   </menu>
 </div>
-<div class="question">Κατά τη συζήτηση ακολουθείται η 
-  <menu role="radiogroup">
-    <button role="radio" data-controls="if11" data-checked="if11">τακτική διαδικασία</button>
-    <button role="radio" data-controls="if12" data-checked="if12">ειδική διαδικασία</button>
-    <button role="radio" data-controls="if13" data-checked="if13">διαδ. ασφαλιστικών μέτρων</button>
-    <button role="radio" data-controls="if14" data-checked="if14">διαδ. εκούσιας δικαιοδοσίας</button>
-  </menu>
-</div>
-<div>Η ειδική διαδικασία αφορά σε
-  <menu role="radiogroup" aria-haspopup>
-    <button role="radio" data-controls="if8">γαμικές διαφορές</button>
-    <button role="radio" data-controls="if9">σχέσεις γονέων και τέκνου</button>
-    <button role="radio" data-controls="if10">μισθωτικές διαφορές και χρήσης ιδιοκτησίας κατ' ορόφους</button>
-    <button role="radio" data-controls="if11">εργατικές διαφορές</button>
-    <button role="radio" data-controls="if12">αμοιβές για παροχή εργασίας</button>
-    <button role="radio" data-controls="if13">ζημίες από αυτοκίνητο ή σύμβαση ασφάλισης</button>
-    <button role="radio" data-controls="if14">διατροφή ή επιμέλεια τέκνου</button>
-    <button role="radio" data-controls="if15">προσβολές από δημοσιεύματα ή ραδιοτηλεοπτικές εκπομπές</button>
-  </menu>
-</div>
-<div class="question">Με τις προτάσεις <button role="radio" data-controls="if1" data-checked="if1"><span>δεν</span> ασκείται</button> και ανταγωγή</div>
-<div class="answer"><span> Ο διάδικος <span data-show="if7 if17"> δεν</span> υποχρεούται να καταθέσει προτάσεις<cite data-show="if7"> 956/2007 ΑΠ</cite><cite data-show="if17"> αρ.115 παρ.3 ΚΠολΔ</cite>.
+<div class="question">Με τις προτάσεις <button role="radio" data-controls="if23" data-checked="if23"><span data-shown="-if23">δεν</span> ασκείται</button> και ανταγωγή</div>
+<div class="answer"><span> Ο διάδικος <span data-shown="if7 if17"> δεν</span> υποχρεούται να καταθέσει προτάσεις<cite data-shown="if7"> 956/2007 ΑΠ</cite><cite data-shown="if17"> αρ.115 παρ.3 ΚΠολΔ</cite>.
 
 </span>Αν κατατεθ<span>ούν</span><span></span> <span>προτάσεις</span><span></span>, για να είναι εμπρόθεσμες πρέπει να κατατεθούν 
-<span data-show="if18 if19">τουλάχιστον 
-  <span data-show="if15+if16">5</span>
-  <span data-show="if16+if18">8</span>
-  <span data-show="if19" data-hide="lvl2(if16+if19)">20</span>
-  <span data-show="lvl2(if16+if19)" data-hide="if19">30</span> ημέρες πριν</span>
-<span>το αργότερο κατά</span> τη συζήτηση<cite data-show="if5+if17 if5+if18" data-hide="lvl2(if6) lvl2(if7)"> αρ.238 εδ.1 ΚΠολΔ</cite>.
+<span data-shown="if18 if19">τουλάχιστον 
+  <span data-shown="if15+if16">5</span>
+  <span data-shown="if16+if18">8</span>
+  <span data-shown="if19">20</span>
+  <span data-shown="if20">30</span> ημέρες πριν</span>
+<span data-shown="if20">το αργότερο κατά</span> τη συζήτηση<cite data-show="if5+if17 if5+if18"> αρ.238 εδ.1 ΚΠολΔ</cite>.
 Η προθεσμία τρέχει από την επόμενη της ημερομηνίας κατάθεσης έως και την προηγούμενη της συζήτησης εργάσιμη<cite> αρ.144 ΚΠολΔ</cite><cite> 6590/2004 Πολ.Πρ.Θεσσαλονίκης</cite><cite> 21/2010 Πολ.Πρ.Αθηνών</cite>
 </div>
 <table>  
