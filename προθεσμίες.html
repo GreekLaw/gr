@@ -14,63 +14,60 @@
 <body>
   <header><a href="./">Greek Law</a></header>
   <nav role="navigation"></nav>
-
+<input id="if17" class="Ειρηνοδικείο"                         type="radio"    name="καθ-ύλην-αρμοδιότητα"  checked>
+<input id="if18" class="Μονομελές-Πρωτοδικείο"                type="radio"    name="καθ-ύλην-αρμοδιότητα"         >
+<input id="if19" class="Πολυμελές-Πρωτοδικείο"                type="radio"    name="καθ-ύλην-αρμοδιότητα"         >
+<input id="if1"  class="πρωτόδικο"                            type="radio"    name="βαθμός-δικαστηρίου"    checked>
+<input id="if2"  class="δευτεροβάθμιο"                        type="radio"    name="βαθμός-δικαστηρίου"           >
+<input id="if3"  class="κατ-αντιμωλία"                        type="radio"    name="διεξαγωγή-συζήτησης"   checked>
+<input id="if4"  class="ερήμην"                               type="radio"    name="διεξαγωγή-συζήτησης"          >
+<input id="if4"  class="ερήμην-κατα-πλάσμα-δικαίου"           type="radio"    name="διεξαγωγή-συζήτησης"          >
+<input id="if16" class="άσκηση-ανταγωγής"                     type="checkbox"                                     >
+<input id="if8"  class="γαμικές-διαφορές"                     type="radio"    name="ειδική-διαδικασία"            >
+<input id="if9"  class="διαφορές-από-σχέσεις-γονέων-τέκνου"   type="radio"    name="ειδική-διαδικασία"            >
+<input id="if10" class="μισθωτικές-διαφορές"                  type="radio"    name="ειδική-διαδικασία"            >
+<input id="if11" class="εργατικές-διαφορές"                   type="radio"    name="ειδική-διαδικασία"            >
+<input id="if12" class="διαφορές-παροχής-εργασίας"            type="radio"    name="ειδική-διαδικασία"            >
+<input id="if13" class="διαφορές-από-ζημίες-αυτοκινήτου"      type="radio"    name="ειδική-διαδικασία"     checked>
+<input id="if14" class="διαφορές-από-διατροφή-τέκνου"         type="radio"    name="ειδική-διαδικασία"            >
+<input id="if15" class="διαφορές-από-προσβολές-δημοσιευμάτων" type="radio"    name="ειδική-διαδικασία"            >
 <main role="main">
-<h1>Προθεσμίες</h1>
-<h2>Κατάθεση προτάσεων</h2>
-<span style="display:none">
-<input id="if1"  class="FirstLevelCourt"   type="radio"    name="courtLevel"      checked>
-<input id="if2"  class="SecondLevelCourt"  type="radio"    name="courtLevel"             >
-<input id="if3"  class="Decision1Member"   type="radio"    name="decisionMembers"        >
-<input id="if4"  class="Decision2Member"   type="radio"    name="decisionMembers" checked>
-<input id="if5"  class="DiscussionTactic"  type="radio"    name="discussionType"  checked>
-<input id="if6"  class="DiscussionSpecial" type="radio"    name="discussionType"         >
-<input id="if7"  class="DiscussionTemp"    type="radio"    name="discussionType"         >
-<input id="if8"  class="SpecialMarriage"   type="radio"    name="specialType"            >
-<input id="if9"  class="SpecialParents"    type="radio"    name="specialType"            >
-<input id="if10" class="SpecialLease"      type="radio"    name="specialType"            >
-<input id="if11" class="SpecialEmployee"   type="radio"    name="specialType"            >
-<input id="if12" class="SpecialWorker"     type="radio"    name="specialType"            >
-<input id="if13" class="SpecialCarDamage"  type="radio"    name="specialType"     checked>
-<input id="if14" class="SpecialAlimony"    type="radio"    name="specialType"            >
-<input id="if15" class="SpecialPulpPress"  type="radio"    name="specialType"            >
-<input id="if16" class="CounterLawsuit"    type="checkbox"                               >
-<input id="if17" class="CourtPeace"        type="radio"    name="courtRank"       checked>
-<input id="if18" class="CourtSingle"       type="radio"    name="courtRank"              >
-<input id="if19" class="CourtMulti"        type="radio"    name="courtRank"              >
-<span class="then">
-Η συζήτηση διεξάγεται ενώπιον <menu><label for="if1">Πρωτοβάθμιου</label><label for="if2" role="button">Δευτεροβάθμιου</label></menu> δικαστηρίου<span data-show="if2">, και η πρωτόδικη απόφαση εκδόθηκε <menu><label for="if4">κατ' αντιμωλία</label><label for="if3">ερήμην</label></menu></span>.
-Το δικαστήριο είναι <menu>
-<label for="if17">Ειρηνοδικείο</label>
-<label for="if18">Μονομελές Πρωτοδικείο</label>
-<label for="if19">Πολυμελές Πρωτοδικείο</label></menu>
-Η διαδικασία είναι <menu><label for="if5">τακτική</label><label for="if6">ειδική</label><label for="if7">ασφαλιστικά μέτρα</label></menu><span data-show="if7"> και αφορά σε
-<menu class="vertical">
-<label for="if8">γαμικές διαφορές</label>
-<label for="if9">σχέσεις γονέων και τέκνου</label>
-<label for="if10">μισθωτικές διαφορές και χρήσης ιδιοκτησίας κατ' ορόφους</label>
-<label for="if11">εργατικές διαφορές</label>
-<label for="if12">αμοιβές για παροχή εργασίας</label>
-<label for="if13">ζημίες από αυτοκίνητο ή σύμβαση ασφάλισης</label>
-<label for="if14">διατροφή ή επιμέλεια τέκνου</label>
-<label for="if15">προσβολές από δημοσιεύματα ή ραδιοτηλεοπτικές εκπομπές</label></menu></span>
-<span data-show="">Με τις προτάσεις <label for="if16"><span data-show="if16">δεν</span> ασκείται</label> και ανταγωγή.</span>
-<h4>Υποχρέωση κατάθεσης και προθεσμία</h4>
+<h2>Προθεσμία κατάθεσης προτάσεων / προσθήκης</h2>
+<div class="question">θέλω να καταθέσω <menu>
+<button role="radio" data-controls="if1" data-checked="if1">Προτάσεις</button>
+<button role="radio" data-controls="if1" data-checked="if1">Προσθήκη σε προτάσεις</button></menu></div>
+<div class="question">Το δικαστήριο είναι<menu>
+<button role="radio" data-controls="if1" data-checked="if1">Ειρηνοδικείο</button>
+<button role="radio" data-controls="if1" data-checked="if1">Μον. Πρωτοδικείο</button>
+<button role="radio" data-controls="if1" data-checked="if1">Πολ. Πρωτοδικείο</button></menu></div>
+<div class="question">Το δικαστήριο ενεργεί ως <menu role="radiogroup"><button role="radio" data-controls="if1" data-checked="if1">Πρωτοβάθμιο δικαστήριο</button><button role="radio" data-controls="if2" data-selected="if2">Δευτεροβάθμιο δικαστήριο</button></menu></div>
+<div class="question">Η πρωτόδικη απόφαση εκδόθηκε <menu role="radiogroup"><button role="radio" data-controls="if1" data-checked="if1">κατ' αντιμωλία</button><button role="radio" data-controls="if1" data-checked="if1">ερήμην</button><button role="radio" data-controls="if1" data-checked="if1">πλασματικά κατ' αντιμωλία</button></menu></div>
+<div class="question">Κατά τη συζήτηση ακολουθείται η <menu role="radiogroup"><button role="radio" data-controls="if1" data-checked="if1">τακτική διαδικασία</button><button role="radio" data-controls="if1" data-checked="if1">ειδική διαδικασία</button><button role="radio" data-controls="if1" data-checked="if1">διαδικασία ασφαλιστικών μέτρων</button><button role="radio" data-controls="if1" data-checked="if1">διαδικασία εκούσιας δικαιοδοσίας</button></div>
+<div>Η ειδική διαδικασία αφορά σε<menu aria-haspopup>
+<button data-controls="if8">γαμικές διαφορές</button>
+<button data-controls="if9">σχέσεις γονέων και τέκνου</button>
+<button data-controls="if10">μισθωτικές διαφορές και χρήσης ιδιοκτησίας κατ' ορόφους</button>
+<button data-controls="if11">εργατικές διαφορές</button>
+<button data-controls="if12">αμοιβές για παροχή εργασίας</button>
+<button data-controls="if13">ζημίες από αυτοκίνητο ή σύμβαση ασφάλισης</button>
+<button data-controls="if14">διατροφή ή επιμέλεια τέκνου</button>
+<button data-controls="if15">προσβολές από δημοσιεύματα ή ραδιοτηλεοπτικές εκπομπές</button></menu></div>
+<div class="question">Με τις προτάσεις <button role="radio" data-controls="if1" data-checked="if1"><span>δεν</span> ασκείται</button> και ανταγωγή</div>
+<div class="answer">
 Ο διάδικος <span data-show="if7 if17"> δεν</span> υποχρεούται να καταθέσει προτάσεις<cite data-show="if7"> 956/2007 ΑΠ</cite><cite data-show="if17"> αρ.115 παρ.3 ΚΠολΔ</cite>.
-Για να είναι εμπρόθεσμες, οι προτάσεις πρέπει να κατατεθούν 
+
+Αν κατατεθούν προτάσεις, για να είναι εμπρόθεσμες πρέπει να κατατεθούν 
 <span data-show="if18 if19">τουλάχιστον 
   <span data-show="if15+if16">5</span>
   <span data-show="if16+if18">8</span>
   <span data-show="if19" data-hide="lvl2(if16+if19)">20</span>
   <span data-show="lvl2(if16+if19)" data-hide="if19">30</span> ημέρες πριν</span>
 <span>το αργότερο κατά</span> τη συζήτηση<cite data-show="if5+if17 if5+if18" data-hide="lvl2(if6) lvl2(if7)"> αρ.238 εδ.1 ΚΠολΔ</cite>.
-</span>
-</span>
-</span>
-Η προθεσμία τρέχει από την επόμενη της ημερομηνίας κατάθεσης έως και την προηγούμενη της συζήτησης εργάσιμη<cite> αρ.144 ΚΠολΔ</cite><cite> 6590/2004 Πολ.Πρ.Θεσσαλονίκης</cite><cite> 21/2010 Πολ.Πρ.Αθ</cite>
+Η προθεσμία τρέχει από την επόμενη της ημερομηνίας κατάθεσης έως και την προηγούμενη της συζήτησης εργάσιμη<cite> αρ.144 ΚΠολΔ</cite><cite> 6590/2004 Πολ.Πρ.Θεσσαλονίκης</cite><cite> 21/2010 Πολ.Πρ.Αθηνών</cite>
+</div>
 <table>  
 <thead>
-<tr><th></th><th></th><th>Στο Πρωτοβάθμιο</th><th>Δικαστήριο</th><th></th><th></th>
+<tr><th>Στο Πρωτοβάθμιο Δικαστήριο</th>
 </tr>
 </thead>
 <tbody>
