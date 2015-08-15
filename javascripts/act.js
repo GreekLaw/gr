@@ -34,17 +34,18 @@ void function disableForms(){
 	var i, forms
 
 	forms = document.getElementsByTagName('form')
-	for (var i = 0; i < forms.length; i++){
+	for (i = 0; i < forms.length; i++){
 		if (forms[i].getAttribute('action') === null){
-			forms[i].onsubmit = dontSubmit
+			forms[i].onsubmit = preventEvent
 		}
 	}
 
-	function dontSubmit(event){
-		event.preventDefault()
-		return false
-	}
 }()
+
+function preventEvent(event){
+	event.preventDefault()
+	return false
+}
 
 var actions, action, actors, actor, i
 actors = []
@@ -69,7 +70,7 @@ function getTriggers(action, actor){
 	triggers = []
 
 	triggersString = actor.getAttribute('data-' + action)
-	triggerStrings = triggersString.split(/\s/g)
+	triggerStrings = triggersString.replace(/\s+/g, ' ').replace(/^\s|\s$/g,'').split(/\s/g)
 	for (i = 0; i < triggerStrings.length; i++){
 		triggers[i] = []
 		conditions = triggerStrings[i].split(/(?=[+-])/g)
@@ -97,9 +98,9 @@ document.onreadystatechange = applyAddressBarParameters
 document.onclick = refreshState
 
 function applyAddressBarParameters(){
-	var parametersString, parameters, i, element
+	var act, actorsWithAct, i, parametersString, parameters, element
 
-	for (var act in ac){
+	for (act in ac){
 		actorsWithAct = getArrayFromNodeList(document.querySelectorAll('[data-' + act + ']'))
 		for (i = 0; i < actorsWithAct.length; i++){
 			actorsWithAct[i].onclick = ac[act]
