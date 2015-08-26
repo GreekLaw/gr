@@ -77,6 +77,12 @@ button[aria-pressed=false]:before {
 	border-radius: 4px;
 }
 
+
+[aria-haspopup] [role=radio] {
+	text-align: left;
+	padding-left: 19px;
+}
+
 [aria-haspopup] .checked,
 [aria-haspopup] .not-checked {
 	display: block;
