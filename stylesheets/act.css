@@ -124,24 +124,21 @@ button[aria-pressed=false]:before {
 		border-radius: 4px;
 	}
 
-	[aria-haspopup] [role=radio].checked:after {
+	[aria-haspopup]:before {
 		content: "";
-		position: absolute;
+		position: relative;
 		width: 0px;
 		height: 0px;
-		right: 0px;
-		top: 19px;
+		left: 10px;
+		top: 14px;
+		float: left;
 		border: 5px solid transparent;
 		border-top-color: #DBECF9;
 	}
 
-	[aria-haspopup][aria-expanded=true] [role=radio].checked:after {
-		opacity: 0;
-	}
-
 	[aria-haspopup][aria-expanded=false] [role=radio].not-checked {
-			opacity: 0;
-			pointer-events: none;
+		opacity: 0;
+		pointer-events: none;
 	}
 
 	[aria-haspopup][aria-expanded=false] [role=radio].not-checked:before {
