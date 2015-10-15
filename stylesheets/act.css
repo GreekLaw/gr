@@ -242,7 +242,7 @@ button[aria-pressed=false]:before {
 @media (min-width: 600px){
 	.question,
 	.answer {
-		padding: 11px 0 0 33px;
+		padding: 11px 0 11px 33px;
 	}
 
 	.question:before,
