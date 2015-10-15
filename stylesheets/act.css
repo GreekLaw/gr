@@ -229,7 +229,7 @@ button[aria-pressed=false]:before {
 }
 
 .solved-issue:after { background-position: 13px top, 0px   0px; }
-.question:after     { background-position: 13px  0%, 0%  101%;  }
+.question:after     { background-position: 13px  0%, 0%   -1px; }
 .answer:after       { background-position: 13px top, 0   100%;  }
 
 .concealed { visibility: hidden; }
