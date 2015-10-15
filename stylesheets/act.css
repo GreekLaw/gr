@@ -166,7 +166,7 @@ button[aria-pressed=false]:before {
 
 .solved-issue {
 	position: relative;
-	margin-left: 32px;
+	padding-left: 32px;
 }
 
 .question, .asnwer { display: inline-table; width: 100%; }
