@@ -164,6 +164,8 @@ button[aria-pressed=false]:before {
 
 .not-shown.not-shown { display: none; }
 
+.solved-issue { position: relative; }
+
 .question, .asnwer { display: inline-table; width: 100%; }
 [role=radiogroup]  { display: inline-table; width: auto; }
 
@@ -171,7 +173,7 @@ button[aria-pressed=false]:before {
 .answer {
 	position: relative;
 	margin: 0 0 0 0px;
-	line-height: 44px;
+        padding: 11px 0;
 	white-space: normal;
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
@@ -179,15 +181,18 @@ button[aria-pressed=false]:before {
 	-webkit-animation: fade-in .5s;
 	   -moz-animation: fade-in .5s;
 	        animation: fade-in .5s;
+}
+
+.question {
 	counter-increment: questions 1;
+	line-height: 44px;
 }
 
 .answer { line-height: 22px; }
-.question { padding-top: 22px; }
 
+.solved-issue:before,
 .question:before,
 .answer:before {
-	content: counter(questions);
 	display: inline-table;
 	width: 22px;
 	height: 22px;
@@ -196,11 +201,32 @@ button[aria-pressed=false]:before {
 	vertical-align: middle;
 	border-radius: 50%;
 	box-shadow: 0 0 0 1px grey;
+	background: white;
+	z-index:1
+	position: relative;
 }
 
-.answer:before {
-	content: "→";
+.solved-issue:before { content: '';                 }
+.question:before     { content: counter(questions); }
+.answer:before       { content: "→";                }
+
+.solved-issue:after,
+.question:after,
+.answer:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 22px;
+	height: 100%;
+	background: linear-gradient(currentColor, currentColor), linear-gradient(currentColor, currentColor);
+	background-size: 1px 100%, 100% 1px;
+	background-repeat: no-repeat;
 }
+
+.solved-issue:after { background-position: 50% top, 0px 0px; }
+.question:after     { background-position: 100% 100%;        }
+.answer:after       { background-position: 50% top, 0 100%;  }
 
 .concealed { visibility: hidden; }
 .text-space { white-space: normal; }
@@ -267,7 +293,7 @@ button[aria-pressed=false]:before {
 	.question,
 	.answer {
 		width: 100%;
-		padding: 22px 0 0 32px;
+		padding-left: 32px;
 	}
 
 	[role=radiogroup] {
