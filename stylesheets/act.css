@@ -202,7 +202,7 @@ button[aria-pressed=false]:before {
 	border-radius: 50%;
 	box-shadow: 0 0 0 1px grey;
 	background: white;
-	z-index:1
+	z-index:1;
 	position: relative;
 }
 
@@ -224,9 +224,9 @@ button[aria-pressed=false]:before {
 	background-repeat: no-repeat;
 }
 
-.solved-issue:after { background-position: 50% top, 0px 0px; }
-.question:after     { background-position: 100% 100%;        }
-.answer:after       { background-position: 50% top, 0 100%;  }
+.solved-issue:after { background-position: 50% top, 0px 0px;  }
+.question:after     { background-position: 50% 0%, 100% 100%; }
+.answer:after       { background-position: 50% top, 0 100%;   }
 
 .concealed { visibility: hidden; }
 .text-space { white-space: normal; }
