@@ -213,8 +213,10 @@ button[aria-pressed=false]:before {
 	background: white;
 }
 
+.solved-issue:before { content: none; }
+
 .solved-issue:after,
-.answer: after {
+.answer:after {
 	content: "";
 	width: 5px;
 	height: 5px;
