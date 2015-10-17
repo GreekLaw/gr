@@ -217,8 +217,8 @@ button[aria-pressed=false]:before {
 	width: 5px;
 	height: 5px;
 	position: absolute;
-	left: 13px;
-	top: 13px;
+	left: 11px;
+	top: 11px;
 }
 
 .solved-issue:after,
@@ -237,12 +237,12 @@ button[aria-pressed=false]:before {
 
 .solved-issue:before, .question:before, .answer:before,
 .solved-issue:after,  .question:after,  .answer:after {
-	color: #E1E1E1;
+	color: #717171;
 }
 
-.solved-issue:after { background-position: 13px top, 0px   0px; }
-.question:after     { background-position: 13px  0%, 0%   -1px; }
-.answer:after       { background-position: 13px top, 0   100%;  }
+.solved-issue:after { background-position: 13px 13px, 0px  -1px; }
+.question:after     { background-position: 13px  0% , 0%   -1px; }
+.answer:after       { background-position: 13px  top, 0   100%;  }
 
 .concealed { visibility: hidden; }
 .text-space { white-space: normal; }
