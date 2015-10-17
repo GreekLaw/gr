@@ -166,7 +166,7 @@ button[aria-pressed=false]:before {
 
 .solved-issue {
 	position: relative;
-	padding-left: 32px;
+	padding: 11px 11px 11px 32px;
 }
 
 .question, .asnwer { display: inline-table; width: 100%; }
@@ -213,36 +213,33 @@ button[aria-pressed=false]:before {
 	background: white;
 }
 
-.solved-issue:before {
+.solved-issue:after,
+.answer: after {
+	content: "";
 	width: 5px;
 	height: 5px;
 	position: absolute;
-	left: 11px;
-	top: 11px;
+	left: 100%;
+	bottom: -2px;
 }
 
-.solved-issue:after,
-.question:after,
-.answer:after {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 22px;
-	height: 100%;
-	background: linear-gradient(currentColor, currentColor), linear-gradient(currentColor, currentColor);
-	background-size: 1px 100%, 100% 1px;
+.solved-issue:after { left: 100% ; bottom: -2px; }
+.answer:after       { left:  11px; bottom: -2px; }
+
+.solved-issue,
+.question,
+.answer {
+	background: linear-gradient(#717171, #717171);
 	background-repeat: no-repeat;
 }
 
-.solved-issue:before, .question:before, .answer:before,
-.solved-issue:after,  .question:after,  .answer:after {
+.solved-issue { background-size: 100%    1px; background-position: 13px 100% ; }
+.question,
+.answer       { background-size:   1px 100% ; background-position: 13px   0px; }
+
+.solved-issue:before, .question:before, .answer:before {
 	color: #717171;
 }
-
-.solved-issue:after { background-position: 13px 13px, 0px  -1px; }
-.question:after     { background-position: 13px  0% , 0%   -1px; }
-.answer:after       { background-position: 13px  top, 3px 100%;  }
 
 .concealed { visibility: hidden; }
 .text-space { white-space: normal; }
