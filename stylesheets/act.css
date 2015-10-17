@@ -193,9 +193,15 @@ button[aria-pressed=false]:before {
 
 .answer { line-height: 22px; }
 
+.solved-issue:before { content: '';                 }
+.question:before     { content: counter(questions); }
+.answer:before       { content: "→";                }
+
 .solved-issue:before,
 .question:before,
 .answer:before {
+	position: relative;
+	z-index: 1;
 	display: inline-table;
 	width: 22px;
 	height: 22px;
@@ -203,15 +209,17 @@ button[aria-pressed=false]:before {
 	text-align: center;
 	vertical-align: middle;
 	border-radius: 50%;
-	box-shadow: 0 0 0 1px grey;
+	box-shadow: 0 0 0 1px currentColor;
 	background: white;
-	z-index:1;
-	position: relative;
 }
 
-.solved-issue:before { content: none;               }
-.question:before     { content: counter(questions); }
-.answer:before       { content: "→";                }
+.solved-issue:before {
+	width: 5px;
+	height: 5px;
+	position: absolute;
+	left: 13px;
+	top: 13px;
+}
 
 .solved-issue:after,
 .question:after,
@@ -225,6 +233,10 @@ button[aria-pressed=false]:before {
 	background: linear-gradient(currentColor, currentColor), linear-gradient(currentColor, currentColor);
 	background-size: 1px 100%, 100% 1px;
 	background-repeat: no-repeat;
+}
+
+.solved-issue:before, .question:before, .answer:before,
+.solved-issue:after,  .question:after,  .answer:after {
 	color: #E1E1E1;
 }
 
