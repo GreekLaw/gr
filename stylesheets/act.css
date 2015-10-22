@@ -195,7 +195,8 @@ button[aria-pressed=false]:before {
 
 .solved-issue:before { content: '';                 }
 .question:before     { content: counter(questions); }
-.answer:before       { content: "→";                }
+.answer:before       { content: '→';                }
+.important:before    { content: '!';                }
 
 .solved-issue:before,
 .question:before,
