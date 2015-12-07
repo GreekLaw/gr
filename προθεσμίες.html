@@ -37,6 +37,7 @@
 <input id="if21" class="ερήμην"                               type="radio"    name="πρωτόδικη-απόφαση"            >
 <input id="if22" class="πλασματικά-κατ-αντιμωλία"             type="radio"    name="πρωτόδικη-απόφαση"            >
 <input id="if23" class="άσκηση-ανταγωγής"                     type="checkbox"                                     >
+<input id="if24" class="διαφορές-πιστωτικών-τίτλων"           type="radio"    name="είδος-διαδικασίας"            >
 <main role="main">
 <h2 class="solved-issue">Προθεσμία κατάθεσης προτάσεων & προσθήκης</h2>
 <div class="question">Η υπόθεση συζητείται στο
@@ -58,6 +59,7 @@
   <menu role="radiogroup" aria-haspopup aria-expanded="false">
     <button role="radio" data-controls="if10" data-checked="if10">γαμικές διαφορές</button>
     <button role="radio" data-controls="if11" data-checked="if11">σχέσεις γονέων και τέκνου</button>
+    <button role="radio" data-controls="if24" data-checked="if24">πιστωτικούς τίτλους</button>
     <button role="radio" data-controls="if12" data-checked="if12">διαφορές μισθωτικές ή χρήσης ιδιοκτησίας κατ' ορόφους</button>
     <button role="radio" data-controls="if13" data-checked="if13">εργατικές διαφορές</button>
     <button role="radio" data-controls="if14" data-checked="if14">αμοιβές για παροχή εργασίας</button>
@@ -88,6 +90,7 @@ if1+if5+if8
 if1+if3+if7+if16 if1+if5+if7+if16">
 <span data-shown="if1+if3+if7+if10 if1+if5+if7+if10">Το <span data-shown="if3">Ειρηνοδικείο</span><span data-shown="if5">Πολυμελές Πρωτοδικείο</span> δεν είναι αρμόδιο για την εκδίκαση γαμικών διαφορών<cite> αρ.17 περ.1 ΚΠολΔ</cite><cite> αρ.592 παρ.1 ΚΠολΔ</cite>.</span>
 <span data-shown="if1+if3+if7+if11 if1+if5+if7+if11">Το <span data-shown="if3">Ειρηνοδικείο</span><span data-shown="if5">Πολυμελές Πρωτοδικείο</span> δεν είναι αρμόδιο για την εκδίκαση διαφορών που αναφέρονται σε σχέσεις γονέων και τέκνων<cite> αρ.17 περ.1 ΚΠολΔ</cite><cite> αρ.614 παρ.1 ΚΠολΔ</cite>.</span>
+<span data-shown="if1+if5+if7+if24">Το Πολυμελές Πρωτοδικείο δεν είναι αρμόδιο για την εκδίκαση διαφορών από πιστωτικούς τίτλους<cite> αρ.636 ΚΠολΔ</cite><cite> αρ.635 ΚΠολΔ</cite>.</span>
 <span data-shown="if1+if5+if7+if12">Το Πολυμελές Πρωτοδικείο δεν είναι αρμόδιο για την εκδίκαση μισθωτικών διαφορών και διαφορών μεταξύ ιδιοκτητών και διαχειριστών ιδιοκτησίας κατ' ορόφους<cite> αρ.14 παρ.1 περ.β ΚΠολΔ</cite><cite> αρ.15 περ.1 ΚΠολΔ</cite><cite> αρ.16 περ.1 ΚΠολΔ</cite><cite> αρ.17 περ.3 ΚΠολΔ</cite><cite> αρ.647 παρ.2 ΚΠολΔ</cite>.</span>
 <span data-shown="if1+if5+if7+if14">Το Πολυμελές Πρωτοδικείο δεν είναι αρμόδιο για την εκδίκαση διαφορών από αμοιβές για παροχή εργασίας<cite> αρ.677 περ.1 ΚΠολΔ</cite><cite> αρ.15 περ.11 ΚΠολΔ</cite><cite> αρ.16 περ.7 ΚΠολΔ</cite><cite> αρ.677 περ.2 ΚΠολΔ</cite><cite> αρ.16 περ.8 ΚΠολΔ</cite><cite> αρ.677 περ.3 ΚΠολΔ</cite><cite> αρ.15 περ.12 ΚΠολΔ</cite><cite> αρ.16 περ.11 ΚΠολΔ</cite>.</span>
 <span data-shown="if1+if5+if7+if15">Το Πολυμελές Πρωτοδικείο δεν είναι αρμόδιο για την εκδίκαση διαφορών για ζημίες από αυτοκίνητο, καθώς και από τη σύμβαση ασφάλισής του<cite> αρ.14 παρ.1 περ.α ΚΠολΔ</cite><cite> αρ.16 περ.12 ΚΠολΔ</cite><cite> αρ.681 Α ΚΠολΔ</cite>.</span>
@@ -97,21 +100,22 @@ if1+if3+if7+if16 if1+if5+if7+if16">
 
 </span><span data-shown="if1">Ο διάδικος
 <b data-shown="if1+if3+if6
-               if1+if3+if7+if10 if1+if3+if7+if11 if1+if3+if7+if12 if1+if3+if7+if13 if1+if3+if7+if14 if1+if3+if7+if15 if1+if3+if7+if16 if1+if3+if7+if17
-                                                 if1+if4+if7+if12 if1+if4+if7+if13 if1+if4+if7+if14 if1+if4+if7+if15 if1+if4+if7+if16 if1+if4+if7+if17
-                                                 if1+if5+if7+if12
+               if1+if3+if7+if10 if1+if3+if7+if11 if1+if3+if7+if12 if1+if3+if7+if13 if1+if3+if7+if14 if1+if3+if7+if15 if1+if3+if7+if16 if1+if3+if7+if17 if1+if3+if7+if24
+                                                 if1+if4+if7+if12 if1+if4+if7+if13 if1+if4+if7+if14 if1+if4+if7+if15 if1+if4+if7+if16 if1+if4+if7+if17 if1+if4+if7+if24
+                                                 if1+if5+if7+if12                                                                                      if1+if5+if7+if24
                if1+if3+if9
                if1+if8 if1+if8">δεν </b>
 υποχρεούται να καταθέσει προτάσεις
 <cite data-shown="if1+if7+if10"> αρ.592 παρ.1 ΚΠολΔ</cite>
 <cite data-shown="if1+if7+if11"> αρ.614 παρ.1 ΚΠολΔ</cite>
+<cite data-shown="if1+if7+if24"> αρ.643 παρ.2 ΚΠολΔ</cite>
 <cite data-shown="if1+if7+if12"> αρ.647 ΚΠολΔ</cite>
 <cite data-shown="if1+if7+if13"> αρ.663 ΚΠολΔ</cite>
 <cite data-shown="if1+if7+if14"> αρ.677 ΚΠολΔ</cite>
 <cite data-shown="if1+if7+if15"> αρ.681 Α ΚΠολΔ</cite>
 <cite data-shown="if1+if7+if16"> αρ.681 Β παρ.1 ΚΠολΔ</cite>
 <cite data-shown="if1+if7+if17"> αρ.681 Δ παρ.1 ΚΠολΔ</cite>
-<cite data-shown="if1+if7+if12"> αρ.649 παρ.1 εδ.2 ΚΠολΔ</cite>
+<cite data-shown="if1+if7+if12 if1+if7+if24"> αρ.649 παρ.1 εδ.2 ΚΠολΔ</cite>
 <cite data-shown="if1+if4+if7+if13 if1+if4+if7+if15 if1+if4+if7+if16 if1+if4+if7+if17"> αρ.666 παρ.1 ΚΠολΔ</cite>
 <cite data-shown="if1+if4+if7+if14"> αρ.679 παρ.1 ΚΠολΔ</cite>
 <cite data-shown="if1+if7"> αρ.591 παρ.1 εδ.1 ΚΠολΔ</cite>
@@ -127,8 +131,8 @@ if1+if3+if7+if16 if1+if5+if7+if16">
 
 <br>
 <span data-shown="if1+if3
-                  if1+if4+if7+if12 if1+if4+if7+if13 if1+if4+if7+if14 if1+if4+if7+if15 if1+if4+if7+if16 if1+if4+if7+if17
-                  if1+if5+if7+if12
+                  if1+if4+if7+if12 if1+if4+if7+if13 if1+if4+if7+if14 if1+if4+if7+if15 if1+if4+if7+if16 if1+if4+if7+if17 if1+if4+if7+if24
+                  if1+if5+if7+if12                                                                                      if1+if5+if7+if24
                   if1+if4+if8
                   if1+if5+if8">Μπορεί, αν θέλει,
                   </span>
@@ -143,8 +147,8 @@ if1+if3+if7+if16 if1+if5+if7+if16">
 να καταθέσει <span data-shown="if1">προτάσεις</span><span data-shown="if2">προσθήκη</span>
 <span data-shown="if1+if3
                   if1+if4+if6
-                  if1+if4+if7+if10 if1+if4+if7+if11 if1+if4+if7+if12 if1+if4+if7+if13 if1+if4+if7+if14 if1+if4+if7+if15 if1+if4+if7+if16 if1+if4+if7+if17
-                  if1+if5+if7+if10+if18 if1+if5+if7+if11+if18 if1+if5+if7+if12+if18 if1+if5+if7+if13+if18 if1+if5+if7+if14+if18 if1+if5+if7+if15+if18 if1+if5+if7+if16+if18 if1+if5+if7+if17+if18
+                  if1+if4+if7+if10 if1+if4+if7+if11 if1+if4+if7+if12 if1+if4+if7+if13 if1+if4+if7+if14 if1+if4+if7+if15 if1+if4+if7+if16 if1+if4+if7+if17 if1+if4+if7+if24
+                  if1+if5+if7+if10+if18 if1+if5+if7+if11+if18 if1+if5+if7+if12+if18 if1+if5+if7+if13+if18 if1+if5+if7+if14+if18 if1+if5+if7+if15+if18 if1+if5+if7+if16+if18 if1+if5+if7+if17+if18 if1+if5+if7+if24+if18
                   if1+if5+if7+if10+if19+if21
                   if1+if4+if8
                   if1+if4+if9"
@@ -161,6 +165,7 @@ if1+if3+if7+if16 if1+if5+if7+if16">
 <cite data-shown="if1+if5+if7+if10+if19+if21"> αρ.528 ΚΠολΔ</cite>
 <cite data-shown="if1+if7+if10"> αρ.592 παρ.1 ΚΠολΔ</cite>
 <cite data-shown="if1+if7+if11"> αρ.614 παρ.1 ΚΠολΔ</cite>
+<cite data-shown="if1+if7+if24"> αρ.635 ΚΠολΔ</cite>
 <cite data-shown="if1+if7+if12"> αρ.647 ΚΠολΔ</cite>
 <cite data-shown="if1+if7+if13"> αρ.663 ΚΠολΔ</cite>
 <cite data-shown="if1+if7+if14"> αρ.677 ΚΠολΔ</cite>
@@ -179,7 +184,7 @@ if1+if3+if7+if16 if1+if5+if7+if16">
 <cite data-shown="if1+if5+if6+if18 if1+if5+if8 if1+if5+if9"> αρ.237 παρ.1 εδ.1 ΚΠολΔ</cite>
 <cite> αρ.281 ΚΠολΔ</cite>
 <cite data-shown="if1+if4+if19+if21 if1+if5+if7+if10+if19+if21"> 293/2005 ΑΠ</cite>
-<cite data-shown=" if1+if5+if7+if10+if19+if21"> 215/2008 Εφ.Αθηνών</cite>.
+<cite data-shown="if1+if5+if7+if10+if19+if21"> 215/2008 Εφ.Αθηνών</cite>.
 
 
 
@@ -202,12 +207,12 @@ if1+if3+if7+if16 if1+if5+if7+if16">
 <cite data-shown="if1+if9"> αρ.741 ΚΠολΔ</cite>
 <cite data-shown="if1+if6 if1+if7 if1+if3+if9"> αρ.115 παρ.4 εδ.1 ΚΠολΔ</cite>.</span>
 
-<span data-shown="if1+if7+if12"><br>
-Το δικαστήριο μπορεί να διατάξει τους διαδίκους να καταθέσουν προτάσεις<cite> αρ.647 ΚΠολΔ</cite><cite> αρ.649 παρ.1 εδ.2</cite>.
+<span data-shown="if1+if7+if12 if1+if7+if24"><br>
+Το δικαστήριο μπορεί να διατάξει τους διαδίκους να καταθέσουν προτάσεις<cite data-shown="if1+if7+if24"> αρ.635 ΚΠολΔ</cite><cite data-shown="if1+if7+if24"> αρ.643 παρ.2 ΚΠολΔ</cite><cite data-shown="if1+if7+if12"> αρ.647 ΚΠολΔ</cite><cite> αρ.649 παρ.1 εδ.2</cite>.
 </span>
 
 
-<span data-shown="if1+if6+if23 if1+if7+if23 if1+if8+if23">
+<span data-shown="if1+if6+if23 if1+if7+if23-if24 if1+if8+if23">
 <br>
 <span data-shown="if4+if19 if5+if19">Η ανταγωγή δεν επιτρέπεται να ασκηθεί για πρώτη φορά στη δευτεροβάθμια δίκη<cite> αρ.525 παρ.2 εδ.1 ΚΠολΔ</cite></span>
 Για να είναι παραδεκτή η <span data-shown="if1+if6 if1+if7">ανταγωγή</span><span data-shown="if1+if8">ανταίτηση</span> δια των προτάσεων, οι προτάσεις πρέπει να κατατεθούν
@@ -253,6 +258,11 @@ if1+if3+if7+if16 if1+if5+if7+if16">
                  > αρ.115 παρ.3 ΚΠολΔ</cite>
 <cite data-shown="if1+if4 if1+if5"> αρ.34 ΚΠολΔ</cite>                 
 <cite data-shown="if1+if8"> 1284/2003 ΑΠ</cite>.</span>
+<span data-shown="if1+if7+if23+if24">
+<br>
+Στη διαδικασία πιστωτικών τίτλων <b>δεν επιτρέπεται</b> η άσκηση ανταγωγής<cite> αρ.641 ΚΠολΔ</cite>
+</span>
+
 
 <br><span data-shown="if1+if4+if6+if23
                       if1+if4+if7+if16+if23 if1+if4+if7+if17+if23
