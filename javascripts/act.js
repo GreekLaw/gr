@@ -2,10 +2,10 @@
 var actors, actions, acts
 
 actors  = []
-actions = { checked:   checked,
-            shown:     shown,
-            concealed: concealed,
-            disabled:  disabled
+actions = { 'checked-if':   checked,
+            'shown-if':     shown,
+            'concealed-if': concealed,
+            'disabled-if':  disabled
           }
 acts    = { controls: controls }
 
@@ -53,13 +53,13 @@ function getTriggers(action, actor){
 		triggers[i] = []
 		conditions = triggerStrings[i].split(/(?=[+-])/g)
 		for (k = 0; k < conditions.length; k++){
-			conditionParts = conditions[k].split(/(?=[+-])|(?=if\d+)/g)
+			conditionParts = conditions[k].split(/(?=[+-])|(?=\d+)/g)
 			conditionFlag  = conditionParts[0] === '+' ? true  :
 			                 conditionParts[0] === '-' ? false :
 			                                             true
 
-			conditionTerm = /if\d+/.test(conditionParts[0]) ? conditionParts[0] :
-			                /if\d+/.test(conditionParts[1]) ? conditionParts[1] :
+			conditionTerm = /\d+/.test(conditionParts[0]) ? conditionParts[0] :
+			                /\d+/.test(conditionParts[1]) ? conditionParts[1] :
 			                                                  null
 			condition     = { flag: conditionFlag,
 			                  term: conditionTerm
@@ -84,13 +84,21 @@ function verifyTrigger(trigger, action, actor){
  }
 
 function verifyCondition(condition, trigger, action, actor){
-	var conditionTruth
+	var term, validTerm, conditionElement, validElement, invalidTermError, invalidElemError, conditionTruth
 
-	if (condition.term === null){
-		console && console.log('There are no well-formed conditions for the action ' + action.verb + ' of actor ' + actor)
-		return
-	}
-	conditionTruth = condition.flag ? document.getElementById(condition.term).checked : !document.getElementById(condition.term).checked
+	term             = 'if' + condition.term
+	validTerm        = term !== null
+	conditionElement = document.getElementById(term)
+	validElement     = conditionElement !== null
+
+	invalidTermError = 'There are no well-formed conditions for the action ' + action.verb + ' of actor ' + actor
+	invalidElemError = term + ' is not a valid condition term'
+	
+	conditionTruth   = !validTerm                       ? console && console.log(invalidTermError) :
+	                   !validElement                    ? console && console.log(invalidElemError) :
+	                    validElement &&  condition.flag ?  conditionElement.checked                :
+	                    validElement && !condition.flag ? !conditionElement.checked                :
+	                                                      false
 
 	return conditionTruth
 }
