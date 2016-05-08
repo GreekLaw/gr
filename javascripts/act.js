@@ -53,7 +53,7 @@ function getTriggers(action, actor){
 		triggers[i] = []
 		conditions = triggerStrings[i].split(/(?=[+-])/g)
 		for (k = 0; k < conditions.length; k++){
-			conditionParts = conditions[k].split(/(?=[+-])|(?=\d+)/g)
+			conditionParts = conditions[k].match(/[+-]|.+/g)
 			conditionFlag  = conditionParts[0] === '+' ? true  :
 			                 conditionParts[0] === '-' ? false :
 			                                             true
