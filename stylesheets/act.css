@@ -201,7 +201,8 @@ button[aria-pressed=false]:before {
 .answer:before       { content: '→';                }
 .important:before    { content: '!';                }
 
-.new.question        { counter-reset: questions;    }
+.new.question,
+.solved-issue        { counter-reset: questions;    }
 
 .solved-issue:before,
 .question:before,
