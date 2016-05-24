@@ -111,6 +111,14 @@ button[aria-pressed=false]:before {
 	opacity: .25;
 }
 
+[aria-disabled]:before {
+	background: currentColor;
+	-webkit-transform: scale(.5);
+	   -moz-transform: scale(.5);
+	    -ms-transform: scale(.5);
+	        transform: scale(.5);
+}
+
 	[aria-haspopup] [role=radio] { width: 100%; }
 
 	[aria-haspopup] [role=radio]:before, [role=checkbox]:before {
@@ -218,6 +226,7 @@ button[aria-pressed=false]:before {
 	border-radius: 50%;
 	box-shadow: 0 0 0 1px currentColor;
 	background: white;
+	transition: inherit;
 }
 
 .solved-issue:before { content: none; }
@@ -228,8 +237,11 @@ button[aria-pressed=false]:before {
 	position: absolute;
 	width:  5px;
 	height: 5px;
-	background: white;
+	color: #717171;
 }
+
+.solved-issue:after { background: transparent; }
+.answer:after {background: #717171;}
 
 .solved-issue:after { left: 100% ; bottom: -2px; box-shadow: 0 0 0 1px; border-radius: 100%; }
 .answer:after       { left:  11px; bottom: -2px; box-shadow: 0 0 0 1px; border-radius:   0%; }
