@@ -111,7 +111,9 @@ button[aria-pressed=false]:before {
 	opacity: .25;
 }
 
-[aria-disabled]:before {
+.solved-issue[aria-disabled]:before,
+.question[aria-disabled]:before,
+.answer[aria-disabled]:before {
 	background: currentColor;
 	-webkit-transform: scale(.5);
 	   -moz-transform: scale(.5);
