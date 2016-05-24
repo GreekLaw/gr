@@ -115,10 +115,10 @@ button[aria-pressed=false]:before {
 .question[aria-disabled]:before,
 .answer[aria-disabled]:before {
 	background: currentColor;
-	-webkit-transform: scale(.5);
-	   -moz-transform: scale(.5);
-	    -ms-transform: scale(.5);
-	        transform: scale(.5);
+	-webkit-transform: scale(.25);
+	   -moz-transform: scale(.25);
+	    -ms-transform: scale(.25);
+	        transform: scale(.25);
 }
 
 	[aria-haspopup] [role=radio] { width: 100%; }
