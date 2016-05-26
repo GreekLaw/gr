@@ -179,6 +179,7 @@ button[aria-pressed=false]:before {
 
 .solved-issue {
 	position: relative;
+	width: auto;
 	padding: 11px 11px 11px 32px;
 }
 
