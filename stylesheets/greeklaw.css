@@ -48,7 +48,10 @@ nav, nav li, .nav-tree-branch, main {
 	        box-sizing: border-box;
 }
 
-nav li { width: 100%; }
+nav li {
+	width: 100%;
+	text-indent: 0;
+}
 
 nav li a {
 	line-height: 34px;
@@ -56,8 +59,8 @@ nav li a {
 	padding: 3px 0px 2px 0px;
 }
 
-a, a:visited { color: #255DB1; text-decoration: none;      }
-   a:hover   { color: #255DB1; text-decoration: underline; }
+a, a:visited { color: #477ccc; text-decoration: none;      }
+   a:hover   { color: #477ccc; text-decoration: underline; }
    a:active  { color: #859DBD; text-decoration: underline; }
 
 hr {
@@ -70,35 +73,30 @@ hr::after {
 	padding-right: 2.5em;
 }
 
-ul { padding: 0 1em; }
-
 ol, ul, dl {
 	display: inline-block;
 	white-space: normal;
 	margin: 0;
+	padding: 0;
 	list-style: inside;
 }
 
 .table-of-contents { list-style: inherit; }
-.with-bullets { list-style: square; }
-
-li, dd, dt {
-	white-space: pre-line;
-	margin: 0;
-}
+.with-bullets      { list-style: square;  }
 
 li {
-	padding-left: 1.5em;
-	margin-left: -1.5em;
+	padding: 0 0 0 1em;
+	margin: 0 0 0 1.5em;
+	text-indent: - 1em;
 }
 
-dd, dt { padding: 0 }
-
-dt {
-	padding-top: 1.5em;
-	font-weight: 400;
+dd, dt {
+	white-space: pre-line;
+	margin: 0;
+	padding: 0;
 }
 
+dt { font-weight: 400; }
 
 main {
 	display: inline-block;
