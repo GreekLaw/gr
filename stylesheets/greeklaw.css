@@ -361,8 +361,7 @@ label { line-height:1.5; }
 	.nav-tree { white-space: normal; }
 	
 	.nav-tree h2,
-	.nav-tree-branch { width: 100%; }
-	.nav-tree-branch li { text-indent: 0;}
+	.nav-tree-branch { display: table; width: 100%; }
 	
 	.seal-text, .seal-header { width: 100%; }
 }
