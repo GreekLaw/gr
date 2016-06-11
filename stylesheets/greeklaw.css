@@ -56,9 +56,9 @@ nav li a {
 	padding: 3px 0px 2px 0px;
 }
 
-a,
-a:visited { color: #255DB1; text-decoration: none;      }
-a:hover   { color: #859DBD; text-decoration: underline; }
+a, a:visited { color: #255DB1; text-decoration: none;      }
+   a:hover   { color: #255DB1; text-decoration: underline; }
+   a:active  { color: #859DBD; text-decoration: underline; }
 
 hr {
 	display: inline;
