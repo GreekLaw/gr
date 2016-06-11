@@ -24,6 +24,11 @@ body > header a {
 	text-align: center;
 }
 
+body > header a:hover, body > header a:link, body > header a:visited {
+	text-decoration: none;
+	color: black;
+}
+
 .last-updated {
 	position: absolute;
 	right: 10px;
@@ -32,26 +37,27 @@ body > header a {
 	color: grey;
 }
 
-body > header a:hover, body > header a:link, body > header a:visited {
-	text-decoration: none;
-	color: black;
-}
-
 nav ul {
 	list-style: none;
 	padding: 0 1em;
 }
 
-nav li a { line-height: 34px; }
+nav, nav li, main {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
 
-nav li a       { color: #afbbcd; }
-nav li a:hover { color: white  ; }
+nav li { width: 100%; }
 
 nav li a {
+	line-height: 34px;
 	display: inline-block;
-	width: 100%;
 	padding: 3px 0px 2px 0px;
 }
+
+nav li a       { color: #afbbcd; text-decoration: none;      }
+nav li a:hover { color: white  ; text-decoration: underline; }
 
 hr {
 	display: inline;
@@ -62,9 +68,6 @@ hr::after {
 	content: "";
 	padding-right: 2.5em;
 }
-
-a       { text-decoration: none     ; }
-a:hover { text-decoration: underline; }
 
 ul { padding: 0 1em; }
 
@@ -105,9 +108,6 @@ main {
 	margin-top: 0em;
 	padding: 20px 10px 30px 10px;
 	white-space: pre-line;
-	-webkit-box-sizing: border-box;
-	   -moz-box-sizing: border-box;
-	        box-sizing: border-box;
 }
 
 h1 ~ div { white-space: pre-wrap; }
