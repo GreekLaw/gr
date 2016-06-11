@@ -78,16 +78,15 @@ ol, ul, dl {
 	white-space: normal;
 	margin: 0;
 	padding: 0;
-	list-style: inside;
+	list-style: outside;
 }
 
 .table-of-contents { list-style: inherit; }
 .with-bullets      { list-style: square;  }
 
 li {
-	padding: 0 0 0 1em;
-	margin: 0 0 0 1.5em;
-	text-indent: -1em;
+	padding: 0;
+	margin: 0 0 0 2em;
 }
 
 dd, dt {
