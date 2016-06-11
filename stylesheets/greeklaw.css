@@ -56,8 +56,13 @@ nav li a {
 	padding: 3px 0px 2px 0px;
 }
 
-nav li a       { color: #afbbcd; text-decoration: none;      }
-nav li a:hover { color: white  ; text-decoration: underline; }
+nav li a,
+nav li a:visited { color: #afbbcd; text-decoration: none;      }
+nav li a:hover   { color: #afbbcd; text-decoration: underline; }
+
+a,
+a:visited { color: #255DB1; }
+a:hover   { color: #859DBD; }
 
 hr {
 	display: inline;
@@ -98,8 +103,6 @@ dt {
 	font-weight: 400;
 }
 
-main li a       { color: #255DB1; }
-main li a:hover { color: #859DBD; }
 
 main {
 	display: inline-block;
