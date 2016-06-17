@@ -10,7 +10,7 @@ input[id^="if"] { display: none; }
 	margin: 0;
 	padding: 0;
 	line-height: 22px;
-	text-align: center;
+	text-align: left;
 	text-indent: 0px;
 	letter-spacing: -1em;
 	vertical-align: middle;
