@@ -79,6 +79,7 @@ ol, ul, dl {
 	margin: 0;
 	padding: 0;
 	list-style: outside;
+	vertical-align: top;
 }
 
 .table-of-contents { list-style: inherit; }
