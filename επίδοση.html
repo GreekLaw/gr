@@ -13,21 +13,24 @@
 </head>
 <body>
   <header><a href="./">Greek Law</a></header>
-<input id="if1"  name="είδος-εγγράφου"  class="αγωγή"                 type="radio"    checked>
-<input id="if2"  name="είδος-εγγράφου"  class="πρακτικά"              type="radio"           >
-<input id="if3"  name="είδος-εγγράφου"  class="απόφαση"               type="radio"           >
-<input id="if4"  name="είδος-εγγράφου"  class="επιταγή-προς-πληρωμή"  type="radio"           >
-<input id="if5"  name="αποδέκτης"       class="εναγόμενος"            type="radio"    checked>
-<input id="if6"  name="αποδέκτης"       class="δικηγόρος"             type="radio"           >
-<input id="if7"  name="νομική-φύση"     class="φυσικό-πρόσωπο"        type="radio"    checked>
-<input id="if8"  name="νομική-φύση"     class="νομικό-πρόσωπο"        type="radio"           >
-<input id="if9"  name="γένος-αποδέκτη"  class="εναγόμενος-αρσενικό"   type="radio"    checked>
-<input id="if10" name="γένος-αποδέκτη"  class="εναγόμενος-θηλυκό"     type="radio"           >
-<input id="if11" name="γένος-αποδέκτη"  class="εναγόμενος-ουδέτερο"   type="radio"           >
-<input id="if12" name="γένος-δικηγόρου" class="δικηγόρος-άνδρας"      type="radio"    checked>
-<input id="if13" name="γένος-δικηγόρου" class="δικηγόρος-γυναίκα"     type="radio"           >
-<input id="if14"                        class="παραγγελία-παράστασης" type="checkbox" checked>
-<input id="if15"                        class="ειρηνοδικείο"          type="checkbox" checked>
+<input id="if1"  name="είδος-εγγράφου"   class="αγωγή"                   type="radio"    checked>
+<input id="if2"  name="είδος-εγγράφου"   class="πρακτικά"                type="radio"           >
+<input id="if3"  name="είδος-εγγράφου"   class="απόφαση"                 type="radio"           >
+<input id="if4"  name="είδος-εγγράφου"   class="επιταγή-προς-πληρωμή"    type="radio"           >
+<input id="if5"  name="αποδέκτης"        class="εναγόμενος"              type="radio"    checked>
+<input id="if6"  name="αποδέκτης"        class="δικηγόρος"               type="radio"           >
+<input id="if7"  name="νομική-φύση"      class="φυσικό-πρόσωπο"          type="radio"    checked>
+<input id="if8"  name="νομική-φύση"      class="νομικό-πρόσωπο"          type="radio"           >
+<input id="if9"  name="γένος-αποδέκτη"   class="εναγόμενος-αρσενικό"     type="radio"    checked>
+<input id="if10" name="γένος-αποδέκτη"   class="εναγόμενος-θηλυκό"       type="radio"           >
+<input id="if11" name="γένος-αποδέκτη"   class="εναγόμενος-ουδέτερο"     type="radio"           >
+<input id="if12" name="γένος-δικηγόρου"  class="δικηγόρος-άνδρας"        type="radio"    checked>
+<input id="if13" name="γένος-δικηγόρου"  class="δικηγόρος-γυναίκα"       type="radio"           >
+<input id="if14"                         class="παραγγελία-παράστασης"   type="checkbox" checked>
+<input id="if15"                         class="ειρηνοδικείο"            type="checkbox" checked>
+<input id="if16"                         class="τακτική-διαδικασία"      type="checkbox" checked>
+<input id="if17" name="χρόνος-κατάθεσης" class="έως-και-31-12-2015"      type="radio"           >
+<input id="if18" name="χρόνος-κατάθεσης" class="από-01-01-2016-και-μετά" type="radio"    checked>
 
 <main role="main">
 <h1 class="solved-issue">Παραγγελία επίδοσης</h1>
@@ -39,6 +42,11 @@
       <button role="radio" data-controls="if4" data-checked-if="4">Επιταγή προς πληρωμή</button>
   </menu>
 </div>
+<div class="question" data-disabled-if="-1">Η αγωγή <button data-controls="if16" data-checked-if="16" aria-pressed="false"><span data-shown-if="-16">δεν</span> ορίστηκε</button> να εκδικαστεί κατά την τακτική διαδικασία και έχει κατατεθεί 
+  <menu role="radiogroup">
+      <button role="radio" data-controls="if17" data-checked-if="17">έως και 31-12-2015</button>
+      <button role="radio" data-controls="if18" data-checked-if="18">από 01-01-2016 και μετά</button>
+  </menu></div>
 <div class="question">
     <menu role="radiogroup" aria-haspopup aria-expanded="false">
         <button role="radio" data-controls="if9"  data-checked-if="9" >Ο</button>
@@ -57,9 +65,9 @@
       <button role="radio" data-controls="if6" data-checked-if="6">σε πληρεξούσιο δικηγόρο</button>
   </menu>
 </div>
-<div class="question" data-disabled-if="-1-2"><span data-shown-if="-2">Ο παραλαβών</span><span data-shown-if="2"><span data-shown-if="9">Ο</span><span data-shown-if="10">Η</span><span data-shown-if="11">Το</span> αντίδικ<span data-shown-if="9 10">ος</span><span data-shown-if="11">ο</span> </span><button data-controls="if14" data-checked-if="14" aria-pressed="false"><span data-shown-if="-14">δεν</span> καλείται</button> να παραστεί στη συζήτηση.</div>
+<div class="question" data-disabled-if="-1-2 1-16-18"><span data-shown-if="-2">Ο παραλαβών</span><span data-shown-if="2"><span data-shown-if="9">Ο</span><span data-shown-if="10">Η</span><span data-shown-if="11">Το</span> αντίδικ<span data-shown-if="9 10">ος</span><span data-shown-if="11">ο</span> </span><button data-controls="if14" data-checked-if="14" aria-pressed="false"><span data-shown-if="-14">δεν</span> καλείται</button> να παραστεί στη συζήτηση.</div>
 <div class="answer"><h3 class="note">Σημείωση στο αντίγραφο <span data-shown-if="1">της αγωγής</span><span data-shown-if="2">των πρακτικών Δικαστηρίου</span><span data-shown-if="3">της απόφασης ή της διαταγής πληρωμής</span><span data-shown-if="4">του απογράφου με συνημμένη επιταγή προς πληρωμή</span><span data-shown-if="1 2 3">, επιδιδόμενο προς γνώση</span>
-</h2><span data-shown-if="4">Αυτό είναι ακριβές αντίγραφο από το εκτελεστό α' απόγραφο που έχω στα χέρια μου και αρμόδιος</span><span data-shown-if="1 2 3">Αρμόδιος</span> δικαστικός επιμελητής παραγγέλλεται να <span data-shown-if="4">το</span> επιδώσει νόμιμα <span data-shown-if="1 3">την παρούσα </span><span data-shown-if="2">τα παρόντα </span> προς <span data-shown-if="-1+6"> τον <input type="text" placeholder="ονοματεπώνυμο" class="fill-the-blank">, δικηγόρο του Πρωτοδικείου <input type="text" placeholder="έδρα Πρωτοδικείου" class="fill-the-blank"> ως πληρεξούσι<span data-shown-if="12">ο</span><span data-shown-if="13">α</span> δικηγόρο </span> <span data-shown-if="9" > το<span data-shown-if="5">ν</span><span data-shown-if="6">υ</span></span><span data-shown-if="10"> τη<span data-shown-if="5 1+6">ν</span><span data-shown-if="-1+6">ς</span></span><span data-shown-if="11"> τ<span  data-shown-if="5">ο</span><span data-shown-if="6">oυ</span></span> <input type="text" placeholder="ονοματεπώνυμο" class="fill-the-blank">, που <span data-shown-if="7"> κατοικεί</span><span data-shown-if="8"> εδρεύει</span> <input type="text" placeholder="διεύθυνση" class="fill-the-blank"><span data-shown-if="8">, νόμιμα εκπροσωπούμεν<span data-shown-if="9">ο</span><span data-shown-if="10">η</span><span data-shown-if="11">ο</span></span>, προς γνώση <span data-shown-if="9" >του</span><span data-shown-if="10">της</span><span data-shown-if="11">του</span> και για τις νόμιμες συνέπειες<span data-shown-if="-14+1 -14+2 -14+3">.</span><span data-shown-if="14+1 14+2">, καλούμεν<span data-shown-if="9">ον</span><span data-shown-if="10">η</span><span data-shown-if="11">ο</span> συγχρόνως να παραστεί κατά τη συζήτηση όταν και όπου ορίζεται με <span data-shown-if="1">την παραπάνω πράξη.</span><span data-shown-if="2">τα παραπάνω πρακτικά.</span> </span><span data-shown-if="4">, καλούμεν<span data-shown-if="9">ον</span><span data-shown-if="10">η</span><span data-shown-if="11">ο</span> συγχρόνως να καταβάλλει σε μένα ή στον πληρεξούσιο και αντίκλητο Δικηγόρο μου κ. <input type="text" placeholder="ονοματεπώνυμο" class="fill-the-blank"> που έχω  <input type="text" placeholder="πόλη δικηγόρου" class="fill-the-blank"> και είναι δεκτικός καταβολής τα εξής χρηματικά ποσά:<br>
+</h2><span data-shown-if="4">Αυτό είναι ακριβές αντίγραφο από το εκτελεστό α' απόγραφο που έχω στα χέρια μου και αρμόδιος</span><span data-shown-if="1 2 3">Αρμόδιος</span> δικαστικός επιμελητής παραγγέλλεται να <span data-shown-if="4">το</span> επιδώσει νόμιμα <span data-shown-if="1 3">την παρούσα </span><span data-shown-if="2">τα παρόντα </span> προς <span data-shown-if="-1+6"> τον <input type="text" placeholder="ονοματεπώνυμο" class="fill-the-blank">, δικηγόρο του Πρωτοδικείου <input type="text" placeholder="έδρα Πρωτοδικείου" class="fill-the-blank"> ως πληρεξούσι<span data-shown-if="12">ο</span><span data-shown-if="13">α</span> δικηγόρο </span> <span data-shown-if="9" > το<span data-shown-if="5">ν</span><span data-shown-if="6">υ</span></span><span data-shown-if="10"> τη<span data-shown-if="5 1+6">ν</span><span data-shown-if="-1+6">ς</span></span><span data-shown-if="11"> τ<span  data-shown-if="5">ο</span><span data-shown-if="6">oυ</span></span> <input type="text" placeholder="ονοματεπώνυμο" class="fill-the-blank">, που <span data-shown-if="7"> κατοικεί</span><span data-shown-if="8"> εδρεύει</span> <input type="text" placeholder="διεύθυνση" class="fill-the-blank"><span data-shown-if="8">, νόμιμα εκπροσωπούμεν<span data-shown-if="9">ο</span><span data-shown-if="10">η</span><span data-shown-if="11">ο</span></span>, προς γνώση <span data-shown-if="9" >του</span><span data-shown-if="10">της</span><span data-shown-if="11">του</span> και για τις νόμιμες συνέπειες<span data-shown-if="1-14 2-14 3-14">.</span><span data-shown-if="1+14-16-18 2+14">, καλούμεν<span data-shown-if="9">ον</span><span data-shown-if="10">η</span><span data-shown-if="11">ο</span> συγχρόνως να παραστεί κατά τη συζήτηση όταν και όπου ορίζεται με <span data-shown-if="1">την παραπάνω πράξη.</span><span data-shown-if="2">τα παραπάνω πρακτικά.</span> </span><span data-shown-if="4">, καλούμεν<span data-shown-if="9">ον</span><span data-shown-if="10">η</span><span data-shown-if="11">ο</span> συγχρόνως να καταβάλλει σε μένα ή στον πληρεξούσιο και αντίκλητο Δικηγόρο μου κ. <input type="text" placeholder="ονοματεπώνυμο" class="fill-the-blank"> που έχω  <input type="text" placeholder="πόλη δικηγόρου" class="fill-the-blank"> και είναι δεκτικός καταβολής τα εξής χρηματικά ποσά:<br>
 <ul><li>1) Για επιδικασθείσα απαίτηση <input type="text" placeholder="ποσό" class="fill-the-blank"> €,</li>
 <li>2) για δεδουλευμένους τόκους από <input type="text" placeholder="ημερομηνία" class="fill-the-blank"> μέχρι <input type="text" placeholder="ημερομηνία" class="fill-the-blank"> <input type="text" placeholder="ποσό" class="fill-the-blank"> €,</li>
 <li>3) για επιδικασθείσα δικαστική δαπάνη <input type="text" placeholder="ποσό" class="fill-the-blank"> €,</li>
@@ -89,10 +97,10 @@
 Στην τακτική διαδικασία, δεν απαιτείται η κλήτευση του αντιδίκου για τη συζήτηση<cite> αρ.237 παρ.4 εδ.5 ΚΠολΔ</cite>.
 Στην τακτική διαδικασία, δεν είναι απαραίτητη η παρουσία των διαδίκων ή των πληρεξούσιων δικηγόρων τους κατά τη συζήτηση<cite> αρ.237 παρ.4 εδ.7 ΚΠολΔ</cite>.
 Στην τακτική διαδικασία, αν κανένας διάδικος δεν λάβει μέρος κανονικά στη συζήτηση, η συζήτηση ματαιώνεται<cite> αρ.260 παρ.2 εδ.1 ΚΠολΔ</cite>.
-Στην τακτική διαδικασία, αν ο εναγόμενος δεν λάβει μέρος κανονικά στη συζήτηση, και αν το δικαστήριο κρίνει ότι η αγωγή δεν επιδόθηκε νόμιμα και εμπρόθεσμα, η <b>αγωγή</b> θεωρείται <b>μη ασκηθείσα</b><cite> αρ.270 παρ.1 ΚΠολΔ</cite><cite> αρ.270 παρ.2 ΚΠολΔ</cite>.
-Στην τακτική διαδικασία, αν ο εναγόμενος δεν λάβει μέρος κανονικά στη συζήτηση, και αν το δικαστήριο κρίνει ότι η αγωγή επιδόθηκε νόμιμα και εμπρόθεσμα, η υπόθεση συζητείται ερήμην του εναγομένου<cite> αρ.270 παρ.1 ΚΠολΔ</cite><cite> αρ.270 παρ.2 ΚΠολΔ</cite>.
+Στην τακτική διαδικασία, αν ο εναγόμενος δεν λάβει μέρος κανονικά στη συζήτηση, και αν το δικαστήριο κρίνει ότι η αγωγή δεν επιδόθηκε νόμιμα και εμπρόθεσμα, τότε η <b>αγωγή</b> θεωρείται <b>μη ασκηθείσα</b><cite> αρ.270 παρ.1 ΚΠολΔ</cite><cite> αρ.270 παρ.2 ΚΠολΔ</cite>.
+Στην τακτική διαδικασία, αν ο εναγόμενος δεν λάβει μέρος κανονικά στη συζήτηση, και αν το δικαστήριο κρίνει ότι η αγωγή επιδόθηκε νόμιμα και εμπρόθεσμα, τότε η υπόθεση συζητείται ερήμην του εναγομένου<cite> αρ.270 παρ.1 ΚΠολΔ</cite><cite> αρ.270 παρ.2 ΚΠολΔ</cite>.
 
-Στην τακτική διαδικασία, αν η συζήτηση ματαιωθεί, και αν εντός 60 ημερών από τη ματαίωση δεν ζητηθεί ο προσδιορισμός νέας δικασίμου, η αγωγή θεωρείται ότι δεν ασκήθηκε<cite> αρ.260 παρ.2 εδ.2 ΚΠολΔ</cite>.
+Στην τακτική διαδικασία, αν η συζήτηση ματαιωθεί, και αν εντός 60 ημερών από τη ματαίωση δεν ζητηθεί ο προσδιορισμός νέας δικασίμου, τότε η αγωγή θεωρείται ότι δεν ασκήθηκε<cite> αρ.260 παρ.2 εδ.2 ΚΠολΔ</cite>.
 
 Πέραν της τακτικής διαδικασίας, αν δεν εμφανιστεί κανένας διάδικος κατά την εκφώνηση της υπόθεσης, ή αν οι διάδικοι που εμφανιστούν δεν μετέχουν κανονικά στη συζήτηση, η συζήτηση ματαιώνεται<cite> αρ.260 παρ.1 ΚΠολΔ</cite>.
 Πέραν της τακτικής διαδικασίας, αν ο εναγόμενος δεν λάβει μέρος κανονικά στη συζήτηση, και αν το δικαστήριο κρίνει ότι η αγωγή δεν επιδόθηκε νόμιμα και εμπρόθεσμα, η <b>συζήτηση</b> κηρύσσεται <b>απαράδεκτη</b><cite> αρ.270 παρ.1 ΚΠολΔ</cite><cite> αρ.270 παρ.2 ΚΠολΔ</cite>
@@ -101,7 +109,7 @@
 Αν κανείς διάδικος δεν επισπεύσει την πρόοδο της δίκης<cite> αρ.261 παρ.2 εδ.2 ΑΚ</cite>, η προθεσμία παραγραφής της απαίτησης επανεκκινείται 6 μήνες μετά τη ματαίωση της υπόθεσης<cite> αρ.260 παρ.3 ΚΠολΔ</cite><cite> αρ.261 παρ.2 εδ.1 ΑΚ</cite>.
 </span>
 <h2>Αμοιβή για επίδοση</h2>
-Η αμοιβή του δικαστικού επιμελητή για την επίδοση ορίζεται από τον νόμο<cite> <a href="http://odee.gr/files/fek_709_b_diorthothikes_amoives.pdf">21798/11-03-2016 κυα</a> (ΦΕΚ 709 Β/16-03-2016)</cite><cite> αρ.49 ν.2318/1995</cite><cite> αρ.50 ν.2318/1995</cite><cite> αρ.122 παρ.5 ΚΠολΔ</cite><cite> αρ.125 ΚΠολΔ</cite><cite> αρ.929 παρ.3 ΚΠολΔ</cite><cite> αρ.630 Α ΚΠολΔ</cite>.
+Η αμοιβή του δικαστικού επιμελητή για την επίδοση ορίζεται από τον νόμο<cite> <a href="http://odee.gr/files/fek_709_b_diorthothikes_amoives.pdf">21798/11-03-2016 κυα</a> (ΦΕΚ Β 709/16-03-2016)</cite><cite> αρ.49 ν.2318/1995</cite><cite> αρ.50 ν.2318/1995</cite><cite> αρ.122 παρ.5 ΚΠολΔ</cite><cite> αρ.125 ΚΠολΔ</cite><cite> αρ.929 παρ.3 ΚΠολΔ</cite><cite> αρ.630 Α ΚΠολΔ</cite>.
 
 Θα συμβουλευτείτε τον <a class="ad" id="ad" href="https://epidiko.gr" target="_blank">ΚΠολΔ στο κινητό σας</a>;
 
