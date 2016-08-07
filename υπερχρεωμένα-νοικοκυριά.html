@@ -16,12 +16,12 @@
   <header><a href="./">Greek Law</a></header>
   <nav role="navigation"></nav>
 <main role="main">
-<div class="question important">Ενημέρωση για αιτήσεις που κατατέθηκαν
+<div class="question important"><span id="label-q1">Ενημέρωση για αιτήσεις που κατατέθηκαν</span>
   <input id="if1"   name="ημερομηνία-κατάθεσης"     class="έως-και-18-08-2015"  type="radio"           >
   <input id="if2"   name="ημερομηνία-κατάθεσης"     class="μετά-την-18-08-2015" type="radio"           >
   <input id="if3"   name="ημερομηνία-κατάθεσης"     class="μετά-την-31-12-2015" type="radio"    checked>
   <input id="if10"  name="επισήμανση-τροποποιήσεων"                             type="checkbox" checked>
-  <div role="radiogroup">
+  <div role="radiogroup" aria-labelledby="label-q1">
       <button role="radio" data-controls="if1" data-checked-if="1">έως 18-08-2015</button>
       <button role="radio" data-controls="if2" data-checked-if="2">από 19-08-2015 έως 31-12-2015</button>
       <button role="radio" data-controls="if3" data-checked-if="3">από 01-01-2016 και μετά</button>
