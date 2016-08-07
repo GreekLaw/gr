@@ -15,17 +15,19 @@
 <body>
   <header><a href="./">Greek Law</a></header>
   <nav role="navigation"></nav>
-<input id="if1" name="είδος-μίσθωσης" class="μίσθωση-πράγματος" type="radio" checked>
-<input id="if2" name="είδος-μίσθωσης" class="αγρομίσθωση"       type="radio"        >
-<input id="if3" name="είδος-μίσθωσης" class="εμπορική-μίσθωση"  type="radio"        >
 
 <main role="main">
 <h1 class="centered">
-  <div role="radiogroup" class="heading">
-    <button role="radio" data-controls="if1" data-checked-if="1">Μίσθωση Πράγματος</button>
-    <button role="radio" data-controls="if2" data-checked-if="2">Αγρομίσθωση</button>
-    <button role="radio" data-controls="if3" data-checked-if="3">Εμπορική Μίσθωση</button>
-  </div>
+  <form>
+    <input id="if1" name="είδος-μίσθωσης" class="μίσθωση-πράγματος" type="radio" checked>
+    <input id="if2" name="είδος-μίσθωσης" class="αγρομίσθωση"       type="radio"        >
+    <input id="if3" name="είδος-μίσθωσης" class="εμπορική-μίσθωση"  type="radio"        >
+    <div role="radiogroup" class="heading">
+      <button role="radio" data-controls="if1" data-checked-if="1">Μίσθωση Πράγματος</button>
+      <button role="radio" data-controls="if2" data-checked-if="2">Αγρομίσθωση</button>
+      <button role="radio" data-controls="if3" data-checked-if="3">Εμπορική Μίσθωση</button>
+    </div>
+  </form>
 </h1>
 <span data-shown-if="1 3">
 <h2>Παραγραφή μισθωμάτων</h2>
