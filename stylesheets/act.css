@@ -13,7 +13,7 @@ form h1, form h2, form h3, form h4, form h5, form h6 {
 	width: 100%;
 }
 
-form span[id^=q] {
+form span[id^=label] {
 	display: inline;
 	padding: 0;
 	vertical-align: middle;
