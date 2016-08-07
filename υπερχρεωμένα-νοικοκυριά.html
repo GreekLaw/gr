@@ -14,17 +14,17 @@
 <body>
   <header><a href="./">Greek Law</a></header>
   <nav role="navigation"></nav>
-<input id="if1"   name="ημερομηνία-κατάθεσης"     class="έως-και-18-08-2015"  type="radio"           >
-<input id="if2"   name="ημερομηνία-κατάθεσης"     class="μετά-την-18-08-2015" type="radio"           >
-<input id="if3"   name="ημερομηνία-κατάθεσης"     class="μετά-την-31-12-2015" type="radio"    checked>
-<input id="if10"  name="επισήμανση-τροποποιήσεων"                             type="checkbox" checked>
 <main role="main">
 <div class="question important">Ενημέρωση για αιτήσεις που κατατέθηκαν
-  <menu role="radiogroup">
+  <input id="if1"   name="ημερομηνία-κατάθεσης"     class="έως-και-18-08-2015"  type="radio"           >
+  <input id="if2"   name="ημερομηνία-κατάθεσης"     class="μετά-την-18-08-2015" type="radio"           >
+  <input id="if3"   name="ημερομηνία-κατάθεσης"     class="μετά-την-31-12-2015" type="radio"    checked>
+  <input id="if10"  name="επισήμανση-τροποποιήσεων"                             type="checkbox" checked>
+  <div role="radiogroup">
       <button role="radio" data-controls="if1" data-checked-if="1">έως 18-08-2015</button>
       <button role="radio" data-controls="if2" data-checked-if="2">από 19-08-2015 έως 31-12-2015</button>
       <button role="radio" data-controls="if3" data-checked-if="3">από 01-01-2016 και μετά</button>
-  </menu>
+  </div>
   <br>
   <cite data-shown-if="2"> αρ.2 παρ.Α υποπαρ.4 αρ.2 παρ.5 ν.4336/2015</cite><cite data-shown-if="1 2"> αρ.4 ν.4336/2015</cite><cite data-shown-if="1 2"> <a href="http://www.mnec.gr/?q=el/news/news/σχετικά-με-την-υπογραφή-της-σύμβασης-χρηματοδοτικής-διευκόλυνσης-μεταξύ-ελληνικής">ανακοίνωση Υπ. Οικονομικών</a></cite><cite data-shown-if="2 3"> αρ.14 παρ.11 ν.4346/2015</cite>
   <div data-shown-if="2 3"> <a href="http://www.publicrevenue.gr/kpi/public/blog/attach/files/rss/parartima2.pdf">Ο ν.3869/2010</a>, με τις τελευταίες τροποποιήσεις</div>
