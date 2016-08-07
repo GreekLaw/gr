@@ -43,21 +43,21 @@
 <input id="if23" class="ερήμην"                               type="radio"    name="πρωτόδικη-απόφαση"            >
 <input id="if24" class="πλασματικά-κατ-αντιμωλία"             type="radio"    name="πρωτόδικη-απόφαση"            >
 <input id="if25" class="άσκηση-ανταγωγής"                     type="checkbox"                                     >
-<fieldset class="question"><legend>Το δικόγραφο κατατέθηκε</legend>
-  <div role="radiogroup">
+<fieldset class="question"><span id="q1-label">Το δικόγραφο κατατέθηκε</span>
+  <div role="radiogroup" aria-labelledby="q1-label">
     <button role="radio" data-controls="if1" data-checked-if="1">έως 31-12-2015</button>
     <button role="radio" data-controls="if2" data-checked-if="2">από 01-01-2016 και μετά</button>
   </div>
 </fieldset>
-<fieldset class="question"><legend>Η υπόθεση συζητείται στο</legend>
-  <div role="radiogroup">
+<fieldset class="question"><span id="q2-label">Η υπόθεση συζητείται στο</span>
+  <div role="radiogroup" aria-labelledby="q2-label">
     <button role="radio" data-controls="if3" data-checked-if="3">Ειρηνοδικείο</button>
     <button role="radio" data-controls="if4" data-checked-if="4">Μον. Πρωτοδικείο</button>
     <button role="radio" data-controls="if5" data-checked-if="5">Πολ. Πρωτοδικείο</button>
   </menu>
 </fieldset>
-<fieldset class="question"><legend>H συζήτηση έχει οριστεί να διεξαχθεί κατά τη<span data-shown-if="6 7">ν</span><span data-shown-if="8 9 10"> διαδικασία</span><span data-shown-if="8 9"> των</span><span data-shown-if="10"> της</span></legend>
-  <div role="radiogroup">
+<fieldset class="question"><span id="q3-label">H συζήτηση έχει οριστεί να διεξαχθεί κατά τη<span data-shown-if="6 7">ν</span><span data-shown-if="8 9 10"> διαδικασία</span><span data-shown-if="8 9"> των</span><span data-shown-if="10"> της</span></span>
+  <div role="radiogroup" aria-labelledby="q3-label">
     <button role="radio" data-controls="if6"  data-checked-if="6" >τακτική διαδικασία</button>
     <button role="radio" data-controls="if7"  data-checked-if="7" >ειδική διαδικασία</button>
     <button role="radio" data-controls="if8"  data-checked-if="8" >μικροδιαφορών</button>
@@ -65,8 +65,8 @@
     <button role="radio" data-controls="if10" data-checked-if="10">εκούσιας δικαιοδοσίας</button>
   </div>
 </fieldset>
-<fieldset class="question" data-disabled-if="-7"><legend>Η ειδική διαδικασία αφορά σε</legend>
-  <div role="radiogroup" aria-haspopup aria-expanded="false">
+<fieldset class="question" data-disabled-if="-7"><span id="q4-label">Η ειδική διαδικασία αφορά σε</span>
+  <div role="radiogroup" aria-haspopup aria-expanded="false" aria-labelledby="q4-label">
     <button role="radio" data-controls="if11" data-checked-if="11">γαμικές διαφορές</button>
     <button role="radio" data-controls="if12" data-checked-if="12">σχέσεις γονέων και τέκνου</button>
     <button role="radio" data-controls="if13" data-checked-if="13">πιστωτικούς τίτλους</button>
@@ -78,7 +78,7 @@
     <button role="radio" data-controls="if19" data-checked-if="19">προσβολές από δημοσιεύματα ή ραδιοτηλεοπτικές εκπομπές</button>
   </div>
 </fieldset>
-<fieldset class="question" data-disabled-if="1+4+21 1+5+21 1+10 2+9 2+10"><button aria-pressed="false" data-controls="if25" data-checked-if="25"><span data-shown-if="-25">Δεν α</span><span data-shown-if="25">Α</span>σκείται</button> <legend><span data-shown-if="6 7 8">ανταγωγή</span><span data-shown-if="9 10">ανταίτηση</span> με τις προτάσεις</legend>
+<fieldset class="question" data-disabled-if="1+4+21 1+5+21 1+10 2+9 2+10"><button aria-pressed="false" data-controls="if25" data-checked-if="25" aria-labelledby="q5-label"><span data-shown-if="-25">Δεν α</span><span data-shown-if="25">Α</span>σκείται</button> <span id="q5-label"><span data-shown-if="6 7 8">ανταγωγή</span><span data-shown-if="9 10">ανταίτηση</span> με τις προτάσεις</span>
 </fieldset><fieldset class="question not-shown" data-disabled-if="3">Το δικαστήριο ενεργεί ως 
   <div role="radiogroup">
     <button role="radio" data-controls="if20" data-checked-if="20">Πρωτοβάθμιο δικαστήριο</button>
