@@ -3,14 +3,17 @@
 	font-size: inherit;
 }
 
-form { display: table; }
+form {
+	display: table;
+	white-space: normal;
+}
 
 form h1, form h2, form h3, form h4, form h5, form h6 {
 	display: inline-block;
 	width: 100%;
 }
 
-.question legend {
+form span[id^=q] {
 	display: inline;
 	padding: 0;
 	vertical-align: middle;
