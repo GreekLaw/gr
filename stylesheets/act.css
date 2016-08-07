@@ -3,6 +3,19 @@
 	font-size: inherit;
 }
 
+form { display: table; }
+
+form h1, form h2, form h3, form h4, form h5, form h6 {
+	display: inline-block;
+	width: 100%;
+}
+
+.question legend {
+	display: inline;
+	padding: 0;
+	vertical-align: middle;
+}
+
 input[id^="if"] { display: none; }
 
 [role=radiogroup] {
@@ -25,8 +38,8 @@ input[id^="if"] { display: none; }
 .answer,
 [role=radio],
 [role=checkbox],
-button[aria-pressed=true],
-button[aria-pressed=false] {
+[aria-pressed=true],
+[aria-pressed=false] {
 	-webkit-transition: .5s;
 	   -moz-transition: .5s;
 	        transition: .5s;
@@ -34,8 +47,8 @@ button[aria-pressed=false] {
 
 [role=radio],
 [role=checkbox],
-button[aria-pressed=true],
-button[aria-pressed=false] {
+[aria-pressed=true],
+[aria-pressed=false] {
 	position: relative;
 	display: table-cell;
 	margin: 0;
@@ -58,25 +71,17 @@ button[aria-pressed=false] {
 
 [role=radio]:before,
 [role=checkbox]:before,
-button[aria-pressed=true]:before,
-button[aria-pressed=false]:before {
+[aria-pressed=true]:before,
+[aria-pressed=false]:before {
 	content: "";
 	position: absolute;
 	left: 0;
 	margin: 0 0 0 0;
-	border: 1px solid #0088E0;
 	border-radius: 0px;
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
 	        box-sizing: border-box;
 }
-
-[role=checkbox]:before,
-button[aria-pressed=true]:before,
-button[aria-pressed=false]:before {
-	border-radius: 4px;
-}
-
 
 [aria-haspopup] [role=radio] {
 	text-align: left;
@@ -131,23 +136,24 @@ button[aria-pressed=false]:before {
 
 	[aria-haspopup][aria-expanded=false] [role=radio]:before {
 		border: 1px solid #0088E0;
-		border-radius: 4px;
 	}
 
 	[aria-haspopup] [role=radio]:after {
 		content: "";
 		position: relative;
-		width: 0px;
-		height: 0px;
-		margin-left: 6px;
-		top: 12px;
-		border: 5px solid transparent;
-		border-top-color: #DBECF9;
-		border-bottom: 0px solid;
+		display: inline-block;
+		width: 9px;
+		height: 9px;
+		top: -2px;
+		margin-left: 11px;
+		border: 1px solid #0088E0;
+		border-width: 0px 1px 1px 0px;
+		transform: rotate(45deg);
 	}
 	
-	[aria-haspopup] [role=radio].checked:after     { opacity: 1; }
-	[aria-haspopup] [role=radio].not-checked:after { opacity: 0; }
+	[aria-haspopup] [role=radio].checked:after             { opacity: 1; }
+	[aria-haspopup] [role=radio].not-checked:after         { opacity: 0; }
+	[aria-haspopup][aria-expanded=true] [role=radio]:after { opacity: 0; }
 
 	[aria-haspopup][aria-expanded=false] [role=radio].not-checked {
 		opacity: 0;
@@ -159,38 +165,28 @@ button[aria-pressed=false]:before {
 		border: 0px solid;
 	}
 
-	[aria-haspopup][aria-expanded=true] [role=radio]:first-child:before {
-		border-radius: 4px 4px 0 0px;
-	}
-
-	[aria-haspopup][aria-expanded=true] [role=radio]:last-child:before {
-		border-radius: 0 0px 4px 4px;
-	}
-
 	[aria-haspopup] .checked:before {
 		border-top: 1px solid #0088E0;
 	}
 
-.checked, button[aria-pressed].checked { color: inherit; }
-
-.checked:before { background: #DBECF9; }
+.checked, [aria-pressed].checked { color: inherit; }
 
 .not-shown.not-shown { display: none; }
 
 .solved-issue {
 	position: relative;
 	width: auto;
-	padding: 11px 11px 11px 32px;
+	padding: 11px 16px 11px 32px;
 }
 
-.question, .asnwer { display: inline-table; width: 100%; }
+.question, .answer { display: inline-table; width: 100%; }
 [role=radiogroup]  { display: inline-table; width: auto; }
 
 .question,
 .answer {
 	position: relative;
 	margin: 0 0 0 0px;
-        padding: 11px 0;
+ 	padding: 11px 0;
 	white-space: normal;
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
@@ -201,11 +197,15 @@ button[aria-pressed=false]:before {
 }
 
 .question {
+	border: none;
 	counter-increment: questions 1;
 	line-height: 44px;
 }
 
-.answer { line-height: 22px; }
+.answer {
+	line-height: 22px;
+	display: inline-block;
+}
 
 .solved-issue:before { content: '';                 }
 .question:before     { content: counter(questions); }
@@ -244,7 +244,7 @@ button[aria-pressed=false]:before {
 }
 
 .solved-issue:after { background: transparent; }
-.answer:after {background: #717171;}
+.answer:after { background: #717171; }
 
 .solved-issue:after { left: 100% ; bottom: -2px; box-shadow: 0 0 0 1px; border-radius: 100%; }
 .answer:after       { left:  11px; bottom: -2px; box-shadow: 0 0 0 1px; border-radius:   0%; }
@@ -272,10 +272,8 @@ button[aria-pressed=false]:before {
         @keyframes fade-in { from {opacity: 0;} }
 
 @media (min-width: 600px){
-	.question,
-	.answer {
-		padding: 11px 0 11px 33px;
-	}
+	.question { padding: 11px 0 11px 33px; }
+	.answer   { padding: 11px 0 22px 33px; }
 
 	.question:before,
 	.answer:before {
@@ -286,51 +284,38 @@ button[aria-pressed=false]:before {
 
 	[role=radio]:before,
 	[role=checkbox]:before,
-	button[aria-pressed=true]:before,
-	button[aria-pressed=false]:before {
+	[aria-pressed]:before {
 		width: 100%;
 		height: 7px;
 		bottom: -2px;
+		border: 1px solid #0088E0;
 	}
 
-	[role=radio]:before {
-		border-right: 0px solid #0088E0;
-	}
+	.not-checked:before            { border-top-width: 0px; }
+	.checked:before                { border-top-width: 1px; }
 
-	[role=radio]:first-child:before {
-		border-left: 1px solid #0088E0;
-		border-radius: 4px 0px 0 4px;
-	}
+	[role=radio]:before            { border-right-width: 0px; }
+	[role=radio]:last-child:before { border-right-width: 1px; }
 
-	[role=radio]:last-child:before {
-		border-right: 1px solid #0088E0;
-		border-radius: 0 4px 4px 0px;
-	}
+	.checked:before                { background: #DBECF9; }
 
-	.checked:before {
-		border-left: 1px solid #0088E0;
-	}
+	[aria-haspopup][aria-expanded=true] [role=radio]:before { border-top-width: 1px; }
 
-	[aria-haspopup][aria-expanded=true] [role=radio]:before {
-		border-right: 1px solid #0088E0;
-	}
+	[aria-haspopup][aria-expanded=true] [role=radio]:before            { border-bottom-width: 0px; }
+	[aria-haspopup][aria-expanded=true] [role=radio]:last-child:before { border-bottom-width: 1px; }
 
-	[aria-haspopup][aria-expanded=true] [role=radio]:before {
-		border-bottom: 0px solid #0088E0;
-	}
-
-	[aria-haspopup][aria-expanded=true] [role=radio]:last-child:before {
-		border-bottom: 1px solid #0088E0;
-	}
+	[aria-haspopup][aria-expanded=true] [role=radio]:before         { border-right-width: 0px; }
+	[aria-haspopup][aria-expanded=true] [role=radio].checked:before { border-right-width: 1px; }
 }
 
 @media (max-width: 600px){
-
 	.question,
 	.answer {
 		width: 100%;
 		padding-left: 32px;
 	}
+
+	.answer { padding-bottom: 22px; }
 
 	[role=radiogroup] {
 		float: right;
@@ -361,17 +346,23 @@ button[aria-pressed=false]:before {
 		letter-spacing: 0px;
 	}
 
-	[role=radiogroup],
-	[role=checkbox],
-	button[aria-pressed=true],
-	button[aria-pressed=false] {
-	}
-
 	[role=radio]:before {
 		width: 7px;
 		height: 100%;
-		left: 0;
 		top: 0;
+	}
+
+	[role=checkbox]:before,
+	[aria-pressed]:before {
+		width: 100%;
+		height: 7px;
+		bottom: 0px;
+	}
+
+	[role=radio]:before,
+	[role=checkbox]:before,
+	[aria-pressed]:before {
+		border: 1px solid #0088E0;
 	}
 
 	[aria-haspopup] [role=radio]:before {
@@ -380,29 +371,24 @@ button[aria-pressed=false]:before {
 		top: 0;
 	}
 
-	[role=checkbox]:before,
-	button[aria-pressed=true]:before,
-	button[aria-pressed=false]:before {
-		width: 100%;
-		height: 7px;
-		bottom: 0px;
-	}
+	.checked:before { border: 1px solid #0088E0; }
 
-	[role=radio]:before {
-		border-bottom: 0px solid #0088E0;
-	}
+	.not-checked:before         { border-top-width: 0px; }
+	.checked:before             { border-top-width: 1px; }
 
-	[role=radio]:first-child:before {
-		border-top: 1px solid #0088E0;
-		border-radius: 4px 4px 0 0px;
-	}
+	[role=radio]:before         { border-right-width:  0px; }
+	[role=radio]:before         { border-top-width:    1px; }
+	[role=radio]:before         { border-bottom-width: 0px; }
 
-	[role=radio]:last-child:before {
-		border-bottom: 1px solid #0088E0;
-		border-radius: 0 0px 4px 4px;
-	}
+	[role=radio].checked:before { border-right-width:  1px; }
+	[role=radio].checked:before { border-bottom-width: 0px; }
 
-	.checked:before {
-		border-top: 1px solid #0088E0;
-	}
+	.checked:before                { background: #DBECF9; }
+
+
+	[role=radio]:first-child:before { border-top-width: 1px; }
+
+	[role=radio]:last-child:before  { border-bottom-width: 1px; }
+
+
 }
