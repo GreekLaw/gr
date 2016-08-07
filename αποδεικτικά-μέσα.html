@@ -83,9 +83,16 @@
 Η εξώδικη ομολογία εκτιμάται ελεύθερα από το δικαστήριο<cite> 768/2000 ΑΠ</cite><cite> αρ.352 παρ.2 ΚΠολΔ</cite>.
 
 <h2 id="ένορκη-βεβαίωση">Ένορκη βεβαίωση</h2>
-<span class="not-shown">
+<div class="question important">Ενημέρωση για ένορκες βεβαιώσεις που δόθηκαν
 <input id="if1"  class="έως-31-12-2015"                       type="radio"    name="ένορκη-βεβαίωση"              >
 <input id="if2"  class="από-01-01-2016"                       type="radio"    name="ένορκη-βεβαίωση"       checked>
+  <div role="radiogroup">
+    <button role="radio" data-controls="if1" data-checked-if="1">έως 31-12-2015</button>
+    <button role="radio" data-controls="if2" data-checked-if="2">από 01-01-2016</button>
+  </div>
+</div>
+<h3 class="solved-issue">Προθεσμία κλήτευσης σε ένορκη βεβαίωση</h2>
+<form>
 <input id="if6"  class="τακτική"                              type="radio"    name="είδος-διαδικασίας"     checked>
 <input id="if7"  class="ειδική"                               type="radio"    name="είδος-διαδικασίας"            >
 <input id="if8"  class="ασφαλιστικά-μέτρα"                    type="radio"    name="είδος-διαδικασίας"            >
@@ -99,23 +106,16 @@
 <input id="if16" class="διαφορές-από-ζημίες-αυτοκινήτου"      type="radio"    name="ειδική-διαδικασία"     checked>
 <input id="if17" class="διαφορές-από-διατροφή-τέκνων"         type="radio"    name="ειδική-διαδικασία"            >
 <input id="if18" class="διαφορές-από-προσβολές-δημοσιευμάτων" type="radio"    name="ειδική-διαδικασία"            >
-</span><div class="question important">Ενημέρωση για ένορκες βεβαιώσεις που δόθηκαν
-  <menu role="radiogroup">
-    <button role="radio" data-controls="if1" data-checked-if="1">έως 31-12-2015</button>
-    <button role="radio" data-controls="if2" data-checked-if="2">από 01-01-2016</button>
-  </menu>
-</div>
-<h3 class="solved-issue">Προθεσμία κλήτευσης σε ένορκη βεβαίωση</h2>
-<div class="question">Κατά τη συζήτηση ακολουθείται η 
-  <menu role="radiogroup">
+<fieldset class="question"><legend>Κατά τη συζήτηση ακολουθείται η </legend>
+  <div role="radiogroup">
     <button role="radio" data-controls="if6" data-checked-if="6">τακτική διαδικασία</button>
     <button role="radio" data-controls="if7" data-checked-if="7">ειδική διαδικασία</button>
     <button role="radio" data-controls="if8" data-checked-if="8">διαδ. ασφαλιστικών μέτρων</button>
     <button role="radio" data-controls="if9" data-checked-if="9">διαδ. εκούσιας δικαιοδοσίας</button>
-  </menu>
-</div>
-<div class="question" data-disabled-if="-7">Η ειδική διαδικασία αφορά σε
-  <menu role="radiogroup" aria-haspopup aria-expanded="false">
+  </div>
+</fieldset>
+<fieldset class="question" data-disabled-if="-7"><legend>Η ειδική διαδικασία αφορά σε</legend>
+  <div role="radiogroup" aria-haspopup aria-expanded="false">
     <button role="radio" data-controls="if10" data-checked-if="10">γαμικές διαφορές</button>
     <button role="radio" data-controls="if11" data-checked-if="11">σχέσεις γονέων και τέκνου</button>
     <button role="radio" data-controls="if12" data-checked-if="12">πιστωτικούς τίτλους</button>
@@ -125,12 +125,12 @@
     <button role="radio" data-controls="if16" data-checked-if="16">ζημίες από αυτοκίνητο ή σύμβαση ασφάλισης</button>
     <button role="radio" data-controls="if17" data-checked-if="17">διατροφή ή επιμέλεια τέκνων</button>
     <button role="radio" data-controls="if18" data-checked-if="18">προσβολές από δημοσιεύματα ή ραδιοτηλεοπτικές εκπομπές</button>
-  </menu>
-</div>
-<div class="answer">Στην <span data-shown-if="6">τακτική</span><span data-shown-if="7">ειδική</span> διαδικασία<span data-shown-if="7+10"> των γαμικών διαφορών</span><span data-shown-if="7+11"> των διαφορών από σχέσεις γονέων και τέκνου</span><span data-shown-if="7+12"> των πιστωτικών τίτλων</span><span data-shown-if="7+13"> των μισθωτικών διαφορών</span><span data-shown-if="7+14"> των εργατικών διαφορών</span><span data-shown-if="7+15"> των διαφορών από αμοιβές για παροχή εργασίας</span><span data-shown-if="7+16"> των διαφορών από ζημίες από αυτοκίνητο ή σύμβαση ασφάλισης</span><span data-shown-if="7+17"> των διαφορών από διατροφή ή επιμέλεια τέκνων</span><span data-shown-if="7+18"> των διαφορών από προσβολές από δημοσιεύματα ή ραδιοτηλεοπτικές εκπομπές</span><span data-shown-if="8"> των ασφαλιστικών μέτρων (είτε προς λήψη ασφαλιστικού μέτρου είτε προς οριστική επίλυση της διαφοράς)</span><span data-shown-if="9"> της εκούσιας δικαιοδοσίας</span>, <span data-shown-if="6 7">η προθεσμία κλήτευσης του αντιδίκου είναι </span><span data-shown-if="8 9">δεν είναι υποχρεωτική η κλήτευση του αντιδίκου</span><span data-shown-if="1+6 1+7+10 1+7+11 2+6 2+7">2 εργάσιμες ημέρες</span><span data-shown-if="1+7+12 1+7+13 1+7+14 1+7+15 1+7+16 1+7+17 1+7+18">24 ώρες</span> πριν τη βεβαίωση<cite data-shown-if="1+7+10"> αρ.592 ΚΠολΔ</cite><cite data-shown-if="2+7+10"> αρ.592 περ.1 ΚΠολΔ</cite><cite data-shown-if="1+7+11"> αρ.614 ΚΠολΔ</cite><cite data-shown-if="2+7+11"> αρ.592 περ.2 ΚΠολΔ</cite><cite data-shown-if="1+7+12"> αρ.635 ΚΠολΔ</cite><cite data-shown-if="1+7+12"> αρ.643 παρ.2 ΚΠολΔ</cite><cite data-shown-if="2+7+12"> αρ.614 περ.8 ΚΠολΔ</cite><cite data-shown-if="1+7+13"> αρ.647 παρ.1 ΚΠολΔ</cite><cite data-shown-if="1+7+13"> αρ.647 παρ.2 ΚΠολΔ</cite><cite data-shown-if="1+7+13"> αρ.17 περ.2 ΚΠολΔ</cite><cite data-shown-if="1+7+12 1+7+13"> αρ.650 παρ.1 εδ.4 ΚΠολΔ</cite><cite data-shown-if="2+7+13"> αρ.614 περ.1 ΚΠολΔ</cite><cite data-shown-if="2+7+13"> αρ.614 περ.2 ΚΠολΔ</cite><cite data-shown-if="1+7+14"> αρ.663 ΚΠολΔ</cite><cite data-shown-if="2+7+14"> αρ.614 περ.3 ΚΠολΔ</cite><cite data-shown-if="2+7+14"> αρ.614 περ.4 ΚΠολΔ</cite><cite data-shown-if="1+7+15"> αρ.677 ΚΠολΔ</cite><cite data-shown-if="1+7+15"> αρ.681 εδ.1 ΚΠολΔ</cite><cite data-shown-if="2+7+15"> αρ.614 περ.5 ΚΠολΔ</cite><cite data-shown-if="1+7+16"> αρ.681 Α ΚΠολΔ</cite><cite data-shown-if="2+7+16"> αρ.614 περ.6 ΚΠολΔ</cite><cite data-shown-if="1+7+17"> αρ.681 Β παρ.1 ΚΠολΔ</cite><cite data-shown-if="2+7+17"> αρ.592 περ.3 ΚΠολΔ</cite><cite data-shown-if="1+7+18"> αρ.681 Δ παρ.1 ΚΠολΔ</cite><cite data-shown-if="2+7+18"> αρ.614 περ.7 ΚΠολΔ</cite><cite data-shown-if="1+7+14 1+7+15 1+7+16 1+7+17 1+7+18"> αρ.671 παρ.1 εδ.4 ΚΠολΔ</cite><cite data-shown-if="1+7+10 1+7+11 2+7"> αρ.591 παρ.1 εδ.1 ΚΠολΔ</cite><cite data-shown-if="1+6 1+7+10 1+7+11"> αρ.270 παρ.2 εδ.3 ΚΠολΔ</cite><cite data-shown-if="2+6 2+7"> αρ.422 παρ.1 ΚΠολΔ</cite><cite data-shown-if="8"> 1857/2011 ΑΠ</cite>.
+  </div>
+</fieldset>
+<output class="answer">Στην <span data-shown-if="6">τακτική</span><span data-shown-if="7">ειδική</span> διαδικασία<span data-shown-if="7+10"> των γαμικών διαφορών</span><span data-shown-if="7+11"> των διαφορών από σχέσεις γονέων και τέκνου</span><span data-shown-if="7+12"> των πιστωτικών τίτλων</span><span data-shown-if="7+13"> των μισθωτικών διαφορών</span><span data-shown-if="7+14"> των εργατικών διαφορών</span><span data-shown-if="7+15"> των διαφορών από αμοιβές για παροχή εργασίας</span><span data-shown-if="7+16"> των διαφορών από ζημίες από αυτοκίνητο ή σύμβαση ασφάλισης</span><span data-shown-if="7+17"> των διαφορών από διατροφή ή επιμέλεια τέκνων</span><span data-shown-if="7+18"> των διαφορών από προσβολές από δημοσιεύματα ή ραδιοτηλεοπτικές εκπομπές</span><span data-shown-if="8"> των ασφαλιστικών μέτρων (είτε προς λήψη ασφαλιστικού μέτρου είτε προς οριστική επίλυση της διαφοράς)</span><span data-shown-if="9"> της εκούσιας δικαιοδοσίας</span>, <span data-shown-if="6 7">η προθεσμία κλήτευσης του αντιδίκου είναι </span><span data-shown-if="8 9">δεν είναι υποχρεωτική η κλήτευση του αντιδίκου</span><span data-shown-if="1+6 1+7+10 1+7+11 2+6 2+7">2 εργάσιμες ημέρες</span><span data-shown-if="1+7+12 1+7+13 1+7+14 1+7+15 1+7+16 1+7+17 1+7+18">24 ώρες</span> πριν τη βεβαίωση<cite data-shown-if="1+7+10"> αρ.592 ΚΠολΔ</cite><cite data-shown-if="2+7+10"> αρ.592 περ.1 ΚΠολΔ</cite><cite data-shown-if="1+7+11"> αρ.614 ΚΠολΔ</cite><cite data-shown-if="2+7+11"> αρ.592 περ.2 ΚΠολΔ</cite><cite data-shown-if="1+7+12"> αρ.635 ΚΠολΔ</cite><cite data-shown-if="1+7+12"> αρ.643 παρ.2 ΚΠολΔ</cite><cite data-shown-if="2+7+12"> αρ.614 περ.8 ΚΠολΔ</cite><cite data-shown-if="1+7+13"> αρ.647 παρ.1 ΚΠολΔ</cite><cite data-shown-if="1+7+13"> αρ.647 παρ.2 ΚΠολΔ</cite><cite data-shown-if="1+7+13"> αρ.17 περ.2 ΚΠολΔ</cite><cite data-shown-if="1+7+12 1+7+13"> αρ.650 παρ.1 εδ.4 ΚΠολΔ</cite><cite data-shown-if="2+7+13"> αρ.614 περ.1 ΚΠολΔ</cite><cite data-shown-if="2+7+13"> αρ.614 περ.2 ΚΠολΔ</cite><cite data-shown-if="1+7+14"> αρ.663 ΚΠολΔ</cite><cite data-shown-if="2+7+14"> αρ.614 περ.3 ΚΠολΔ</cite><cite data-shown-if="2+7+14"> αρ.614 περ.4 ΚΠολΔ</cite><cite data-shown-if="1+7+15"> αρ.677 ΚΠολΔ</cite><cite data-shown-if="1+7+15"> αρ.681 εδ.1 ΚΠολΔ</cite><cite data-shown-if="2+7+15"> αρ.614 περ.5 ΚΠολΔ</cite><cite data-shown-if="1+7+16"> αρ.681 Α ΚΠολΔ</cite><cite data-shown-if="2+7+16"> αρ.614 περ.6 ΚΠολΔ</cite><cite data-shown-if="1+7+17"> αρ.681 Β παρ.1 ΚΠολΔ</cite><cite data-shown-if="2+7+17"> αρ.592 περ.3 ΚΠολΔ</cite><cite data-shown-if="1+7+18"> αρ.681 Δ παρ.1 ΚΠολΔ</cite><cite data-shown-if="2+7+18"> αρ.614 περ.7 ΚΠολΔ</cite><cite data-shown-if="1+7+14 1+7+15 1+7+16 1+7+17 1+7+18"> αρ.671 παρ.1 εδ.4 ΚΠολΔ</cite><cite data-shown-if="1+7+10 1+7+11 2+7"> αρ.591 παρ.1 εδ.1 ΚΠολΔ</cite><cite data-shown-if="1+6 1+7+10 1+7+11"> αρ.270 παρ.2 εδ.3 ΚΠολΔ</cite><cite data-shown-if="2+6 2+7"> αρ.422 παρ.1 ΚΠολΔ</cite><cite data-shown-if="8"> 1857/2011 ΑΠ</cite>.
 <span data-shown-if="6 7"><br>Η προθεσμία ξεκινά <span data-shown-if="1+6 1+7+10 1+7+11 2">από την επομένη της επίδοσης της κλήσης</span><span data-shown-if="1+7+12 1+7+13 1+7+14 1+7+15 1+7+16 1+7+17 1+7+18">24 ώρες πριν τη βεβαίωση</span><cite> 115/2006 Εφ.Λάρισας</cite><cite data-shown-if="1+6 1+7+10 1+7+11 2"> αρ.144 παρ.1 ΚΠολΔ</cite><cite data-shown-if="1+7+12 1+7+13 1+7+14 1+7+15 1+7+16 1+7+17 1+7+18"> αρ.145 παρ.4 ΚΠολΔ</cite>.
 </span><span data-shown-if="1+7+12 1+7+13 1+7+14 1+7+15 1+7+16 1+7+17 1+7+18"><br>Η προθεσμία των 24 ωρών υπολογίζεται από στιγμή σε στιγμή, και όχι κατά το αρ.144 παρ.1 ΚΠολΔ<cite> 1574/2001 ΑΠ</cite>
-</span></div>
+</span></output></form>
 Αν υπάρχει προθεσμία κλήτευσης και δεν τηρηθεί, και αν ο αντίδικος δεν παραστεί κατά την ένορκη βεβαίωση<cite> 381/2010 ΑΠ</cite>, η ένορκη βεβαίωση είναι ανύπαρκτη ως αποδεικτικό μέσο, όχι απλά άκυρη, και δεν λαμβάνεται υπόψη ως αποδεικτικό μέσο<cite> 579/2011 ΑΠ</cite><cite> 381/2010 ΑΠ</cite><cite> 85/2001 ΑΠ</cite>.
 Αν το δικαστήριο λαβει υπόψη τέτοια ένορκη βεβαίωση, ιδρύεται λόγος αναίρεσης για λήψη υπόψη ανεπίτρεπτου αποδεικτικού μέσου<cite> 1707/2009 ΑΠ</cite><cite> 682/2000 ΑΠ</cite><cite> αρ.559 περ.11 ΚΠολΔ</cite>.
 
