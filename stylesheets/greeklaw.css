@@ -344,6 +344,7 @@ input:required:-moz-placeholder           { color: #FF8787; font-size: 12px; pad
 
 h1.centered { width: 100%; white-space: normal; }
 .centered { text-align: center; }
+.centered form { display: inline-table; }
 .padded   { padding-top: 2em; }
 .block    { display: block;   }
 .white-space-normal { white-space: normal; }
