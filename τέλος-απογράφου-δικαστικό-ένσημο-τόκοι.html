@@ -14,20 +14,18 @@
 <body>
   <header><a href="./">Greek Law</a></header>
   <nav></nav>
+<main>
+<h1 class="centered">
   <input id="if1" name="υπολογισμός" class="τέλος-απογράφου"  type="radio" checked>
   <input id="if2" name="υπολογισμός" class="δικαστικό-ένσημο" type="radio"        >
   <input id="if3" name="υπολογισμός" class="τόκοι"            type="radio"        >
   <input id="if4" name="υπολογισμός" class="παράβολα"         type="radio"        >
-  <input id="if5" name="χρόνος-δικαστικού-ενσήμου" class="έως-και-31-05-2016"  type="radio"        >
-  <input id="if6" name="χρόνος-δικαστικού-ενσήμου" class="μετά-την-31-05-2016" type="radio" checked>
-<main>
-<h1 class="centered">
-<menu role="radiogroup" class="heading">
-  <button role="radio" data-controls="if1" data-checked-if="1">Τέλος απογράφου</button>
-  <button role="radio" data-controls="if2" data-checked-if="2">Δικαστικό ένσημο</button>
-  <button role="radio" data-controls="if3" data-checked-if="3">Τόκοι</button>
-  <button role="radio" data-controls="if4" data-checked-if="4">Παράβολα</button>
-</menu>
+  <div role="radiogroup" class="heading">
+    <button role="radio" data-controls="if1" data-checked-if="1">Τέλος απογράφου</button>
+    <button role="radio" data-controls="if2" data-checked-if="2">Δικαστικό ένσημο</button>
+    <button role="radio" data-controls="if3" data-checked-if="3">Τόκοι</button>
+    <button role="radio" data-controls="if4" data-checked-if="4">Παράβολα</button>
+  </div>
 </h1>
 <span data-shown-if="1">
 <table>
@@ -92,12 +90,12 @@
 
 </span><span data-shown-if="2">
 <div class="question important">Ενημέρωση για δικαστικό ένσημο όπως ορίζονταν 
-  <menu role="radiogroup">
+  <div role="radiogroup">
       <button role="radio" data-controls="if5" data-checked-if="5">έως 05-06-2016</button>
       <button role="radio" data-controls="if6" data-checked-if="6">από 06-06-2016 και μετά</button>
-  </menu>
-  <br>
+  </div>
 </div>
+<br>
 <table>
 <thead><tr><th></th><th>Ποσό </th><th>Αιτιολογία </th><th>Κωδικός Αριθμός Εσόδου </th></tr>
 </thead>
