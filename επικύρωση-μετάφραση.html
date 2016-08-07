@@ -15,15 +15,17 @@
 <body>
   <header><a href="./">Greek Law</a></header>
   <nav role="navigation"></nav>
-  <input id="if1"  name="επεξεργασία"    class="επικύρωση"               type="radio"           >
-  <input id="if2"  name="επεξεργασία"    class="μετάφραση"               type="radio"    checked>
 
 <main role="main">
 <h1 class="centered">
-  <div class="heading" role="radiogroup">
-    <button role="radio" data-controls="if1" data-checked-if="1">Επικύρωση</button>
-    <button role="radio" data-controls="if2" data-checked-if="2">Μετάφραση</button>
-</div>
+  <form>
+    <input id="if1"  name="επεξεργασία" class="επικύρωση" type="radio"        >
+    <input id="if2"  name="επεξεργασία" class="μετάφραση" type="radio" checked>
+    <div class="heading" role="radiogroup">
+      <button role="radio" data-controls="if1" data-checked-if="1">Επικύρωση</button>
+      <button role="radio" data-controls="if2" data-checked-if="2">Μετάφραση</button>
+    </div>
+  </form>
 </h1>
 <div class="seal"><h3 class="seal-header">Σημείωση στο φωτοαντίγραφο του προς <span data-shown-if="1"> επικύρωση </span><span data-shown-if="2"> μετάφραση </span> εγγράφου:</h3>
 <div class="seal-text"><span class="seal-text-certification">Ακριβές αντίγραφο του 
@@ -62,16 +64,16 @@
   <input id="if8" name="είδος-εγγράφου" class="έγγραφο-αλλοδαπής-αρχής" type="radio"        >
   <input id="if9" name="είδος-εγγράφου" class="ιδιωτικό-έγγραφο"        type="radio" checked>
 <fieldset class="question">
-<legend>Αν <span data-shown-if="1">το έγγραφο </span><span data-shown-if="2">η μετάφραση </span> κατατίθεται </legend>
-  <div role="radiogroup">
+<span id="label-q1">Αν <span data-shown-if="1">το έγγραφο </span><span data-shown-if="2">η μετάφραση </span> κατατίθεται </span>
+  <div role="radiogroup" aria-labelledby="label-q1">
     <button role="radio" data-controls="if3" data-checked-if="3">για δικαστική χρήση</button>
     <button role="radio" data-controls="if4" data-checked-if="4">σε Δημόσια Αρχή</button>
     <button role="radio" data-controls="if5" data-checked-if="5">πέραν της Δημόσιας Αρχής</button>
   </div>
 <cite class="block" data-shown-if="4 5">Ως <b>Δημόσια Αρχή</b> νοούνται τα δικαστήρια κάθε βαθµού, το Δημόσιο, οι ΟΤΑ, τα ΝΠΔΔ, τα ΝΠΙΔ που ανήκουν στο κράτος ή επιχορηγούνται τακτικώς, σύµφωνα µε τις κείµενες διατάξεις, από κρατικούς πόρους κατά 50% τουλάχιστον του ετήσιου προϋπολογισµού τους, οι δηµόσιες επιχειρήσεις και οι οργανισµοί που προβλέπονται στις διατάξεις του αρ.1 του ν.3429/2005, καθώς και τα νοµικά πρόσωπα και οι επιχειρήσεις των ΟΤΑ. αρ.11 παρ.2α ν.2690/1999 όπως τροποποιήθηκε με τον ν.4250/2014 αρ.1 παρ.2</cite>
 </fieldset>
-<fieldset class="question" data-disabled-if="2"><legend>και το πρωτότυπο έγγραφο είναι </legend>
-  <div role="radiogroup">
+<fieldset class="question" data-disabled-if="2"><span id="label-q2">και το πρωτότυπο έγγραφο είναι </span>
+  <div role="radiogroup" aria-labelledby="label-q2">
     <button role="radio" data-controls="if9" data-checked-if="9">Ιδιωτικό έγγραφο</button>
     <button role="radio" data-controls="if6" data-checked-if="6" >Δημόσιο έγγραφο</button>
     <button role="radio" data-controls="if7" data-checked-if="7" >έγγραφο Διοικητικής Αρχής</button>
