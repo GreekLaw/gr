@@ -84,14 +84,16 @@
 Η εξώδικη ομολογία εκτιμάται ελεύθερα από το δικαστήριο<cite> 768/2000 ΑΠ</cite><cite> αρ.352 παρ.2 ΚΠολΔ</cite>.
 
 <h2 id="ένορκη-βεβαίωση">Ένορκη βεβαίωση</h2>
-<div class="question important">Ενημέρωση για ένορκες βεβαιώσεις που δόθηκαν
-<input id="if1"  class="έως-31-12-2015"                       type="radio"    name="ένορκη-βεβαίωση"              >
-<input id="if2"  class="από-01-01-2016"                       type="radio"    name="ένορκη-βεβαίωση"       checked>
-  <div role="radiogroup">
+<form>
+<input id="if1"  class="έως-31-12-2015" type="radio" name="ένορκη-βεβαίωση"        >
+<input id="if2"  class="από-01-01-2016" type="radio" name="ένορκη-βεβαίωση" checked>
+<fieldset class="question important"><span id="label-q">Ενημέρωση για ένορκες βεβαιώσεις που δόθηκαν</span>
+  <div role="radiogroup" aria-labelledby="label-q">
     <button role="radio" data-controls="if1" data-checked-if="1">έως 31-12-2015</button>
     <button role="radio" data-controls="if2" data-checked-if="2">από 01-01-2016</button>
   </div>
-</div>
+</fieldset>
+</form>
 <h3 class="solved-issue">Προθεσμία κλήτευσης σε ένορκη βεβαίωση</h2>
 <form>
 <input id="if6"  class="τακτική"                              type="radio"    name="είδος-διαδικασίας"     checked>
@@ -107,16 +109,16 @@
 <input id="if16" class="διαφορές-από-ζημίες-αυτοκινήτου"      type="radio"    name="ειδική-διαδικασία"     checked>
 <input id="if17" class="διαφορές-από-διατροφή-τέκνων"         type="radio"    name="ειδική-διαδικασία"            >
 <input id="if18" class="διαφορές-από-προσβολές-δημοσιευμάτων" type="radio"    name="ειδική-διαδικασία"            >
-<fieldset class="question"><legend>Κατά τη συζήτηση ακολουθείται η </legend>
-  <div role="radiogroup">
+<fieldset class="question"><span id="label-q1">Κατά τη συζήτηση ακολουθείται η </span>
+  <div role="radiogroup" aria-labelledby="label-q1">
     <button role="radio" data-controls="if6" data-checked-if="6">τακτική διαδικασία</button>
     <button role="radio" data-controls="if7" data-checked-if="7">ειδική διαδικασία</button>
     <button role="radio" data-controls="if8" data-checked-if="8">διαδ. ασφαλιστικών μέτρων</button>
     <button role="radio" data-controls="if9" data-checked-if="9">διαδ. εκούσιας δικαιοδοσίας</button>
   </div>
 </fieldset>
-<fieldset class="question" data-disabled-if="-7"><legend>Η ειδική διαδικασία αφορά σε</legend>
-  <div role="radiogroup" aria-haspopup aria-expanded="false">
+<fieldset class="question" data-disabled-if="-7"><span id="label-q2">Η ειδική διαδικασία αφορά σε</span>
+  <div role="radiogroup" aria-haspopup aria-expanded="false" aria-labelledby="label-q2">
     <button role="radio" data-controls="if10" data-checked-if="10">γαμικές διαφορές</button>
     <button role="radio" data-controls="if11" data-checked-if="11">σχέσεις γονέων και τέκνου</button>
     <button role="radio" data-controls="if12" data-checked-if="12">πιστωτικούς τίτλους</button>
