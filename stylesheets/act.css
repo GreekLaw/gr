@@ -41,8 +41,7 @@ input[id^="if"] { display: none; }
 .answer,
 [role=radio],
 [role=checkbox],
-[aria-pressed=true],
-[aria-pressed=false] {
+[aria-pressed] {
 	-webkit-transition: .5s;
 	   -moz-transition: .5s;
 	        transition: .5s;
@@ -50,8 +49,7 @@ input[id^="if"] { display: none; }
 
 [role=radio],
 [role=checkbox],
-[aria-pressed=true],
-[aria-pressed=false] {
+[aria-pressed] {
 	position: relative;
 	display: table-cell;
 	margin: 0;
@@ -74,8 +72,7 @@ input[id^="if"] { display: none; }
 
 [role=radio]:before,
 [role=checkbox]:before,
-[aria-pressed=true]:before,
-[aria-pressed=false]:before {
+[aria-pressed]:before {
 	content: "";
 	position: absolute;
 	left: 0;
