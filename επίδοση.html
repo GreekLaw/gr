@@ -36,43 +36,49 @@
 <input id="if16"                         class="τακτική-διαδικασία"      type="checkbox" checked>
 <input id="if17" name="χρόνος-κατάθεσης" class="έως-και-31-12-2015"      type="radio"           >
 <input id="if18" name="χρόνος-κατάθεσης" class="από-01-01-2016-και-μετά" type="radio"    checked>
-<fieldset class="question"><span id="label-q1">Θέλω να επιδώσω</span>
-  <div role="radiogroup" aria-labelledby="label-q1">
-      <button role="radio" data-controls="if1" data-checked-if="1">Αγωγή</button>
-      <button role="radio" data-controls="if2" data-checked-if="2">Πρακτικά</button>
-      <button role="radio" data-controls="if3" data-checked-if="3">Απόφαση</button>
-      <button role="radio" data-controls="if4" data-checked-if="4">Επιταγή προς πληρωμή</button>
+<fieldset class="question">
+  <span id="labelQ1" role="tooltip">Θέλω να επιδώσω</span>
+  <div role="radiogroup" aria-labelledby="labelQ1">
+      <button role="radio" data-controls="if1" data-checked-if="1">αγωγή</button>
+      <button role="radio" data-controls="if2" data-checked-if="2">πρακτικά</button>
+      <button role="radio" data-controls="if3" data-checked-if="3">απόφαση</button>
+      <button role="radio" data-controls="if4" data-checked-if="4">επιταγή προς πληρωμή</button>
   </div>
 </fieldset>
-<fieldset class="question" data-disabled-if="-1"><span id="label-q2">Η αγωγή </span><button data-controls="if16" data-checked-if="16" aria-pressed="false" aria-labelledby="label-q2 label-q3"><span data-shown-if="-16">δεν</span> ορίστηκε</button><span id="label-q3"> να εκδικαστεί κατά την τακτική διαδικασία </span><br>
-και <span id="label-q4">έχει κατατεθεί </span>
-  <div role="radiogroup" aria-labelledby="label-q2 label-q4">
+<fieldset class="question" data-disabled-if="-1">
+  <span id="labelQ2p1" role="tooltip">Η αγωγή </span><button data-controls="if16" data-checked-if="16" aria-pressed="false" aria-labelledby="labelQ2p1 labelQ2p2"><span data-shown-if="-16">δεν</span> ορίστηκε</button><span id="labelQ2p2" role="tooltip"> να εκδικαστεί κατά την τακτική διαδικασία </span>
+<span id="labelQ2p3" role="tooltip">και έχει κατατεθεί </span>
+  <div role="radiogroup" aria-labelledby="labelQ2p1 labelQ2p3">
       <button role="radio" data-controls="if17" data-checked-if="17">έως και 31-12-2015</button>
       <button role="radio" data-controls="if18" data-checked-if="18">από 01-01-2016 και μετά</button>
   </div>
 </fieldset>
 <fieldset class="question">
-    <span id="label-q5">
-      <div role="radiogroup" aria-haspopup aria-expanded="false" aria-labelledby="label-q6">
-        <button role="radio" data-controls="if9"  data-checked-if="9" >Ο</button>
-        <button role="radio" data-controls="if10" data-checked-if="10">Η</button>
-        <button role="radio" data-controls="if11" data-checked-if="11">Το</button>
+    <div role="radiogroup" aria-haspopup aria-expanded="false" aria-labelledby="labelQ3p2">
+      <button role="radio" data-controls="if9"  data-checked-if="9" >Ο</button>
+      <button role="radio" data-controls="if10" data-checked-if="10">Η</button>
+      <button role="radio" data-controls="if11" data-checked-if="11">Το</button>
     </div>
-    <span id="label-q6">αντίδικο<span data-shown-if="9 10">ς</span></span> είναι</span>
-    <div role="radiogroup" aria-labelledby="label-q5">
+    <span id="labelQ3p1" role="tooltip"><span id="labelQ3p2">αντίδικο<span data-shown-if="9 10">ς</span></span> είναι</span>
+    <div role="radiogroup" aria-labelledby="labelQ3p2">
         <button role="radio" data-controls="if7" data-checked-if="7">φυσικό πρόσωπο</button>
         <button role="radio" data-controls="if8" data-checked-if="8">νομικό πρόσωπο</button>
     </div>
 </fieldset>
-<fieldset class="question" data-disabled-if="1"><span id="label-q7">Η επίδοση να γίνει</span>
-  <div role="radiogroup" aria-labelledby="label-q7">
+<fieldset class="question" data-disabled-if="1">
+  <span id="labelQ4" role="tooltip">Η επίδοση να γίνει</span>
+  <div role="radiogroup" aria-labelledby="labelQ4">
       <button role="radio" data-controls="if5" data-checked-if="5">στ<span data-shown-if="9">ον</span><span data-shown-if="10">ην</span><span data-shown-if="11">ο</span> αντίδικο</button>
       <button role="radio" data-controls="if6" data-checked-if="6">σε πληρεξούσιο δικηγόρο</button>
   </div>
 </fieldset>
-<fieldset class="question" data-disabled-if="-1-2 1+16+18"><span data-shown-if="-2">Ο παραλαβών</span><span data-shown-if="2"><span data-shown-if="9">Ο</span><span data-shown-if="10">Η</span><span data-shown-if="11">Το</span> αντίδικ<span data-shown-if="9 10">ος</span><span data-shown-if="11">ο</span> </span><button data-controls="if14" data-checked-if="14" aria-pressed="false" aria-labelledby="label-q8"><span data-shown-if="-14">δεν</span> καλείται</button><span id="label-q8"> να παραστεί στη συζήτηση.</span></fieldset>
-<output class="answer"><h3 class="note">Σημείωση στο αντίγραφο <span data-shown-if="1">της αγωγής</span><span data-shown-if="2">των πρακτικών Δικαστηρίου</span><span data-shown-if="3">της απόφασης ή της διαταγής πληρωμής</span><span data-shown-if="4">του απογράφου με συνημμένη επιταγή προς πληρωμή</span><span data-shown-if="1 2 3">, επιδιδόμενο προς γνώση</span>
-</h2><span data-shown-if="4">Αυτό είναι ακριβές αντίγραφο από το εκτελεστό α' απόγραφο που έχω στα χέρια μου και αρμόδιος</span><span data-shown-if="1 2 3">Αρμόδιος</span> δικαστικός επιμελητής παραγγέλλεται να <span data-shown-if="4">το</span> επιδώσει νόμιμα <span data-shown-if="1 3">την παρούσα </span><span data-shown-if="2">τα παρόντα </span> προς <span data-shown-if="-1+6"> τον <input type="text" placeholder="ονοματεπώνυμο" class="fill-the-blank">, δικηγόρο του Πρωτοδικείου <input type="text" placeholder="έδρα Πρωτοδικείου" class="fill-the-blank"> ως πληρεξούσι<span data-shown-if="12">ο</span><span data-shown-if="13">α</span> δικηγόρο </span> <span data-shown-if="9" > το<span data-shown-if="5">ν</span><span data-shown-if="6">υ</span></span><span data-shown-if="10"> τη<span data-shown-if="5 1+6">ν</span><span data-shown-if="-1+6">ς</span></span><span data-shown-if="11"> τ<span  data-shown-if="5">ο</span><span data-shown-if="6">oυ</span></span> <input type="text" placeholder="ονοματεπώνυμο" class="fill-the-blank">, που <span data-shown-if="7"> κατοικεί</span><span data-shown-if="8"> εδρεύει</span> <input type="text" placeholder="διεύθυνση" class="fill-the-blank"><span data-shown-if="8">, νόμιμα εκπροσωπούμεν<span data-shown-if="9">ο</span><span data-shown-if="10">η</span><span data-shown-if="11">ο</span></span>, προς γνώση <span data-shown-if="9" >του</span><span data-shown-if="10">της</span><span data-shown-if="11">του</span> και για τις νόμιμες συνέπειες<span data-shown-if="1-14 1+14+16+18 2-14 3-14">.</span><span data-shown-if="1+14-16 1+14-18 2+14">, καλούμεν<span data-shown-if="9">ον</span><span data-shown-if="10">η</span><span data-shown-if="11">ο</span> συγχρόνως να παραστεί κατά τη συζήτηση όταν και όπου ορίζεται με <span data-shown-if="1">την παραπάνω πράξη.</span><span data-shown-if="2">τα παραπάνω πρακτικά.</span> </span><span data-shown-if="4">, καλούμεν<span data-shown-if="9">ον</span><span data-shown-if="10">η</span><span data-shown-if="11">ο</span> συγχρόνως να καταβάλλει σε μένα ή στον πληρεξούσιο και αντίκλητο Δικηγόρο μου κ. <input type="text" placeholder="ονοματεπώνυμο" class="fill-the-blank"> που έχω  <input type="text" placeholder="πόλη δικηγόρου" class="fill-the-blank"> και είναι δεκτικός καταβολής τα εξής χρηματικά ποσά:<br>
+<fieldset class="question" data-disabled-if="-1-2 1+16+18">
+  <span id="labelQ5p1" role="tooltip"><span data-shown-if="-2">Ο παραλαβών</span><span data-shown-if="2"><span data-shown-if="9">Ο</span><span data-shown-if="10">Η</span><span data-shown-if="11">Το</span> αντίδικ<span data-shown-if="9 10">ος</span><span data-shown-if="11">ο</span> </span></span><button data-controls="if14" data-checked-if="14" aria-pressed="false" aria-labelledby="labelQ5p1 labelQ5p2"><span data-shown-if="-14">δεν</span> καλείται</button><span id="labelQ5p2" role="tooltip"> να παραστεί στη συζήτηση.</span>
+</fieldset>
+<output class="answer">
+  <h2 class="note">Σημείωση στο αντίγραφο <span data-shown-if="1">της αγωγής</span><span data-shown-if="2">των πρακτικών Δικαστηρίου</span><span data-shown-if="3">της απόφασης ή της διαταγής πληρωμής</span><span data-shown-if="4">του απογράφου με συνημμένη επιταγή προς πληρωμή</span><span data-shown-if="1 2 3">, επιδιδόμενο προς γνώση</span>
+  </h2>
+<span data-shown-if="4">Αυτό είναι ακριβές αντίγραφο από το εκτελεστό α' απόγραφο που έχω στα χέρια μου και αρμόδιος</span><span data-shown-if="1 2 3">Αρμόδιος</span> δικαστικός επιμελητής παραγγέλλεται να <span data-shown-if="4">το</span> επιδώσει νόμιμα <span data-shown-if="1 3">την παρούσα </span><span data-shown-if="2">τα παρόντα </span> προς <span data-shown-if="-1+6"> τον <input type="text" placeholder="ονοματεπώνυμο" class="fill-the-blank">, δικηγόρο του Πρωτοδικείου <input type="text" placeholder="έδρα Πρωτοδικείου" class="fill-the-blank"> ως πληρεξούσι<span data-shown-if="12">ο</span><span data-shown-if="13">α</span> δικηγόρο </span> <span data-shown-if="9" > το<span data-shown-if="5">ν</span><span data-shown-if="6">υ</span></span><span data-shown-if="10"> τη<span data-shown-if="5 1+6">ν</span><span data-shown-if="-1+6">ς</span></span><span data-shown-if="11"> τ<span  data-shown-if="5">ο</span><span data-shown-if="6">oυ</span></span> <input type="text" placeholder="ονοματεπώνυμο" class="fill-the-blank">, που <span data-shown-if="7"> κατοικεί</span><span data-shown-if="8"> εδρεύει</span> <input type="text" placeholder="διεύθυνση" class="fill-the-blank"><span data-shown-if="8">, νόμιμα εκπροσωπούμεν<span data-shown-if="9">ο</span><span data-shown-if="10">η</span><span data-shown-if="11">ο</span></span>, προς γνώση <span data-shown-if="9" >του</span><span data-shown-if="10">της</span><span data-shown-if="11">του</span> και για τις νόμιμες συνέπειες<span data-shown-if="1-14 1+14+16+18 2-14 3-14">.</span><span data-shown-if="1+14-16 1+14-18 2+14">, καλούμεν<span data-shown-if="9">ον</span><span data-shown-if="10">η</span><span data-shown-if="11">ο</span> συγχρόνως να παραστεί κατά τη συζήτηση όταν και όπου ορίζεται με <span data-shown-if="1">την παραπάνω πράξη.</span><span data-shown-if="2">τα παραπάνω πρακτικά.</span> </span><span data-shown-if="4">, καλούμεν<span data-shown-if="9">ον</span><span data-shown-if="10">η</span><span data-shown-if="11">ο</span> συγχρόνως να καταβάλλει σε μένα ή στον πληρεξούσιο και αντίκλητο Δικηγόρο μου κ. <input type="text" placeholder="ονοματεπώνυμο" class="fill-the-blank"> που έχω  <input type="text" placeholder="πόλη δικηγόρου" class="fill-the-blank"> και είναι δεκτικός καταβολής τα εξής χρηματικά ποσά:<br>
 <ul><li>1) Για επιδικασθείσα απαίτηση <input type="text" placeholder="ποσό" class="fill-the-blank"> €,</li>
 <li>2) για δεδουλευμένους τόκους από <input type="text" placeholder="ημερομηνία" class="fill-the-blank"> μέχρι <input type="text" placeholder="ημερομηνία" class="fill-the-blank"> <input type="text" placeholder="ποσό" class="fill-the-blank"> €,</li>
 <li>3) για επιδικασθείσα δικαστική δαπάνη <input type="text" placeholder="ποσό" class="fill-the-blank"> €,</li>
@@ -225,8 +231,9 @@
 Η διαταγή πληρωμής που δεν επιδόθηκε εντός δύο μηνών από την έκδοσή της είναι αυτοδικαίως άκυρη, δεν απαιτείται ανακοπή<cite> 318/2005 Μον.Πρ.Κιλκίς</cite>.
 Η μη εμπρόθεσμη κατάθεση από τον δικαστικό επιμελητή αντιγράφου της σχετικής έκθεσης επίδοσης στη γραμματεία του δικαστηρίου δεν προκαλεί ακυρότητα<cite> 23/2007 Ειρ.Νίκαιας</cite>.
 
-Οι διαταγές πληρωμής που είχαν εκδοθεί μέχρι 07-01-2000 έπρεπε να επιδοθούν εντός διμήνου στους καθ' ων για να παραμείνουν έγκυρες<cite> 18750/2002 Μον.Πρ.Θεσσαλονίκης</cite><cite> αρ.630 Α ΚΠολΔ</cite>.
-Αν η διαταγή πληρωμής στρέφεται κατά πολλών, επιδοθεί εμπρόθεσμα στον έναν οφειλέτη και δεν επιδοθεί εμπρόθεσμα στους υπόλοιπους, ο οφειλέτης στον οποίο έγινε εμπρόθεσμα η επίδοση δεν μπορεί βάσιμα να ισχυριστεί δικονομική βλάβη του από την μη νόμιμη επίδοση στους υπόλοιπους<cite> 23/2007 Ειρ.Νίκαιας</cite>.
+Αν η διαταγή πληρωμής είχε εκδοθεί μέχρι 07-01-2000, και αν δεν επιδόθηκε στον καθ' ου εντός διμήνου από 07-01-2000, τότε η διαταγή πληρωμής είναι άκυρη<cite> 18750/2002 Μον.Πρ.Θεσσαλονίκης</cite><cite> αρ.630 Α ΚΠολΔ</cite>.
+
+Αν η διαταγή πληρωμής στρέφεται κατά πολλών, και αν επιδοθεί εμπρόθεσμα στον έναν οφειλέτη, και αν δεν επιδοθεί εμπρόθεσμα στους υπόλοιπους, τότε ο οφειλέτης στον οποίο έγινε εμπρόθεσμα η επίδοση δεν μπορεί βάσιμα να ισχυριστεί δικονομική βλάβη του από την μη νόμιμη επίδοση στους υπόλοιπους<cite> 23/2007 Ειρ.Νίκαιας</cite>.
 </main>
 
   <footer role="contentinfo"><small>© Greek Law</small></footer>
