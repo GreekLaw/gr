@@ -43,21 +43,24 @@
 <input id="if23" class="ερήμην"                               type="radio"    name="πρωτόδικη-απόφαση"            >
 <input id="if24" class="πλασματικά-κατ-αντιμωλία"             type="radio"    name="πρωτόδικη-απόφαση"            >
 <input id="if25" class="άσκηση-ανταγωγής"                     type="checkbox"                                     >
-<fieldset class="question"><span id="label-q1">Το δικόγραφο κατατέθηκε</span>
-  <div role="radiogroup" aria-labelledby="label-q1">
+<fieldset class="question">
+  <span id="labelQ1" role="tooltip">Το δικόγραφο κατατέθηκε</span>
+  <div role="radiogroup" aria-labelledby="labelQ1">
     <button role="radio" data-controls="if1" data-checked-if="1">έως 31-12-2015</button>
     <button role="radio" data-controls="if2" data-checked-if="2">από 01-01-2016 και μετά</button>
   </div>
 </fieldset>
-<fieldset class="question"><span id="label-q2">Η υπόθεση συζητείται στο</span>
-  <div role="radiogroup" aria-labelledby="label-q2">
+<fieldset class="question">
+  <span id="labelQ2" role="tooltip">Η υπόθεση συζητείται στο</span>
+  <div role="radiogroup" aria-labelledby="labelQ2">
     <button role="radio" data-controls="if3" data-checked-if="3">Ειρηνοδικείο</button>
     <button role="radio" data-controls="if4" data-checked-if="4">Μον. Πρωτοδικείο</button>
     <button role="radio" data-controls="if5" data-checked-if="5">Πολ. Πρωτοδικείο</button>
-  </menu>
+  </div>
 </fieldset>
-<fieldset class="question"><span id="label-q3">H συζήτηση έχει οριστεί να διεξαχθεί κατά τη<span data-shown-if="6 7">ν</span><span data-shown-if="8 9 10"> διαδικασία</span><span data-shown-if="8 9"> των</span><span data-shown-if="10"> της</span></span>
-  <div role="radiogroup" aria-labelledby="label-q3">
+<fieldset class="question">
+  <span id="labelQ3" role="tooltip">H συζήτηση έχει οριστεί να διεξαχθεί κατά τη<span data-shown-if="6 7">ν</span><span data-shown-if="8 9 10"> διαδικασία</span><span data-shown-if="8 9"> των</span><span data-shown-if="10"> της</span></span>
+  <div role="radiogroup" aria-labelledby="labelQ3">
     <button role="radio" data-controls="if6"  data-checked-if="6" >τακτική διαδικασία</button>
     <button role="radio" data-controls="if7"  data-checked-if="7" >ειδική διαδικασία</button>
     <button role="radio" data-controls="if8"  data-checked-if="8" >μικροδιαφορών</button>
@@ -65,8 +68,9 @@
     <button role="radio" data-controls="if10" data-checked-if="10">εκούσιας δικαιοδοσίας</button>
   </div>
 </fieldset>
-<fieldset class="question" data-disabled-if="-7"><span id="label-q4">Η ειδική διαδικασία αφορά σε</span>
-  <div role="radiogroup" aria-haspopup aria-expanded="false" aria-labelledby="label-q4">
+<fieldset class="question" data-disabled-if="-7">
+  <span id="labelQ4" role="tooltip">Η ειδική διαδικασία αφορά σε</span>
+  <div role="radiogroup" aria-haspopup aria-expanded="false" aria-labelledby="labelQ4">
     <button role="radio" data-controls="if11" data-checked-if="11">γαμικές διαφορές</button>
     <button role="radio" data-controls="if12" data-checked-if="12">σχέσεις γονέων και τέκνου</button>
     <button role="radio" data-controls="if13" data-checked-if="13">πιστωτικούς τίτλους</button>
@@ -78,19 +82,26 @@
     <button role="radio" data-controls="if19" data-checked-if="19">προσβολές από δημοσιεύματα ή ραδιοτηλεοπτικές εκπομπές</button>
   </div>
 </fieldset>
-<fieldset class="question" data-disabled-if="1+4+21 1+5+21 1+10 2+9 2+10"><button aria-pressed="false" data-controls="if25" data-checked-if="25" aria-labelledby="label-q5"><span data-shown-if="-25">Δεν α</span><span data-shown-if="25">Α</span>σκείται</button> <span id="label-q5"><span data-shown-if="6 7 8">ανταγωγή</span><span data-shown-if="9 10">ανταίτηση</span> με τις προτάσεις</span>
-</fieldset><fieldset class="question not-shown" data-disabled-if="3">Το δικαστήριο ενεργεί ως 
+<fieldset class="question" data-disabled-if="1+4+21 1+5+21 1+10 2+9 2+10">
+  <button aria-pressed="false" data-controls="if25" data-checked-if="25" aria-labelledby="labelQ5"><span data-shown-if="-25">Δεν α</span><span data-shown-if="25">Α</span>σκείται</button>
+  <span id="labelQ5" role="tooltip"> <span data-shown-if="6 7 8">ανταγωγή</span><span data-shown-if="9 10">ανταίτηση</span> με τις προτάσεις</span>
+</fieldset>
+<fieldset class="question not-shown" data-disabled-if="3">
+  Το δικαστήριο ενεργεί ως 
   <div role="radiogroup">
     <button role="radio" data-controls="if20" data-checked-if="20">Πρωτοβάθμιο δικαστήριο</button>
     <button role="radio" data-controls="if21" data-checked-if="21">Δευτεροβάθμιο δικαστήριο</button>
   </div>
-</fieldset><fieldset class="question not-shown" data-disabled-if="3 20">Η πρωτόδικη απόφαση εκδόθηκε 
+</fieldset>
+<fieldset class="question not-shown" data-disabled-if="3 20">
+  Η πρωτόδικη απόφαση εκδόθηκε 
   <div role="radiogroup">
     <button role="radio" data-controls="if22" data-checked-if="22">κατ' αντιμωλία</button>
     <button role="radio" data-controls="if23" data-checked-if="23">ερήμην</button>
     <button role="radio" data-controls="if24" data-checked-if="24">ερήμην, σαν να ήταν παρών</button>
   </div>
-</fieldset><output class="answer"><span class="warning" data-shown-if="
+</fieldset>
+<output class="answer"><span class="warning" data-shown-if="
 1+3+7+11 1+3+7+12                                     1+3+7+18
 1+5+7+11 1+5+7+12 1+5+7+13 1+5+7+14 1+5+7+16 1+5+7+17 1+5+7+18
 1+4+8
@@ -364,7 +375,7 @@
 </tr>
 <tr><td></td><td></td>
 <td>Επί πρωτόδικης ερήμην απόφασης, όπως στην αντίστοιχη πρωτόδικη διαδικασία</td>
-<td><cite> αρ.524 παρ.1 ΚΠολΔ</cite><cite> <a href="https://docs.google.com/viewer?a=v&amp;q=cache:o9N5J9nsIucJ:www.ethemis.gr/WPC-edit-content/uploads/2008/05/efeteio.pdf+&amp;hl=en&amp;gl=gr&amp;pid=bl&amp;srcid=ADGEESh6qkdGXBiEk2uPRSFGKWmQDrfVdahoW2OF6hZDDOi85KIzknlf-Ihy5biw7--MCT2Nn8l9S3L-NPLxyWhXDJ0Voe5B2VqoPeco5SzJQl6UgyezO3Fvn1NB1VwGB0NJlhT14o2h&amp;sig=AHIEtbT_MYMGzFXPnRgJKtn5MHMavGdf6g">έγγραφο Εφετείου Αθηνών</a></cite></td>
+<td><cite> αρ.524 παρ.1 ΚΠολΔ</cite><cite> <a href="https://docs.google.com/viewer?a=v&amp;q=cache:o9N5J9nsIucJ:www.ethemis.gr/WPC-edit-content/uploads/2008/05/efeteio.pdf+&amp;hl=en&amp;gl=gr&amp;pid=bl&amp;srcid=ADGEESh6qkdGXBiEk2uPRSFGKWmQDrfVdahoW2OF6hZDDOi85KIzknlf-Ihy5biw7--MCT2Nn8l9S3L-NPLxyWhXDJ0Voe5B2VqoPeco5SzJQl6UgyezO3Fvn1NB1VwGB0NJlhT14o2h&amp;sig=AHIEtbT_MYMGzFXPnRgJKtn5MHMavGdf6g">ενημερωτικό σημείωμα Εφετείου Αθηνών</a></cite></td>
 </tr>
 </tbody>
 </table>
@@ -516,6 +527,8 @@
 Αν για την ποινική δίωξη απαιτείται έγκληση, η έλλειψη της έγκλησης δεν αναστέλλει την παραγραφή<cite> αρ.113 παρ.4 ΠΚ</cite>.
 
 Αν η υπόθεση έχει παραγραφεί, ο εισαγγελέας πλημμελειοδικών δύναται να θέσει τη δικογραφία στο αρχείο<cite> αρ.113 παρ.5 ΠΚ</cite>.
+
+Με ειδικότερους νόμους έχει θεσπισθεί η παραγραφή πταισμάτων και πλημμελημάτων με συγκεκριμένο χρόνο τέλεσης, υπό προϋποθέσεις<cite> ν.3346/2005 αρ.31</cite><cite> ν.3346/2005 αρ.32</cite><cite> ν.4043/2012 αρ.2</cite><cite> ν.4043/2012 αρ.3</cite><cite> ν.4043/2012 αρ.4</cite><cite> ν.4198/2013 αρ.8 παρ.3</cite><cite> ν.4198/2013 αρ.8 παρ.4</cite><cite> ν.4411/2016 αρ.8ο</cite><cite> ν.4411/2016 αρ.9ο</cite>.
 </main>
 
   <footer role="contentinfo"><small>© Greek Law</small></footer>
