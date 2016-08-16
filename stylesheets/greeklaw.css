@@ -82,6 +82,7 @@ ol, ul, dl {
 	vertical-align: top;
 }
 
+.table { display: table; }
 .table-of-contents { list-style: inherit; }
 .with-bullets      { list-style: square;  }
 
@@ -167,11 +168,15 @@ td { white-space: pre-line; }
 	overflow: hidden;
 }
 
+.table-cell { display: table-cell; }
+
 .fill-the-blank {
 	border:none;
 	border-bottom: 1px dotted;
 	text-align: right;
 }
+
+.fill-the-blank.table-cell { width: 100%;}
 
 h1, h2, h3, h4, h5, h6 {
 	display: inline-block;
