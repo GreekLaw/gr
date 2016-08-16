@@ -82,7 +82,7 @@ ol, ul, dl {
 	vertical-align: top;
 }
 
-.table { display: table; }
+.inline-table { display: inline-table; }
 .table-of-contents { list-style: inherit; }
 .with-bullets      { list-style: square;  }
 
