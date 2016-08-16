@@ -176,7 +176,10 @@ td { white-space: pre-line; }
 	text-align: right;
 }
 
-.fill-the-blank.table-cell { width: 100%;}
+.fill-the-blank.table-cell {
+	width: 100%;
+	padding: 0;
+}
 
 h1, h2, h3, h4, h5, h6 {
 	display: inline-block;
@@ -224,10 +227,6 @@ h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { color: #312f30; }
 	width: 100%;
 	padding: 0;
 	background: transparent;
-}
-
-.seal-text .placeholder {
-	width: 45%;
 }
 
 .stamp {
