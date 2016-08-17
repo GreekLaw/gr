@@ -94,7 +94,6 @@ input[id^="if"] { display: none; }
 
 [aria-haspopup] [role=radio] {
 	text-align: left;
-	padding-left: 19px;
 }
 
 [aria-haspopup] .checked,
@@ -138,13 +137,9 @@ input[id^="if"] { display: none; }
 	[aria-haspopup] [role=radio] { width: 100%; }
 
 	[aria-haspopup] [role=radio]:before, [role=checkbox]:before {
-		width: 7px;
+		width: 4px;
 		height: 100%;
 		bottom: 0px;
-	}
-
-	[aria-haspopup][aria-expanded=false] [role=radio]:before {
-		border: 1px solid #0088E0;
 	}
 
 	[aria-haspopup] [role=radio]:after {
@@ -172,10 +167,6 @@ input[id^="if"] { display: none; }
 	[aria-haspopup][aria-expanded=false] [role=radio].not-checked:before {
 		opacity: .25;
 		border: 0px solid;
-	}
-
-	[aria-haspopup] .checked:before {
-		border-top: 1px solid #0088E0;
 	}
 
 .checked, [aria-pressed].checked { color: inherit; }
@@ -250,7 +241,6 @@ input[id^="if"] { display: none; }
 	border-radius: 50%;
 	box-shadow: 0 0 0 1px currentColor;
 	background: white;
-	transition: inherit;
 }
 
 .solved-issue:before { content: none; }
@@ -277,11 +267,12 @@ input[id^="if"] { display: none; }
 .concealed { visibility: hidden; }
 .text-space { white-space: normal; }
 
-.question,
-.answer,
-[role=radio],
-[role=checkbox],
-[aria-pressed] {
+.solved-issue:before,
+.question, .question:before,
+.answer, .answer:before,
+[role=radio], [role=radio]:before,
+[role=checkbox], [role=checkbox]:before,
+[aria-pressed], [aria-pressed]:before {
 	-webkit-transition: .5s;
 	   -moz-transition: .5s;
 	        transition: .5s;
@@ -292,35 +283,42 @@ input[id^="if"] { display: none; }
         @keyframes fade-in { from {opacity: 0;} }
 
 @media (min-width: 600px){
+	[aria-haspopup][role=radiogroup] { margin-left: 5px; }
+
 	[role=radio] { width: auto; }
+	[aria-haspopup][aria-expanded] [role=radio] { padding-left: 1em; }
 
 	[role=radio]:before,
 	[role=checkbox]:before,
 	[aria-pressed]:before {
 		width: 100%;
-		height: 7px;
-		bottom: -2px;
-		border: 1px solid #0088E0;
+		height: 4px;
+		bottom: 0px;
+		border: 0px solid #0088E0;
 	}
 
-	.not-checked:before            { border-top-width: 0px; }
-	.checked:before                { border-top-width: 1px; }
+	[role=radio]:before,
+	[role=checkbox]:before,
+	[aria-pressed]:before {
+		border-bottom-width: 1px;
+	}
 
-	[role=radio]:before            { border-right-width: 0px; }
-	[role=radio]:last-child:before { border-right-width: 1px; }
-
-	.checked:before                { background: #DBECF9; }
-
-	[aria-haspopup][aria-expanded=true] [role=radio]:before { border-top-width: 1px; }
-
-	[aria-haspopup][aria-expanded=true] [role=radio]:before            { border-bottom-width: 0px; }
-	[aria-haspopup][aria-expanded=true] [role=radio]:last-child:before { border-bottom-width: 1px; }
-
-	[aria-haspopup][aria-expanded=true] [role=radio]:before         { border-right-width: 0px; }
-	[aria-haspopup][aria-expanded=true] [role=radio].checked:before { border-right-width: 1px; }
+	[role=radio]:first-child:before { !border-left-width:   1px; }
+	[role=radio]:last-child:before  { !border-right-width:  1px; }
+	.checked:before                 { border-bottom-width: 4px; }
+	
+	[aria-haspopup][aria-expanded] [role=radio]:before             { border-left-width:   1px; border-bottom-width: 0px; }
+	[aria-haspopup][aria-expanded] [role=radio]:first-child:before { !border-top-width:    1px; }
+	[aria-haspopup][aria-expanded] [role=radio]:last-child:before  { !border-bottom-width: 1px; !border-right-width:  0px; }
+	[aria-haspopup][aria-expanded] [role=radio].checked:before     { border-left-width:   4px; !border-right-width:  0px; }
 }
 
 @media (max-width: 600px){
+
+	[aria-haspopup] [role=radio] {
+		padding-left: 19px;
+	}
+
 	[role=tooltip] { display: table-row; }
 
 	.question,
@@ -350,7 +348,7 @@ input[id^="if"] { display: none; }
 	}
 
 	[role=radio]:before {
-		width: 7px;
+		width: 4px;
 		height: 100%;
 		top: 0;
 	}
@@ -358,14 +356,19 @@ input[id^="if"] { display: none; }
 	[role=checkbox]:before,
 	[aria-pressed]:before {
 		width: 100%;
-		height: 7px;
+		height: 4px;
 		bottom: 0px;
 	}
 
 	[role=radio]:before,
 	[role=checkbox]:before,
 	[aria-pressed]:before {
-		border: 1px solid #0088E0;
+		border: 0px solid #0088E0;
+	}
+
+	[role=checkbox]:before,
+	[aria-pressed]:before {
+		border-bottom-width: 1px;
 	}
 
 	[aria-haspopup] [role=radio]:before {
@@ -374,23 +377,11 @@ input[id^="if"] { display: none; }
 		top: 0;
 	}
 
-	.checked:before { border: 1px solid #0088E0; }
+	.checked:before { border-bottom-width: 4px; }
 
-	.not-checked:before         { border-top-width: 0px; }
-	.checked:before             { border-top-width: 1px; }
-
-	[role=radio]:before         { border-right-width:  0px; }
-	[role=radio]:before         { border-top-width:    1px; }
-	[role=radio]:before         { border-bottom-width: 0px; }
-
-	[role=radio].checked:before { border-right-width:  1px; }
-	[role=radio].checked:before { border-bottom-width: 0px; }
-
-	.checked:before                { background: #DBECF9; }
-
-
-	[role=radio]:first-child:before { border-top-width: 1px; }
-
-	[role=radio]:last-child:before  { border-bottom-width: 1px; }
+	[role=radio]:before             { border-left-width:   1px; }
+	[role=radio]:first-child:before { !border-top-width:    1px; }
+	[role=radio]:last-child:before  { !border-bottom-width: 1px; }
+	[role=radio].checked:before     { border-left-width:   4px; border-bottom-width: 0px}
 
 }
