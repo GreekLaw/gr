@@ -60,7 +60,7 @@ function getTriggers(action, actor){
 
 			conditionTerm = /\d+/.test(conditionParts[0]) ? conditionParts[0] :
 			                /\d+/.test(conditionParts[1]) ? conditionParts[1] :
-			                                                  null
+			                                                null
 			condition     = { flag: conditionFlag,
 			                  term: conditionTerm
 			                }
@@ -84,23 +84,63 @@ function verifyTrigger(trigger, action, actor){
  }
 
 function verifyCondition(condition, trigger, action, actor){
-	var term, validTerm, conditionElement, validElement, invalidTermError, invalidElemError, conditionTruth
+	var validTerm, term, conditionElement, validElement, conditionTruth
 
+	validTerm        = condition.term !== null
 	term             = 'if' + condition.term
-	validTerm        = term !== null
 	conditionElement = document.getElementById(term)
 	validElement     = conditionElement !== null
 
-	invalidTermError = 'There are no well-formed conditions for the action ' + action.verb + ' of actor ' + actor
-	invalidElemError = term + ' is not a valid condition term'
-	
-	conditionTruth   = !validTerm                       ? console && console.log(invalidTermError) :
-	                   !validElement                    ? console && console.log(invalidElemError) :
-	                    validElement &&  condition.flag ?  conditionElement.checked                :
-	                    validElement && !condition.flag ? !conditionElement.checked                :
-	                                                      false
+	if (!validTerm   ){ return (logTermError(condition, trigger, action, actor)   , false) }
+	if (!validElement){ return (logElementError(condition, trigger, action, actor), false) }
+
+	conditionTruth =  condition.flag ?  conditionElement.checked :
+	                 !condition.flag ? !conditionElement.checked :
+	                                    false
 
 	return conditionTruth
+}
+
+function logTermError(condition, trigger, action, actor){
+	var invalidTermError, actorIndex, actionIndex, triggerIndex
+
+	actorIndex   = getIndexInArray(actors, actor)
+	actionIndex  = getIndexInArray(actor.actions, action)
+	triggerIndex = getIndexInArray(action.triggers, trigger)
+
+	invalidTermError = 'There is an error with an actor\'s term. \nTo locate actor: actors[' + 
+	actorIndex + '].element \nTo locate action: actors[' + actorIndex + '].actions[' + 
+	actionIndex + '].verb \nTo locate trigger: actors[' + actorIndex + '].actions[' + 
+	actionIndex + '].triggers[' + triggerIndex + ']'
+
+	console && console.log(invalidTermError)
+}
+
+function logElementError(condition, trigger, action, actor){
+	var invalidElementError, actorIndex, actionIndex, triggerIndex
+
+
+	actorIndex   = getIndexInArray(actors, actor)
+	actionIndex  = getIndexInArray(actor.actions, action)
+	triggerIndex = getIndexInArray(action.triggers, trigger)
+
+	invalidElementError = 'Can not locate actor with id if' +
+	                       condition.term + '.\nTo locate requesting actor: actors[' + 
+	actorIndex + '].element \nTo locate requesting action: actors[' + actorIndex + '].actions[' + 
+	actionIndex + '].verb \nTo locate requesting trigger: actors[' + actorIndex + '].actions[' + 
+	actionIndex + '].triggers[' + triggerIndex + ']'
+
+	console && console.log(invalidElementError)
+}
+
+function getIndexInArray(array, member){
+	var i
+
+	for (i = 0; i < array.length; i++){
+		if (array[i] === member) { break }
+	}
+
+	return i
 }
 
 function shown(actor, value, event){
@@ -161,11 +201,9 @@ function controls(event){
 	}
 	if (actor.tagName.toLowerCase() === 'button' && actor.parentNode.getAttribute('aria-haspopup') !== null){
 
-		actor.parentNode.getAttribute('aria-expanded') === 'true'   ?
-			actor.parentNode.setAttribute('aria-expanded', 'false')  :
-		actor.parentNode.getAttribute('aria-expanded') === 'false'  ?
-			actor.parentNode.setAttribute('aria-expanded', 'true')	 :
-			void Function
+		actor.parentNode.getAttribute('aria-expanded') === 'true'  ? actor.parentNode.setAttribute('aria-expanded', 'false') :
+		actor.parentNode.getAttribute('aria-expanded') === 'false' ? actor.parentNode.setAttribute('aria-expanded', 'true')  :
+		                                                             void Function
 	}
 }
 
@@ -211,7 +249,7 @@ function applyAddressBarParameters(){
 
 		if (parameters.length === 1 && parameters[0] === '') { return refreshState() }
 		for (i = 0; i < parameters.length; i++){
-			element = document.querySelector('.' + parameters[i])
+			element = document.querySelector('[value=' + parameters[i] + ']')
 			element && !element.checked ? element.checked = true : 
 			                              void Function
 		}
