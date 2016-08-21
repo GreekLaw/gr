@@ -196,6 +196,20 @@ h6 { font-size: 18px; line-height: 22px; padding: 16px 0    6px 9em; font-weight
 h2 a      , h3 a      , h4 a      , h5 a      , h6 a       { color: #312f30; }
 h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { color: #312f30; }
 
+.warning { padding: 11px; }
+
+.warning:before {
+	content: "!";
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	margin-right: 11px;
+	border: 1px solid;
+	color: red;
+	text-align: center;
+	border-radius: 50%;
+}
+
 .seal {
 	letter-spacing: -1em;
 	white-space: normal;
