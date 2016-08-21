@@ -16,8 +16,8 @@ function handleIt(event){
     controlOf   = event.target.getAttribute('data-controls')
     reference   = document.getElementById(controlOf)
 
-    description = id        ? id                                         :
-                  reference ? reference.name + ':' + reference.className :
+    description = id        ? id                                     :
+                  reference ? reference.name + ':' + reference.value :
                               null
     description ? ga('send', 'event', decodeURI(location.pathname.match(/.+\/(.+?)\.html?$/)[1]), 'click', description, {'nonInteraction': 1}) :
                   void Function
