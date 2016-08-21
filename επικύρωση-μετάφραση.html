@@ -19,8 +19,8 @@
 <main role="main">
 <h1 class="centered">
   <form>
-    <input id="if1"  name="επεξεργασία" class="επικύρωση" type="radio"        >
-    <input id="if2"  name="επεξεργασία" class="μετάφραση" type="radio" checked>
+    <input id="if1" type="radio" name="εργασία" value="επικύρωση"        >
+    <input id="if2" type="radio" name="εργασία" value="μετάφραση" checked>
     <div class="heading" role="radiogroup">
       <button role="radio" data-controls="if1" data-checked-if="1">Επικύρωση</button>
       <button role="radio" data-controls="if2" data-checked-if="2">Μετάφραση</button>
@@ -56,13 +56,13 @@
 
 <h2 class="solved-issue">Κατάθεση αντιγράφων</h2>
 <form>
-  <input id="if3" name="κατάθεση"       class="δικαστήριο"              type="radio" checked>
-  <input id="if4" name="κατάθεση"       class="Δημόσιο"                 type="radio"        >
-  <input id="if5" name="κατάθεση"       class="πέραν-Δημοσίου"          type="radio"        >
-  <input id="if6" name="είδος-εγγράφου" class="δημόσιο-έγγραφο"         type="radio"        >
-  <input id="if7" name="είδος-εγγράφου" class="διοικητικό-έγγραφο"      type="radio"        >
-  <input id="if8" name="είδος-εγγράφου" class="έγγραφο-αλλοδαπής-αρχής" type="radio"        >
-  <input id="if9" name="είδος-εγγράφου" class="ιδιωτικό-έγγραφο"        type="radio" checked>
+  <input id="if3" type="radio" name="κατάθεση"       value="σε-δικαστήριο"           checked>
+  <input id="if4" type="radio" name="κατάθεση"       value="στο-Δημόσιο"                    >
+  <input id="if5" type="radio" name="κατάθεση"       value="πέραν-Δημοσίου"                 >
+  <input id="if6" type="radio" name="είδος-εγγράφου" value="δημόσιο-έγγραφο"                >
+  <input id="if7" type="radio" name="είδος-εγγράφου" value="διοικητικό-έγγραφο"             >
+  <input id="if8" type="radio" name="είδος-εγγράφου" value="έγγραφο-αλλοδαπής-αρχής"        >
+  <input id="if9" type="radio" name="είδος-εγγράφου" value="ιδιωτικό-έγγραφο"        checked>
 <fieldset class="question">
 <span id="labelQ1" role="tooltip">Αν <span data-shown-if="1">το έγγραφο </span><span data-shown-if="2">η μετάφραση </span> κατατίθεται </span>
   <div role="radiogroup" aria-labelledby="labelQ1">
