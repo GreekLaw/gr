@@ -343,6 +343,7 @@ input[id^="if"] { display: none; }
 	}
 
 	[role=radiogroup] {
+		min-width: 66.66%;
 		margin: 0 0 0 0px;
 		letter-spacing: 0px;
 	}
