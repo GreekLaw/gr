@@ -15,21 +15,20 @@
 <body>
   <header><a href="./">Greek Law</a></header>
   <nav></nav>
-<main>
-<h1 class="centered">
-  <form>
-    <input id="if1" type="radio" name="υπολογισμός" value="τέλος-απογράφου"  checked>
-    <input id="if2" type="radio" name="υπολογισμός" value="δικαστικό-ένσημο"        >
-    <input id="if3" type="radio" name="υπολογισμός" value="τόκοι"                   >
-    <input id="if4" type="radio" name="υπολογισμός" value="παράβολα"                >
-    <div role="radiogroup" class="heading">
-      <button role="radio" data-controls="if1" data-checked-if="1">Τέλος απογράφου</button>
-      <button role="radio" data-controls="if2" data-checked-if="2">Δικαστικό ένσημο</button>
-      <button role="radio" data-controls="if3" data-checked-if="3">Τόκοι</button>
-      <button role="radio" data-controls="if4" data-checked-if="4">Παράβολα</button>
-    </div>
-  </form>
-</h1>
+
+<main role="main">
+<form class="tabs">
+  <input id="if1" type="radio" name="υπολογισμός" value="τέλος-απογράφου"  checked>
+  <input id="if2" type="radio" name="υπολογισμός" value="δικαστικό-ένσημο"        >
+  <input id="if3" type="radio" name="υπολογισμός" value="τόκοι"                   >
+  <input id="if4" type="radio" name="υπολογισμός" value="παράβολα"                >
+  <div class="tablist" role="radiogroup">
+    <h1><button role="radio" data-controls="if1" data-checked-if="1">Τέλος απογράφου</button></h1>
+    <h1><button role="radio" data-controls="if2" data-checked-if="2">Δικαστικό ένσημο</button></h1>
+    <h1><button role="radio" data-controls="if3" data-checked-if="3">Τόκοι</button></h1>
+    <h1><button role="radio" data-controls="if4" data-checked-if="4">Παράβολα</button></h1>
+  </div>
+</form>
 <span data-shown-if="1">
 <table>
 <thead><tr><th>Είδος διαφοράς</th><th>Τέλος</th><th>Σχετικές διατάξεις</th></thead>
