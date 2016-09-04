@@ -16,6 +16,10 @@ form h1, form h2, form h3, form h4, form h5, form h6 {
 form h2:first-of-type { padding-top:  6px; }
 form h3:first-of-type { padding-top: 11px; }
 
+form.tabs { width: 100%; }
+
+.tablist { width: auto; }
+
 [role=tooltip] {
 	display: inline-block;
 	border: 0px solid transparent;
@@ -283,6 +287,8 @@ input[id^="if"] { display: none; }
         @keyframes fade-in { from {opacity: 0;} }
 
 @media (min-width: 600px){
+	form.tabs { text-align: center; }
+
 	[aria-haspopup][role=radiogroup] { margin-left: 5px; }
 
 	[role=radio] { width: auto; }
