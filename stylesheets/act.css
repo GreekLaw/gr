@@ -228,6 +228,8 @@ input[id^="if"] { display: none; }
 .answer:before       { content: '→';                }
 .important:before    { content: '!';                }
 
+.important { border-collapse: separate; FIXME: true; }
+
 .new.question,
 .solved-issue        { counter-reset: questions;    }
 
