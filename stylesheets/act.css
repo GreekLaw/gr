@@ -288,6 +288,7 @@ input[id^="if"] { display: none; }
 
 @media (min-width: 600px){
 	form.tabs { text-align: center; }
+	.tabs h1 { width: auto; }
 
 	[aria-haspopup][role=radiogroup] { margin-left: 5px; }
 
