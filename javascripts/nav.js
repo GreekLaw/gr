@@ -10,11 +10,11 @@ ga('send', 'pageview')
 document.addEventListener('click', handleIt)
 
 function handleIt(event){
-    var id, controlOf, reference, description
+    var id, controlFor, reference, description
 
-    id          = event.target.id
-    controlOf   = event.target.getAttribute('data-controls')
-    reference   = document.getElementById(controlOf)
+    id         = event.target.id
+    controlFor = event.target.getAttribute('data-controls')
+    reference  = document.getElementById(controlFor)
 
     description = id        ? id                                     :
                   reference ? reference.name + ':' + reference.value :
