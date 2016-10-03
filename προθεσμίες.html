@@ -8,9 +8,9 @@
   <meta name="viewport"         content="initial-scale = 1">
   <meta name="format-detection" content="telephone = no">
   <link rel="stylesheet"        href="./stylesheets/greeklaw.css">
-  <link rel="stylesheet"        href="./stylesheets/act.css">
+  <link rel="stylesheet"        href="./stylesheets/linear.css">
   <script async                 src="./javascripts/nav.js"></script>
-  <script async                 src="./javascripts/act.js"></script>
+  <script async                 src="./javascripts/director.js"></script>
 </head>
 <body>
   <header><a href="./">Greek Law</a></header>
@@ -42,25 +42,25 @@
 <input id="if22" type="radio"    name="πρωτόδικη-απόφαση"    value="κατ-αντιμωλία"                        checked>
 <input id="if23" type="radio"    name="πρωτόδικη-απόφαση"    value="ερήμην"                                      >
 <input id="if24" type="radio"    name="πρωτόδικη-απόφαση"    value="πλασματικά-κατ-αντιμωλία"                    >
-<input id="if25" type="checkbox"                             value="άσκηση-ανταγωγής"                            >
-<fieldset class="question">
-  <span id="labelQ1" role="tooltip">Το δικόγραφο κατατέθηκε</span>
-  <div role="radiogroup" aria-labelledby="labelQ1">
+<input id="if25" type="checkbox" name="ανταγωγή-ή-ανταίτηση" value="ασκείται"                                    >
+<fieldset class="question" aria-labelledby="q1label">
+  <span id="q1label" role="tooltip">Το δικόγραφο κατατέθηκε </span>
+  <div role="radiogroup" aria-labelledby="q1label">
     <button role="radio" data-controls="if1" data-checked-if="1">έως 31-12-2015</button>
     <button role="radio" data-controls="if2" data-checked-if="2">από 01-01-2016 και μετά</button>
   </div>
 </fieldset>
-<fieldset class="question">
-  <span id="labelQ2" role="tooltip">Η υπόθεση συζητείται στο</span>
-  <div role="radiogroup" aria-labelledby="labelQ2">
+<fieldset class="question" aria-labelledby="q2label">
+  <span id="q2label" role="tooltip">Η υπόθεση συζητείται στο </span>
+  <div role="radiogroup" aria-labelledby="q2label">
     <button role="radio" data-controls="if3" data-checked-if="3">Ειρηνοδικείο</button>
     <button role="radio" data-controls="if4" data-checked-if="4">Μον. Πρωτοδικείο</button>
     <button role="radio" data-controls="if5" data-checked-if="5">Πολ. Πρωτοδικείο</button>
   </div>
 </fieldset>
-<fieldset class="question">
-  <span id="labelQ3" role="tooltip">H συζήτηση έχει οριστεί να διεξαχθεί κατά τη<span data-shown-if="6 7">ν</span><span data-shown-if="8 9 10"> διαδικασία</span><span data-shown-if="8 9"> των</span><span data-shown-if="10"> της</span></span>
-  <div role="radiogroup" aria-labelledby="labelQ3">
+<fieldset class="question" aria-labelledby="q3label">
+  <span id="q3label" role="tooltip">H διαδικασία κατά την οποία εισάχθηκε το δικόγραφο είναι <span data-shown-if="6 7">η</span><span data-shown-if="8 9" class="not-shown">των</span><span data-shown-if="10" class="not-shown">της</span> </span>
+  <div role="radiogroup" aria-labelledby="q3label">
     <button role="radio" data-controls="if6"  data-checked-if="6" >τακτική διαδικασία</button>
     <button role="radio" data-controls="if7"  data-checked-if="7" >ειδική διαδικασία</button>
     <button role="radio" data-controls="if8"  data-checked-if="8" >μικροδιαφορών</button>
@@ -68,9 +68,9 @@
     <button role="radio" data-controls="if10" data-checked-if="10">εκούσιας δικαιοδοσίας</button>
   </div>
 </fieldset>
-<fieldset class="question" data-disabled-if="-7">
-  <span id="labelQ4" role="tooltip">Η ειδική διαδικασία αφορά σε</span>
-  <div role="radiogroup" aria-haspopup aria-expanded="false" aria-labelledby="labelQ4">
+<fieldset class="question" data-disabled-if="-7" aria-expanded="false" aria-labelledby="q4label">
+  <span id="q4label" role="tooltip">Η ειδική διαδικασία αφορά σε </span>
+  <div role="radiogroup" aria-haspopup="true" aria-expanded="false" aria-labelledby="q4label">
     <button role="radio" data-controls="if11" data-checked-if="11">γαμικές διαφορές</button>
     <button role="radio" data-controls="if12" data-checked-if="12">σχέσεις γονέων και τέκνου</button>
     <button role="radio" data-controls="if13" data-checked-if="13">πιστωτικούς τίτλους</button>
@@ -82,9 +82,9 @@
     <button role="radio" data-controls="if19" data-checked-if="19">προσβολές από δημοσιεύματα ή ραδιοτηλεοπτικές εκπομπές</button>
   </div>
 </fieldset>
-<fieldset class="question" data-disabled-if="1+4+21 1+5+21 1+10 2+9 2+10">
-  <button aria-pressed="false" data-controls="if25" data-checked-if="25" aria-labelledby="labelQ5"><span data-shown-if="-25">Δεν α</span><span data-shown-if="25">Α</span>σκείται</button>
-  <span id="labelQ5" role="tooltip"> <span data-shown-if="6 7 8">ανταγωγή</span><span data-shown-if="9 10">ανταίτηση</span> με τις προτάσεις</span>
+<fieldset class="question" data-disabled-if="1+4+21 1+5+21 1+10 2+9 2+10" aria-labelledby="q5label">
+  <button role="checkbox" data-controls="if25" data-checked-if="25" aria-labelledby="q5label"><span data-shown-if="-25">Δεν α</span><span data-shown-if="25" class="not-shown">Α</span>σκείται</button>
+  <span id="q5label" role="tooltip"> <span data-shown-if="6 7 8">ανταγωγή</span><span data-shown-if="9 10" class="not-shown">ανταίτηση</span> με τις προτάσεις</span>
 </fieldset>
 <fieldset class="question not-shown" data-disabled-if="3">
   Το δικαστήριο ενεργεί ως 
@@ -166,7 +166,7 @@
                      1+5+6 1+5+7+11+20 1+5+7+12+20 1+5+7+15+20 1+5+7+16+20 1+5+7+17+20 1+5+7+18+20 1+5+7+19+20
                      1+4+8 1+4+10
                      1+5+8 1+5+10
-                     2+3+6 2+3+7 2+3+10  
+                     2+3+6 2+3+7 2+3+10
                      2+4+6 2+4+7 2+4+10
                      2+5+6 2+5+7 2+5+10"
                    >Πρέπει
@@ -304,7 +304,7 @@
                      1+3+7+11 1+3+7+12 1+3+7+15 1+3+7+16 1+3+7+17
                                        1+4+7+15 1+4+7+16 1+4+7+17"
                  > αρ.115 παρ.3 ΚΠολΔ</cite>
-<cite data-shown-if="1+4 1+5"> αρ.34 ΚΠολΔ</cite>                 
+<cite data-shown-if="1+4 1+5"> αρ.34 ΚΠολΔ</cite>
 <cite data-shown-if="1+9"> 1284/2003 ΑΠ</cite>.</span>
 <span data-shown-if="1+7+13+25 2+7+13+25"><br>Στη διαδικασία πιστωτικών τίτλων <b>δεν επιτρέπεται</b> η άσκηση ανταγωγής<span data-shown-if="2+7+13+25">, εκτός αν η ανταγωγή είναι συναφής με την κύρια αγωγή</span><cite data-shown-if="1+7+13+25"> αρ.641 ΚΠολΔ</cite><cite data-shown-if="2+7+13+25"> αρ.662 Β παρ.3 ΚΠολΔ</cite><cite data-shown-if="2+7+13+25"> αρ.662 Β παρ.1 ΚΠολΔ</cite><cite data-shown-if="2+7+13+25"> αρ.614 περ.8 ΚΠολΔ</cite>.
 </span>
@@ -319,7 +319,6 @@
 <br><br>Οι ίδιες προθεσμίες ισχύουν και για τον προσθέτως παρεμβαίνοντα<cite> 5267/2007 Εφ.Αθηνών</cite>
 </span>
 </output>
-<br><br>Θα συμβουλευτείτε τον <a class="ad" id="ad" href="https://epidiko.gr" target="_blank">ΚΠολΔ στο κινητό σας</a>;
 <span style="display: none;">
 Παραπομπή στα άρθρα 1-590
 Όλες οι ειδικές διαδικασίες              591 παρ.1 εδ.1
@@ -367,7 +366,7 @@
 <table>
 <tbody>
 <tr><th>Είδος διαδικασίας</th><th>Δικαστήριο</th><th>Προθεσμία κατάθεσης</th><th>Σχετικές διατάξεις</th></tr>
-<tr><th>Στο</th><th>Δευτεροβάθμιο Δικαστήριο</th><th></th></tr>
+<tr><th colspan="4">Στο Δευτεροβάθμιο Δικαστήριο</th></tr>
 <tr><th></th><th></th><th>Προθεσμία κατάθεσης</th><th>Σχετικές διατάξεις</th></tr>
 <tr><td></td><td></td>
 <td>Επί πρωτόδικης απόφασης κατ' αντιμωλία, μέχρι τις 12:00 την τρίτη εργάσιμη ημέρα από τη συζήτηση</td>
@@ -381,6 +380,7 @@
 </table>
 </span>
 </form>
+Θα συμβουλευτείτε τον <a class="ad" id="ad" href="https://epidiko.gr" target="_blank">ΚΠολΔ στο κινητό σας</a>;
 <h2>Προθεσμία άσκησης έφεσης</h2>
 Ενημερωθείτε για την <a href="./έφεση.html#προθεσμία-άσκησης-έφεσης">προθεσμία άσκησης έφεσης</a>.
 <span style="display: none;">
