@@ -13,6 +13,8 @@ form h1, form h2, form h3, form h4, form h5, form h6 {
 	width: 100%;
 }
 
+.tablist h1, .tablist h2, .tablist h3, .tablist h4, .tablist h5, .tablist h6 { width: auto; }
+
 form h2:first-of-type { padding-top:  6px; }
 form h3:first-of-type { padding-top: 11px; }
 
@@ -287,7 +289,10 @@ input[id^="if"] { display: none; }
 @media (min-width: 600px){
 	form.tabs { width: 100%; }
 
-	.tablist { width: auto; }
+	.tablist {
+		width: 100%;
+		text-align: center;
+	}
 
 	[role=radio] { width: auto; }
 	[aria-haspopup][aria-expanded] [role=radio] { padding-left: 1em; }
