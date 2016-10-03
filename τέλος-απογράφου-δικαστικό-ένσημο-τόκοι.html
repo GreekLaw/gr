@@ -8,9 +8,9 @@
   <meta name="viewport"         content="initial-scale = 1">
   <meta name="format-detection" content="telephone = no">
   <link rel="stylesheet"        href="./stylesheets/greeklaw.css">
-  <link rel="stylesheet"        href="./stylesheets/act.css">
+  <link rel="stylesheet"        href="./stylesheets/linear.css">
   <script async                 src="./javascripts/nav.js"></script>
-  <script async                 src="./javascripts/act.js"></script>
+  <script async                 src="./javascripts/director.js"></script>
 </head>
 <body>
   <header><a href="./">Greek Law</a></header>
@@ -91,14 +91,17 @@
 Παρατηρήσεις: (Στοιχεία απόφασης: <u>Αριθμός Απόφασης, Είδος διαδικασίας</u>)
 
 </span><span data-shown-if="2">
-<div class="question important"><span id="label-q2 role="tooltip">Ενημέρωση για δικαστικό ένσημο όπως ορίζονταν </span>
-  <input id="if5" type="radio" name="τρόπος-υπολογισμού-ενσήμου" value="έως-05-06-2016"                 >
-  <input id="if6" type="radio" name="τρόπος-υπολογισμού-ενσήμου" value="από-06-06-2016-και-μετά" checked>
-  <div role="radiogroup" aria-labelledby="label-q2">
+<form>
+<input id="if5" type="radio" name="τρόπος-υπολογισμού-ενσήμου" value="έως-05-06-2016"                 >
+<input id="if6" type="radio" name="τρόπος-υπολογισμού-ενσήμου" value="από-06-06-2016-και-μετά" checked>
+<fieldset class="question important">
+  <span id="q2label" role="tooltip">Ενημέρωση για δικαστικό ένσημο όπως ορίζονταν </span>
+  <div role="radiogroup" aria-labelledby="q2label">
       <button role="radio" data-controls="if5" data-checked-if="5">έως 05-06-2016</button>
       <button role="radio" data-controls="if6" data-checked-if="6">από 06-06-2016 και μετά</button>
   </div>
-</div>
+</fieldset>
+</form>
 <br>
 <table>
 <thead><tr><th></th><th>Ποσό </th><th>Αιτιολογία </th><th>Κωδικός Αριθμός Εσόδου </th></tr>
@@ -124,8 +127,8 @@
 Σε αγωγή παροχής διόδου το δικαστικό ένσημο υπολογίζεται με βάση την αποζημίωση που πρέπει να καταβληθεί<cite> 1547/1985 ΑΠ</cite>.
 
 Σε περίπτωση μη καταβολής του δικαστικού ενσήμου, και ανάκυψης του ζητήματος στο δευτεροβάθμιο δικαστήριο, το δευτεροβάθμιο δικαστήριο μπορεί να αναβάλει την συζήτηση ώστε να καταβληθεί το δικαστικό ένσημο, αντί να απορρίψει την αγωγή<cite> 602/2005 Εφ.Θεσσαλονίκης</cite>.
-<ul>Δικαστικό ένσημο καταβάλλεται στις
-<li><b>αιτήσεις διαταγής πληρωμής</b><cite> ν.ΓϠΟΗ/1912 αρ.2</cite><cite> πδ.7/18-06-1928 παρ3</cite><cite> νδ.1544/1942 αρ.7 παρ.3 όπως τροποποιήθηκε με τον ν.4055/2012 αρ.21 παρ.1</cite></li>
+Δικαστικό ένσημο καταβάλλεται στις
+<ul><li><b>αιτήσεις διαταγής πληρωμής</b><cite> ν.ΓϠΟΗ/1912 αρ.2</cite><cite> πδ.7/18-06-1928 παρ3</cite><cite> νδ.1544/1942 αρ.7 παρ.3 όπως τροποποιήθηκε με τον ν.4055/2012 αρ.21 παρ.1</cite></li>
 <li><b>καταψηφιστικές αγωγές</b><cite> ν.ΓϠΟΗ/1912 αρ.2</cite><cite> νδ.1544/1942 αρ.7 παρ.3</cite>
 </li>
 <li><b>αναγνωριστικές αγωγές<cite> 22937/2013 Μον.Πρ.Θεσσαλονίκης</cite></b>
@@ -252,17 +255,16 @@
 <td>ΚΑΕ 3751
 (παράβολο ΤΑΧΔΙΚ)</td>
 </tr>
-<tr><td></td><td><td></td></td>
+<tr><td></td><td></td><td></td>
 <td>40 €</td>
 <td>ΚΑΕ 3741
 (παράβολο κάθε αξίας)</td>
 </tr>
-<tr>
 <tr><td></td><td></td><td>Πληρωμή με έντυπο παράβολο
 <cite> ν.4055/2012 αρ.112 παρ.5</cite>
 <cite> αποφ.76120/06-09-2012 Υπ.Οικ Υπ.Δικαιοσύνης (ΦΕΚ Β 2759/2012)</cite></td><td></td><td></td>
 </tr>
-<td><small>αλλά στα κατ' έγκληση διωκώμενα εγκλήματα
+<tr><td><small>αλλά στα κατ' έγκληση διωκώμενα εγκλήματα
 κατά γενετήσιας ελευθερίας</small></td>
 <td>Χωρίς παράβολο
 <cite> αρ.46 παρ.2 εδ.5 ΚΠοινΔ</cite></td><td></td><td></td><td></td>
