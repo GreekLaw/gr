@@ -8,8 +8,8 @@
   <meta name="viewport"         content="initial-scale = 1">
   <meta name="format-detection" content="telephone = no">
   <link rel="stylesheet"        href="./stylesheets/greeklaw.css">
-  <link rel="stylesheet"        href="./stylesheets/act.css">
-  <script async                 src="./javascripts/act.js"></script>
+  <link rel="stylesheet"        href="./stylesheets/linear.css">
+  <script async                 src="./javascripts/director.js"></script>
   <script async                 src="./javascripts/nav.js"></script>
 </head>
 <body>
@@ -73,7 +73,7 @@
 Δικαστική ομολογία είναι μόνο η ομολογία που γίνεται από τον αντίδικο εκείνου που φέρει το βάρος της επίκλησης και απόδειξης του αμφισβητούμενου και επιβλαβούς για τον ομολογούντα γεγονότος προς το δικαστήριο που δικάζει την υπόθεση με σκοπό αποδοχής του και είναι σαφής και ορισμένη<cite> 1237/2013 ΑΠ</cite>.
 Η δικαστική ομολογία παρέχει πλήρη απόδειξη εναντίον εκείνου που ομολόγησε<cite> 11/2004 ΑΠ</cite><cite> αρ.352 παρ.1 ΚΠολΔ</cite>.
 Κάθε άλλη ομολογία θεωρείται εξώδικη και εκτιμάται ελευθέρως<cite> 11/2004 ΑΠ</cite><cite> αρ.352 παρ.2 ΚΠολΔ</cite>.
-Εξώδικη είναι και η ομολογία που έγινε ενώπιον δικαστηρίου, αλλά όχι στη συγκεκριμένη δίκη στην οποία γίνεται επίκλησή της ως αποδεικτικό μέσο<cite> 11/2004 ΑΠ</cite.
+Εξώδικη είναι και η ομολογία που έγινε ενώπιον δικαστηρίου, αλλά όχι στη συγκεκριμένη δίκη στην οποία γίνεται επίκλησή της ως αποδεικτικό μέσο<cite> 11/2004 ΑΠ</cite>.
 Δικαστική ομολογία αποτελεί και η αναφορά γεγονότων στην αγωγή, όταν ο εναγόμενος προβάλλει ένσταση η οποία στηρίζεται στα γεγονότα αυτά<cite> 192/2008 ΑΠ</cite>.
 
 <h2>Εξώδικη ομολογία</h2>
@@ -95,7 +95,7 @@
   </div>
 </fieldset>
 </form>
-<h3 class="solved-issue">Προθεσμία κλήτευσης σε ένορκη βεβαίωση</h2>
+<h3 class="solved-issue">Προθεσμία κλήτευσης σε ένορκη βεβαίωση</h3>
 <form>
 <input id="if6"  type="radio" name="είδος-διαδικασίας" value="τακτική"                                  checked>
 <input id="if7"  type="radio" name="είδος-διαδικασίας" value="ειδική"                                          >
@@ -111,8 +111,8 @@
 <input id="if17" type="radio" name="ειδική-διαδικασία" value="διαφορές-από-διατροφή-τέκνων"                    >
 <input id="if18" type="radio" name="ειδική-διαδικασία" value="διαφορές-από-προσβολές-δημοσιευμάτων"            >
 <fieldset class="question">
-  <span id="labelQ1" role="tooltip">Κατά τη συζήτηση ακολουθείται η </span>
-  <div role="radiogroup" aria-labelledby="labelQ1">
+  <span id="q1label" role="tooltip">Κατά τη συζήτηση ακολουθείται η </span>
+  <div role="radiogroup" aria-labelledby="q1label">
     <button role="radio" data-controls="if6" data-checked-if="6">τακτική διαδικασία</button>
     <button role="radio" data-controls="if7" data-checked-if="7">ειδική διαδικασία</button>
     <button role="radio" data-controls="if8" data-checked-if="8">διαδ. ασφαλιστικών μέτρων</button>
@@ -120,8 +120,8 @@
   </div>
 </fieldset>
 <fieldset class="question" data-disabled-if="-7">
-  <span id="labelQ2" role="tooltip">Η ειδική διαδικασία αφορά σε</span>
-  <div role="radiogroup" aria-haspopup aria-expanded="false" aria-labelledby="labelQ2">
+  <span id="q2label" role="tooltip">Η ειδική διαδικασία αφορά σε</span>
+  <div role="radiogroup" aria-haspopup aria-expanded="false" aria-labelledby="q2label">
     <button role="radio" data-controls="if10" data-checked-if="10">γαμικές διαφορές</button>
     <button role="radio" data-controls="if11" data-checked-if="11">σχέσεις γονέων και τέκνου</button>
     <button role="radio" data-controls="if12" data-checked-if="12">πιστωτικούς τίτλους</button>
@@ -521,7 +521,7 @@
 Κατ' εξαίρεση, περί φορολογικών και τελωνειακών διαφορών, η αναστολή ισχύει μόνο για το διάστημα από 1 έως και 31 Αυγούστου<cite> ν.3610/2007 αρ.25</cite>.
 Η προθεσμία ενός έτους από τη δημοσίευση της απόφασης για έφεση επί ακυρωτικής δίκης δεν αναστέλλεται από τις Δικαστικές διακοπές<cite> 1780/2006 ΣτΕ Ολομέλεια</cite>.
 
-<h4>Παραγραφή απαίτησης του ζημιωθέντος κατά ασφαλιστή</h3>
+<h4>Παραγραφή απαίτησης του ζημιωθέντος κατά ασφαλιστή</h4>
 Η παραγραφή της αξίωσης του παθόντος τρίτου κατά του ασφαλιστή επέρχεται σε 5 έτη<cite> ν.489/1976 αρ.10 παρ.2</cite><cite> πδ.237/1986 αρ.10 παρ.2</cite><cite> ν.3557/2007 αρ.7</cite>.
 Η παραγραφή αρχίζει από την επόμενη ημέρα του ατυχήματος<cite> 1043/2010 ΑΠ</cite>.
 Εντός της προθεσμίας παραγραφής πρέπει να γίνει  τόσο η κατάθεση της αγωγής όσο και η επίδοση της αγωγής<cite> 1043/2010 ΑΠ</cite>, διαφορετικά γίνεται δεκτή η τυχόν προβαλλόμενη ένσταση παραγραφής<cite> 1043/2010 ΑΠ</cite>.
