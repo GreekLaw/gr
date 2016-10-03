@@ -8,9 +8,9 @@
   <meta name="viewport"         content="initial-scale = 1">
   <meta name="format-detection" content="telephone = no">
   <link rel="stylesheet"        href="./stylesheets/greeklaw.css">
-  <link rel="stylesheet"        href="./stylesheets/act.css">
-  <script async                 src="./javascripts/act.js"></script>
+  <link rel="stylesheet"        href="./stylesheets/linear.css">
   <script async                 src="./javascripts/nav.js"></script>
+  <script async                 src="./javascripts/director.js"></script>
 </head>
 <body>
   <header><a href="./">Greek Law</a></header>
@@ -37,8 +37,8 @@
 <input id="if17" type="radio"    name="χρόνος-κατάθεσης" value="έως-και-31-12-2015"             >
 <input id="if18" type="radio"    name="χρόνος-κατάθεσης" value="από-01-01-2016-και-μετά" checked>
 <fieldset class="question">
-  <span id="labelQ1" role="tooltip">Θέλω να επιδώσω</span>
-  <div role="radiogroup" aria-labelledby="labelQ1">
+  <span id="q1label" role="tooltip">Θέλω να επιδώσω </span>
+  <div role="radiogroup" aria-labelledby="q1label">
       <button role="radio" data-controls="if1" data-checked-if="1">αγωγή</button>
       <button role="radio" data-controls="if2" data-checked-if="2">πρακτικά</button>
       <button role="radio" data-controls="if3" data-checked-if="3">απόφαση</button>
@@ -46,34 +46,34 @@
   </div>
 </fieldset>
 <fieldset class="question" data-disabled-if="-1">
-  <span id="labelQ2p1" role="tooltip">Η αγωγή </span><button data-controls="if16" data-checked-if="16" aria-pressed="false" aria-labelledby="labelQ2p1 labelQ2p2"><span data-shown-if="-16">δεν</span> ορίστηκε</button><span id="labelQ2p2" role="tooltip"> να εκδικαστεί κατά την τακτική διαδικασία </span>
-<span id="labelQ2p3" role="tooltip">και έχει κατατεθεί </span>
-  <div role="radiogroup" aria-labelledby="labelQ2p1 labelQ2p3">
+  <span id="q2p1label" role="tooltip">Η αγωγή </span><button role="checkbox" data-controls="if16" data-checked-if="16" aria-labelledby="q2p1label q2p2label"><span data-shown-if="-16">δεν</span> ορίστηκε</button><span id="q2p2label" role="tooltip"> να εκδικαστεί κατά την τακτική διαδικασία </span>
+<span id="q2p3label" role="tooltip">και έχει κατατεθεί </span>
+  <div role="radiogroup" aria-labelledby="q2p1label q2p3label">
       <button role="radio" data-controls="if17" data-checked-if="17">έως και 31-12-2015</button>
       <button role="radio" data-controls="if18" data-checked-if="18">από 01-01-2016 και μετά</button>
   </div>
 </fieldset>
 <fieldset class="question">
-    <div role="radiogroup" aria-haspopup aria-expanded="false" aria-labelledby="labelQ3p2">
-      <button role="radio" data-controls="if9"  data-checked-if="9" >Ο</button>
+    <div role="radiogroup" aria-haspopup="true" aria-expanded="false" aria-labelledby="q3p2label">
+      <button role="radio" data-controls="if9"  data-checked-if="9">Ο</button>
       <button role="radio" data-controls="if10" data-checked-if="10">Η</button>
       <button role="radio" data-controls="if11" data-checked-if="11">Το</button>
     </div>
-    <span id="labelQ3p1" role="tooltip"><span id="labelQ3p2">αντίδικο<span data-shown-if="9 10">ς</span></span> είναι</span>
-    <div role="radiogroup" aria-labelledby="labelQ3p2">
+    <span id="q3p1label" role="tooltip"><span id="q3p2label">αντίδικο<span data-shown-if="9 10">ς</span></span> είναι </span>
+    <div role="radiogroup" aria-labelledby="q3p2label">
         <button role="radio" data-controls="if7" data-checked-if="7">φυσικό πρόσωπο</button>
         <button role="radio" data-controls="if8" data-checked-if="8">νομικό πρόσωπο</button>
     </div>
 </fieldset>
 <fieldset class="question" data-disabled-if="1">
-  <span id="labelQ4" role="tooltip">Η επίδοση να γίνει</span>
-  <div role="radiogroup" aria-labelledby="labelQ4">
-      <button role="radio" data-controls="if5" data-checked-if="5">στ<span data-shown-if="9">ον</span><span data-shown-if="10">ην</span><span data-shown-if="11">ο</span> αντίδικο</button>
+  <span id="q4label" role="tooltip">Η επίδοση να γίνει </span>
+  <div role="radiogroup" aria-labelledby="q4label">
+      <button role="radio" data-controls="if5" data-checked-if="5">στ<span data-shown-if="9">ον</span><span data-shown-if="10" class="not-shown">ην</span><span data-shown-if="11" class="not-shown">ο</span> αντίδικο</button>
       <button role="radio" data-controls="if6" data-checked-if="6">σε πληρεξούσιο δικηγόρο</button>
   </div>
 </fieldset>
 <fieldset class="question" data-disabled-if="-1-2 1+16+18">
-  <span id="labelQ5p1" role="tooltip"><span data-shown-if="-2">Ο παραλαβών</span><span data-shown-if="2"><span data-shown-if="9">Ο</span><span data-shown-if="10">Η</span><span data-shown-if="11">Το</span> αντίδικ<span data-shown-if="9 10">ος</span><span data-shown-if="11">ο</span> </span></span><button data-controls="if14" data-checked-if="14" aria-pressed="false" aria-labelledby="labelQ5p1 labelQ5p2"><span data-shown-if="-14">δεν</span> καλείται</button><span id="labelQ5p2" role="tooltip"> να παραστεί στη συζήτηση.</span>
+  <span id="q5p1label" role="tooltip"><span data-shown-if="-2" class="not-shown">Ο παραλαβών </span><span data-shown-if="2"><span data-shown-if="9">Ο</span><span data-shown-if="10" class="not-shown">Η</span><span data-shown-if="11" class="not-shown">Το</span> αντίδικ<span data-shown-if="9 10">ος</span><span data-shown-if="11" class="not-shown">ο</span> </span></span><button role="checkbox" data-controls="if14" data-checked-if="14" aria-labelledby="q5p1label q5p2label"><span data-shown-if="-14" class="not-shown">δεν </span>καλείται</button><span id="q5p2label" role="tooltip"> να παραστεί στη συζήτηση</span>
 </fieldset>
 <output class="answer">
   <h2 class="note">Σημείωση στο αντίγραφο <span data-shown-if="1">της αγωγής</span><span data-shown-if="2">των πρακτικών Δικαστηρίου</span><span data-shown-if="3">της απόφασης ή της διαταγής πληρωμής</span><span data-shown-if="4">του απογράφου με συνημμένη επιταγή προς πληρωμή</span><span data-shown-if="1 2 3">, επιδιδόμενο προς γνώση</span>
@@ -100,7 +100,7 @@
 <input type="text" placeholder="ΥΠΟΓΡΑΦΗ" class="fill-the-blank centered seal-stamp-placeholder">
 </span></div></div></output>
 </form>
-<span style="display:none;"><h2>Από την παραγγελία επίδοσης μέχρι τη συζήτηση</h2>
+<span hidden style="display:none;"><h2>Από την παραγγελία επίδοσης μέχρι τη συζήτηση</h2>
 
 !!!!! WORK IN PROGRESS !!!!!
 
@@ -130,7 +130,7 @@
 
 Αν το αντίγραφο της απόφασης που επιδίδει ο διάδικος δεν φέρει καθόλου τη βεβαίωση επικύρωσης δικηγόρου, αποτελεί απλό αντίγραφο της απόφασης και δεν δημιουργεί συνέπειες για τον παραλαμβάνοντα<cite> 2/1993 ΑΠ Πολ.Τμ.Γ</cite>.
 
-Κατά μια άποψη, είναι αντισυνταγματικές και δεν εφαρμόζονται οι διατάξεις που ορίζουν ότι η εξώδικη ή δικαστική πράξη είναι άκυρη αν δεν χαρτοσημανθεί σωστά<cite> 159/2011 Εφ.Λαμίας</cite>.
+Κατά μια άποψη, αν η εξώδικη ή η δικαστική πράξη δεν χαρτοσημανθεί σωστά, η πράξη παραμένει έγκυρη, γιατί οι διατάξεις που προβλέπουν το αντίθετο είναι αντισυνταγματικές<cite> 159/2011 Εφ.Λαμίας</cite>.
 Η αναγκαστική εκτέλεση είναι άκυρη λόγω πλημμελούς χαρτοσήμανσης του απογράφου μόνο αν γίνεται επίκληση δικονομικής βλάβης<cite> 51/2004 ΑΠ</cite>. Τέτοια βλάβη δεν υπάρχει αν υπάρχει έλλειψη στη χαρτοσήμανση του απογράφου, επειδή το έξοδο της χαρτοσήμανσης θα βάρυνε κατά την εκτέλεση τον καθ' ου<cite> 51/2004 ΑΠ</cite><cite> 474/1999 ΑΠ</cite>.
 
 Η επίδοση εξωδίκου συνιστά οιονεί δικαιοπραξία και μάλιστα μονομερή δικαιοπραξία. Αν την επίδοση παραγγέλλει πληρεξούσιος δικηγόρος, πρέπει να επιδειχθεί και το πληρεξούσιο έγγραφο, διαφορετικά η απόκρουση της επίδοσης χωρίς υπαίτια καθυστέρηση καθιστά την επίδοση άκυρη. Επίδειξη του πληρεξουσίου δεν υπάρχει όταν θυροκολλείται μόνο το έγγραφο που επιδίδεται<cite> 687/2008 ΑΠ</cite>.
