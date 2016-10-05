@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="el">
+<head>
+  <meta charset="utf-8">
+  <title>Επίδειξη συστατικών CSS</title>
+  <meta name="description"      content="Επίδειξη συστατικών CSS">
+  <meta name="robots"           content="archive, follow, index, snippet">
+  <meta name="viewport"         content="initial-scale = 1">
+  <meta name="format-detection" content="telephone = no">
+  <link rel="stylesheet"        href="./stylesheets/greeklaw.css">
+  <link rel="stylesheet"        href="./stylesheets/linear.css">
+  <script async                 src="./javascripts/director.js"></script>
+</head>
+<body>
+  <header><a href="./">Greek Law</a></header>
+  <nav role="navigation"></nav>
+<main role="main">
+<h1>Έφεση απόφασης πολιτικού δικαστηρίου</h1>
+<h2>Έφεση απόφασης πολιτικού δικαστηρίου</h2>
+<h3>Έφεση απόφασης πολιτικού δικαστηρίου</h3>
+<h4>Έφεση απόφασης πολιτικού δικαστηρίου</h4>
+<h5>Έφεση απόφασης πολιτικού δικαστηρίου</h5>
+<h6>Έφεση απόφασης πολιτικού δικαστηρίου</h6>
+
+Οι προϋποθέσεις είναι
+<ul>
+  <li>1) Πρώτη προϋπόθεση</li>
+  <li>2) Δεύτερη προϋπόθεση</li>
+  <li><ul>
+        <li>3.1) Τρίτη προϋπόθεση 1</li>
+        <li>3.2) Τρίτη προϋπόθεση 2</li>
+      </ul>
+  </li>
+</ul>
+
+<form>
+<input id="if1"  type="radio"    name="είδος-εγγράφου"   value="αγωγή"                   checked>
+<input id="if2"  type="radio"    name="είδος-εγγράφου"   value="πρακτικά"                       >
+<input id="if3"  type="radio"    name="είδος-εγγράφου"   value="απόφαση"                        >
+<input id="if4"  type="radio"    name="είδος-εγγράφου"   value="επιταγή-προς-πληρωμή"           >
+<input id="if5"  type="radio"    name="αποδέκτης"        value="εναγόμενος"              checked>
+<input id="if6"  type="radio"    name="αποδέκτης"        value="δικηγόρος"                      >
+<input id="if7"  type="radio"    name="νομική-φύση"      value="φυσικό-πρόσωπο"          checked>
+<input id="if8"  type="radio"    name="νομική-φύση"      value="νομικό-πρόσωπο"                 >
+<input id="if9"  type="radio"    name="γένος-αποδέκτη"   value="εναγόμενος-αρσενικό"     checked>
+<input id="if10" type="radio"    name="γένος-αποδέκτη"   value="εναγόμενος-θηλυκό"              >
+<input id="if11" type="radio"    name="γένος-αποδέκτη"   value="εναγόμενος-ουδέτερο"            >
+<input id="if12" type="radio"    name="γένος-δικηγόρου"  value="δικηγόρος-άνδρας"        checked>
+<input id="if13" type="radio"    name="γένος-δικηγόρου"  value="δικηγόρος-γυναίκα"              >
+<input id="if14" type="checkbox"                         value="παραγγελία-παράστασης"   checked>
+<input id="if15" type="checkbox"                         value="ειρηνοδικείο"            checked>
+<input id="if16" type="checkbox"                         value="τακτική-διαδικασία"      checked>
+<input id="if17" type="radio"    name="χρόνος-κατάθεσης" value="έως-και-31-12-2015"             >
+<input id="if18" type="radio"    name="χρόνος-κατάθεσης" value="από-01-01-2016-και-μετά" checked>
+<fieldset class="question">
+  <span id="q1label" role="tooltip">Θέλω να επιδώσω </span>
+  <div role="radiogroup" aria-labelledby="q1label">
+      <button role="radio" data-controls="if1" data-checked-if="1">αγωγή</button>
+      <button role="radio" data-controls="if2" data-checked-if="2">πρακτικά</button>
+      <button role="radio" data-controls="if3" data-checked-if="3">απόφαση</button>
+      <button role="radio" data-controls="if4" data-checked-if="4">επιταγή προς πληρωμή</button>
+  </div>
+</fieldset>
+<fieldset class="question" data-disabled-if="-1">
+  <span id="q2p1label" role="tooltip">Η αγωγή </span><button role="checkbox" data-controls="if16" data-checked-if="16" aria-labelledby="q2p1label q2p2label"><span data-shown-if="-16">δεν</span> ορίστηκε</button><span id="q2p2label" role="tooltip"> να εκδικαστεί κατά την τακτική διαδικασία </span>
+<span id="q2p3label" role="tooltip">και έχει κατατεθεί </span>
+  <div role="radiogroup" aria-labelledby="q2p1label q2p3label">
+      <button role="radio" data-controls="if17" data-checked-if="17">έως και 31-12-2015</button>
+      <button role="radio" data-controls="if18" data-checked-if="18">από 01-01-2016 και μετά</button>
+  </div>
+</fieldset>
+<fieldset class="question">
+    <div role="radiogroup" aria-haspopup="true" aria-expanded="false" aria-labelledby="q3p2label">
+      <button role="radio" data-controls="if9"  data-checked-if="9">Ο</button>
+      <button role="radio" data-controls="if10" data-checked-if="10">Η</button>
+      <button role="radio" data-controls="if11" data-checked-if="11">Το</button>
+    </div>
+    <span id="q3p1label" role="tooltip"><span id="q3p2label">αντίδικο<span data-shown-if="9 10">ς</span></span> είναι </span>
+    <div role="radiogroup" aria-labelledby="q3p2label">
+        <button role="radio" data-controls="if7" data-checked-if="7">φυσικό πρόσωπο</button>
+        <button role="radio" data-controls="if8" data-checked-if="8">νομικό πρόσωπο</button>
+    </div>
+</fieldset>
+<fieldset class="question" data-disabled-if="1">
+  <span id="q4label" role="tooltip">Η επίδοση να γίνει </span>
+  <div role="radiogroup" aria-labelledby="q4label">
+      <button role="radio" data-controls="if5" data-checked-if="5">στ<span data-shown-if="9">ον</span><span data-shown-if="10" class="not-shown">ην</span><span data-shown-if="11" class="not-shown">ο</span> αντίδικο</button>
+      <button role="radio" data-controls="if6" data-checked-if="6">σε πληρεξούσιο δικηγόρο</button>
+  </div>
+</fieldset>
+<fieldset class="question" data-disabled-if="-1-2 1+16+18">
+  <span id="q5p1label" role="tooltip"><span data-shown-if="-2" class="not-shown">Ο παραλαβών </span><span data-shown-if="2"><span data-shown-if="9">Ο</span><span data-shown-if="10" class="not-shown">Η</span><span data-shown-if="11" class="not-shown">Το</span> αντίδικ<span data-shown-if="9 10">ος</span><span data-shown-if="11" class="not-shown">ο</span> </span></span><button role="checkbox" data-controls="if14" data-checked-if="14" aria-labelledby="q5p1label q5p2label"><span data-shown-if="-14" class="not-shown">δεν </span>καλείται</button><span id="q5p2label" role="tooltip"> να παραστεί στη συζήτηση</span>
+</fieldset>
+<output class="answer">
+  <h2 class="note">Σημείωση στο αντίγραφο <span data-shown-if="1">της αγωγής</span><span data-shown-if="2">των πρακτικών Δικαστηρίου</span><span data-shown-if="3">της απόφασης ή της διαταγής πληρωμής</span><span data-shown-if="4">του απογράφου με συνημμένη επιταγή προς πληρωμή</span><span data-shown-if="1 2 3">, επιδιδόμενο προς γνώση</span>
+</h2>
+</form>
+</main>
+  <footer role="contentinfo"><small>© Greek Law</small></footer>
+</body>
+</html>
