@@ -251,7 +251,8 @@ input[id^="if"] { display: none; }
 .solved-issue:after,
 .answer:after {
 	content: "";
-	position: absolute;
+	position: relative;
+	display: block;
 	width:  5px;
 	height: 5px;
 	color: #717171;
@@ -260,8 +261,8 @@ input[id^="if"] { display: none; }
 .solved-issue:after { background: transparent; }
 .answer:after { background: #717171; }
 
-.solved-issue:after { left: 100% ; bottom: -2px; box-shadow: 0 0 0 1px; border-radius: 100%; }
-.answer:after       { left:  11px; bottom: -2px; box-shadow: 0 0 0 1px; border-radius:   0%; }
+.solved-issue:after { left: 100% ; bottom: -13px; margin: -5px 0 0 3px; box-shadow: 0 0 0 1px; border-radius: 100%; }
+.answer:after       { left: -22px; bottom: -24px; margin:  0px 0 0 0px; box-shadow: 0 0 0 1px; border-radius:   0%; }
 
 .solved-issue:before, .question:before, .answer:before {
 	color: #717171;
