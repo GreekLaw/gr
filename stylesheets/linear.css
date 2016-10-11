@@ -37,7 +37,7 @@ input[id^="if"] { display: none; }
 	text-align: left;
 	text-indent: 0px;
 	letter-spacing: -.4em;
-	vertical-align: baseline;
+	vertical-align: top;
 }
 
 [role=radiogroup][aria-haspopup] {
