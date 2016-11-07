@@ -34,7 +34,7 @@ body > header a:hover, body > header a:link, body > header a:visited {
 	right: 10px;
 	bottom: -26px;
 	font-size: 11px;
-	color: grey;
+	color: #595959;
 }
 
 nav ul {
@@ -111,7 +111,7 @@ main {
 h1 ~ div { white-space: pre-wrap; }
 
 cite {
-	color: grey;
+	color: #595959;
 	font-size: 12px;
 	line-height: 22px;
 }
