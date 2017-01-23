@@ -194,11 +194,11 @@ function logElementError(condition, cue, action, actor){
 
 	console &&
 	console.log.apply(null,
-		              ['Can not locate actor with id ', condition.term, '\n',
-	                   'The requesting actor is '  , actors[actorIndex].element, '\n',
-	                   'The requesting action is ' , actors[actorIndex].actions[actionIndex].verb, '\n',
-	                   'The requesting cue is ', actors[actorIndex].actions[actionIndex].cues[triggerIndex], '\n'
-	                  ])
+		                ['Can not locate actor with id ', condition.term, '\n',
+	                         'The requesting actor is '  , actors[actorIndex].element, '\n',
+	                         'The requesting action is ' , actors[actorIndex].actions[actionIndex].verb, '\n',
+	                         'The requesting cue is ', actors[actorIndex].actions[actionIndex].cues[cueIndex], '\n'
+	                        ])
 }
 
 function shownIf(actor, value, event){
