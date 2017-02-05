@@ -23,13 +23,13 @@
   <input id="if3" type="radio" name="υπολογισμός" value="τόκοι"                   >
   <input id="if4" type="radio" name="υπολογισμός" value="παράβολα"                >
   <div class="tablist" role="radiogroup">
-    <h1><button role="radio" data-controls="if1" data-checked-if="1">Τέλος απογράφου</button></h1>
-    <h1><button role="radio" data-controls="if2" data-checked-if="2">Δικαστικό ένσημο</button></h1>
-    <h1><button role="radio" data-controls="if3" data-checked-if="3">Τόκοι</button></h1>
-    <h1><button role="radio" data-controls="if4" data-checked-if="4">Παράβολα</button></h1>
+    <h1><button role="radio" data-controls="if1" data-checked="if1">Τέλος απογράφου</button></h1>
+    <h1><button role="radio" data-controls="if2" data-checked="if2">Δικαστικό ένσημο</button></h1>
+    <h1><button role="radio" data-controls="if3" data-checked="if3">Τόκοι</button></h1>
+    <h1><button role="radio" data-controls="if4" data-checked="if4">Παράβολα</button></h1>
   </div>
 </form>
-<span data-shown-if="1">
+<span data-shown="if1">
 <table>
 <thead><tr><th>Είδος διαφοράς</th><th>Τέλος</th><th>Σχετικές διατάξεις</th></thead>
 <tbody>
@@ -94,7 +94,7 @@
 Τελικό ποσό: ____ ευρώ
 Παρατηρήσεις: (Στοιχεία απόφασης: <u>Αριθμός Απόφασης, Είδος διαδικασίας</u>)
 
-</span><span data-shown-if="2">
+</span><span data-shown="if2">
 <form>
 <input id="if5" type="radio" name="τρόπος-υπολογισμού-ενσήμου" value="από-19-11-2012-έως-05-06-2016"        >
 <input id="if6" type="radio" name="τρόπος-υπολογισμού-ενσήμου" value="από-06-06-2016-έως-21-01-2017"        >
@@ -102,9 +102,9 @@
 <fieldset class="question important">
   <span id="q2label" role="tooltip">Ενημέρωση για δικαστικό ένσημο όπως ορίζονταν </span>
   <div role="radiogroup" aria-labelledby="q2label">
-      <button role="radio" data-controls="if5" data-checked-if="5">από 19-11-2012 έως 05-06-2016</button>
-      <button role="radio" data-controls="if6" data-checked-if="6">από 06-06-2016 έως 21-01-2017</button>
-      <button role="radio" data-controls="if7" data-checked-if="7">από 22-01-2017 και μετά</button>
+      <button role="radio" data-controls="if5" data-checked="if5">από 19-11-2012 έως 05-06-2016</button>
+      <button role="radio" data-controls="if6" data-checked="if6">από 06-06-2016 έως 21-01-2017</button>
+      <button role="radio" data-controls="if7" data-checked="if7">από 22-01-2017 και μετά</button>
   </div>
 </fieldset>
 </form>
@@ -113,10 +113,10 @@
 <thead><tr><th></th><th>Ποσό </th><th>Αιτιολογία </th><th>Κωδικός Αριθμός Εσόδου </th></tr>
 </thead>
 <tbody>
-  <tr><td><b>Στη ΔΟΥ</b></td><td>8‰ × Αιτούμενο κεφάλαιο<span data-shown-if="7">*</span></td><td>δικαστικό ένσημο</td><td>2375</td></tr>
-<tr><td></td><td><span data-shown-if="5 6">20%</span><span data-shown-if="7">30%</span> × δικαστικού ενσήμου</td><td>εισφορά ΤΑΧΔΙΚ</td><td>82639</td></tr>
-<tr data-shown-if="5"><td></td><td>10% × δικαστικού ενσήμου</td><td>εισφορά ΕΤΑΑ/ΤΑΝ</td><td>82623</td></tr>
-<tr data-shown-if="5"><td></td><td>5% × δικαστικού ενσήμου</td><td>εισφορά ΕΟΠΥΥ</td><td> δικηγόρων ασφαλισμένων στο 
+  <tr><td><b>Στη ΔΟΥ</b></td><td>8‰ × Αιτούμενο κεφάλαιο<span data-shown="if7">*</span></td><td>δικαστικό ένσημο</td><td>2375</td></tr>
+<tr><td></td><td><span data-shown="if5 || if6">20%</span><span data-shown="if7">30%</span> × δικαστικού ενσήμου</td><td>εισφορά ΤΑΧΔΙΚ</td><td>82639</td></tr>
+<tr data-shown="if5"><td></td><td>10% × δικαστικού ενσήμου</td><td>εισφορά ΕΤΑΑ/ΤΑΝ</td><td>82623</td></tr>
+<tr data-shown="if5"><td></td><td>5% × δικαστικού ενσήμου</td><td>εισφορά ΕΟΠΥΥ</td><td> δικηγόρων ασφαλισμένων στο 
 ΤΠΔΑ: 82628
 ΤΥΔΕ: 83937</td></tr>
 <tr><td></td><td>2% × δικαστικού ενσήμου</td><td>χαρτόσημο</td><td>1229</td></tr>
@@ -125,12 +125,12 @@
 </table>
 <cite> ν.ΓϠΟΗ/1912 αρ.2 παρ.1</cite><cite> ν.4093/2012 αρ.πρώτο παρ.ΙΓ.1 περ.6</cite><cite> ν.4093/2012 αρ.τρίτο</cite><cite> ν.4111/2013 αρ.40 παρ.16</cite><cite> ν.4111/2013 αρ.49 παρ.3</cite>
 <cite> ν.1017/1971 αρ.10 παρ.1 περ.η</cite>
-<span data-shown-if="6 7"><cite> ν.4387/2016 αρ.39 παρ.14</cite><cite> ν.4393/2016 αρ.2 παρ.6 περ.α</cite><cite> ν.4393/2016 αρ.2 παρ.6 περ.β</cite><cite> ν.4393/2016 αρ.13 (ΦΕΚ Α 106/06-06-2016)</cite><cite> ν.3655/2008 αρ.150 παρ.1</cite><cite> <a href="http://www.dsa.gr/sites/default/files/press_releases/attached/eggrafo_etaa_gia_poroys_epi_toy_dikastikoy_ensimoy.pdf">150001/2016 γνωμ.ΕΤΑΑ</a></cite>
-</span><span data-shown-if="7"><cite> ν.4446/2016 αρ.42 παρ.1</cite><cite> ν.4446/2016 αρ.45</cite>
+<span data-shown="if6 || if7"><cite> ν.4387/2016 αρ.39 παρ.14</cite><cite> ν.4393/2016 αρ.2 παρ.6 περ.α</cite><cite> ν.4393/2016 αρ.2 παρ.6 περ.β</cite><cite> ν.4393/2016 αρ.13 (ΦΕΚ Α 106/06-06-2016)</cite><cite> ν.3655/2008 αρ.150 παρ.1</cite><cite> <a href="http://www.dsa.gr/sites/default/files/press_releases/attached/eggrafo_etaa_gia_poroys_epi_toy_dikastikoy_ensimoy.pdf">150001/2016 γνωμ.ΕΤΑΑ</a></cite>
+</span><span data-shown="if7"><cite> ν.4446/2016 αρ.42 παρ.1</cite><cite> ν.4446/2016 αρ.45</cite>
 </span><cite> ν.4169/1961 αρ.11 παρ.1 περ.Γ (ΦΕΚ Α 81/18-05-1961)</cite><cite> νδ.4435/1964 αρ.6 παρ.1 (ΦΕΚ Α 217/1964)</cite><cite> νδ.4435/1964 αρ.6 παρ.5</cite><cite> νδ.4435/1964 αρ.6 παρ.3</cite><cite> βδ.783/1964 (ΦΕΚ Β 257/1964)</cite><cite> ν.12/1975 αρ.26 (ΦΕΚ Α 34/1975)</cite><cite> ν.231/1975 αρ.2 παρ.9 (ΦΕΚ Α 277/1975)</cite><cite> υα.Φ35/οικ.2705/1981 (ΦΕΚ Β 514/1981)</cite>
 <cite> αρ.9 εδ.2 ΚΠολΔ</cite>
 
-<span data-shown-if="7">*Στις εργατικές διαφορές, το δικαστικό ένσημο ανέρχεται σε 4‰ επί της αξίας του αντικειμένου της αγωγής ή άλλου δικογράφου το οποίο υποβάλλεται σε οποιοδήποτε Δικαστήριο του Κράτους και υπόκειται σε δικαστικό ένσημο κατά τις οικείες διατάξεις<cite> αρ.71 ΕισΝΚΠολΔ</cite><cite> ν.4446/2016 αρ.34</cite><cite> ν.4446/2016 αρ.45</cite>.
+<span data-shown="if7">*Στις εργατικές διαφορές, το δικαστικό ένσημο ανέρχεται σε 4‰ επί της αξίας του αντικειμένου της αγωγής ή άλλου δικογράφου το οποίο υποβάλλεται σε οποιοδήποτε Δικαστήριο του Κράτους και υπόκειται σε δικαστικό ένσημο κατά τις οικείες διατάξεις<cite> αρ.71 ΕισΝΚΠολΔ</cite><cite> ν.4446/2016 αρ.34</cite><cite> ν.4446/2016 αρ.45</cite>.
 </span>Στις εργατικές διαφορές, ο ενάγων δεν οφείλει δικαστικό ένσημο για τις πρώτες 20.000 € του αιτήματος της αγωγής<cite> αρ.71 ΕισΝΚΠολΔ</cite><cite> αρ.14 παρ.1 ΚΠολΔ</cite>.
 
 Οι αναγνωριστικές αγωγές, οι οποίες είναι εκκρεμείς στις 22-12-2016<cite> ν.4446/2016 αρ.33 παρ.2</cite>, δεν υπόκεινται σε δικαστικό ένσημο<cite> ν.4446/2016 αρ.33 παρ.1</cite>.
@@ -192,7 +192,7 @@
 Ο δικαστής, μετά την συζήτηση, οφείλει να ειδοποιήσει μέσω γραμματέα τον πληρεξούσιο δικηγόρο ή τον διάδικο να καταθέσουν το δικαστικό ένσημο εντός εύλογης προθεσμίας, αν υπάρχει έλλειψη<cite> αρ. 139 Α ΚΔιοικΔ</cite>.
 Αν το δικαστικό ένσημο δεν κατατεθεί, το δικαστήριο αναστέλει την πρόοδο της δίκης, και ορίζει νέα ημερομηνία συζήτησης της υπόθεσης. Αν το δικαστικό ένσημο δεν καταβληθεί ως την νέα συζήτηση, η αγωγή απορρίπτεται ως απαράδεκτη<cite> αρ.274 παρ.3 ΚΔιοικΔ, όπως τροποποιήθηκε με τον ν.3226/2004</cite>.
 
-</span><span data-shown-if="3">
+</span><span data-shown="if3">
 Ο νόμιμος και ο υπερημερίας τόκος επί οφειλών του Δημοσίου ορίζεται σε 6% ετησίως, εκτός αν υπάρχει αντίθετη σύμβαση ή ειδικός νόμος<cite> βδ.26-06/10-07-1944 αρ.21</cite><cite> 25/2012 ΑΕΔ</cite>.
 Κατά μια άποψη, στους ΟΤΑ, ως ΝΠΔΔ, ισχύει το μειωμένο επιτόκιο του Δημοσίου<cite> 2/2014 ΑΠ</cite><cite> 1454/2014 ΣτΕ</cite><cite> 21596/2012 Μον.Πρ.Θεσσαλονίκης</cite><cite> 123/2012 Μον.Πρ.Θηβών</cite><cite> 282/2012 Ειρ.Θηβών</cite>.
 Κατ' άλλη άποψη, στους ΟΤΑ, ως ΝΠΔΔ, δεν ισχύει το μειωμένο επιτόκιο του Δημοσίου<cite> 222/2012 Μον.Πρ.Θηβών</cite><cite> 1117/2011 Διοικ.Εφ.Αθηνών</cite><cite> 6082/2010 Εφ.Αθηνών</cite>.
@@ -224,7 +224,7 @@
 
 Θα συμβουλευτείτε τον <a href="https://epidiko.gr" class="ad" id="ad3" target="_blank">ΑΚ στο κινητό σας</a>;
 
-</span><span data-shown-if="4">
+</span><span data-shown="if4">
 <h1>Παράβολα στην ποινική δίκη</h1>
 <table>
 <thead><tr><th></th><th>Ποσό πληρωμής</th><th>Τρόπος πληρωμής</th><th>Επιμερισμός ποσών</th><th>ΚΑΕ</th></tr>
