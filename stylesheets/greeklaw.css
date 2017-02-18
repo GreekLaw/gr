@@ -116,7 +116,7 @@ cite {
 	line-height: 22px;
 }
 
-cite + cite::before { content: ", " }
+cite + cite::before { content: " • "; color: #EAEAEA; }
 
 footer {
 	color: #a7adb1;
