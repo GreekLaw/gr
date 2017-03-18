@@ -196,9 +196,7 @@ h6 { font-size: 15px; line-height: 22px; padding: 16px 0    6px 0; font-weight: 
 h2 a      , h3 a      , h4 a      , h5 a      , h6 a       { color: #312f30; }
 h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { color: #312f30; }
 
-.warning {
-	padding: 11px;
-}
+.warning { padding: 11px; }
 
 .warning:before {
 	content: "!";
@@ -369,6 +367,7 @@ h1.centered { width: 100%; white-space: normal; }
 .padded   { padding-top: 2em; }
 .block    { display: block;   }
 .white-space-normal { white-space: normal; }
+.pre-line { white-space: pre-line; }
 .inline-block { display: inline-block; }
 .align-right { text-align: right; }
 .float-right { float: right; }
