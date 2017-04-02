@@ -585,7 +585,7 @@ function is(element, attributes){
 	match = true
 
 	for (attribute in attributes){
-		value = element.getAttribute(attribute)
+		value = element.hasAttribute(attribute) && element.getAttribute(attribute) || element[attribute]
 		match = match && value === attributes[attribute]
 	}
 	
