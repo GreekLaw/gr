@@ -536,18 +536,18 @@ function controlled(actor, cued, event){
 }
 
 function controls(actor, cued, event){
-	var target, controlledElement, it, anActor, aCheckboxButton, aRadioButton, isAriaExpandable,
-	    isAriaExpanded, isAriaNotExpanded
+	var target, controlledElement, it, anActor, aCheckboxButton, aRadioButton,
+	    isAriaExpandable, isAriaExpanded, isAriaNotExpanded
 
-	target                       = event && event.target || actor
-	controlledElement            = document.getElementById(target.getAttribute('data-controls'))
-	it                           = contextual(target)
-	anActor                      = equals(target, actor)
-	aCheckboxButton              = is(target, a.checkboxButton)
-	aRadioButton                 = is(target, a.radioButton)
-	isAriaExpandable             = has(target, a.ariaExpanded)
-	isAriaExpanded               = is(target, a.ariaExpanded)
-	isAriaNotExpanded            = is(target, a.ariaNotExpanded)
+	target            = event && event.target || actor
+	controlledElement = document.getElementById(target.getAttribute('data-controls'))
+	it                = contextual(target)
+	anActor           = equals(target, actor)
+	aCheckboxButton   = is(target, a.checkboxButton)
+	aRadioButton      = is(target, a.radioButton)
+	isAriaExpandable  = has(target, a.ariaExpanded)
+	isAriaExpanded    = is(target, a.ariaExpanded)
+	isAriaNotExpanded = is(target, a.ariaNotExpanded)
 
 	anActor && aCheckboxButton                                                                        ? toggleCheck(controlledElement) :
 	anActor && aRadioButton    && isAn(ancestor, a.radiogroup, it.self) && !controlledElement.checked ? toggleCheck(controlledElement) :
