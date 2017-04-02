@@ -506,12 +506,6 @@ function disabled(actor, cued, event){
 	isAriaDisabled = is(actor, a.ariaDisabled)
 	it             = contextual(actor)
 
-/*	 cued &&  isDisabled ? void Function       :
-	 cued && !isDisabled ? it.is(a.disabled)   :
-	!cued &&  isDisabled ? it.isnt(a.disabled) :
-	!cued && !isDisabled ? void Function       :
-	                       void Function*/
-
 	 cued &&  isAriaDisabled &&  isDisabled ? ( void Function                                  ) :
 	 cued &&  isAriaDisabled && !isDisabled ? (                            it.is(a.disabled)   ) :
 	 cued && !isAriaDisabled &&  isDisabled ? ( it.is(a.ariaDisabled)                          ) :
