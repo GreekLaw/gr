@@ -277,61 +277,7 @@ h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { color: #312f30; }
 	color: rgba(0, 0, 0, 0.5);
 }
 
-.bill-of-exchange {
-	background-color: #F8FAFF;
-	padding: 20px;
-	border-bottom: 60px solid white;
-	font-family: serif;
-	font-style: italic;
-	line-height: 1.5;
-	white-space: normal;
-	box-shadow: 0 0 1px grey;
-}
-
 strong, b { font-weight: bolder; }
-
-.line { display: table; width: 100%; }
-
-label.qualified { position: relative; display: table-cell; }
-.qualifier { position: absolute; left: 0; top: 0; background:inherit; }
-.qualified input    { width: 100%; }
-.payment.date.short { width:  45%; }
-.payment.date.long  { width:  50%; }
-
-.line.one   { font-size: 16px; }
-.line.seven { padding-top: 20px; white-space: nowrap;}
-.invisible  { visibility: hidden; }
-.not-shown  { display: none; }
-.party      { display: inline-block; }
-
-.line label,
-.line input { font-size: inherit; line-height: inherit; padding:0; border: 0px; box-sizing: border-box; }
-
-input.paper {
-	background: transparent;
-	border: 0px solid;
-	border-bottom: 1px dotted;
-	text-align: right;
-}
-
-input.paper:required { border-bottom: 1px dashed red; }
-.line.one .payment.amount input { box-shadow: 0 0 0 1px red; }
-
-.payment.amount input { box-shadow: 0 0 0 1px; text-align: right; }
-.drawee.signature { vertical-align: bottom; }
-.issuer.signature { vertical-align: bottom; }
-
-.drawee.signature::before {
-	content: "\0A \0A \0A \0A";
-	display: block;
-	white-space: pre;
-}
-
-.issuer.signature::before {
-	content: "\0A";
-	display: block;
-	white-space: pre;
-}
 
 .note {
 	display: inline-block;
@@ -352,13 +298,6 @@ input:required:-ms-input-placeholder      { color: #FF8787; font-size: 12px; pad
 input:required::-moz-placeholder          { color: #FF8787; font-size: 12px; padding-right: 10px; }
 input:required:-moz-placeholder           { color: #FF8787; font-size: 12px; padding-right: 10px; }
 
-.party { box-sizing: border-box; vertical-align: top; }
-
-.drawee           { width: 45%; padding-right: 10px; }
-.acceptor         { width: 20%; padding-right: 10px; }
-.drawer-guarantor { width: 35%; }
-.issuer { display: block; text-align: center; }
-
 .ad { text-decoration: underline; }
 
 h1.centered { width: 100%; white-space: normal; }
@@ -374,6 +313,8 @@ h1.centered { width: 100%; white-space: normal; }
 .clear-both { clear: both; }
 label { line-height:1.5; }
 .heading { font-size: 22px; margin: 0 auto; }
+.invisible  { visibility: hidden; }
+.not-shown  { display: none; }
 
 @media (max-width: 35em) {
 	.nav-tree { white-space: normal; }
