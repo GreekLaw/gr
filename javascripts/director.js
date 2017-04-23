@@ -86,12 +86,14 @@ function applyAddressBarParametersToState(){
 		if (parameters.length === 1 && parameters[0] === '') { return }
 
 		for (i = 0; i < parameters.length; i++){
-			parameterIsNameValuePair = !!parameters[i].match(/.+=.+/g)
+			parameterIsNameValuePair = !!parameters[i].match(/(.+)=(.+)/g)
 			parameterIsNameValuePair ? (nameValue = parameters[i].split(/=/g), name = nameValue[0], value = nameValue[1]) :
 			                           void Function
-			element = !parameterIsNameValuePair ? document.querySelector('[value=' + parameters[i] + ']') :
-			parameterIsNameValuePair ? elementWithNameValue(name, value):
-			                           void Function
+			element =  parameterIsNameValuePair && name !== '' && value !== '' ? elementWithNameValue(name, value)   :
+			           parameterIsNameValuePair && name !== '' && value === '' ? document.getElementsByName(name)[0] :
+			           parameterIsNameValuePair && name === ''                 ? elementWithValue(value)             :
+				  !parameterIsNameValuePair                                ? elementWithValue(value)             :
+			                                                                     void Function
 			element && !element.checked ? element.checked = true : 
 			                              void Function
 		}
@@ -308,6 +310,17 @@ function elementWithNameValue(name, value){
 	for (i = 0; i < elementsWithName.length; i++){
 		elementsWithName[i].value === value ? element = elementsWithName[i] :
 		                                      void Function
+	}
+	return element
+}
+
+function elementWithValue(value){
+	var inputs, i, element
+	
+	inputs = document.getElementsByTagName('input')
+	for (i = 0; i < inputs.length; i++){
+		inputs.value === value ? element = inputs[i] :
+		                         void Function
 	}
 	return element
 }
