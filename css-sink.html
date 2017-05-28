@@ -53,6 +53,106 @@
 <input id="if16" type="checkbox"                         value="τακτική-διαδικασία"      checked>
 <input id="if17" type="radio"    name="χρόνος-κατάθεσης" value="έως-και-31-12-2015"             >
 <input id="if18" type="radio"    name="χρόνος-κατάθεσης" value="από-01-01-2016-και-μετά" checked>
+
+<span class="not-shown">
+<span id="Lq1" role="tooltip">Αν θέλω να επιδώσω </span>
+<fieldset class="inline" aria-labelledby="Lq1">
+    <button data-controls="q1r1">αγωγή</button>
+    <button data-controls="q1r2">πρακτικά</button>
+    <button data-controls="q1r3">απόφαση</button>
+    <button data-controls="q1r4">επιταγή προς πληρωμή</button>
+</fieldset>
+
+<span id="Lq2" role="tooltip">Αν το δικόγραφο κατατέθηκε </span><button data-controls="q2" class="group-switch">από 01-01-2016 και μετά</button>
+<fieldset data-concealed="q2" aria-labelledby="Lq2">
+    <button data-controls="q2r2">από 01-01-2016 και μετά</button>
+    <button data-controls="q2r1">από 25-07-2011 έως και 31-12-2015</button>
+</fieldset>
+
+<span id="Lq3" role="tooltip">Αν η συζήτηση διεξάγεται </span><button data-controls="q3" class="group-switch">από 01-01-2016 και μετά</button>
+<fieldset data-concealed="q3" aria-labelledby="Lq3">
+  <button data-controls="q3r2">από 01-01-2016 και μετά</button>
+  <button data-controls="q3r1">από 25-07-2011 έως και 31-12-2015</button>
+</fieldset>
+
+<span id="Lq4" role="tooltip">Αν η υπόθεση συζητείται στο </span><button data-controls="q4" class="group-switch">Ειρηνοδικείο</button>
+<fieldset data-concealed="q4" aria-labelledby="Lq4">
+  <button data-controls="q4r1">Ειρηνοδικείο</button>
+  <button data-controls="q4r2">Μον. Πρωτοδικείο</button>
+  <button data-controls="q4r3">Πολ. Πρωτοδικείο</button>
+</fieldset>
+
+<span id="Lq5" role="tooltip">Αν το δικαστήριο ενεργεί ως </span><button data-controls="q5" class="group-switch">πρωτοβάθμιο δικαστήριο</button>
+<fieldset data-concealed="q5" data-disabled="q4r1" aria-labelledby="Lq5">
+  <button data-controls="q5r1">πρωτοβάθμιο δικαστήριο</button>
+  <button data-controls="q5r2">δευτεροβάθμιο δικαστήριο</button>
+</fieldset>
+
+<span id="Lq6" role="tooltip">Αν η πρωτόδικη απόφαση εκδόθηκε </span><button data-controls="q6" class="group-switch">κατ' αντιμωλία</button>
+<fieldset data-disabled="ref6" aria-labelledby="Lq6">
+  <button data-controls="q6r1">κατ' αντιμωλία</button>
+  <button data-controls="q6r2">ερήμην</button>
+  <button data-controls="q6r3">ερήμην, σαν να ήταν παρών</button>
+</fieldset>
+
+<span id="Lq7" role="tooltip">Αν η συζήτηση διεξάγεται κατά τη<span data-shown="ref1">ν </span> </span><button data-controls="q7" class="group-switch">τακτική διαδικασία</button>
+<fieldset data-concealed="q7" aria-labelledby="Lq7">
+  <button data-controls="q7r1">τακτική διαδικασία</button>
+  <button data-controls="q7r2">ειδική διαδικασία</button>
+  <button data-controls="q7r3">διαδικασία μικροδιαφορών</button>
+  <button data-controls="q7r4">διαδικασία ασφαλιστικών μέτρων</button>
+  <button data-controls="q7r5">διαδικασία εκούσιας δικαιοδοσίας</button>
+  <button data-controls="q7r6">διαδικασία πέραν της τακτικής</button>
+</fieldset>
+
+<span id="Lq8" role="tooltip">Αν η ειδική διαδικασία αφορά σε </span><button data-controls="q8" class="group-switch">ζημίες από αυτοκίνητο ή σύμβαση ασφάλισης</button>
+<fieldset data-concealed="q8" aria-labelledby="Lq8">
+  <button data-controls="q8r1">γαμικές διαφορές</button>
+  <button data-controls="q8r2">σχέσεις γονέων και τέκνου</button>
+  <button data-controls="q8r3">πιστωτικούς τίτλους</button>
+  <button data-controls="q8r4">διαφορές μισθωτικές ή χρήσης ιδιοκτησίας κατ' ορόφους</button>
+  <button data-controls="q8r5">εργατικές διαφορές</button>
+  <button data-controls="q8r6">αμοιβές για παροχή εργασίας</button>
+  <button data-controls="q8r7">ζημίες από αυτοκίνητο ή σύμβαση ασφάλισης</button>
+  <button data-controls="q8r8">διατροφή ή επιμέλεια τέκνων</button>
+  <button data-controls="q8r9">προσβολές από δημοσιεύματα ή ραδιοτηλεοπτικές εκπομπές</button>
+</fieldset>
+
+<button data-controls="q9" data-shown="ref1">πληρεξούσιο δικηγόρο, για</button>
+
+<span id="Lq10">Αν πρόκειται για παραλήπτη, </span><button data-controls="q10" class="group-switch">ο οποίος</button>
+  <fieldset data-concealed="q10" aria-labelledby="Lq10">
+    <button data-controls="q10r1">ο οποίος</button>
+    <button data-controls="q10r2">η οποία</button>
+    <button data-controls="q10r3">το οποίο</button>
+  </fieldset>
+
+<span id="Lq11">Αν ο παραλήπτης είναι </span><button data-controls="q11" class="group-switch">φυσικό πρόσωπο</button>
+<fieldset data-concealed="q11" aria-labelledby="Lq11">
+    <button data-controls="q11r1">φυσικό πρόσωπο</button>
+    <button data-controls="q11r2">νομικό πρόσωπο</button>
+</fieldset>
+
+  <span id="Lq12">Αν ο αντίδικος </span><button data-controls="q12" class="group-switch">καλείται</button>
+<fieldset data-concealed="q12" aria-labelledby="Lq12">
+  <button data-controls="q12r1">καλείται</button>
+  <button data-controls="q12r2">δεν καλείται</button>
+</fieldset>
+
+<span id="Lq13" role="tooltip">Αν η κλήση </span><button data-controls="q13" class="group-switch">επιδόθηκε</button>
+<fieldset data-concealed="q13" aria-labelledby="Lq13">
+  <button data-controls="q13r1">επιδόθηκε</button>
+  <button data-controls="q13r2">δεν επιδόθηκε</button>
+</fieldset>
+
+<span id="Lq14" role="tooltip">Αν η κλήση για την ένορκη βεβαίωση επιδόθηκε</span><button data-controls="q14" class="group-switch">από 01-01-2016 και μετά</button>
+<fieldset data-concealed="q14" aria-labelledby="Lq14">
+  <button data-controls="q14r1">από 01-01-2016 και μετά</button>
+  <button data-controls="q14r2">από 25-07-2011 έως και 31-12-2015</button>
+</fieldset>
+
+</span>
+
 <fieldset class="question">
   <span id="q1label" role="tooltip">Θέλω να επιδώσω </span>
   <div role="radiogroup" aria-labelledby="q1label">
