@@ -92,7 +92,7 @@ function applyAddressBarParametersToState(){
 			element =  parameterIsNameValuePair && name !== '' && value !== '' ? elementWithNameValue(name, value)   :
 			           parameterIsNameValuePair && name !== '' && value === '' ? document.getElementsByName(name)[0] :
 			           parameterIsNameValuePair && name === ''                 ? elementWithValue(value)             :
-				  !parameterIsNameValuePair                                ? elementWithValue(value)             :
+				  !parameterIsNameValuePair                                ? elementWithValue(parameters[0])     :
 			                                                                     void Function
 			element && !element.checked ? element.checked = true : 
 			                              void Function
@@ -319,8 +319,8 @@ function elementWithValue(value){
 	
 	inputs = document.getElementsByTagName('input')
 	for (i = 0; i < inputs.length; i++){
-		inputs.value === value ? element = inputs[i] :
-		                         void Function
+		inputs[i].value === value ? element = inputs[i] :
+		                            void Function
 	}
 	return element
 }
