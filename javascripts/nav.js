@@ -20,9 +20,9 @@ function gitData(data){
     if (isNaN(dateOfUpdate.getTime())){ return }
     dateText     = dateOfUpdate.getUTCDate() + " " + months[dateOfUpdate.getUTCMonth()] + " " + dateOfUpdate.getUTCFullYear()
     updateText   = 'Τροποποίηση στις ' + dateText
-    document.head.textContent ? noteOfUpdate.textContent = updateText :
-    document.head.innerText   ? noteOfUpdate.innerText   = updateText :
-                                ''      
+    noteOfUpdate.textContent ? noteOfUpdate.textContent = updateText :
+    noteOfUpdate.innerText   ? noteOfUpdate.innerText   = updateText :
+                               ''      
     noteOfUpdate.className = 'last-updated'
     document.getElementsByTagName('header')[0].appendChild(noteOfUpdate)
 }
