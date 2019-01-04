@@ -63,16 +63,6 @@ a, a:visited { color: #477ccc; text-decoration: none;      }
    a:hover   { color: #477ccc; text-decoration: underline; }
    a:active  { color: #859DBD; text-decoration: underline; }
 
-hr {
-	display: inline;
-	border: 0px;
-}
-
-hr::after {
-	content: "";
-	padding-right: 2.5em;
-}
-
 ol, ul, dl {
 	display: inline-block;
 	white-space: normal;
@@ -80,6 +70,9 @@ ol, ul, dl {
 	padding-left: 22px;
 	vertical-align: top;
 }
+
+ul ul, ul ol,
+ol ul, ol ol { display: block; }
 
 .inline-table { display: inline-table; }
 .table-of-contents { list-style: inherit; }
