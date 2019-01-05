@@ -75,8 +75,10 @@ ul ul, ul ol,
 ol ul, ol ol { display: block; }
 
 .inline-table { display: inline-table; }
-.table-of-contents { list-style: inherit; }
+.table-of-contents { list-style: inherit; border-left: 1px solid #777; }
 .with-bullets      { list-style: square;  }
+
+table-of-contents:before {content: 'Περιεχόμενα'; margin-left: -14px; font-weight: bolder; }
 
 li {
 	padding: 0;
