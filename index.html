@@ -8,6 +8,63 @@
     <meta name="format-detection" content="telephone = no">
     <link rel="search" type="application/opensearchdescription+xml" title="Greek Law" href="/opensearch.xml" />
     <link rel="stylesheet"        href="./stylesheets/greeklaw.css">
+    <style>
+nav ul {
+	list-style: none;
+	padding: 0 1em;
+}
+
+nav, nav li, .nav-tree-branch {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+nav li {
+	width: 100%;
+	text-indent: 0;
+}
+
+nav li a {
+	line-height: 34px;
+	display: inline-block;
+	padding: 3px 0px 2px 0px;
+}
+
+.nav-tree {
+	display: table;
+	width: 100%;
+	padding-top: 10px;
+	white-space: nowrap;
+	background: none;
+	box-shadow: none;
+}
+
+.nav-tree h2 {
+	display: table-cell;
+	width: 25%;
+	padding-top: 0;
+	vertical-align: top;
+}
+
+.nav-tree-branch {
+	display: table-cell;
+	width: 75%;
+	padding-top: 0;
+	padding-right: 0;
+}
+
+.table-of-contents { list-style: inherit; border-left: 1px solid #777; }
+
+.table-of-contents:before {content: 'Περιεχόμενα'; margin-left: -14px; font-weight: bolder; }
+
+@media (max-width: 35em) {
+	.nav-tree { white-space: normal; }
+	
+	.nav-tree h2,
+	.nav-tree-branch { display: table; width: 100%;
+}
+</style>
     <script async                 src="./javascripts/nav.js"></script>
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
