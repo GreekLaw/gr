@@ -82,7 +82,7 @@ input[id^="if"] { display: none; }
 
 [role=radio]:before,
 [role=checkbox]:before {
-	content: "";
+	content: '';
 	position: absolute;
 	left: 0;
 	margin: 0 0 0 0;
@@ -143,7 +143,7 @@ input[id^="if"] { display: none; }
 	}
 
 	[aria-haspopup] [role=radio]:after {
-		content: "";
+		content: '';
 		position: absolute;
 		width: 9px;
 		height: 9px;
@@ -248,7 +248,7 @@ input[id^="if"] { display: none; }
 
 .solved-issue:after,
 .answer:after {
-	content: "";
+	content: '';
 	position: relative;
 	display: block;
 	width:  5px;
