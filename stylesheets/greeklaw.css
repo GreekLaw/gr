@@ -84,6 +84,8 @@ ol, ul, dl {
 	vertical-align: top;
 }
 
+li { white-space: pre-line; }
+
 .with-bullets { list-style: square;  }
 
 .table-of-contents {
