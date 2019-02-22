@@ -1,4 +1,7 @@
-html { font: 400 15px/22px 'Helvetica Neue', sans-serif; }
+html {
+	font: 400 15px/22px 'Helvetica Neue', sans-serif;
+	color: #333;
+}
 
 body {
 	margin: 0 auto;
