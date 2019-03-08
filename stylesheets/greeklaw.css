@@ -87,7 +87,8 @@ ol, ul, dl {
 	vertical-align: top;
 }
 
-li { white-space: pre-line; }
+        li { white-space: pre-line; }
+.answer li { white-space:   normal; }
 
 .with-bullets { list-style: square;  }
 
