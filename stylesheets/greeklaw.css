@@ -78,6 +78,8 @@ cite {
 
 cite::before { content: ' · '; color: #ADADAD; }
 
+footer { color: #595959; }
+
 ol, ul, dl {
 	display: inline-block;
 	width: 100%;
@@ -152,7 +154,6 @@ input:required::-moz-placeholder          { color: #FF8787; font-size: 12px; pad
 input:required:-moz-placeholder           { color: #FF8787; font-size: 12px; padding-right: 10px; }
 
 footer {
-	color: #a7adb1;
 	font-size: 13px;
 	line-height: 44px;
 	text-align: center;
