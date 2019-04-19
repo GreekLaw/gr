@@ -66,6 +66,29 @@ h6, .h6 { font-size: 16px; line-height: 22px; padding: 16px 0px  6px 0px; font-w
 h2 a      , h3 a      , h4 a      , h5 a      , h6 a       { color: #312f30; }
 h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { color: #312f30; }
 
+ h2:before,  h3:before,  h4:before,  h5:before,  h6:before,
+.h2:before, .h3:before, .h4:before, .h5:before, .h6:before {
+	content: '';
+	display: inline-block;
+	margin: 0 6px 0 -10px;
+	width: 4px;
+	height: 22px;
+	background: transparent;
+    background-image: -webkit-linear-gradient(top      , white, white 2px, black 2px);
+    background-image:    -moz-linear-gradient(top      , white, white 2px, black 2px);
+    background-image:         linear-gradient(to bottom, white, white 2px, black 2px);
+    background-size: 2px 4px;
+    background-position: 1px 2px;
+    background-repeat: repeat-y;
+    box-sizing: border-box;
+}
+
+ h2:before, .h2:before { border-bottom: 18px solid; }
+ h3:before, .h3:before { border-bottom: 14px solid; }
+ h4:before, .h4:before { border-bottom: 10px solid; }
+ h5:before, .h5:before { border-bottom:  6px solid; }
+ h6:before, .h6:before { border-bottom:  2px solid; }
+
 a, a:visited { color: #477ccc; text-decoration: none;      }
    a:hover   { color: #477ccc; text-decoration: underline; }
    a:active  { color: #859DBD; text-decoration: underline; }
