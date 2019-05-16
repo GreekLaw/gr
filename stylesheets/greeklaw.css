@@ -66,29 +66,6 @@ h6, .h6 { font-size: 16px; line-height: 22px; padding: 16px 0px  6px 0px; font-w
 h2 a      , h3 a      , h4 a      , h5 a      , h6 a       { color: #312f30; }
 h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { color: #312f30; }
 
- h2:before,  h3:before,  h4:before,  h5:before,  h6:before,
-.h2:before, .h3:before, .h4:before, .h5:before, .h6:before {
-    content: '';
-    display: inline-block;
-    margin: 0 6px 0 -10px;
-    width: 2px;
-    height: 22px;
-    background: currentColor;
-    background-image: -webkit-linear-gradient(top      , white, white 2px, currentColor 2px);
-    background-image:    -moz-linear-gradient(top      , white, white 2px, currentColor 2px);
-    background-image:         linear-gradient(to bottom, white, white 2px, currentColor 2px);
-    background-size: 2px 4px;
-    background-position: 0px 0px;
-    background-repeat: repeat-y;
-    box-sizing: border-box;
-}
-
- h2:before, .h2:before { border-top: 15px solid; border-bottom:  1px solid; }
- h3:before, .h3:before { border-top: 12px solid; border-bottom:  4px solid; }
- h4:before, .h4:before { border-top:  8px solid; border-bottom:  7px solid; }
- h5:before, .h5:before { border-top:  4px solid; border-bottom: 10px solid; }
- h6:before, .h6:before { border-top:  1px solid; border-bottom: 15px solid; }
-
 a, a:visited { color: #477ccc; text-decoration: none;      }
    a:hover   { color: #477ccc; text-decoration: underline; }
    a:active  { color: #859DBD; text-decoration: underline; }
