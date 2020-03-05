@@ -116,7 +116,8 @@ li {
 	margin: 0;
 }
 
-dd, dt {
+dt, dd {
+	display: inline;
 	margin: 0;
 	padding: 0;
 	white-space: pre-line;
