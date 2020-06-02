@@ -111,7 +111,7 @@ ol, ul, dl {
 .table-of-contents a:hover   { color: #477ccc; text-decoration: underline; }
 .table-of-contents a:active  { color: #859DBD; text-decoration: underline; }
 .table-of-contents > li > a                                           { font-weight: bolder; }
-.table-of-contents > li > ul > li > ul > li > a                       { font-weight: bolder; }
+.table-of-contents > li > ul > li > ul > li > a                       { font-weight: bolder; color: #595959;}
 .table-of-contents > li > ul > li > ul > li > ul > li > > ul > li > a { font-weight: bolder; }
 
 .table-of-contents ul ul li    { padding-left: 2em; }
