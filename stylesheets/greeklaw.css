@@ -114,7 +114,7 @@ ol, ul, dl {
 .table-of-contents > li > ul > li > ul > li > a                       { font-weight: bolder; }
 .table-of-contents > li > ul > li > ul > li > ul > li > > ul > li > a { font-weight: bolder; }
 
-.table-of-contents ul ul       { padding-left: 2em; }
+.table-of-contents ul ul li    { padding-left: 2em; }
 .table-of-contents ul ul ul ul { padding-left: 3em; list-style: circle inside; }
 
 .table-of-contents li:before {
