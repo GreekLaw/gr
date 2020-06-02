@@ -103,7 +103,12 @@ ol, ul, dl {
 	padding: 0;
 	list-style: none;
 }
-.table-of-contents a, .table-of-contents a:visited { color: inherit; }
+.table-of-contents li { padding: 0 1em; margin-left: -1em; }
+.table-of-contents li a {margin-left: -1px; }
+.table-of-contents a         { color: inherit; }
+.table-of-contents a:visited { color: inherit; }
+.table-of-contents a:hover   { color: #477ccc; text-decoration: underline; }
+.table-of-contents a:active  { color: #859DBD; text-decoration: underline; }
 .table-of-contents > li > a                                           { font-weight: bolder; }
 .table-of-contents > li > ul > li > ul > li > a                       { font-weight: bolder; }
 .table-of-contents > li > ul > li > ul > li > ul > li > > ul > li > a { font-weight: bolder; }
