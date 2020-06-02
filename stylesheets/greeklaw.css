@@ -103,7 +103,7 @@ ol, ul, dl {
 	padding: 0;
 	list-style: none;
 }
-.table-of-contents li    { border: 1px solid; padding: 0 1em;    }
+.table-of-contents li    { border-left: 1px solid; padding: 0 1em;    }
 .table-of-contents ul li {                    margin-left: -1em; }
 .table-of-contents ul li a  { margin-left: -1px; }
 .table-of-contents a         { color: inherit; }
