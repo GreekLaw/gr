@@ -121,6 +121,7 @@ ol, ul, dl {
 .table-of-contents a:visited { color: inherit; }
 
 .table-of-contents > li                                         { font-weight: bolder;                 }
+.table-of-contents > li   ul                                    { font-weight: normal;                 }
 .table-of-contents > li > ul > li > ul > li                     { font-weight: bolder; color: #595959; }
 .table-of-contents > li > ul > li > ul > li > ul > li > ul > li { font-weight: bolder; color: #595959; }
 
