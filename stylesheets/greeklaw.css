@@ -110,8 +110,8 @@ ol, ul, dl {
 .table-of-contents ul             li { margin-left:  -1em; }
 .table-of-contents ul ul          li { padding-left:  2em; }
 .table-of-contents ul ul ul       li { margin-left:  -2em; }
-.table-of-contents ul ul ul ul    li { padding-left:  3em; list-style: circle inside; }
-.table-of-contents ul ul ul ul ul li { margin-left:  -3em; }
+.table-of-contents ul ul ul ul    li { padding-left:  4em; }
+.table-of-contents ul ul ul ul ul li { margin-left:  -4em; }
 
 .table-of-contents li a  { margin-left: -1px; }
 
