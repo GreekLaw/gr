@@ -27,11 +27,6 @@ body > header a {
 	text-align: center;
 }
 
-body > header a:hover, body > header a:link, body > header a:visited {
-	text-decoration: none;
-	color: black;
-}
-
 main {
 	display: inline-block;
 	min-height: 400px;
@@ -113,16 +108,19 @@ ol, ul, dl {
 .table-of-contents ul ul ul ul    li { padding-left:  4em; font-weight: bolder; }
 .table-of-contents ul ul ul ul ul li { margin-left:  -4em; font-weight: normal; }
 
-                   a               { color: #477ccc; text-decoration: none;      }
-                   a:visited       { color: #477ccc; text-decoration: none;      }
-.table-of-contents a               { color: inherit; }
+                   a                 { color: #477ccc; text-decoration: none;      }
+                   a:visited         { color: #477ccc; text-decoration: none;      }
+.table-of-contents a                 { color: inherit; }
 .table-of-contents>li>
-ul>li> ul>li>      a               { color: #595959; }
+ul>li> ul>li>      a                 { color: #595959; }
 .table-of-contents>li>
 ul>li> ul>li>
-ul>li> ul>li>      a               { color: #595959; }
-                   a:hover:hover   { color: #477ccc; text-decoration: underline; }
-                   a:active:active { color: #859DBD; text-decoration: underline; }
+ul>li> ul>li>      a                 { color: #595959; }
+                   a:hover:hover     { color: #477ccc; text-decoration: underline; }
+                   a:active:active   { color: #859DBD; text-decoration: underline; }
+body > header      a:hover:hover,
+body > header      a:link:link,
+body > header      a:visited:visited { color: black; text-decoration: none; }
 
 .table-of-contents li:before {
 	  content: "\200B"; /* VoiceOver list-style: none; fix */
