@@ -27,13 +27,31 @@ body > header a {
 	text-align: center;
 }
 
+      main { white-space: pre-line; }
+  h1 ~ div { white-space: pre-wrap; }
+ol, ul, dl { white-space: normal  ; }
+        li { white-space: pre-line; }
+.answer li { white-space: normal  ; }
+    dt, dd { white-space: pre-line; }
+        td { white-space: pre-line; }
+.expanded-results {
+	     white-space: nowrap  ; }
+     .seal { white-space: normal  ; }
+.seal-text { white-space: pre     ; }
+.seal .stamp {
+	     white-space: normal  ; }
+.white-space-normal {
+	     white-space: normal  ; }
+.pre-line  { white-space: pre-line; }
+h1.centered {
+	     white-space: normal  ; }
+
 main {
 	display: inline-block;
 	min-height: 400px;
 	width: 100%;
 	margin-top: 0em;
 	padding: 22px 10px 33px 10px;
-	white-space: pre-line;
 }
 
 .last-updated {
@@ -43,8 +61,6 @@ main {
 	font-size: 11px;
 	color: #595959;
 }
-
-h1 ~ div { white-space: pre-wrap; }
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -82,12 +98,8 @@ ol, ul, dl {
 	width: 100%;
 	margin: 0;
 	padding: 0 0 0 22px;
-	white-space: normal;
 	vertical-align: top;
 }
-
-        li { white-space: pre-line; }
-.answer li { white-space:   normal; }
 
 .with-bullets { list-style: square;  }
 
@@ -135,7 +147,6 @@ dt, dd {
 	display: inline;
 	margin: 0;
 	padding: 0;
-	white-space: pre-line;
 }
 
 dt { font-weight: 400; }
@@ -146,7 +157,6 @@ table {
 }
 
 td { border: 1px solid grey; }
-td { white-space: pre-line; }
 
 .expanded-results {
 	position: absolute;
@@ -154,7 +164,6 @@ td { white-space: pre-line; }
 	z-index: -1;
 	width: 5em;
 	height: 3em;
-	white-space: nowrap;
 	text-indent: 6em;
 	overflow: hidden;
 }
@@ -211,7 +220,6 @@ footer {
 
 .seal {
 	letter-spacing: -1em;
-	white-space: normal;
 	width: 100%;
 	overflow: auto;
 }
@@ -232,7 +240,6 @@ footer {
 	padding-bottom: 3em;
 	width: 320px;
 	letter-spacing: normal;
-	white-space: pre;
 	color: #3C3C3C;
 }
 
@@ -254,7 +261,6 @@ footer {
 .seal .stamp {
 	position: absolute;
 	z-index: -1;
-	white-space: normal;
 	word-break: break-word;
 }
 
@@ -299,10 +305,7 @@ footer {
 .centered    { text-align: center; }
 .align-right { text-align: right;  }
 
-.white-space-normal { white-space: normal; }
-.pre-line.          { white-space: pre-line; }
-
-h1.centered { width: 100%; white-space: normal; }
+h1.centered { width: 100%; }
 .centered form { display: inline-table; }
 
 .heading { font-size: 22px; margin: 0 auto; }
