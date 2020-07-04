@@ -112,22 +112,22 @@ ol, ul, dl {
 }
 
 .table-of-contents    li { border-left: 1px solid; }
-.table-of-contents ul li { position: relative; left: -1px; }
+.table-of-contents li li { position: relative; left: -1px; }
 .table-of-contents                li { padding-left:  1em; font-weight: bolder; }
-.table-of-contents ul             li { margin-left:  -1em; font-weight: normal; }
-.table-of-contents ul ul          li { padding-left:  2em; font-weight: bolder; }
-.table-of-contents ul ul ul       li { margin-left:  -2em; font-weight: normal; }
-.table-of-contents ul ul ul ul    li { padding-left:  4em; font-weight: bolder; }
-.table-of-contents ul ul ul ul ul li { margin-left:  -4em; font-weight: normal; }
+.table-of-contents             li li { margin-left:  -1em; font-weight: normal; }
+.table-of-contents          li li li { padding-left:  2em; font-weight: bolder; }
+.table-of-contents       li li li li { margin-left:  -2em; font-weight: normal; }
+.table-of-contents    li li li li li { padding-left:  4em; font-weight: bolder; }
+.table-of-contents li li li li li li { margin-left:  -4em; font-weight: normal; }
 
                    a                 { color: #477ccc; text-decoration: none;      }
                    a:visited         { color: #477ccc; text-decoration: none;      }
 .table-of-contents a                 { color: inherit; }
 .table-of-contents>li>
-ul>li> ul>li>      a                 { color: #595959; }
+ul>li> ul>li>      a                 { color: #686868; }
 .table-of-contents>li>
 ul>li> ul>li>
-ul>li> ul>li>      a                 { color: #595959; }
+ul>li> ul>li>      a                 { color: #686868; }
                    a:hover:hover     { color: #477ccc; text-decoration: underline; }
                    a:active:active   { color: #859DBD; text-decoration: underline; }
 body > header      a:hover:hover,
