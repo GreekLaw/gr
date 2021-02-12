@@ -289,6 +289,7 @@ footer {
 	vertical-align: text-top;
 }
 
+.hidden.hidden       { display: none; }
 .not-shown.not-shown { display: none; }
 .block        { display: block;        }
 .inline-block { display: inline-block; }
