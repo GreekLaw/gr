@@ -46,6 +46,8 @@ ol, ul, dl { white-space: normal  ; }
 h1.centered {
 	     white-space: normal  ; }
 
+.width-4em { width: 4em; }
+
 main {
 	display: inline-block;
 	min-height: 400px;
