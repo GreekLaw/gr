@@ -144,7 +144,7 @@ nav li a {
 	.nav-tree { white-space: normal; }
 	
 	.nav-tree h2,
-	.nav-tree-branch { display: table; width: 100%;
+	.nav-tree-branch { display: table; width: 100%; }
 }
 
 ol, ul, dl {
