@@ -99,6 +99,7 @@ body {
 body > header {
     display: block;
     position: relative;
+    padding: 0 11px;
     background-size: 100% 4px;
     background-position: bottom center;
     background-repeat: no-repeat;
