@@ -187,8 +187,10 @@ cite {
     line-height: 1.834;
 }
 
+     cite::before { content: " · "; }
+cite cite::before { content: ", ";  }
+
 cite::before {
-    content: " · ";
     font-style: normal;
 }
 
