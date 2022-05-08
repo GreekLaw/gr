@@ -238,10 +238,10 @@ nav li a {
 }
 
 @media (max-width: 35em) {
-	.nav-tree { white-space: normal; }
-	
-	.nav-tree h2,
-	.nav-tree-branch { display: table; width: 100%; }
+    .nav-tree { white-space: normal; }
+    
+    .nav-tree h2,
+    .nav-tree-branch { display: table; width: 100%; }
 }
 
 ol, ul, dl {
@@ -289,9 +289,9 @@ ol, ul, dl {
                       >ul>li         { margin-left:   0px; border-width: 0 0 0 15px; font-weight: 500; }
 
 .table-of-contents>li >ul>li {
-	background-repeat: no-repeat;
-	background-size: 1px 100%;
-	background-origin: border-box;
+    background-repeat: no-repeat;
+    background-size: 1px 100%;
+    background-origin: border-box;
 }
 
 .table-of-contents li:before {
@@ -334,8 +334,8 @@ td { border-width: 1px; border-style: solid; }
 
 aside {
     margin: 3px 22px;
-	border-width: 1px;
-	border-style: solid;
+    border-width: 1px;
+    border-style: solid;
     padding: 8px 11px;
     border-radius: 5px;
 }
@@ -403,8 +403,8 @@ footer {
 }
 
 .seal-data {
-	display: inline-table;
-	width: 100%;
+    display: inline-table;
+    width: 100%;
 }
 
 .seal-stamp-placeholder {
@@ -480,12 +480,12 @@ h1.centered { width: 100%; }
 .heading { font-size: 22px; margin: 0 auto; }
 
 main,
-h1,  h2,  h3,  h4,  h5,  h6,
+h1, h2, h3, h4, h5, h6,
 ol, ul, dl,
 nav, nav li {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 @media (max-width: 35em) {
