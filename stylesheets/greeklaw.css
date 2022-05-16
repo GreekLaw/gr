@@ -15,8 +15,9 @@ h1, h2, h3, h4, h5, h6,
                     cite              { color: #595959;                             }
                     cite:before       { color: #ADADAD;                             }
                     footer            { color: #595959;                             }
-                    a                 { color: #477ccc; text-decoration: none;      }
-                    a:visited         { color: #477ccc; text-decoration: none;      }
+                    a                 { color: #477ccc; text-decoration: underline; }
+                    a                 { text-decoration-color: #6695C5;             }
+                    a:visited         { color: #477ccc;                             }
 .table-of-contents  a                 { color: inherit; text-decoration: none;      }
 .table-of-contents>
 li >ul>li >ul>li  > a                 { color: #595959;                             }
@@ -36,7 +37,6 @@ li >ul>li >ul>li
       body > header a:hover:hover,
       body > header a:link:link,
       body > header a:visited:visited { color: inherit; text-decoration: none;      }
-                    .ad               {                 text-decoration: underline; }
 
 .warning:before                           { color: red;     }
 
