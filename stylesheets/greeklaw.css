@@ -16,7 +16,7 @@ h1, h2, h3, h4, h5, h6,
                     cite:before       { color: #ADADAD;                             }
                     footer            { color: #595959;                             }
                     a                 { color: #477ccc; text-decoration: underline; }
-                    a                 { text-decoration-color: #6695C5;             }
+                    a                 { text-decoration-color: #AFC2CF;             }
                     a:visited         { color: #477ccc;                             }
 .table-of-contents  a                 { color: inherit; text-decoration: none;      }
 .table-of-contents>
