@@ -322,7 +322,7 @@ table {
     border-collapse: collapse;
 }
 
-td { border-width: 1px; border-style: solid; }
+td { border-width: 1px; border-style: solid; padding: 5px 6px 6px 5px; }
 
 .expanded-results {
     position: absolute;
