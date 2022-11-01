@@ -176,11 +176,11 @@ h2:before, h3:before, h4:before, h5:before, h6:before {
     border-radius: 3px;
 }
 
-h2:before { height: 14px; margin: 9px 0 0 -15px; }
-h3:before { height: 16px; margin: 9px 0 0 -15px; }
-h4:before { height: 16px; margin: 9px 0 0 -30px; }
-h5:before { height: 19px; margin: 2px 0 0 -30px; }
-h6:before { height: 22px; margin: 0px 0 0 -45px; }
+h2:before { height: 14px; margin: 10px 0 0 -15px; }
+h3:before { height: 16px; margin:  9px 0 0 -15px; }
+h4:before { height: 16px; margin:  9px 0 0 -30px; }
+h5:before { height: 19px; margin:  2px 0 0 -30px; }
+h6:before { height: 22px; margin:  0px 0 0 -45px; }
 
 cite {
     font-size: 12px;
