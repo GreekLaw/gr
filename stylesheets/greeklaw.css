@@ -163,7 +163,7 @@ h1.block { padding: 0 22px 0 0; }
 
 .table-of-contents > li > ul { position: relative; }
 
-.table-of-contents > li > ul,
+.table-of-contents > li > ul:before,
 h2:before, h3:before, h4:before, h5:before, h6:before {
     content: "";
     position: absolute;
