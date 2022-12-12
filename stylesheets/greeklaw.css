@@ -104,9 +104,9 @@ body > header {
 body > header a {
     position: relative;
     display: block;
-    font: small-caps 44px/44px serif;
+    font: small-caps 44px/66px serif;
     text-align: center;
-    padding: 13px 0 9px 0;
+    padding: 0px 0 0px 0;
 }
 
 body > header a:before {
