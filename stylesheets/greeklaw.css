@@ -178,10 +178,10 @@ h2:before, h3:before, h4:before, h5:before, h6:before {
 .table-of-contents > li > ul:before {
             height: 100%; margin:  0px 0 0 -25px; }
 h2:before { height: 24px; margin:  5px 0 0 -15px; }
-h3:before { height: 15px; margin:  9px 0 0 -15px; }
-h4:before { height: 14px; margin:  4px 0 0 -30px; }
-h5:before { height: 10px; margin:  6px 0 0 -30px; }
-h6:before { height:  9px; margin:  7px 0 0 -45px; }
+h3:before { height: 17px; margin:  8px 0 0 -15px; }
+h4:before { height: 17px; margin:  3px 0 0 -30px; }
+h5:before { height: 12px; margin:  5px 0 0 -30px; }
+h6:before { height: 12px; margin:  5px 0 0 -45px; }
 
 cite {
     font-size: 12px;
@@ -278,10 +278,10 @@ ol, ul, dl {
     background: none;
 }
 
-.table-of-contents               li  { border-style: solid; padding-left:  5px; text-indent:  -5px; }
-.table-of-contents            ul     {                      margin-left:  -5px;                     }
-.table-of-contents              >li  { margin-left:   0px; border-width: 0 0 0 30px; font-weight: 500; }
-.table-of-contents       >li >ul>li  { margin-left: -30px; border-width: 0 0 0 15px; font-weight: 500; }
+.table-of-contents li                { border-style: solid; padding-left:  5px; text-indent:  -5px; }
+.table-of-contents ul                {                      margin-left:  -5px;                     }
+.table-of-contents>li                { margin-left:   0px; border-width: 0 0 0 30px; font-weight: 500; }
+.table-of-contents>li >ul>li         { margin-left: -30px; border-width: 0 0 0 15px; font-weight: 500; }
 .table-of-contents>li >ul>li >ul>li  { margin-left:   0px; border-width: 0 0 0  0px; font-weight: 400; }
 .table-of-contents>li >ul>li >ul>li
                       >ul>li         { margin-left:   0px; border-width: 0 0 0 15px; font-weight: 500; }
