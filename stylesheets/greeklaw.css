@@ -145,7 +145,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 { font-size: 26px; line-height: 44px; padding:  0px 0px 0px 30px; font-weight: 500; letter-spacing: .2px; }
 h2 { font-size: 21px; line-height: 33px; padding: 17px 0px 5px 15px; font-weight: 500; letter-spacing: .3px; }
 h3 { font-size: 18px; line-height: 33px; padding: 17px 0px 5px 15px; font-weight: 400; letter-spacing: .2px; }
-h4 { font-size: 16px; line-height: 22px; padding: 17px 0px 5px 30px; font-weight: 500; letter-spacing: .3px; }
+h4 { font-size: 17px; line-height: 22px; padding: 17px 0px 5px 30px; font-weight: 500; letter-spacing: .3px; }
 h5 { font-size: 16px; line-height: 22px; padding: 19px 0px 3px 30px; font-weight: 400; letter-spacing: .2px; }
 h6 { font-size: 15px; line-height: 22px; padding: 20px 0px 2px 45px; font-weight: 500; letter-spacing: .3px; }
 
@@ -178,8 +178,8 @@ h2:before, h3:before, h4:before, h5:before, h6:before {
 .table-of-contents > li > ul:before {
             height: 100%; margin:  0px 0 0 -25px; }
 h2:before { height: 24px; margin:  5px 0 0 -15px; }
-h3:before { height: 17px; margin:  9px 0 0 -15px; }
-h4:before { height: 17px; margin:  3px 0 0 -30px; }
+h3:before { height: 19px; margin:  7px 0 0 -15px; }
+h4:before { height: 18px; margin:  2px 0 0 -30px; }
 h5:before { height: 12px; margin:  5px 0 0 -30px; }
 h6:before { height: 12px; margin:  5px 0 0 -45px; }
 
