@@ -10,33 +10,31 @@ h1, h2, h3, h4, h5, h6,
     font-family: "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, Arial, sans-serif;
 }
 
-                    html              { color: #333333; background: white;          }
-                    .last-updated     { color: #595959;                             }
-                    cite              { color: #595959;                             }
-                    cite:before       { color: #ADADAD;                             }
-                    footer            { color: #595959;                             }
-                    a                 { color: #477ccc; text-decoration: underline; }
-                    a                 { text-decoration-color: #AFC2CF;             }
-                    a:visited         { color: #477ccc;                             }
-.table-of-contents  a                 { color: inherit; text-decoration: none;      }
-.table-of-contents>
-li >ul>li >ul>li  > a                 { color: #595959;                             }
-.table-of-contents>
-li >ul>li >ul>li
-   >ul>li         > a                 { color: #595959;                             }
-.table-of-contents>
-li >ul>li >ul>li
-   >ul>li >ul>li  > a                 { color: #595959;                             }
-.table-of-contents>
-li >ul>li >ul>li
-   >ul>li >ul>li
-   >ul>li         > a                 { color: #595959;                             }
-.table-of-contents  a:hover:hover     { color: #477ccc;                             }
-                    a:hover:hover     { color: #477ccc; text-decoration: underline; }
-                    a:active:active   { color: #859DBD; text-decoration: underline; }
-      body > header a:hover:hover,
-      body > header a:link:link,
-      body > header a:visited:visited { color: inherit; text-decoration: none;      }
+                        html              { color: #333333; background: white;          }
+                        .last-updated     { color: #595959;                             }
+                        cite              { color: #595959;                             }
+                        cite:before       { color: #ADADAD;                             }
+                        footer            { color: #595959;                             }
+                        a                 { color: #477ccc; text-decoration: underline; }
+                        a                 { text-decoration-color: #AFC2CF;             }
+                        a:visited         { color: #477ccc;                             }
+.table-of-contents      a                 { color: inherit; text-decoration: none;      }
+.table-of-contents>li 
+ >ul>li >ul>li        > a                 { color: #595959;                             }
+.table-of-contents>li
+ >ul>li >ul>li >ul>li > a                 { color: #595959;                             }
+.table-of-contents>li
+ >ul>li >ul>li >ul>li
+ >ul>li               > a                 { color: #595959;                             }
+.table-of-contents>li
+ >ul>li >ul>li >ul>li
+ >ul>li >ul>li        > a                 { color: #595959;                             }
+.table-of-contents      a:hover:hover     { color: #477ccc;                             }
+                        a:hover:hover     { color: #477ccc; text-decoration: underline; }
+                        a:active:active   { color: #859DBD; text-decoration: underline; }
+          body > header a:hover:hover,
+          body > header a:link:link,
+          body > header a:visited:visited { color: inherit; text-decoration: none;      }
 
 .warning:before                           { color: red;     }
 
@@ -176,7 +174,7 @@ h2:before, h3:before, h4:before, h5:before, h6:before {
 }
 
 .table-of-contents > li > ul:before {
-            height: 100%; margin:  0px 0 0 -25px; }
+            height: 100%; margin:  0px 0 0 -25px; left: -5px; }
 h2:before { height: 24px; margin:  5px 0 0 -15px; }
 h3:before { height: 19px; margin:  7px 0 0 -15px; }
 h4:before { height: 18px; margin:  2px 0 0 -30px; }
@@ -278,8 +276,9 @@ ol, ul, dl {
     background: none;
 }
 
-.table-of-contents li                { border-style: solid; padding-left:  5px; text-indent:  -5px; }
-.table-of-contents ul                {                      margin-left:  -5px;                     }
+.table-of-contents li                { border-style: solid; padding-left:  5px; text-indent: -5px; }
+.table-of-contents ul                {                      margin-left:  -5px; text-indent:  0px; }
+
 .table-of-contents>li                { margin-left:   0px; border-width: 0 0 0 30px; font-weight: 500; }
 .table-of-contents>li >ul>li         { margin-left: -30px; border-width: 0 0 0 15px; font-weight: 500; }
 .table-of-contents>li >ul>li >ul>li  { margin-left:   0px; border-width: 0 0 0  0px; font-weight: 400; }
