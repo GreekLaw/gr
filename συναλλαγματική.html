@@ -11,25 +11,25 @@
   <script async                 src="./javascripts/nav.js"></script>
   <style>
 .bill-of-exchange {
-	background-color: #F8FAFF;
-	padding: 20px;
-	border-bottom: 60px solid white;
-	font-family: serif;
-	font-style: italic;
-	line-height: 1.5;
-	white-space: normal;
-	box-shadow: 0 0 1px grey;
+    background-color: #F8FAFF;
+    padding: 20px;
+    border-bottom: 60px solid white;
+    font-family: serif;
+    font-style: italic;
+    line-height: 1.5;
+    white-space: normal;
+    box-shadow: 0 0 1px grey;
 }
-
-.line { display: table; width: 100%; }
-.line label, .line input { font-size: inherit; line-height: inherit; padding:0; border: 0px; box-sizing: border-box; }
 @media (max-width: 35em) {
-  .bill-of-exchange { font-size: 9px; }
-  .line input::-webkit-input-placeholder { font-size: 9px;}
-  .line input::placeholder { font-size: 9px; }
- }
+    .bill-of-exchange { font-size: 9px; padding: 11px; border-bottom: 37px; } }
+.line { display: table; width: 100%; }
+.line label, .line input { font-size: inherit; line-height: inherit; padding: 0; border: 0px; box-sizing: border-box; }
+@media (max-width: 35em) {
+    .line input::-webkit-input-placeholder { font-size: 9px; }
+    .line input::placeholder { font-size: 9px; }
+}
 label.qualified { position: relative; display: table-cell; }
-.qualifier { position: absolute; left: 0; top: 0; background:inherit; }
+.qualifier { position: absolute; left: 0; top: 0; background: inherit; }
 .qualified input    { width: 100%; }
 .payment.date.short { width:  45%; }
 .payment.date.long  { width:  50%; }
@@ -39,8 +39,8 @@ label.qualified { position: relative; display: table-cell; }
 
 input.paper { background: transparent; border: 0px solid; border-bottom: 1px dotted; text-align: right; }
 
-input.paper:required { border-bottom: 1px dashed red; }
-.line.one .payment.amount input { box-shadow: 0 0 0 1px red; }
+input.paper:required { border-bottom: 1px dotted red; padding-right: 4px; }
+.line.one .payment.amount input { box-shadow: 0 0 0 1px red; padding-right: 4px;}
 
 .payment.amount input { box-shadow: 0 0 0 1px; text-align: right; }
 .drawee.signature { vertical-align: bottom; }
