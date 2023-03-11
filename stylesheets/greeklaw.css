@@ -159,6 +159,12 @@ h1 + h2, h2 + h3, h3 + h4, h4 + h5, h5 + h6 {
     padding-top: 0;
 }
 
+h2 + .nav-tree-branch { padding-left: 15px; }
+h3 + .nav-tree-branch { padding-left: 15px; }
+h4 + .nav-tree-branch { padding-left: 30px; }
+h5 + .nav-tree-branch { padding-left: 30px; }
+h6 + .nav-tree-branch { padding-left: 45px; }
+
 h1 { width: auto; margin: 0 0 0 0; }
 
 h1.block { padding: 0 22px 0 0; }
@@ -219,35 +225,11 @@ nav li a {
 }
 
 .nav-tree {
-    display: table;
+    display: block;
     width: 100%;
     padding-top: 10px;
-    white-space: nowrap;
     background: none;
     box-shadow: none;
-}
-
-.nav-tree h2 {
-    display: table-cell;
-    width: 25%;
-    padding-top: 0;
-    vertical-align: top;
-}
-
-.nav-tree-branch {
-    display: table-cell;
-    width: 75%;
-    padding-top: 0;
-    padding-right: 0;
-}
-
-@media (max-width: 35em) {
-    .nav-tree { white-space: normal; }
-}
-
-@media (max-width: 35em) {
-    .nav-tree h2,
-    .nav-tree-branch { display: table; width: 100%; }
 }
 
 ol, ul, dl {
