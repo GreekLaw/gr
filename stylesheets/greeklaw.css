@@ -186,7 +186,7 @@ h2:before, h3:before, h4:before, h5:before, h6:before {
 h2:before { height: 24px; margin:  5px 0 0 -15px; width: 5px;             }
 h3:before { height: 19px; margin:  7px 0 0 -15px; width: 3px;             }
 h4:before { height: 18px; margin:  2px 0 0 -30px; width: 2px;             }
-h5:before { height: 12px; margin:  5px 0 0 -30px; width: 2px;             }
+h5:before { height: 12px; margin:  5px 0 0 -30px; width: 3px;             }
 h6:before { height:  9px; margin:  7px 0 0 -45px; width: 5px;             }
 
 cite {
