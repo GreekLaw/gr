@@ -200,16 +200,20 @@ h2:before, h3:before, h4:before, h5:before, h6:before,
 .table-of-contents>li >ul>li >ul>li >ul:before,
 .table-of-contents>li >ul>li >ul>li >ul>li >ul>li >ul:before { left:   1px; }
 
-h2:before { height: 24px; margin:  5px 0 0 -15px; width: 5px;                      }
-h3:before { height: 19px; margin:  7px 0 0 -15px; width: 3px;                      }
-h4:before { height: 18px; margin:  2px 0 0 -30px; width: 2px;                      }
-h4:after  { height: 12px; margin:  5px 0 0  11px; width: 2px; left: 0px; top: 0px; }
-h5:before { height: 12px; margin:  5px 0 0 -30px; width: 2px;                      }
-h5:after  { height:  7px; margin:  7px 0 0  11px; width: 2px; left: 0px; top: 0px; }
-h6:before { height: 12px; margin:  5px 0 0 -45px; width: 2px;                      }
-h6:after  { height:  7px; margin:  8px 0 0  22px; width: 2px; left: 0px; top: 0px; }
+h2:before { height: 24px; margin:  5px 0 0 -15px; width: 5px;                       }
+h3:before { height: 19px; margin:  7px 0 0 -15px; width: 3px;                       }
+h4:before { height: 18px; margin:  2px 0 0 -30px; width: 2px;                       }
+h4:after  { height: 12px; margin:  5px 0 0  11px; width: 2px; left: 0px; top: 19px; }
+h5:before { height: 12px; margin:  5px 0 0 -30px; width: 2px;                       }
+h5:after  { height:  7px; margin:  7px 0 0  11px; width: 2px; left: 0px; top: 21px; }
+h6:before { height: 12px; margin:  5px 0 0 -45px; width: 2px;                       }
+h6:after  { height:  7px; margin:  8px 0 0  22px; width: 2px; left: 0px; top: 21px; }
 
 h6:after { box-shadow: -11px 0px currentColor; }
+
+h3 + h4:after { top: 2px; }
+h4 + h5:after { top: 2px; }
+h5 + h6:after { top: 1px; }
 
 cite {
     font-size: 12px;
