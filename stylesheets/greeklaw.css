@@ -176,7 +176,9 @@ h1.block { padding: 0 22px 0 0; }
 
 .table-of-contents>li >ul,
 .table-of-contents>li >ul>li >ul>li >ul,
-.table-of-contents>li >ul>li >ul>li >ul>li >ul>li >ul { position: relative; }
+.table-of-contents>li >ul>li >ul>li >ul>li >ul>li >ul {
+    position: relative;
+}
 
 .table-of-contents>li >ul:before,
 .table-of-contents>li >ul>li >ul>li >ul:before,
