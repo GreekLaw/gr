@@ -54,6 +54,8 @@ td                                        {                 border-color: #C5C5C
 
 body > header a:before,
 .table-of-contents>li >ul:before,
+.table-of-contents>li >ul>li >ul>li >ul:before,
+.table-of-contents>li >ul>li >ul>li >ul>li >ul>li >ul:before,
 h2:before, h3:before, h4:before, h5:before, h6:before {
     background-image: -webkit-linear-gradient(left    , currentColor, currentColor);
     background-image:    -moz-linear-gradient(left    , currentColor, currentColor);
@@ -143,6 +145,8 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
 }
 
+h4, h5, h6 { position: relative; }
+
 h1 { font-size: 26px; line-height: 44px; padding:  0px 0px 0px 30px; font-weight: 500; letter-spacing: .2px; }
 h2 { font-size: 21px; line-height: 33px; padding: 17px 0px 5px 15px; font-weight: 500; letter-spacing: .3px; }
 h3 { font-size: 18px; line-height: 33px; padding: 17px 0px 5px 15px; font-weight: 400; letter-spacing: .2px; }
@@ -169,10 +173,15 @@ h1 { width: auto; margin: 0 0 0 0; }
 
 h1.block { padding: 0 22px 0 0; }
 
-.table-of-contents> li > ul { position: relative; }
+.table-of-contents>li >ul:before,
+.table-of-contents>li >ul>li >ul>li >ul:before,
+.table-of-contents>li >ul>li >ul>li >ul>li >ul>li >ul:before { position: relative; }
 
-.table-of-contents> li > ul:before,
-h2:before, h3:before, h4:before, h5:before, h6:before {
+.table-of-contents>li >ul:before,
+.table-of-contents>li >ul>li >ul>li >ul:before,
+.table-of-contents>li >ul>li >ul>li >ul>li >ul>li >ul:before,
+h2:before, h3:before, h4:before, h5:before, h6:before,
+                      h4:after,  h5:after,  h6:after {
     content: "";
     position: absolute;
     background-repeat: no-repeat;
@@ -181,13 +190,23 @@ h2:before, h3:before, h4:before, h5:before, h6:before {
     border-radius: 2px;
 }
 
-.table-of-contents> li > ul:before {
-            height: 100%; margin:  0px 0 0 -25px; width: 2px; left: -5px; }
+.table-of-contents>li >ul:before,
+.table-of-contents>li >ul>li >ul>li >ul:before,
+.table-of-contents>li >ul>li >ul>li >ul>li >ul>li >ul:before {
+    width: 2px; top: 2px; bottom: 2px; }
+
+.table-of-contents>li >ul:before {                             left: -30px; }
+.table-of-contents>li >ul>li >ul>li >ul:before,
+.table-of-contents>li >ul>li >ul>li >ul>li >ul>li >ul:before { left:   1px; }
+
 h2:before { height: 24px; margin:  5px 0 0 -15px; width: 5px;             }
 h3:before { height: 19px; margin:  7px 0 0 -15px; width: 3px;             }
 h4:before { height: 18px; margin:  2px 0 0 -30px; width: 2px;             }
-h5:before { height: 12px; margin:  5px 0 0 -30px; width: 3px;             }
-h6:before { height:  9px; margin:  7px 0 0 -45px; width: 5px;             }
+h4:after  { height: 12px; margin:  5px 0 0  11px; width: 2px; left:  0px; }
+h5:before { height: 12px; margin:  5px 0 0 -30px; width: 2px;             }
+h5:after  { height:  7px; margin:  7px 0 0  11px; width: 2px; left:  0px; }
+h6:before { height: 12px; margin:  5px 0 0 -45px; width: 2px;             }
+h6:after  { height:  7px; margin:  8px 0 0  22px; width: 2px; left:  0px; }
 
 cite {
     font-size: 12px;
@@ -261,7 +280,7 @@ ol, ul, dl {
     padding: 0;
     background: none;
 }
-
+                                      /* indent lines after the first in li, reset indent on ul */
 .table-of-contents li                { border-style: solid; padding-left:  5px; text-indent: -5px; }
 .table-of-contents ul                {                      margin-left:  -5px; text-indent:  0px; }
 
