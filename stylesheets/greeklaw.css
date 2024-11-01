@@ -196,11 +196,11 @@ h2:before, h3:before, h4:before, h5:before, h6:before,
 .table-of-contents>li >ul:before,
 .table-of-contents>li >ul>li >ul>li >ul:before,
 .table-of-contents>li >ul>li >ul>li >ul>li >ul>li >ul:before {
-    width: 2px; top: 2px; bottom: 2px; }
+    width: 2px; top: 2px; bottom: 4px; }
 
 .table-of-contents>li >ul:before {                             left: -30px; }
 .table-of-contents>li >ul>li >ul>li >ul:before,
-.table-of-contents>li >ul>li >ul>li >ul>li >ul>li >ul:before { left:   1px; }
+.table-of-contents>li >ul>li >ul>li >ul>li >ul>li >ul:before { left:   5px; }
 
 h2:before { width:  4px; height: 24px; margin:  5px 0 0 -15px;                       }
 h3:before { width:  4px; height: 19px; margin:  7px 0 0 -15px;                       }
