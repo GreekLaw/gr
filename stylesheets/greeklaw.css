@@ -10,47 +10,55 @@ h1, h2, h3, h4, h5, h6,
     font-family: "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, Arial, sans-serif;
 }
 
-                        html              { color: #333333; background: white;          }
-                        .last-updated     { color: #595959;                             }
-                        cite              { color: #595959;                             }
-                        cite:before       { color: #ADADAD;                             }
-                        footer            { color: #595959;                             }
-                        a                 { color: #477ccc; text-decoration: underline; }
-                        a                 { text-decoration-color: #AFC2CF;             }
-                        a:visited         { color: #477ccc;                             }
-.table-of-contents      a                 { color: inherit; text-decoration: none;      }
+                        html              { color: #333333;      background: white;          }
+                        .last-updated     { color: #595959;                                  }
+                        cite              { color: #595959;                                  }
+                        cite:before       { color: #ADADAD;                                  }
+                        footer            { color: #595959;                                  }
+                        a                 { color: currentColor; text-decoration: underline; }
+                        a                 { text-decoration-color: #477ccc;
+                                            text-underline-position: under;
+                                            text-underline-offset: 0px;                      }
+                        a:visited         { color: #477ccc;                                  }
+                        a:hover           { color: #477ccc;
+                                            text-underline-offset: -1px;                     }
+.table-of-contents      a                 { color: inherit;
+                                            text-decoration-color: #ffffffff;                }
 .table-of-contents>li 
- >ul>li >ul>li        > a                 { color: #595959;                             }
+ >ul>li >ul>li        > a                 { color: #595959;                                  }
 .table-of-contents>li
- >ul>li >ul>li >ul>li > a                 { color: #595959;                             }
-.table-of-contents>li
- >ul>li >ul>li >ul>li
- >ul>li               > a                 { color: #595959;                             }
+ >ul>li >ul>li >ul>li > a                 { color: #595959;                                  }
 .table-of-contents>li
  >ul>li >ul>li >ul>li
- >ul>li >ul>li        > a                 { color: #595959;                             }
-.table-of-contents      a:hover:hover     { color: #477ccc;                             }
-                        a:hover:hover     { color: #477ccc; text-decoration: underline; }
-                        a:active:active   { color: #859DBD; text-decoration: underline; }
-          body > header a:hover:hover,
-          body > header a:link:link,
-          body > header a:visited:visited { color: inherit; text-decoration: none;      }
+ >ul>li               > a                 { color: #595959;                                  }
+.table-of-contents>li
+ >ul>li >ul>li >ul>li
+ >ul>li >ul>li        > a                 { color: #595959;                                  }
+.table-of-contents      a:hover           { color: #477ccc;
+                                            text-decoration-color: #477ccc;                  }
+                        a:active:active   { color: #859DBD;                                  }
+          body > header a:hover,
+          body > header a:link,
+          body > header a:visited         { color: inherit;      text-decoration: none;      }
 
-.warning:before                           { color: red;     }
+                        a                 { transition: text-decoration-color 334ms,
+                                                        text-underline-offset 334ms;         }
 
-.date input::-webkit-input-placeholder    { color: inherit; }
-.date input:-ms-input-placeholder         { color: inherit; }
-.date input::-moz-placeholder             { color: inherit; }
-.date input:-moz-placeholder              { color: inherit; }
+.warning:before                           { color: red;          }
 
-input:required::-webkit-input-placeholder { color: #FF8787; }
-input:required:-ms-input-placeholder      { color: #FF8787; }
-input:required::-moz-placeholder          { color: #FF8787; }
-input:required:-moz-placeholder           { color: #FF8787; }
+.date input::-webkit-input-placeholder    { color: inherit;      }
+.date input:-ms-input-placeholder         { color: inherit;      }
+.date input::-moz-placeholder             { color: inherit;      }
+.date input:-moz-placeholder              { color: inherit;      }
 
-.table-of-contents li                     {                 border-color: #FFFFFF;      }
-.table-of-contents li                     {                 border-color: transparent;  }
-td                                        {                 border-color: #C5C5C5;      }
+input:required::-webkit-input-placeholder { color: #FF8787;      }
+input:required:-ms-input-placeholder      { color: #FF8787;      }
+input:required::-moz-placeholder          { color: #FF8787;      }
+input:required:-moz-placeholder           { color: #FF8787;      }
+
+.table-of-contents li                     {                      border-color: #FFFFFF;      }
+.table-of-contents li                     {                      border-color: transparent;  }
+td                                        {                      border-color: #C5C5C5;      }
 
 body > header a:before,
 .table-of-contents>li >ul:before,
