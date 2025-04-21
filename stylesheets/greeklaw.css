@@ -64,8 +64,7 @@ body > header a:before,
 .table-of-contents>li >ul:before,
 .table-of-contents>li >ul>li >ul>li >ul:before,
 .table-of-contents>li >ul>li >ul>li >ul>li >ul>li >ul:before,
-h2:before, h3:before, h4:before, h5:before, h6:before,
-                                 h5:after,  h6:after {
+h2:before, h3:before, h4:before, h5:before, h6:before {
     background-image: -webkit-linear-gradient(left    , currentColor, currentColor);
     background-image:    -moz-linear-gradient(left    , currentColor, currentColor);
     background-image:         linear-gradient(to right, currentColor, currentColor);
@@ -191,8 +190,7 @@ h1.block { padding: 0 22px 0 0; }
 .table-of-contents>li >ul:before,
 .table-of-contents>li >ul>li >ul>li >ul:before,
 .table-of-contents>li >ul>li >ul>li >ul>li >ul>li >ul:before,
-h2:before, h3:before, h4:before, h5:before, h6:before,
-                                 h5:after,  h6:after {
+h2:before, h3:before, h4:before, h5:before, h6:before {
     content: "";
     position: absolute;
     background-repeat: no-repeat;
@@ -213,15 +211,8 @@ h2:before, h3:before, h4:before, h5:before, h6:before,
 h2:before { width:  4px; height: 24px; margin:  5px 0 0 -15px;                       }
 h3:before { width:  4px; height: 19px; margin:  7px 0 0 -15px;                       }
 h4:before { width: 19px; height:  4px; margin:  6px 0 0 -30px;                       }
-h5:before { width: 12px; height:  4px; margin:  6px 0 0 -30px;                       }
-h5:after  { width:  4px; height:  4px; margin:  6px 0 0  20px; left: 0px; top: 19px; }
-h6:before { width: 12px; height:  4px; margin:  6px 0 0 -45px;                       }
-h6:after  { width:  4px; height:  4px; margin:  6px 0 0  32px; left: 0px; top: 20px; }
-
-h6:after { box-shadow: -12px -0px currentColor; }
-
-h4 + h5:after { top: 0px; }
-h5 + h6:after { top: 0px; }
+h5:before { width: 11px; height:  4px; margin:  6px 0 0 -30px;                       }
+h6:before { width: 11px; height:  4px; margin:  6px 0 0 -32px;                       }
 
 cite {
     font-size: 12px;
