@@ -246,6 +246,12 @@ nav li a {
     line-height: 34px;
     display: inline-block;
     padding: 3px 0px 2px 0px;
+    color: #477ccc;
+    text-decoration-color: #FFFFFFFF;
+}
+
+nav li a:hover {
+    text-decoration-color: #477ccc;
 }
 
 .nav-tree {
