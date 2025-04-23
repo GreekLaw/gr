@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, h6,
                         a:hover           { color: #477ccc;
                                             text-underline-offset: -1px;                     }
 .table-of-contents      a                 { color: inherit;
-                                            text-decoration-color: #ffffffff;                }
+                                            text-decoration-color: #ffffff00;                }
 .table-of-contents>li 
  >ul>li >ul>li        > a                 { color: #595959;                                  }
 .table-of-contents>li
