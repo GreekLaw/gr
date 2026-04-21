@@ -17,11 +17,11 @@ h1, h2, h3, h4, h5, h6,
                         footer            { color: #595959;                                  }
                         a                 { color: currentColor; text-decoration: underline; }
                         a                 { text-decoration-color: #477ccc;
-                                            text-underline-position: under;
-                                            text-underline-offset: 0px;                      }
+                                            text-underline-position: from-font;
+                                            text-underline-offset: 1px;                      }
                         a:visited         { color: #477ccc;                                  }
                         a:hover           { color: #477ccc;
-                                            text-underline-offset: -1px;                     }
+                                            text-underline-offset: 3px;                      }
 .table-of-contents      a                 { color: inherit;
                                             text-decoration-color: #ffffff00;                }
 .table-of-contents>li 
@@ -41,8 +41,8 @@ h1, h2, h3, h4, h5, h6,
           body > header a:link,
           body > header a:visited         { color: inherit;      text-decoration: none;      }
 
-                        a                 { transition: text-decoration-color 334ms,
-                                                        text-underline-offset 334ms;         }
+                        a                 { transition: text-decoration-color 250ms,
+                                                        text-underline-offset 250ms;         }
 
 .warning:before                           { color: red;          }
 
