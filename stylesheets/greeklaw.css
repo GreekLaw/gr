@@ -18,11 +18,11 @@ h1, h2, h3, h4, h5, h6,
                         a                 { color: currentColor; text-decoration: underline; }
                         a                 { text-decoration-color: #477ccc;
                                             text-underline-position: from-font;
+                                            text-decoration-thickness: 1px;
                                             text-underline-offset: 1px;                      }
                         a:visited         { color: inherit;                                  }
                         a:hover           { color: #477ccc;
-                                            text-underline-offset: 3px;
-                                            text-decoration-thickness: 1px;                  }
+                                            text-underline-offset: 3px;                      }
 .table-of-contents      a                 { color: inherit;
                                             text-decoration-color: #ffffff00;                }
 .table-of-contents>li 
