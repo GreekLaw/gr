@@ -23,6 +23,10 @@ h1, h2, h3, h4, h5, h6,
                         a:visited         { color: inherit;                                  }
                         a:hover           { color: #477ccc;
                                             text-underline-offset: 3px;                      }
+                 nav li a,
+                 nav li a:visited         { color: #477ccc;
+                                            text-decoration-color: #FFFFFFFF;                }
+                 nav li a:hover           { text-decoration-color: #477ccc;                  }
 .table-of-contents      a                 { color: inherit;
                                             text-decoration-color: #ffffff00;                }
 .table-of-contents>li 
@@ -247,12 +251,6 @@ nav li a, nav li a:visited {
     line-height: 34px;
     display: inline-block;
     padding: 3px 0px 2px 0px;
-    color: #477ccc;
-    text-decoration-color: #FFFFFFFF;
-}
-
-nav li a:hover {
-    text-decoration-color: #477ccc;
 }
 
 .nav-tree {
