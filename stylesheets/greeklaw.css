@@ -214,10 +214,10 @@ h2:before, h3:before, h4:before, h5:before, h6:before {
 .table-of-contents>li >ul>li >ul>li >ul>li >ul>li >ul:before { left:   5px; }
 
 h2:before { width:  4px; height: 22px; margin:  5px 0 0 -24px;                       }
-h3:before { width: 15px; height:  4px; margin: 15px 0 0 -24px;                       }
+h3:before { width: 15px; height:  4px; margin: 15px 0 0 -22px;                       }
 h4:before { width:  4px; height: 15px; margin:  4px 0 0 -21px;                       }
-h5:before { width: 13px; height:  4px; margin:  9px 0 0 -21px;                       }
-h6:before { width:  4px; height: 13px; margin:  4px 0 0 -16px;                       }
+h5:before { width: 13px; height:  4px; margin:  9px 0 0 -19px;                       }
+h6:before { width:  4px; height: 13px; margin:  4px 0 0 -20px;                       }
 
 cite {
     font-size: 12px;
@@ -229,7 +229,7 @@ cite cite::before { content: ", ";  }
 
 cite::before {
     font-style: normal;
-    pointer-events: none; /* allow element text selection to start with cursor click and hold at the pseudoelement */
+    pointer-events: none; /* allow click-and-drag text-selection */
 }
 
 nav ul {
