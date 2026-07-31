@@ -229,6 +229,7 @@ cite cite::before { content: ", ";  }
 
 cite::before {
     font-style: normal;
+    pointer-events: none; /* allow element text selection to start with cursor click and hold at the pseudoelement */
 }
 
 nav ul {
